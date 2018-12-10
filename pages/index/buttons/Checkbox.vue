@@ -4,10 +4,10 @@
     <rd-button-group>
       <rd-button-checkbox
         v-model="picked"
-        semantic="secondary">
+        semantic="secondary"
+      >
         Checked
       </rd-button-checkbox>
-
     </rd-button-group>
   </div>
 </template>

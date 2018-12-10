@@ -4,15 +4,15 @@
     :class="[classes,{active:input,disabled,'btn-block':block}]"
   >
     <input
-      v-model="input"
       :id="id"
+      v-model="input"
       type="checkbox"
       :name="name"
       :autocomplete="autocomplete"
       @change="$emit('change',input)"
     >
 
-    <slot/>
+    <slot />
   </label>
 </template>
 
@@ -26,11 +26,11 @@ export default {
     prop: 'modelValue',
     event: 'change'
   },
-  data() {
-    return { input: this.modelValue }
-  },
   props: {
     modelValue: { type: null, default: undefined }
+  },
+  data() {
+    return { input: this.modelValue };
   }
 };
 </script>

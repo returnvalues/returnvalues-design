@@ -8,11 +8,11 @@
       type="radio"
       :name="name"
       :autocomplete="autocomplete"
-      @change="$emit('change',value)"
       :checked="checked"
+      @change="$emit('change',value)"
     >
 
-    <slot/>
+    <slot />
   </label>
 </template>
 
@@ -26,14 +26,14 @@ export default {
     prop: 'modelValue',
     event: 'change'
   },
-  computed: {
-    checked() {
-      return this.value === this.modelValue
-    }
-  },
   props: {
     value: { type: null, default: undefined },
     modelValue: { type: null, default: undefined }
+  },
+  computed: {
+    checked() {
+      return this.value === this.modelValue;
+    }
   }
 };
 </script>
