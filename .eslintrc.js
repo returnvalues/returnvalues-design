@@ -7,7 +7,8 @@ module.exports = {
   rules: {
     'comma-dangle': 0,
     'import/no-unresolved': 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'vue/component-name-in-template-casing': ['error', 'kebab-case']
   },
   'globals': {
     "$": true
