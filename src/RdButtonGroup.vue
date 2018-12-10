@@ -1,10 +1,12 @@
 <template>
-  <div>progress</div>
+  <div class="btn-group-toggle">
+    <slot />
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Progress'
+  name: 'RdButtonGroup'
 };
 </script>
 

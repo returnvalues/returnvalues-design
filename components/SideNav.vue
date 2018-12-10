@@ -23,11 +23,12 @@ export default {
         { name: 'Main', to: '/', },
         { name: 'Card', to: '/card', },
         {
-          name: 'Form',
-          to: '/form',
+          name: 'Buttons',
+          to: '/buttons',
           child: [
+            { name: 'Button', to: '/button', },
             { name: 'Checkbox', to: '/checkbox', },
-            { name: 'Progress', to: '/progress', },
+            { name: 'Radio', to: '/radio', },
           ]
         },
       ]
