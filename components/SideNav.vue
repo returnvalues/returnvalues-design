@@ -3,21 +3,35 @@
     <li class="nav-item">
       <h5>Return Values Design</h5>
     </li>
-    <li class="nav-item">
-      <nuxt-link to="/">
-        main
-      </nuxt-link>
-    </li>
-    <li class="nav-item">
-      <nuxt-link to="/card">
-        card
-      </nuxt-link>
-    </li>
+    <side-nav-item
+      v-for="item of navigations"
+      :key="item.to"
+      :item="item"
+    />
   </ul>
 </template>
 
 <script>
+import SideNavItem from './SideNavItem.vue';
+
 export default {
   name: 'SideNav',
+  components: { SideNavItem },
+  data() {
+    return {
+      navigations: [
+        { name: 'Main', to: '/', },
+        { name: 'Card', to: '/card', },
+        {
+          name: 'Form',
+          to: '/form',
+          child: [
+            { name: 'Checkbox', to: '/checkbox', },
+            { name: 'Progress', to: '/progress', },
+          ]
+        },
+      ]
+    };
+  }
 };
 </script>
