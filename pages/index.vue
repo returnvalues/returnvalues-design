@@ -1,21 +1,28 @@
 <template>
-  <div class="container-fluid">
-    <SideNav />
-    <NavBar />
-    <RdButton>dddd</RdButton>
+  <div class="container-fluid d-flex">
+    <SideNav class="sidenav " />
+    <div class="col content d-flex flex-grow-1">
+      <NuxtChild />
+    </div>
   </div>
 </template>
 
 <script>
 
-import { RdButton } from '../src';
-import NavBar from '~/components/NavBar.vue';
+import '~/css/style.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import SideNav from '~/components/SideNav.vue';
 
 export default {
   name: 'Index',
   components: {
-    RdButton, NavBar, SideNav,
+    SideNav,
   },
 };
 </script>
+
+<style scoped>
+  .sidenav {width: 200px;}
+  .container-fluid {height: 100%}
+  .content {background: #fff;}
+</style>
