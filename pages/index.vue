@@ -1,8 +1,8 @@
 <template>
-  <div class="container-fluid d-flex">
-    <SideNav class="sidenav " />
-    <div class="col content d-flex flex-grow-1">
-      <NuxtChild />
+  <div class="container-fluid d-flex flex-nowrap">
+    <side-nav class="sidenav" />
+    <div class="col content d-flex flex-grow-1 border rounded">
+      <nuxt-child />
     </div>
   </div>
 </template>

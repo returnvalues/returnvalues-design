@@ -1,10 +1,13 @@
 <template>
-  <div>index</div>
+  <h2>card index</h2>
 </template>
 
 <script>
-
 export default {
-  name: 'Index',
+  name: 'Card'
 };
 </script>
+
+<style scoped>
+
+</style>

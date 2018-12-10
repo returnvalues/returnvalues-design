@@ -1,36 +1,17 @@
 <template>
   <ul class="nav flex-column">
     <li class="nav-item">
-      <a
-        class="nav-link active"
-        href="#"
-      >
-        Active
-      </a>
+      <h5>Return Values Design</h5>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link"
-        href="#"
-      >
-        Link
-      </a>
+      <nuxt-link to="/">
+        main
+      </nuxt-link>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link"
-        href="#"
-      >
-        Link
-      </a>
-    </li>
-    <li class="nav-item">
-      <a
-        class="nav-link disabled"
-        href="#"
-      >
-        Disabled
-      </a>
+      <nuxt-link to="/card">
+        card
+      </nuxt-link>
     </li>
   </ul>
 </template>
