@@ -2,38 +2,37 @@
   <component
     :is="tag"
     class="btn"
-    :class="[classes,{active,disabled,'btn-block':block}]"
+    :class="[classes,{active,disabled,'btn-block':block},semanticClass]"
     :active="active"
     :disabled="disabled"
   >
-    <slot />
+    <slot/>
   </component>
 </template>
 
 <script>
 
+import SemanticClass from './SemanticClass';
+
 export default {
   name: 'RdButton',
+  mixins: [SemanticClass],
   props: {
     tag: {
       type: String,
       default: 'button'
     },
     active: {
-      type: [Boolean, Object],
+      type: Boolean,
       default: undefined
     },
     disabled: {
-      type: [Boolean, Object],
+      type: Boolean,
       default: undefined
     },
     block: {
-      type: [Boolean, Object],
+      type: Boolean,
       default: undefined
-    },
-    semantic: {
-      type: String,
-      default: 'primary'
     },
     outline: {
       type: String,
@@ -49,7 +48,7 @@ export default {
   },
   computed: {
     classes() {
-      const ret = [this.semantic, this.outline && `outline-${this.outline}`, this.size];
+      const ret = [this.outline && `outline-${this.outline}`, this.size];
       return ret.map(x => x && `btn-${x}`);
     }
   }

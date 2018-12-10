@@ -35,30 +35,30 @@
              <rd-button
                tag="a"
                href="javascript:"
-               role="button"
+               role="button" primary
              >
                Link
              </rd-button>
              <rd-button
                tag="button"
-               type="submit"
+               type="submit" primary
              >
                Button
              </rd-button>
              <rd-button
                tag="input"
                type="button"
-               value="Input"
+               value="Input" primary
              />
              <rd-button
                tag="input"
                type="submit"
-               value="Submit"
+               value="Submit" primary
              />
              <rd-button
                tag="input"
                type="reset"
-               value="Reset"
+               value="Reset" primary
              />
     </p>
     <p>

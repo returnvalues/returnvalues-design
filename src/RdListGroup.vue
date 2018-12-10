@@ -2,6 +2,7 @@
   <component
     :is="tag"
     class="list-group"
+    :class="{'list-group-flush':flush}"
   >
     <slot />
   </component>
@@ -14,6 +15,10 @@ export default {
     tag: {
       type: String,
       default: 'ul'
+    },
+    flush: {
+      type: Boolean,
+      default: undefined
     },
   }
 };
