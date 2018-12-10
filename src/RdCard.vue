@@ -13,6 +13,7 @@
     >
     <slot name="beforeBody" />
     <div class="card-body">
+      <slot name="bodyTop" />
       <h5
         v-if="title"
         class="card-title"
@@ -28,6 +29,7 @@
       <p class="card-text">
         <slot />
       </p>
+      <slot name="bodyBottom" />
     </div>
     <slot name="afterBody" />
     <img

@@ -22,6 +22,7 @@ export default {
       navigations: [
         { name: 'Main', to: '/', },
         { name: 'Card', to: '/card', },
+        { name: 'List', to: '/list', },
         {
           name: 'Buttons',
           to: '/buttons',
