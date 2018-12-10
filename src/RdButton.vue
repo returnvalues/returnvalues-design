@@ -43,6 +43,9 @@ export default {
       type: String,
       default: ''
     },
+    id: { type: String, default: undefined },
+    name: { type: String, default: undefined },
+    autocomplete: { type: String, default: undefined },
   },
   computed: {
     classes() {

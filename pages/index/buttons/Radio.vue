@@ -43,7 +43,7 @@ export default {
   name: 'Radio',
   components: { RdButtonGroup, RdButtonRadio },
   data() {
-    return { picked: '' };
+    return { picked: 'one' };
   },
 };
 </script>
