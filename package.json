@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node node_modules/.bin/nuxt",
     "gh-pages": "node node_modules/.bin/nuxt generate && node_modules/.bin/push-dir --dir=dist --branch=gh-pages --cleanup",
-    "lint": "node_modules/.bin/eslint pages --ext .js,.mjs,.vue",
-    "lint:fix": "node_modules/.bin/eslint pages --ext .js,.mjs,.vue --fix"
+    "lint": "node_modules/.bin/eslint pages src components --ext .js,.mjs,.vue",
+    "lint:fix": "node_modules/.bin/eslint pages src components --ext .js,.mjs,.vue --fix"
   },
   "repository": {
     "type": "git",
@@ -20,13 +20,15 @@
   },
   "homepage": "https://github.com/returnvalues/returnvalues-design#readme",
   "dependencies": {
-    "nuxt": "^2.3.4"
+    "bootstrap": "^4.1.3"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.10.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-vue": "^5.0.0",
+    "nuxt": "^2.3.4",
     "push-dir": "^0.4.1"
   }
 }

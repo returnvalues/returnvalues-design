@@ -3,8 +3,13 @@ module.exports = {
     'plugin:vue/recommended',
     'airbnb-base'
   ],
-  plugins: [
-    'vue'
-  ],
-  rules: {}
+  plugins: ['vue'],
+  rules: {
+    'comma-dangle': 0,
+    'import/no-unresolved': 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+  },
+  'globals': {
+    "$": true
+  }
 };
