@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node node_modules/.bin/nuxt",
-    "gh-pages": "node node_modules/.bin/nuxt package",
+    "gh-pages": "node node_modules/.bin/nuxt generate && node_modules/.bin/push-dir --dir=dist --branch=gh-pages --cleanup",
     "lint": "node_modules/.bin/eslint pages --ext .js,.mjs,.vue",
     "lint:fix": "node_modules/.bin/eslint pages --ext .js,.mjs,.vue --fix"
   },
@@ -26,6 +26,7 @@
     "eslint": "^5.10.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-vue": "^5.0.0"
+    "eslint-plugin-vue": "^5.0.0",
+    "push-dir": "^0.4.1"
   }
 }
