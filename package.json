@@ -1,0 +1,31 @@
+{
+  "name": "returnvalues-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node node_modules/.bin/nuxt",
+    "gh-pages": "node node_modules/.bin/nuxt package",
+    "lint": "node_modules/.bin/eslint pages --ext .js,.mjs,.vue",
+    "lint:fix": "node_modules/.bin/eslint pages --ext .js,.mjs,.vue --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/returnvalues/returnvalues-design.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/returnvalues/returnvalues-design/issues"
+  },
+  "homepage": "https://github.com/returnvalues/returnvalues-design#readme",
+  "dependencies": {
+    "nuxt": "^2.3.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-vue": "^5.0.0"
+  }
+}
