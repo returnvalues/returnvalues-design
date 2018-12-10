@@ -3,6 +3,8 @@
     :is="tag"
     class="btn"
     :class="[classes,{active,disabled,'btn-block':block}]"
+    :active="active"
+    :disabled="disabled"
   >
     <slot />
   </component>
