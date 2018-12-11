@@ -1,28 +1,12 @@
 <script>
 export default {
   name: 'RdDropdown',
-  model: {
-    prop: 'modelValue',
-    event: 'change'
-  },
   props: {
-    modelValue: Boolean,
-    tag: { type: String, default: 'button' },
     split: Boolean,
     dropright: Boolean,
     dropleft: Boolean,
     alignright: Boolean,
 
-  },
-  data() {
-    return { show: this.modelValue };
-  },
-  methods: {
-    toggle(...args) {
-      const [tf = this.show] = args;
-      this.show = args.length ? tf : !tf;
-      this.$emit('change', this.show);
-    }
   },
   render(createElement) {
     const { button: buttons = [] } = this.$slots;
