@@ -1,6 +1,9 @@
 <script>
+import SizeClass from './SizeClass';
+
 export default {
   name: 'RdButtonGroup',
+  mixins: [SizeClass],
   render(createElement) {
     const deflt = this.$slots.default || [];
     let { prepend = [], append = [] } = this.$slots;
@@ -25,7 +28,7 @@ export default {
     });
 
     return createElement('div',
-      { class: { 'input-group': true } },
+      { class: [{ 'input-group': true }, this.sizeClass] },
       [prepend, deflt, append]);
   }
 };

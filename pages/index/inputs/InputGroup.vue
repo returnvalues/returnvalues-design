@@ -84,7 +84,10 @@
           </rd-input-group>
 
           Sizing
-          <rd-input-group class=" input-group-sm mb-3">
+          <rd-input-group
+            class="mb-3"
+            sm
+          >
             <span
               id="inputGroup-sizing-sm"
               slot="prepend"
@@ -114,9 +117,8 @@
             >
           </rd-input-group>
 
-          <rd-input-group class=" input-group-lg">
+          <rd-input-group lg>
             <span
-              id="inputGroup-sizing-lg"
               slot="prepend"
               text
             >
@@ -124,8 +126,6 @@
             </span>
             <input
               type="text"
-              aria-label="Sizing example input"
-              aria-describedby="inputGroup-sizing-lg"
             >
           </rd-input-group>
   </div>

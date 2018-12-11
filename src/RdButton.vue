@@ -2,7 +2,7 @@
   <component
     :is="tag"
     class="btn"
-    :class="[classes,{active,disabled,'btn-block':block},semanticClass]"
+    :class="[classes,{active,disabled,'btn-block':block},semanticClass,sizeClass,outlineClass]"
     :active="active"
     :disabled="disabled"
   >
@@ -13,10 +13,12 @@
 <script>
 
 import SemanticClass from './SemanticClass';
+import SizeClass from './SizeClass';
+import OutlineClass from './OutlineClass';
 
 export default {
   name: 'RdButton',
-  mixins: [SemanticClass],
+  mixins: [SemanticClass, SizeClass, OutlineClass],
   props: {
     tag: {
       type: String,
@@ -38,19 +40,9 @@ export default {
       type: String,
       default: ''
     },
-    size: {
-      type: String,
-      default: ''
-    },
     id: { type: String, default: undefined },
     name: { type: String, default: undefined },
     autocomplete: { type: String, default: undefined },
-  },
-  computed: {
-    classes() {
-      const ret = [this.outline && `outline-${this.outline}`, this.size];
-      return ret.map(x => x && `btn-${x}`);
-    }
   }
 };
 </script>
