@@ -2,7 +2,7 @@
   <div>
     Input
     Basic example
-    <rd-input-group class="mb-3">
+          <rd-input-group class="mb-3">
             <span
               id="basic-addon1"
               slot="prepend"
@@ -10,34 +10,34 @@
             >
               @
             </span>
-      <input
-        type="text"
-        placeholder="Username"
-        aria-label="Username"
-        aria-describedby="basic-addon1"
-      >
-    </rd-input-group>
+            <input
+              type="text"
+              placeholder="Username"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            >
+          </rd-input-group>
 
-    <rd-input-group class="mb-3">
-      <input
-        type="text"
-        placeholder="Recipient's username"
-        aria-label="Recipient's username"
-        aria-describedby="basic-addon2"
-      >
-      <span
-        id="basic-addon2"
-        slot="append"
-        text
-      >
+          <rd-input-group class="mb-3">
+            <input
+              type="text"
+              placeholder="Recipient's username"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            >
+            <span
+              id="basic-addon2"
+              slot="append"
+              text
+            >
               @example.com
             </span>
-    </rd-input-group>
+          </rd-input-group>
 
-    <label for="basic-url">
-      Your vanity URL
-    </label>
-    <rd-input-group class="mb-3">
+          <label for="basic-url">
+            Your vanity URL
+          </label>
+          <rd-input-group class="mb-3">
             <span
               id="basic-addon3"
               slot="prepend"
@@ -45,49 +45,49 @@
             >
               https://example.com/users/
             </span>
-      <input
-        id="basic-url"
-        type="text"
-        aria-describedby="basic-addon3"
-      >
-    </rd-input-group>
+            <input
+              id="basic-url"
+              type="text"
+              aria-describedby="basic-addon3"
+            >
+          </rd-input-group>
 
-    <rd-input-group class="mb-3">
+          <rd-input-group class="mb-3">
             <span
               slot="prepend"
               text
             >
               $
             </span>
-      <input
-        type="text"
-        aria-label="Amount (to the nearest dollar)"
-      >
-      <span
-        slot="append"
-        text
-      >
+            <input
+              type="text"
+              aria-label="Amount (to the nearest dollar)"
+            >
+            <span
+              slot="append"
+              text
+            >
               .00
             </span>
-    </rd-input-group>
+          </rd-input-group>
 
-    <rd-input-group>
+          <rd-input-group>
             <span
               slot="prepend"
               text
             >
               With textarea
             </span>
-      <textarea
-        aria-label="With textarea"
-      />
-    </rd-input-group>
+            <textarea
+              aria-label="With textarea"
+            />
+          </rd-input-group>
 
-    Sizing
-    <rd-input-group
-      class="mb-3"
-      sm
-    >
+          Sizing
+          <rd-input-group
+            class="mb-3"
+            sm
+          >
             <span
               id="inputGroup-sizing-sm"
               slot="prepend"
@@ -95,14 +95,14 @@
             >
               Small
             </span>
-      <input
-        type="text"
-        aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-sm"
-      >
-    </rd-input-group>
+            <input
+              type="text"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm"
+            >
+          </rd-input-group>
 
-    <rd-input-group class=" mb-3">
+          <rd-input-group class=" mb-3">
             <span
               id="inputGroup-sizing-default"
               slot="prepend"
@@ -110,295 +110,639 @@
             >
               Default
             </span>
-      <input
-        type="text"
-        aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-default"
-      >
-    </rd-input-group>
+            <input
+              type="text"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+            >
+          </rd-input-group>
 
-    <rd-input-group lg>
+          <rd-input-group lg>
             <span
               slot="prepend"
               text
             >
               Large
             </span>
-      <input
-        type="text"
-      >
-    </rd-input-group>
-    Checkboxes and radios
-    <rd-input-group class="mb-3">
+            <input
+              type="text"
+            >
+          </rd-input-group>
+          Checkboxes and radios
+          <rd-input-group class="mb-3">
+            <div
+              slot="prepend"
+              text
+            >
+              <input
+                type="checkbox"
+                aria-label="Checkbox for following text input"
+              >
+            </div>
 
-      <div slot="prepend" text>
-        <input type="checkbox" aria-label="Checkbox for following text input">
-      </div>
+            <input
+              type="text"
+              aria-label="Text input with checkbox"
+            >
+          </rd-input-group>
 
-      <input type="text" aria-label="Text input with checkbox">
-    </rd-input-group>
+          <rd-input-group>
+            <div
+              slot="prepend"
+              text
+            >
+              <input
+                type="radio"
+                aria-label="Radio button for following text input"
+              >
+            </div>
 
-    <rd-input-group>
+            <input
+              type="text"
+              aria-label="Text input with radio button"
+            >
+          </rd-input-group>
+          Multiple inputs
+          <rd-input-group>
+            <span
+              slot="prepend"
+              text
+            >
+              First and last name
+            </span>
+            <input
+              type="text"
+              aria-label="First name"
+            >
+            <input
+              type="text"
+              aria-label="Last name"
+            >
+          </rd-input-group>
 
-      <div slot="prepend" text>
-        <input type="radio" aria-label="Radio button for following text input">
-      </div>
+          Multiple addons
+          <rd-input-group class="mb-3">
+            <span
+              slot="prepend"
+              text
+            >
+              $
+            </span>
+            <span
+              slot="prepend"
+              text
+            >
+              0.00
+            </span>
 
-      <input type="text" aria-label="Text input with radio button">
-    </rd-input-group>
-    Multiple inputs
-    <rd-input-group>
-      <span slot="prepend" text>First and last name</span>
-      <input type="text" aria-label="First name">
-      <input type="text" aria-label="Last name">
-    </rd-input-group>
+            <input
+              type="text"
+              aria-label="Dollar amount (with dot and two decimal places)"
+            >
+          </rd-input-group>
 
-    Multiple addons
-    <rd-input-group class="mb-3">
+          <rd-input-group>
+            <input
+              type="text"
+              aria-label="Dollar amount (with dot and two decimal places)"
+            >
 
-      <span slot="prepend" text>$</span>
-      <span slot="prepend" text>0.00</span>
+            <span
+              slot="prepend"
+              text
+            >
+              $
+            </span>
+            <span
+              slot="prepend"
+              text
+            >
+              0.00
+            </span>
+          </rd-input-group>
+          Button addons
+          <rd-input-group class="mb-3">
+            <rd-button
+              id="button-addon1"
+              slot="prepend"
+              outline-secondary
+              type="button"
+            >
+              Button
+            </rd-button>
+            <input
+              type="text"
+              placeholder=""
+              aria-label="Example text with button addon"
+              aria-describedby="button-addon1"
+            >
+          </rd-input-group>
 
-      <input type="text" aria-label="Dollar amount (with dot and two decimal places)">
-    </rd-input-group>
+          <rd-input-group class="mb-3">
+            <input
+              type="text"
+              placeholder="Recipient's username"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            >
 
-    <rd-input-group>
-      <input type="text" aria-label="Dollar amount (with dot and two decimal places)">
+            <rd-button
+              id="button-addon2"
+              slot="append"
+              outline-secondary
+              type="button"
+            >
+              Button
+            </rd-button>
+          </rd-input-group>
 
-      <span slot="prepend" text>$</span>
-      <span slot="prepend" text>0.00</span>
+          <rd-input-group class="mb-3">
+            <rd-button
+              slot="prepend"
+              outline-secondary
+              type="button"
+            >
+              Button
+            </rd-button>
+            <rd-button
+              slot="prepend"
+              outline-secondary
+              type="button"
+            >
+              Button
+            </rd-button>
 
-    </rd-input-group>
-    Button addons
-    <rd-input-group class="mb-3">
-      <rd-button slot="prepend" outlineSecondary type="button" id="button-addon1">Button</rd-button>
-      <input type="text"
-             placeholder=""
-             aria-label="Example text with button addon"
-             aria-describedby="button-addon1">
-    </rd-input-group>
+            <input
+              type="text"
+              placeholder=""
+              aria-label="Example text with two button addons"
+              aria-describedby="button-addon3"
+            >
+          </rd-input-group>
 
-    <rd-input-group class="mb-3">
-      <input type="text"
-             placeholder="Recipient's username"
-             aria-label="Recipient's username"
-             aria-describedby="button-addon2">
-
-      <rd-button slot="append" outlineSecondary type="button" id="button-addon2">Button</rd-button>
-
-    </rd-input-group>
-
-    <rd-input-group class="mb-3">
-
-      <rd-button slot="prepend" outlineSecondary type="button">Button</rd-button>
-      <rd-button slot="prepend" outlineSecondary type="button">Button</rd-button>
-
-      <input type="text"
-             placeholder=""
-             aria-label="Example text with two button addons"
-             aria-describedby="button-addon3">
-    </rd-input-group>
-
-    <rd-input-group>
-      <input type="text"
-             placeholder="Recipient's username"
-             aria-label="Recipient's username with two button addons"
-             aria-describedby="button-addon4">
-      <rd-button slot="append" outlineSecondary type="button">Button</rd-button>
-      <rd-button slot="append" outlineSecondary type="button">Button</rd-button>
-    </rd-input-group>
+          <rd-input-group>
+            <input
+              type="text"
+              placeholder="Recipient's username"
+              aria-label="Recipient's username with two button addons"
+              aria-describedby="button-addon4"
+            >
+            <rd-button
+              slot="append"
+              outline-secondary
+              type="button"
+            >
+              Button
+            </rd-button>
+            <rd-button
+              slot="append"
+              outline-secondary
+              type="button"
+            >
+              Button
+            </rd-button>
+          </rd-input-group>
 
 
-    Buttons with dropdowns
-    <rd-input-group class="mb-3">
+          Buttons with dropdowns
+          <rd-input-group class="mb-3">
+            <rd-button
+              slot="append"
+              outline-secondary
+              class="dropdown-toggle"
+              type="button"
+            >
+              Dropdown
+            </rd-button>
+            <div
+              slot="append"
+              class="dropdown-menu"
+            >
+              <a
+                class="dropdown-item"
+                href="#"
+              >
+                Action
+              </a>
+              <a
+                class="dropdown-item"
+                href="#"
+              >
+                Another action
+              </a>
+              <a
+                class="dropdown-item"
+                href="#"
+              >
+                Something else here
+              </a>
+              <div
+                role="separator"
+                class="dropdown-divider"
+              />
+              <a
+                class="dropdown-item"
+                href="#"
+              >
+                Separated link
+              </a>
+            </div>
 
-      <rd-button slot="append" outlineSecondary class="dropdown-toggle" type="button">Dropdown
-      </rd-button>
-      <div slot="append" class="dropdown-menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-        <div role="separator" class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Separated link</a>
-      </div>
+            <input
+              type="text"
+              aria-label="Text input with dropdown button"
+            >
+          </rd-input-group>
 
-      <input type="text" aria-label="Text input with dropdown button">
-    </rd-input-group>
+          <rd-input-group>
+            <input
+              type="text"
+              aria-label="Text input with dropdown button"
+            >
 
-    <rd-input-group>
-      <input type="text" aria-label="Text input with dropdown button">
+            <rd-button
+              slot="prepend"
+              outline-secondary
+              class="dropdown-toggle"
+              type="button"
+            >
+              Dropdown
+            </rd-button>
+            <div
+              slot="prepend"
+              class="dropdown-menu"
+            >
+              <a
+                class="dropdown-item"
+                href="#"
+              >
+                Action
+              </a>
+              <a
+                class="dropdown-item"
+                href="#"
+              >
+                Another action
+              </a>
+              <a
+                class="dropdown-item"
+                href="#"
+              >
+                Something else here
+              </a>
+              <div
+                role="separator"
+                class="dropdown-divider"
+              />
+              <a
+                class="dropdown-item"
+                href="#"
+              >
+                Separated link
+              </a>
+            </div>
+          </rd-input-group>
 
-      <rd-button slot="prepend" outlineSecondary class="dropdown-toggle" type="button">Dropdown
-      </rd-button>
-      <div slot="prepend" class="dropdown-menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-        <div role="separator" class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Separated link</a>
-      </div>
-
-    </rd-input-group>
-
-    Segmented buttons
-    <rd-input-group class="mb-3">
-      <button slot="prepend" type="button" class="btn btn-outline-secondary">Action</button>
-      <button slot="prepend"
+          Segmented buttons
+          <rd-input-group class="mb-3">
+            <button
+              slot="prepend"
+              type="button"
+              class="btn btn-outline-secondary"
+            >
+              Action
+            </button>
+            <button
+              slot="prepend"
               type="button"
               class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
               data-toggle="dropdown"
               aria-haspopup="true"
-              aria-expanded="false">
-        <span class="sr-only">Toggle Dropdown</span>
-      </button>
-      <div slot="prepend" class="dropdown-menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-        <div role="separator" class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Separated link</a>
-      </div>
-      <input type="text" aria-label="Text input with segmented dropdown button">
-    </rd-input-group>
+              aria-expanded="false"
+            >
+              <span class="sr-only">
+                Toggle Dropdown
+              </span>
+            </button>
+            <div
+              slot="prepend"
+              class="dropdown-menu"
+            >
+              <a
+                class="dropdown-item"
+                href="#"
+              >
+                Action
+              </a>
+              <a
+                class="dropdown-item"
+                href="#"
+              >
+                Another action
+              </a>
+              <a
+                class="dropdown-item"
+                href="#"
+              >
+                Something else here
+              </a>
+              <div
+                role="separator"
+                class="dropdown-divider"
+              />
+              <a
+                class="dropdown-item"
+                href="#"
+              >
+                Separated link
+              </a>
+            </div>
+            <input
+              type="text"
+              aria-label="Text input with segmented dropdown button"
+            >
+          </rd-input-group>
 
-    <rd-input-group>
-      <input type="text" aria-label="Text input with segmented dropdown button">
+          <rd-input-group>
+            <input
+              type="text"
+              aria-label="Text input with segmented dropdown button"
+            >
 
-      <button slot="append" type="button" class="btn btn-outline-secondary">Action</button>
-      <button slot="append"
+            <button
+              slot="append"
+              type="button"
+              class="btn btn-outline-secondary"
+            >
+              Action
+            </button>
+            <button
+              slot="append"
               type="button"
               class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
               data-toggle="dropdown"
               aria-haspopup="true"
-              aria-expanded="false">
-        <span class="sr-only">Toggle Dropdown</span>
-      </button>
-      <div slot="append" class="dropdown-menu">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-        <div role="separator" class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Separated link</a>
-      </div>
-    </rd-input-group>
+              aria-expanded="false"
+            >
+              <span class="sr-only">
+                Toggle Dropdown
+              </span>
+            </button>
+            <div
+              slot="append"
+              class="dropdown-menu"
+            >
+              <a
+                class="dropdown-item"
+                href="#"
+              >
+                Action
+              </a>
+              <a
+                class="dropdown-item"
+                href="#"
+              >
+                Another action
+              </a>
+              <a
+                class="dropdown-item"
+                href="#"
+              >
+                Something else here
+              </a>
+              <div
+                role="separator"
+                class="dropdown-divider"
+              />
+              <a
+                class="dropdown-item"
+                href="#"
+              >
+                Separated link
+              </a>
+            </div>
+          </rd-input-group>
 
 
-    Custom forms
+          Custom forms
 
-    Custom select
-    <rd-input-group class="mb-3">
+          Custom select
+          <rd-input-group class="mb-3">
+            <label
+              slot="prepend"
+              class="input-group-text"
+              for="inputGroupSelect01"
+            >
+              Options
+            </label>
 
-      <label slot="prepend" class="input-group-text" for="inputGroupSelect01">Options</label>
+            <select
+              id="inputGroupSelect01"
+              class="custom-select"
+            >
+              <option selected>
+                Choose...
+              </option>
+              <option value="1">
+                One
+              </option>
+              <option value="2">
+                Two
+              </option>
+              <option value="3">
+                Three
+              </option>
+            </select>
+          </rd-input-group>
 
-      <select class="custom-select" id="inputGroupSelect01">
-        <option selected>Choose...</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-    </rd-input-group>
+          <rd-input-group class="mb-3">
+            <select
+              id="inputGroupSelect02"
+              class="custom-select"
+            >
+              <option selected>
+                Choose...
+              </option>
+              <option value="1">
+                One
+              </option>
+              <option value="2">
+                Two
+              </option>
+              <option value="3">
+                Three
+              </option>
+            </select>
 
-    <rd-input-group class="mb-3">
-      <select class="custom-select" id="inputGroupSelect02">
-        <option selected>Choose...</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
+            <label
+              slot="append"
+              class="input-group-text"
+              for="inputGroupSelect02"
+            >
+              Options
+            </label>
+          </rd-input-group>
 
-      <label slot="append" class="input-group-text" for="inputGroupSelect02">Options</label>
+          <rd-input-group class="mb-3">
+            <button
+              slot="prepend"
+              class="btn btn-outline-secondary"
+              type="button"
+            >
+              Button
+            </button>
 
-    </rd-input-group>
-
-    <rd-input-group class="mb-3">
-
-      <button slot="prepend" class="btn btn-outline-secondary" type="button">Button</button>
-
-      <select class="custom-select"
+            <select
               id="inputGroupSelect03"
-              aria-label="Example select with button addon">
-        <option selected>Choose...</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-    </rd-input-group>
+              class="custom-select"
+              aria-label="Example select with button addon"
+            >
+              <option selected>
+                Choose...
+              </option>
+              <option value="1">
+                One
+              </option>
+              <option value="2">
+                Two
+              </option>
+              <option value="3">
+                Three
+              </option>
+            </select>
+          </rd-input-group>
 
-    <rd-input-group>
-      <select class="custom-select"
+          <rd-input-group>
+            <select
               id="inputGroupSelect04"
-              aria-label="Example select with button addon">
-        <option selected>Choose...</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
+              class="custom-select"
+              aria-label="Example select with button addon"
+            >
+              <option selected>
+                Choose...
+              </option>
+              <option value="1">
+                One
+              </option>
+              <option value="2">
+                Two
+              </option>
+              <option value="3">
+                Three
+              </option>
+            </select>
 
-      <button slot="append" class="btn btn-outline-secondary" type="button">Button</button>
-
-    </rd-input-group>
-
-    Custom file input
-    <rd-input-group class="mb-3">
-
-      <span slot="prepend" class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-
-      <div class="custom-file">
-        <input type="file"
-               class="custom-file-input"
-               id="inputGroupFile01"
-               aria-describedby="inputGroupFileAddon01">
-        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-      </div>
-    </rd-input-group>
-
-    <rd-input-group class="mb-3">
-      <div class="custom-file">
-        <input type="file" class="custom-file-input" id="inputGroupFile02">
-        <label class="custom-file-label"
-               for="inputGroupFile02"
-               aria-describedby="inputGroupFileAddon02">Choose file</label>
-      </div>
-
-      <span slot="append" class="input-group-text" id="inputGroupFileAddon02">Upload</span>
-
-    </rd-input-group>
-
-    <rd-input-group class="mb-3">
-
-      <button slot="prepend"
+            <button
+              slot="append"
               class="btn btn-outline-secondary"
               type="button"
-              id="inputGroupFileAddon03">Button
-      </button>
+            >
+              Button
+            </button>
+          </rd-input-group>
 
-      <div class="custom-file">
-        <input type="file"
-               class="custom-file-input"
-               id="inputGroupFile03"
-               aria-describedby="inputGroupFileAddon03">
-        <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
-      </div>
-    </rd-input-group>
+          Custom file input
+          <rd-input-group class="mb-3">
+            <span
+              id="inputGroupFileAddon01"
+              slot="prepend"
+              class="input-group-text"
+            >
+              Upload
+            </span>
 
-    <rd-input-group>
-      <div class="custom-file">
-        <input type="file"
-               class="custom-file-input"
-               id="inputGroupFile04"
-               aria-describedby="inputGroupFileAddon04">
-        <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
-      </div>
+            <div class="custom-file">
+              <input
+                id="inputGroupFile01"
+                type="file"
+                class="custom-file-input"
+                aria-describedby="inputGroupFileAddon01"
+              >
+              <label
+                class="custom-file-label"
+                for="inputGroupFile01"
+              >
+                Choose file
+              </label>
+            </div>
+          </rd-input-group>
 
-      <button slot="append"
+          <rd-input-group class="mb-3">
+            <div class="custom-file">
+              <input
+                id="inputGroupFile02"
+                type="file"
+                class="custom-file-input"
+              >
+              <label
+                class="custom-file-label"
+                for="inputGroupFile02"
+                aria-describedby="inputGroupFileAddon02"
+              >
+                Choose file
+              </label>
+            </div>
+
+            <span
+              id="inputGroupFileAddon02"
+              slot="append"
+              class="input-group-text"
+            >
+              Upload
+            </span>
+          </rd-input-group>
+
+          <rd-input-group class="mb-3">
+            <button
+              id="inputGroupFileAddon03"
+              slot="prepend"
               class="btn btn-outline-secondary"
               type="button"
-              id="inputGroupFileAddon04">Button
-      </button>
+            >
+              Button
+            </button>
 
-    </rd-input-group>
+            <div class="custom-file">
+              <input
+                id="inputGroupFile03"
+                type="file"
+                class="custom-file-input"
+                aria-describedby="inputGroupFileAddon03"
+              >
+              <label
+                class="custom-file-label"
+                for="inputGroupFile03"
+              >
+                Choose file
+              </label>
+            </div>
+          </rd-input-group>
 
+          <rd-input-group>
+            <div class="custom-file">
+              <input
+                id="inputGroupFile04"
+                type="file"
+                class="custom-file-input"
+                aria-describedby="inputGroupFileAddon04"
+              >
+              <label
+                class="custom-file-label"
+                for="inputGroupFile04"
+              >
+                Choose file
+              </label>
+            </div>
 
+            <button
+              id="inputGroupFileAddon04"
+              slot="append"
+              class="btn btn-outline-secondary"
+              type="button"
+            >
+              Button
+            </button>
+          </rd-input-group>
   </div>
 </template>
 

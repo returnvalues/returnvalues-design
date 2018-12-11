@@ -32,7 +32,6 @@ export default {
           to: '/inputs',
           child: [
             { name: 'Input group', to: '/inputgroup' },
-            { name: 'Input', to: '/input' },
             { name: 'Dropdown', to: '/dropdown' },
           ]
         },
