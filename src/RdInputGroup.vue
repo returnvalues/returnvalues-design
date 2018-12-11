@@ -2,10 +2,12 @@
 export default {
   name: 'RdButtonGroup',
   render(createElement) {
+    const deflt = this.$slots.default || [];
     let { prepend = [], append = [] } = this.$slots;
-    prepend.concat(append).forEach(({ data }) => {
-      data.class = data.class || {}; // eslint-disable-line no-param-reassign
+    const pna = prepend.concat(append);
+    pna.forEach(({ data }) => {
       if (data.attrs.text === '' || data.attrs.text) {
+        data.class = data.class || {}; // eslint-disable-line no-param-reassign
         data.class['input-group-text'] = true; // eslint-disable-line no-param-reassign
       }
     });
@@ -15,9 +17,16 @@ export default {
     if (append.length) {
       append = createElement('div', { class: { 'input-group-append': true } }, append);
     }
+    pna.concat(deflt).forEach(({ data, tag }) => {
+      if (tag === 'input' || tag === 'textarea') {
+        data.class = data.class || {}; // eslint-disable-line no-param-reassign
+        data.class['form-control'] = true; // eslint-disable-line no-param-reassign
+      }
+    });
+
     return createElement('div',
       { class: { 'input-group': true } },
-      [prepend, this.$slots.default, append]);
+      [prepend, deflt, append]);
   }
 };
 </script>

@@ -12,7 +12,6 @@
             </span>
             <input
               type="text"
-              class="form-control"
               placeholder="Username"
               aria-label="Username"
               aria-describedby="basic-addon1"
@@ -22,7 +21,6 @@
           <rd-input-group class="mb-3">
             <input
               type="text"
-              class="form-control"
               placeholder="Recipient's username"
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
@@ -50,7 +48,6 @@
             <input
               id="basic-url"
               type="text"
-              class="form-control"
               aria-describedby="basic-addon3"
             >
           </rd-input-group>
@@ -64,7 +61,6 @@
             </span>
             <input
               type="text"
-              class="form-control"
               aria-label="Amount (to the nearest dollar)"
             >
             <span
@@ -83,7 +79,6 @@
               With textarea
             </span>
             <textarea
-              class="form-control"
               aria-label="With textarea"
             />
           </rd-input-group>
@@ -99,7 +94,6 @@
             </span>
             <input
               type="text"
-              class="form-control"
               aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-sm"
             >
@@ -115,7 +109,6 @@
             </span>
             <input
               type="text"
-              class="form-control"
               aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-default"
             >
@@ -131,7 +124,6 @@
             </span>
             <input
               type="text"
-              class="form-control"
               aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-lg"
             >
