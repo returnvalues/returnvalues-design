@@ -7,19 +7,9 @@ import RdListGroup from './RdListGroup.vue';
 import RdListItem from './RdListItem.vue';
 import RdInputGroup from './RdInputGroup.vue';
 import RdDropdown from './RdDropdown.vue';
+import RdInput from './RdInput.vue';
 import 'bootstrap/dist/css/bootstrap.css';
 
-const defaultExport = {
-  RdButton,
-  RdButtonGroup,
-  RdButtonRadio,
-  RdButtonCheckbox,
-  RdCard,
-  RdListGroup,
-  RdListItem,
-  RdInputGroup,
-  RdDropdown
-};
 
 export {
   RdButton,
@@ -30,10 +20,9 @@ export {
   RdListGroup,
   RdListItem,
   RdInputGroup,
-  RdDropdown
+  RdDropdown,
+  RdInput
 };
-export default defaultExport;
-
 
 const isBrowser = typeof window !== 'undefined' && typeof window.document !== 'undefined';
 if (isBrowser) {

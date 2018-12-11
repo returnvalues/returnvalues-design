@@ -33,6 +33,7 @@ export default {
           child: [
             { name: 'Input group', to: '/inputgroup' },
             { name: 'Dropdown', to: '/dropdown' },
+            { name: 'Form', to: '/form' },
           ]
         },
         {
