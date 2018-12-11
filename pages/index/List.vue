@@ -16,7 +16,10 @@
       >
         Cras justo odio
       </rd-list-item>
-      <rd-list-item tag="button" primary>
+      <rd-list-item
+        tag="button"
+        primary
+      >
         Dapibus ac facilisis in
       </rd-list-item>
       <rd-list-item tag="button">

@@ -6,7 +6,7 @@
     :active="active"
     :disabled="disabled"
   >
-    <slot/>
+    <slot />
   </component>
 </template>
 

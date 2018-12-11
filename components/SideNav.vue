@@ -17,7 +17,7 @@ import SideNavItem from './SideNavItem.vue';
 export default {
   name: 'SideNav',
   components: { SideNavItem },
-  props:{navigations:{type:Array,default: []}},
+  props: { navigations: { type: Array, default: undefined } },
 
 };
 </script>
