@@ -6,7 +6,7 @@
             <span
               id="basic-addon1"
               slot="prepend"
-              class="input-group-text"
+              text
             >
               @
             </span>
@@ -30,7 +30,7 @@
             <span
               id="basic-addon2"
               slot="append"
-              class="input-group-text"
+              text
             >
               @example.com
             </span>
@@ -43,7 +43,7 @@
             <span
               id="basic-addon3"
               slot="prepend"
-              class="input-group-text"
+              text
             >
               https://example.com/users/
             </span>
@@ -58,7 +58,7 @@
           <rd-input-group class="mb-3">
             <span
               slot="prepend"
-              class="input-group-text"
+              text
             >
               $
             </span>
@@ -69,7 +69,7 @@
             >
             <span
               slot="append"
-              class="input-group-text"
+              text
             >
               .00
             </span>
@@ -78,7 +78,7 @@
           <rd-input-group class="">
             <span
               slot="prepend"
-              class="input-group-text"
+              text
             >
               With textarea
             </span>
@@ -93,7 +93,7 @@
             <span
               id="inputGroup-sizing-sm"
               slot="prepend"
-              class="input-group-text"
+              text
             >
               Small
             </span>
@@ -109,7 +109,7 @@
             <span
               id="inputGroup-sizing-default"
               slot="prepend"
-              class="input-group-text"
+              text
             >
               Default
             </span>
@@ -125,7 +125,7 @@
             <span
               id="inputGroup-sizing-lg"
               slot="prepend"
-              class="input-group-text"
+              text
             >
               Large
             </span>
