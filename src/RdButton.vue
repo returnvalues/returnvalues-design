@@ -2,7 +2,7 @@
   <component
     :is="tag"
     class="btn"
-    :class="[classes,{active,disabled,'btn-block':block},semanticClass,sizeClass,outlineClass]"
+    :class="[{active,disabled,'btn-block':block},semanticClass,sizeClass,outlineClass]"
     :active="active"
     :disabled="disabled"
   >

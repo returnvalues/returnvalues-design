@@ -5,14 +5,14 @@ const prefix = {
 export default {
   props: {
     outline: { type: String, default: undefined },
-    primary: { type: Boolean, default: undefined },
-    secondary: { type: Boolean, default: undefined },
-    success: { type: Boolean, default: undefined },
-    danger: { type: Boolean, default: undefined },
-    warning: { type: Boolean, default: undefined },
-    info: { type: Boolean, default: undefined },
-    light: { type: Boolean, default: undefined },
-    dark: { type: Boolean, default: undefined },
+    outlinePrimary: { type: Boolean, default: undefined },
+    outlineSecondary: { type: Boolean, default: undefined },
+    outlineSuccess: { type: Boolean, default: undefined },
+    outlineDanger: { type: Boolean, default: undefined },
+    outlineWarning: { type: Boolean, default: undefined },
+    outlineInfo: { type: Boolean, default: undefined },
+    outlineLight: { type: Boolean, default: undefined },
+    outlineDark: { type: Boolean, default: undefined },
   },
   computed: {
     outlineClass() {
@@ -21,10 +21,24 @@ export default {
       if (this.outline) ret = this.outline;
       else {
         const {
-          primary, secondary, success, danger, warning, info, light, dark
+          outlinePrimary,
+          outlineSecondary,
+          outlineSuccess,
+          outlineDanger,
+          outlineWarning,
+          outlineInfo,
+          outlineLight,
+          outlineDark
         } = this;
         const classes = {
-          dark, light, info, warning, danger, success, secondary, primary
+          dark: outlineDark,
+          light: outlineLight,
+          info: outlineInfo,
+          warning: outlineWarning,
+          danger: outlineDanger,
+          success: outlineSuccess,
+          secondary: outlineSecondary,
+          primary: outlinePrimary
         };
         Object.keys(classes).every((key) => {
           if (classes[key] === undefined) return true;
