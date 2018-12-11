@@ -17,23 +17,7 @@ import SideNavItem from './SideNavItem.vue';
 export default {
   name: 'SideNav',
   components: { SideNavItem },
-  data() {
-    return {
-      navigations: [
-        { name: 'Main', to: '/', },
-        { name: 'Card', to: '/card', },
-        { name: 'List', to: '/list', },
-        {
-          name: 'Buttons',
-          to: '/buttons',
-          child: [
-            { name: 'Button', to: '/button', },
-            { name: 'Checkbox', to: '/checkbox', },
-            { name: 'Radio', to: '/radio', },
-          ]
-        },
-      ]
-    };
-  }
+  props:{navigations:{type:Array,default: []}},
+
 };
 </script>
