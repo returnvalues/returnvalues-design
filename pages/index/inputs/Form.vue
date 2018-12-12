@@ -119,6 +119,42 @@
         Example Range input
       </rd-input>
     </form>
+
+
+    Checkboxes and radios
+    <rd-input type="checkbox">
+      Default checkbox
+    </rd-input>
+    <rd-input
+      type="checkbox"
+      disabled
+    >
+      Disabled checkbox
+    </rd-input>
+
+
+    <rd-input
+      v-model="test3"
+      :value="1"
+      type="radio"
+    >
+      Default radio
+    </rd-input>
+    <rd-input
+      v-model="test3"
+      :value="2"
+      type="radio"
+    >
+      Second default radio
+    </rd-input>
+    <rd-input
+      v-model="test3"
+      :value="3"
+      type="radio"
+      disabled
+    >
+      Disabled radio
+    </rd-input>
   </div>
 </template>
 
@@ -138,7 +174,8 @@ export default {
       a: { a: 1 },
       b: { b: 2 },
       c: { c: 3 },
-      test2: 'wfwe'
+      test2: 'wfwe',
+      test3: 2
     };
   }
 };

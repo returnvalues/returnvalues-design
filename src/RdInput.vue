@@ -7,21 +7,34 @@
       <input
         v-if="check"
         ref="input"
-        :type="type"
+        type="type"
         :value="modelValue"
         :class="[sizeClass,inputClass]"
         :readonly="readonly"
+        :disabled="disabled"
         @change="$emit('change',$refs.input.checked)"
+      >
+      <input
+        v-if="radio"
+        ref="input"
+        :type="type"
+        :value="value"
+        :checked="modelValue===value"
+        :class="[sizeClass,inputClass]"
+        :readonly="readonly"
+        :disabled="disabled"
+        @change="$emit('change',value)"
       >
       <slot />
       <input
-        v-if="!check"
+        v-if="!(check||radio)"
         ref="input"
         :value="modelValue||value"
         :placeholder="placeholder"
         :type="type"
         :class="[sizeClass,inputClass]"
         :readonly="readonly"
+        :disabled="disabled"
         @change="$emit('change',$refs.input.value)"
       >
     </label>
@@ -46,6 +59,7 @@ export default {
     placeholder: { type: String, default: undefined },
     readonly: Boolean,
     plaintext: Boolean,
+    disabled: Boolean,
     modelValue: { type: null, default: undefined },
     value: { type: null, default: undefined }
   },
@@ -55,12 +69,16 @@ export default {
         file: 'form-control-file',
         plaintext: 'form-control-plaintext',
         range: 'form-control-range',
-        checkbox: 'form-check-input'
+        checkbox: 'form-check-input',
+        radio: 'form-check-input'
       };
       return type[this.type] || `form-control${this.plaintext ? '-plaintext' : ''}`;
     },
     check() {
       return this.type === 'checkbox';
+    },
+    radio() {
+      return this.type === 'radio';
     }
   },
 };
