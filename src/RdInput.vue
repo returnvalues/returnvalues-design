@@ -95,5 +95,76 @@ export default {
       return this.type === 'radio';
     }
   },
+  render(h) {
+    const {
+      check, radio, inline, inputId, type,
+      placeholder,
+      readonly,
+      disabled,
+      modelValue,
+      value,
+      sizeClass, inputClass, $emit, $refs
+    } = this;
+    const formGroup = ['div', {
+      class: ['form-group', {
+        'form-check': check || radio,
+        'form-check-inline': (radio || check) && inline
+      }]
+    }];
+    const inputCheck = ['input', {
+      ref: 'input',
+      domProps: { value: modelValue },
+      attrs: {
+        id: inputId, type, readonly, disabled
+      },
+      class: [sizeClass, inputClass],
+      on: {
+        change() {
+          $emit('change', $refs.input.checked);
+        }
+      }
+    }];
+    const inputRadio = ['input', {
+      ref: 'input',
+      domProps: {
+        value,
+        checked: modelValue === value
+      },
+      attrs: {
+        id: inputId, type, readonly, disabled
+      },
+      class: [sizeClass, inputClass],
+      on: {
+        change() {
+          $emit('change', value);
+        }
+      }
+    }];
+
+    const label = ['label', {
+      class: { 'form-check-label': check || radio },
+      attrs: { for: inputId }
+    }];
+
+    const input = ['input', {
+      ref: 'input',
+      attrs: {
+        id: inputId, type, readonly, disabled, placeholder
+      },
+      domProps: {
+        value: modelValue || value,
+        checked: modelValue === value
+      },
+      class: [sizeClass, inputClass],
+      on: {
+        change() {
+          $emit('change', $refs.input.value);
+        }
+      }
+    }];
+
+
+    return h('div');
+  },
 };
 </script>
