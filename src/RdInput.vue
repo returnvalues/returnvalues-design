@@ -1,55 +1,3 @@
-<template>
-  <div
-    class="form-group"
-    :class="{'form-check':check||radio,'form-check-inline':(radio||check)&&inline}"
-  >
-    <input
-      v-if="check"
-      :id="inputId"
-      ref="input"
-      :type="type"
-      :value="modelValue"
-      :class="[sizeClass,inputClass]"
-      :readonly="readonly"
-      :disabled="disabled"
-      @change="$emit('change',$refs.input.checked)"
-    >
-    <input
-      v-if="radio"
-      :id="inputId"
-      ref="input"
-      :type="type"
-      :value="value"
-      :checked="modelValue===value"
-      :class="[sizeClass,inputClass]"
-      :readonly="readonly"
-      :disabled="disabled"
-      @change="$emit('change',value)"
-    >
-    <label
-      v-if="$slots.default"
-      :class="{'form-check-label':check||radio}"
-      :for="inputId"
-    >
-      <slot />
-    </label>
-
-    <input
-      v-if="!(check||radio)"
-      :id="inputId"
-      ref="input"
-      :value="modelValue||value"
-      :placeholder="placeholder"
-      :type="type"
-      :class="[sizeClass,inputClass]"
-      :readonly="readonly"
-      :disabled="disabled"
-      @change="$emit('change',$refs.input.value)"
-    >
-    <slot name="message" />
-  </div>
-</template>
-
 <script>
 import SizeClass from './SizeClass';
 
@@ -103,50 +51,21 @@ export default {
       disabled,
       modelValue,
       value,
-      sizeClass, inputClass, $emit, $refs
+      sizeClass, inputClass
     } = this;
-    const formGroup = ['div', {
+    const self = this;
+    const formGroup = {
       class: ['form-group', {
         'form-check': check || radio,
         'form-check-inline': (radio || check) && inline
       }]
-    }];
-    const inputCheck = ['input', {
-      ref: 'input',
-      domProps: { value: modelValue },
-      attrs: {
-        id: inputId, type, readonly, disabled
-      },
-      class: [sizeClass, inputClass],
-      on: {
-        change() {
-          $emit('change', $refs.input.checked);
-        }
-      }
-    }];
-    const inputRadio = ['input', {
-      ref: 'input',
-      domProps: {
-        value,
-        checked: modelValue === value
-      },
-      attrs: {
-        id: inputId, type, readonly, disabled
-      },
-      class: [sizeClass, inputClass],
-      on: {
-        change() {
-          $emit('change', value);
-        }
-      }
-    }];
-
-    const label = ['label', {
+    };
+    const label = {
       class: { 'form-check-label': check || radio },
       attrs: { for: inputId }
-    }];
+    };
 
-    const input = ['input', {
+    const input = {
       ref: 'input',
       attrs: {
         id: inputId, type, readonly, disabled, placeholder
@@ -158,13 +77,47 @@ export default {
       class: [sizeClass, inputClass],
       on: {
         change() {
-          $emit('change', $refs.input.value);
+          self.$emit('change', self.$refs.input.value);
         }
       }
-    }];
+    };
 
+    const inputCheck = {
+      domProps: { checked: modelValue },
+      on: {
+        change() {
+          self.$emit('change', self.$refs.input.checked);
+        }
+      }
+    };
+    const inputRadio = {
+      domProps: {
+        value,
+        checked: typeof modelValue !== 'undefined' && modelValue === value
+      },
+      on: {
+        change() {
+          self.$emit('change', value);
+        }
+      }
+    };
 
-    return h('div');
+    if (check) Object.assign(input, inputCheck);
+    else if (radio) Object.assign(input, inputRadio);
+
+    const hasLabel = this.$slots.default;
+    let hasFormGroup = (hasLabel || check || radio);
+    if (this.$parent.$options.name === 'RdInputGroup') {
+      input.class = (check || radio) ? undefined : 'form-control';
+      hasFormGroup = false;
+    }
+
+    if (!hasFormGroup) return h('input', input);
+
+    const order = [hasLabel && h('label', label, this.$slots.default)];
+    if (check || radio) order.unshift(h('input', input));
+    else order.push(h('input', input), this.$slots.message);
+    return h('div', formGroup, order);
   },
 };
 </script>
