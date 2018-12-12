@@ -28,6 +28,7 @@ export default {
         { name: 'Card', to: '/card', },
         { name: 'List', to: '/list', },
         { name: 'Alert', to: '/alert', },
+        { name: 'Badge', to: '/badge', },
         {
           name: 'Inputs',
           to: '/inputs',

@@ -11,6 +11,7 @@ import RdInput from './RdInput.vue';
 import RdSelect from './RdSelect.vue';
 import RdTextarea from './RdTextarea.vue';
 import RdAlert from './RdAlert.vue';
+import RdBadge from './RdBadge.vue';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -28,6 +29,7 @@ export {
   RdSelect,
   RdTextarea,
   RdAlert,
+  RdBadge
 };
 
 const isBrowser = typeof window !== 'undefined' && typeof window.document !== 'undefined';
