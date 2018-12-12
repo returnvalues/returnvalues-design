@@ -1,13 +1,21 @@
 <template>
-  <div>Jumbotron</div>
+  <div
+    class="jumbotron"
+    :class="{'jumbotron-fluid':fluid}"
+  >
+    <div
+      v-if="fluid"
+      class="container"
+    >
+      <slot />
+    </div>
+    <slot v-else />
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'RdJumbotron'
+  name: 'RdJumbotron',
+  props: { fluid: Boolean }
 };
 </script>
-
-<style scoped>
-
-</style>
