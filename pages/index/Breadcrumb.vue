@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import RdBreadcrumb from '../../src/RdBreadcrumb';
+import { RdBreadcrumb } from '~/src';
 
 export default {
   name: 'Breadcrumb',

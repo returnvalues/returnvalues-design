@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import RdNavbar from '../../src/RdNavbar';
+import { RdNavbar } from '~/src';
 
 export default {
   name: 'Navbar',

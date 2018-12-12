@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import RdCarousel from '../../src/RdCarousel';
+import { RdCarousel } from '~/src';
 
 export default {
   name: 'Carousel',

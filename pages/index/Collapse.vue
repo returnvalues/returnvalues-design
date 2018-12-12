@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import RdCollapse from '../../src/RdCollapse';
+import { RdCollapse } from '~/src';
 
 export default {
   name: 'Collapse',

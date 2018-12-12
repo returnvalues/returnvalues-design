@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import RdModal from '../../src/RdModal';
+import { RdModal } from '~/src';
 
 export default {
   name: 'Modal',

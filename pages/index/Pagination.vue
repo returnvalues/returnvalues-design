@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import RdPagination from '../../src/RdPagination';
+import { RdPagination } from '~/src';
 
 export default {
   name: 'Pagination',

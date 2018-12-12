@@ -18,7 +18,7 @@ import RdCollapse from './RdCollapse.vue';
 import RdJumbotron from './RdJumbotron.vue';
 import RdModal from './RdModal.vue';
 import RdNavbar from './RdNavbar.vue';
-import RdNavs from './RdNavs.vue';
+import RdNav from './RdNav.vue';
 import RdPagination from './RdPagination.vue';
 import RdProgress from './RdProgress.vue';
 
@@ -46,7 +46,7 @@ export {
   RdJumbotron,
   RdModal,
   RdNavbar,
-  RdNavs,
+  RdNav,
   RdPagination,
   RdProgress,
 };

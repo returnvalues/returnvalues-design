@@ -191,7 +191,7 @@
 </template>
 
 <script>
-import RdBadge from '../../src/RdBadge';
+import { RdBadge } from '~/src';
 
 export default {
   name: 'Badge',

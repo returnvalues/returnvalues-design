@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import RdAlert from '../../src/RdAlert';
+import { RdAlert } from '~/src';
 
 export default {
   name: 'Alert',

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import RdProgress from '../../src/RdProgress';
+import { RdProgress } from '~/src';
 
 export default {
   name: 'Progress',
