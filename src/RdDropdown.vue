@@ -6,7 +6,7 @@ export default {
     dropright: Boolean,
     dropleft: Boolean,
     alignright: Boolean,
-
+    tag: { type: String, default: 'div' }
   },
   render(createElement) {
     const { button: buttons = [] } = this.$slots;
@@ -14,7 +14,7 @@ export default {
     if (button && this.$slots.default) {
       const { data } = button;
       data.class = data.class || {};
-      data.attrs['data-toggle'] = 'dropdown';
+      Object.assign(data.attrs, { 'data-toggle': 'dropdown', role: 'button' });
       data.class['dropdown-toggle'] = true;
     }
     if (this.$slots.default) {
@@ -33,7 +33,7 @@ export default {
         data.class['dropdown-header'] = true;
       });
     }
-    return createElement('div', {
+    return createElement(this.tag, {
       class: {
         [this.split ? 'btn-group' : 'dropdown']: true,
         dropleft: this.dropleft,
