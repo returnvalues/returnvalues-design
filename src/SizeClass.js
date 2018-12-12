@@ -1,6 +1,7 @@
 const prefix = {
   RdButtonGroup: 'input-group',
-  RdButton: 'btn'
+  RdButton: 'btn',
+  RdInput: 'form-control',
 };
 
 export default {

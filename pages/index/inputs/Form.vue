@@ -65,29 +65,80 @@
           5
         </option>
       </rd-select>
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">
-          Example textarea
-        </label>
-        <textarea
-          id="exampleFormControlTextarea1"
-          class="form-control"
-          rows="3"
-        />
-      </div>
+      <rd-textarea v-model="test2">
+        Example textarea
+      </rd-textarea>
+    </form>
+
+    <form>
+      <rd-input type="file">
+        Example file input
+      </rd-input>
+    </form>
+
+    Sizing
+    <rd-input
+      lg
+      type="text"
+      placeholder=".form-control-lg"
+    />
+    <rd-input
+      type="text"
+      placeholder="Default input"
+    />
+    <rd-input
+      sm
+      type="text"
+      placeholder=".form-control-sm"
+    />
+
+
+    Readonly
+    <rd-input
+      type="text"
+      placeholder="Readonly input here…"
+      readonly
+    />
+
+
+    Readonly plain text
+
+    <form>
+      <rd-input
+        plaintext
+        value="email@example.com"
+        readonly
+      >
+        Email
+      </rd-input>
+    </form>
+
+    Range Inputs
+    <form>
+      <rd-input type="range">
+        Example Range input
+      </rd-input>
     </form>
   </div>
 </template>
 
 <script>
-import { RdInput, RdButton, RdSelect } from '~/src';
+import {
+  RdInput, RdButton, RdSelect, RdTextarea
+} from '~/src';
 
 export default {
   name: 'Form',
-  components: { RdInput, RdButton, RdSelect },
+  components: {
+    RdInput, RdButton, RdSelect, RdTextarea
+  },
   data() {
     return {
-      test: ['3', 4], a: { a: 1 }, b: { b: 2 }, c: { c: 3 }
+      test: ['3', 4],
+      a: { a: 1 },
+      b: { b: 2 },
+      c: { c: 3 },
+      test2: 'wfwe'
     };
   }
 };
