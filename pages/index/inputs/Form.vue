@@ -2,7 +2,10 @@
   <div>
     Form
     <form>
-      <rd-input type="email">
+      <rd-input
+        v-model="testEmail"
+        type="email"
+      >
         Email address
         <small
           slot="message"
@@ -15,7 +18,10 @@
       <rd-input type="password">
         Password
       </rd-input>
-      <rd-input type="checkbox">
+      <rd-input
+        v-model="testCheckbox"
+        type="checkbox"
+      >
         Check me out
       </rd-input>
       <rd-button
@@ -244,6 +250,8 @@ export default {
   },
   data() {
     return {
+      testEmail: '123',
+      testCheckbox: true,
       test: ['3', 4],
       a: { a: 1 },
       b: { b: 2 },

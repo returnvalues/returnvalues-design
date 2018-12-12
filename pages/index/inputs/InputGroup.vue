@@ -10,21 +10,21 @@
             >
               @
             </span>
-            <input
+            <rd-input
               type="text"
               placeholder="Username"
               aria-label="Username"
               aria-describedby="basic-addon1"
-            >
+            />
           </rd-input-group>
 
           <rd-input-group class="mb-3">
-            <input
+            <rd-input
               type="text"
               placeholder="Recipient's username"
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
-            >
+            />
             <span
               id="basic-addon2"
               slot="append"
@@ -45,11 +45,11 @@
             >
               https://example.com/users/
             </span>
-            <input
+            <rd-input
               id="basic-url"
               type="text"
               aria-describedby="basic-addon3"
-            >
+            />
           </rd-input-group>
 
           <rd-input-group class="mb-3">
@@ -59,16 +59,17 @@
             >
               $
             </span>
-            <input
+            <rd-input
               type="text"
               aria-label="Amount (to the nearest dollar)"
             >
-            <span
-              slot="append"
-              text
-            >
-              .00
-            </span>
+              <span
+                slot="append"
+                text
+              >
+                .00
+              </span>
+            </rd-input>
           </rd-input-group>
 
           <rd-input-group>
@@ -95,11 +96,11 @@
             >
               Small
             </span>
-            <input
+            <rd-input
               type="text"
               aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-sm"
-            >
+            />
           </rd-input-group>
 
           <rd-input-group class=" mb-3">
@@ -110,11 +111,11 @@
             >
               Default
             </span>
-            <input
+            <rd-input
               type="text"
               aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-default"
-            >
+            />
           </rd-input-group>
 
           <rd-input-group lg>
@@ -124,9 +125,9 @@
             >
               Large
             </span>
-            <input
+            <rd-input
               type="text"
-            >
+            />
           </rd-input-group>
           Checkboxes and radios
           <rd-input-group class="mb-3">
@@ -134,16 +135,16 @@
               slot="prepend"
               text
             >
-              <input
+              <rd-input
                 type="checkbox"
                 aria-label="Checkbox for following text input"
-              >
+              />
             </div>
 
-            <input
+            <rd-input
               type="text"
               aria-label="Text input with checkbox"
-            >
+            />
           </rd-input-group>
 
           <rd-input-group>
@@ -151,16 +152,16 @@
               slot="prepend"
               text
             >
-              <input
+              <rd-input
                 type="radio"
                 aria-label="Radio button for following text input"
-              >
+              />
             </div>
 
-            <input
+            <rd-input
               type="text"
               aria-label="Text input with radio button"
-            >
+            />
           </rd-input-group>
           Multiple inputs
           <rd-input-group>
@@ -170,14 +171,15 @@
             >
               First and last name
             </span>
-            <input
+            <rd-input
               type="text"
               aria-label="First name"
             >
-            <input
-              type="text"
-              aria-label="Last name"
-            >
+              <rd-input
+                type="text"
+                aria-label="Last name"
+              />
+            </rd-input>
           </rd-input-group>
 
           Multiple addons
@@ -195,30 +197,30 @@
               0.00
             </span>
 
-            <input
+            <rd-input
               type="text"
               aria-label="Dollar amount (with dot and two decimal places)"
-            >
+            />
           </rd-input-group>
 
           <rd-input-group>
-            <input
+            <rd-input
               type="text"
               aria-label="Dollar amount (with dot and two decimal places)"
             >
-
-            <span
-              slot="prepend"
-              text
-            >
-              $
-            </span>
-            <span
-              slot="prepend"
-              text
-            >
-              0.00
-            </span>
+              <span
+                slot="prepend"
+                text
+              >
+                $
+              </span>
+              <span
+                slot="prepend"
+                text
+              >
+                0.00
+              </span>
+            </rd-input>
           </rd-input-group>
           Button addons
           <rd-input-group class="mb-3">
@@ -230,30 +232,30 @@
             >
               Button
             </rd-button>
-            <input
+            <rd-input
               type="text"
               placeholder=""
               aria-label="Example text with button addon"
               aria-describedby="button-addon1"
-            >
+            />
           </rd-input-group>
 
           <rd-input-group class="mb-3">
-            <input
+            <rd-input
               type="text"
               placeholder="Recipient's username"
               aria-label="Recipient's username"
               aria-describedby="button-addon2"
             >
-
-            <rd-button
-              id="button-addon2"
-              slot="append"
-              outline-secondary
-              type="button"
-            >
-              Button
-            </rd-button>
+              <rd-button
+                id="button-addon2"
+                slot="append"
+                outline-secondary
+                type="button"
+              >
+                Button
+              </rd-button>
+            </rd-input>
           </rd-input-group>
 
           <rd-input-group class="mb-3">
@@ -272,35 +274,36 @@
               Button
             </rd-button>
 
-            <input
+            <rd-input
               type="text"
               placeholder=""
               aria-label="Example text with two button addons"
               aria-describedby="button-addon3"
-            >
+            />
           </rd-input-group>
 
           <rd-input-group>
-            <input
+            <rd-input
               type="text"
               placeholder="Recipient's username"
               aria-label="Recipient's username with two button addons"
               aria-describedby="button-addon4"
             >
-            <rd-button
-              slot="append"
-              outline-secondary
-              type="button"
-            >
-              Button
-            </rd-button>
-            <rd-button
-              slot="append"
-              outline-secondary
-              type="button"
-            >
-              Button
-            </rd-button>
+              <rd-button
+                slot="append"
+                outline-secondary
+                type="button"
+              >
+                Button
+              </rd-button>
+              <rd-button
+                slot="append"
+                outline-secondary
+                type="button"
+              >
+                Button
+              </rd-button>
+            </rd-input>
           </rd-input-group>
 
 
@@ -348,59 +351,59 @@
               </a>
             </div>
 
-            <input
+            <rd-input
               type="text"
               aria-label="Text input with dropdown button"
-            >
+            />
           </rd-input-group>
 
           <rd-input-group>
-            <input
+            <rd-input
               type="text"
               aria-label="Text input with dropdown button"
             >
-
-            <rd-button
-              slot="prepend"
-              outline-secondary
-              class="dropdown-toggle"
-              type="button"
-            >
-              Dropdown
-            </rd-button>
-            <div
-              slot="prepend"
-              class="dropdown-menu"
-            >
-              <a
-                class="dropdown-item"
-                href="#"
+              <rd-button
+                slot="prepend"
+                outline-secondary
+                class="dropdown-toggle"
+                type="button"
               >
-                Action
-              </a>
-              <a
-                class="dropdown-item"
-                href="#"
-              >
-                Another action
-              </a>
-              <a
-                class="dropdown-item"
-                href="#"
-              >
-                Something else here
-              </a>
+                Dropdown
+              </rd-button>
               <div
-                role="separator"
-                class="dropdown-divider"
-              />
-              <a
-                class="dropdown-item"
-                href="#"
+                slot="prepend"
+                class="dropdown-menu"
               >
-                Separated link
-              </a>
-            </div>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                >
+                  Action
+                </a>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                >
+                  Another action
+                </a>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                >
+                  Something else here
+                </a>
+                <div
+                  role="separator"
+                  class="dropdown-divider"
+                />
+                <a
+                  class="dropdown-item"
+                  href="#"
+                >
+                  Separated link
+                </a>
+              </div>
+            </rd-input>
           </rd-input-group>
 
           Segmented buttons
@@ -457,70 +460,70 @@
                 Separated link
               </a>
             </div>
-            <input
+            <rd-input
               type="text"
               aria-label="Text input with segmented dropdown button"
-            >
+            />
           </rd-input-group>
 
           <rd-input-group>
-            <input
+            <rd-input
               type="text"
               aria-label="Text input with segmented dropdown button"
             >
-
-            <button
-              slot="append"
-              type="button"
-              class="btn btn-outline-secondary"
-            >
-              Action
-            </button>
-            <button
-              slot="append"
-              type="button"
-              class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <span class="sr-only">
-                Toggle Dropdown
-              </span>
-            </button>
-            <div
-              slot="append"
-              class="dropdown-menu"
-            >
-              <a
-                class="dropdown-item"
-                href="#"
+              <button
+                slot="append"
+                type="button"
+                class="btn btn-outline-secondary"
               >
                 Action
-              </a>
-              <a
-                class="dropdown-item"
-                href="#"
+              </button>
+              <button
+                slot="append"
+                type="button"
+                class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
-                Another action
-              </a>
-              <a
-                class="dropdown-item"
-                href="#"
-              >
-                Something else here
-              </a>
+                <span class="sr-only">
+                  Toggle Dropdown
+                </span>
+              </button>
               <div
-                role="separator"
-                class="dropdown-divider"
-              />
-              <a
-                class="dropdown-item"
-                href="#"
+                slot="append"
+                class="dropdown-menu"
               >
-                Separated link
-              </a>
-            </div>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                >
+                  Action
+                </a>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                >
+                  Another action
+                </a>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                >
+                  Something else here
+                </a>
+                <div
+                  role="separator"
+                  class="dropdown-divider"
+                />
+                <a
+                  class="dropdown-item"
+                  href="#"
+                >
+                  Separated link
+                </a>
+              </div>
+            </rd-input>
           </rd-input-group>
 
 
@@ -652,35 +655,37 @@
             </span>
 
             <div class="custom-file">
-              <input
+              <rd-input
                 id="inputGroupFile01"
                 type="file"
                 class="custom-file-input"
                 aria-describedby="inputGroupFileAddon01"
               >
-              <label
-                class="custom-file-label"
-                for="inputGroupFile01"
-              >
-                Choose file
-              </label>
+                <label
+                  class="custom-file-label"
+                  for="inputGroupFile01"
+                >
+                  Choose file
+                </label>
+              </rd-input>
             </div>
           </rd-input-group>
 
           <rd-input-group class="mb-3">
             <div class="custom-file">
-              <input
+              <rd-input
                 id="inputGroupFile02"
                 type="file"
                 class="custom-file-input"
               >
-              <label
-                class="custom-file-label"
-                for="inputGroupFile02"
-                aria-describedby="inputGroupFileAddon02"
-              >
-                Choose file
-              </label>
+                <label
+                  class="custom-file-label"
+                  for="inputGroupFile02"
+                  aria-describedby="inputGroupFileAddon02"
+                >
+                  Choose file
+                </label>
+              </rd-input>
             </div>
 
             <span
@@ -703,35 +708,37 @@
             </button>
 
             <div class="custom-file">
-              <input
+              <rd-input
                 id="inputGroupFile03"
                 type="file"
                 class="custom-file-input"
                 aria-describedby="inputGroupFileAddon03"
               >
-              <label
-                class="custom-file-label"
-                for="inputGroupFile03"
-              >
-                Choose file
-              </label>
+                <label
+                  class="custom-file-label"
+                  for="inputGroupFile03"
+                >
+                  Choose file
+                </label>
+              </rd-input>
             </div>
           </rd-input-group>
 
           <rd-input-group>
             <div class="custom-file">
-              <input
+              <rd-input
                 id="inputGroupFile04"
                 type="file"
                 class="custom-file-input"
                 aria-describedby="inputGroupFileAddon04"
               >
-              <label
-                class="custom-file-label"
-                for="inputGroupFile04"
-              >
-                Choose file
-              </label>
+                <label
+                  class="custom-file-label"
+                  for="inputGroupFile04"
+                >
+                  Choose file
+                </label>
+              </rd-input>
             </div>
 
             <button
@@ -747,11 +754,11 @@
 </template>
 
 <script>
-import { RdInputGroup, RdButton } from '~/src';
+import { RdInputGroup, RdInput, RdButton } from '~/src';
 
 export default {
   name: 'InputGroup',
-  components: { RdInputGroup, RdButton }
+  components: { RdInputGroup, RdButton, RdInput }
 };
 </script>
 
