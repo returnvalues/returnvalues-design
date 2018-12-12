@@ -1,76 +1,87 @@
 <template>
   <div>
     Navbar
-    <rd-navbar class="navbar navbar-expand-lg navbar-light bg-light">
-      <a
-        class="navbar-brand"
-        href="#"
+    <rd-navbar
+      class="bg-light"
+      lg
+      light
+    >
+      <rd-navbar-brand
+        href="javascript:"
       >
         Navbar
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon" />
-      </button>
-      <div
-        id="navbarNav"
-        class="collapse navbar-collapse"
-      >
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a
-              class="nav-link"
-              href="#"
-            >
-              Home <span class="sr-only">
-                (current)
-              </span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#"
-            >
-              Features
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#"
-            >
-              Pricing
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-            >
-              Disabled
-            </a>
-          </li>
-        </ul>
-      </div>
+      </rd-navbar-brand>
+      <rd-navbar-text>
+        short
+      </rd-navbar-text>
+      <rd-navbar-toggler />
+      <rd-navbar-collapse>
+        <rd-nav>
+          <a
+            href="javascript:"
+          >
+            Home <span class="sr-only">
+              (current)
+            </span>
+          </a>
+          <a
+            href="javascript:"
+          >
+            Features
+          </a>
+          <a
+            href="javascript:"
+          >
+            Pricing
+          </a>
+          <a
+            class=" disabled"
+            href="javascript:"
+          >
+            Disabled
+          </a>
+        </rd-nav>
+        <form class="form-inline my-2 my-lg-0">
+          <rd-input
+            class="mr-sm-2"
+            type="search"
+          />
+          <rd-button
+            outline-success
+            class="my-2 my-sm-0"
+            type="submit"
+          >
+            Search
+          </rd-button>
+        </form>
+      </rd-navbar-collapse>
     </rd-navbar>
   </div>
 </template>
 
 <script>
-import { RdNavbar } from '~/src';
+import {
+  RdNavbar, RdNavbarBrand,
+  RdNavbarToggler,
+  RdNavbarCollapse,
+  RdNavbarText,
+  RdNav, RdInput
+} from '~/src';
+import RdButton from '../../src/RdButton';
 
 
 export default {
   name: 'Navbar',
-  components: { RdNavbar }
+  components: {
+    RdButton,
+    RdNav,
+    RdNavbarCollapse,
+    RdNavbarToggler,
+    RdNavbarBrand,
+    RdNavbarText,
+    RdNavbar,
+    RdInput,
+  }
 };
 </script>
 

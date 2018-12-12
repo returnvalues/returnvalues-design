@@ -22,6 +22,8 @@ export default {
     const tag = this.tag === 'nav' ? 'nav' : 'ul';
     const nodes = this.$slots.default || [];
     const aTags = nodes.filter(x => x.tag === 'a');
+    const cls = this.$parent.$options.name.includes('RdNavbar') ? 'navbar-nav' : 'nav';
+
 
     let child;
     if (tag === 'nav') child = nodes;
@@ -43,7 +45,7 @@ export default {
       data.class['nav-link'] = true;
     });
 
-    return h(tag, { class: ['nav', ...this.classes] }, child);
+    return h(tag, { class: [cls, ...this.classes] }, child);
   },
 };
 </script>

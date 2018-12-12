@@ -2,6 +2,7 @@ const prefix = {
   RdButtonGroup: 'input-group',
   RdButton: 'btn',
   RdInput: 'form-control',
+  RdNavbar: 'navbar-expand',
 };
 
 export default {

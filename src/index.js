@@ -21,6 +21,11 @@ import RdNavbar from './RdNavbar.vue';
 import RdNav from './RdNav.vue';
 import RdPagination from './RdPagination.vue';
 import RdProgress from './RdProgress.vue';
+import RdNavbarBrand from './RdNavbarBrand.vue';
+import RdNavbarToggler from './RdNavbarToggler.vue';
+import RdNavbarCollapse from './RdNavbarCollapse.vue';
+import RdNavbarText from './RdNavbarText.vue';
+
 
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -49,6 +54,10 @@ export {
   RdNav,
   RdPagination,
   RdProgress,
+  RdNavbarBrand,
+  RdNavbarToggler,
+  RdNavbarCollapse,
+  RdNavbarText,
 };
 
 const isBrowser = typeof window !== 'undefined' && typeof window.document !== 'undefined';
