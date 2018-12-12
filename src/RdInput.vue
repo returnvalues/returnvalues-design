@@ -17,12 +17,13 @@
         v-if="!check"
         ref="input"
         :value="modelValue"
+        :placeholder="placeholder"
         :type="type"
         class="form-control"
         @change="$emit('change',$refs.input.value)"
       >
     </label>
-    <slot name="help" />
+    <slot name="message" />
   </div>
 </template>
 
@@ -36,6 +37,7 @@ export default {
 
   props: {
     type: { type: String, default: 'div' },
+    placeholder: { type: String, default: '' },
     modelValue: { type: null, default: undefined }
   },
   computed: {

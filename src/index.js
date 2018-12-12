@@ -8,6 +8,7 @@ import RdListItem from './RdListItem.vue';
 import RdInputGroup from './RdInputGroup.vue';
 import RdDropdown from './RdDropdown.vue';
 import RdInput from './RdInput.vue';
+import RdSelect from './RdSelect.vue';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -21,7 +22,8 @@ export {
   RdListItem,
   RdInputGroup,
   RdDropdown,
-  RdInput
+  RdInput,
+  RdSelect,
 };
 
 const isBrowser = typeof window !== 'undefined' && typeof window.document !== 'undefined';

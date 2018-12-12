@@ -2,7 +2,7 @@
 import SizeClass from './SizeClass';
 
 export default {
-  name: 'RdButtonGroup',
+  name: 'RdInputGroup',
   mixins: [SizeClass],
   render(createElement) {
     const deflt = this.$slots.default || [];
