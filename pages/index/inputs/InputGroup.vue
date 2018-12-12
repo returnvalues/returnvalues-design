@@ -660,14 +660,10 @@
                 type="file"
                 class="custom-file-input"
                 aria-describedby="inputGroupFileAddon01"
-              >
-                <label
-                  class="custom-file-label"
-                  for="inputGroupFile01"
-                >
-                  Choose file
-                </label>
-              </rd-input>
+              />
+              <label class="custom-file-label">
+                Choose file
+              </label>
             </div>
           </rd-input-group>
 
@@ -677,15 +673,10 @@
                 id="inputGroupFile02"
                 type="file"
                 class="custom-file-input"
-              >
-                <label
-                  class="custom-file-label"
-                  for="inputGroupFile02"
-                  aria-describedby="inputGroupFileAddon02"
-                >
-                  Choose file
-                </label>
-              </rd-input>
+              />
+              <label class="custom-file-label">
+                Choose file
+              </label>
             </div>
 
             <span
@@ -713,14 +704,10 @@
                 type="file"
                 class="custom-file-input"
                 aria-describedby="inputGroupFileAddon03"
-              >
-                <label
-                  class="custom-file-label"
-                  for="inputGroupFile03"
-                >
-                  Choose file
-                </label>
-              </rd-input>
+              />
+              <label class="custom-file-label">
+                Choose file
+              </label>
             </div>
           </rd-input-group>
 
@@ -731,14 +718,10 @@
                 type="file"
                 class="custom-file-input"
                 aria-describedby="inputGroupFileAddon04"
-              >
-                <label
-                  class="custom-file-label"
-                  for="inputGroupFile04"
-                >
-                  Choose file
-                </label>
-              </rd-input>
+              />
+              <label class="custom-file-label">
+                Choose file
+              </label>
             </div>
 
             <button
