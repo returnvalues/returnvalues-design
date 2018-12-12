@@ -1,17 +1,17 @@
 <template>
   <label
     class="btn"
-    :class="[classes,{active:input,disabled,'btn-block':block}]"
+    :class="[{active:modelValue,disabled,'btn-block':block},semanticClass]"
   >
     <input
       :id="id"
-      v-model="input"
+      ref="input"
+      :value="modelValue"
       type="checkbox"
       :name="name"
       :autocomplete="autocomplete"
-      @change="$emit('change',input)"
+      @change="$emit('change',$refs.input.checked)"
     >
-
     <slot />
   </label>
 </template>
@@ -21,16 +21,13 @@ import RdButton from './RdButton.vue';
 
 export default {
   name: 'RdButtonCheckbox',
-  mixins: [RdButton],
+  mixins: [Object.assign({}, RdButton, { name: undefined })],
   model: {
     prop: 'modelValue',
     event: 'change'
   },
   props: {
     modelValue: { type: null, default: undefined }
-  },
-  data() {
-    return { input: this.modelValue };
   }
 };
 </script>

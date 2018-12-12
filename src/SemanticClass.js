@@ -1,6 +1,7 @@
 const prefix = {
   RdListItem: 'list-group-item',
-  RdButton: 'btn'
+  RdButton: 'btn',
+  RdButtonCheckbox: 'btn'
 };
 
 export default {
