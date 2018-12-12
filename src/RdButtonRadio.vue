@@ -1,7 +1,7 @@
 <template>
   <label
     class="btn"
-    :class="[classes,{active:checked,disabled,'btn-block':block}]"
+    :class="[{active:checked,disabled,'btn-block':block},semanticClass]"
   >
     <input
       :id="id"
@@ -21,7 +21,7 @@ import RdButton from './RdButton.vue';
 
 export default {
   name: 'RdButtonRadio',
-  mixins: [RdButton],
+  mixins: [Object.assign({}, RdButton, { name: undefined })],
   model: {
     prop: 'modelValue',
     event: 'change'

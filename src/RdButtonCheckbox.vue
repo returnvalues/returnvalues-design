@@ -6,7 +6,7 @@
     <input
       :id="id"
       ref="input"
-      :value="modelValue"
+      :checked="modelValue"
       type="checkbox"
       :name="name"
       :autocomplete="autocomplete"
