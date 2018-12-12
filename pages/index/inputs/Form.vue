@@ -155,6 +155,80 @@
     >
       Disabled radio
     </rd-input>
+
+    Inline
+    <rd-input
+      inline
+      type="checkbox"
+      value="option1"
+    >
+      1
+    </rd-input>
+
+    <rd-input
+      inline
+      type="checkbox"
+      value="option2"
+    >
+      2
+    </rd-input>
+
+    <rd-input
+      inline
+      type="checkbox"
+      value="option3"
+      disabled
+    >
+      3 (disabled)
+    </rd-input>
+
+
+    <rd-input
+      inline
+      type="radio"
+      value="option1"
+    >
+      1
+    </rd-input>
+
+    <rd-input
+      inline
+      type="radio"
+      value="option2"
+    >
+      2
+    </rd-input>
+
+    <rd-input
+      inline
+      type="radio"
+      value="option3"
+      disabled
+    >
+      3 (disabled)
+    </rd-input>
+
+    Without labels
+
+    <div class="form-check ">
+      <input
+        id="blankCheckbox"
+        class="form-check-input position-static"
+        type="checkbox"
+        value="option1"
+        aria-label="..."
+      >
+    </div>
+    <div class="form-check ">
+      <input
+        id="blankRadio1"
+        class="form-check-input position-static"
+        type="radio"
+        name="blankRadio"
+        value="option1"
+        aria-label="..."
+      >
+    </div>
   </div>
 </template>
 
