@@ -12,6 +12,16 @@ import RdSelect from './RdSelect.vue';
 import RdTextarea from './RdTextarea.vue';
 import RdAlert from './RdAlert.vue';
 import RdBadge from './RdBadge.vue';
+import RdBreadcrumb from './RdBreadcrumb.vue';
+import RdCarousel from './RdCarousel.vue';
+import RdCollapse from './RdCollapse.vue';
+import RdJumbotron from './RdJumbotron.vue';
+import RdModal from './RdModal.vue';
+import RdNavbar from './RdNavbar.vue';
+import RdNavs from './RdNavs.vue';
+import RdPagination from './RdPagination.vue';
+import RdProgress from './RdProgress.vue';
+
 import 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -29,7 +39,16 @@ export {
   RdSelect,
   RdTextarea,
   RdAlert,
-  RdBadge
+  RdBadge,
+  RdBreadcrumb,
+  RdCarousel,
+  RdCollapse,
+  RdJumbotron,
+  RdModal,
+  RdNavbar,
+  RdNavs,
+  RdPagination,
+  RdProgress,
 };
 
 const isBrowser = typeof window !== 'undefined' && typeof window.document !== 'undefined';
