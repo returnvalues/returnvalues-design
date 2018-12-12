@@ -10,6 +10,7 @@ import RdDropdown from './RdDropdown.vue';
 import RdInput from './RdInput.vue';
 import RdSelect from './RdSelect.vue';
 import RdTextarea from './RdTextarea.vue';
+import RdAlert from './RdAlert.vue';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -26,6 +27,7 @@ export {
   RdInput,
   RdSelect,
   RdTextarea,
+  RdAlert,
 };
 
 const isBrowser = typeof window !== 'undefined' && typeof window.document !== 'undefined';

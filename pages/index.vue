@@ -27,6 +27,7 @@ export default {
         { name: 'Main', to: '/', },
         { name: 'Card', to: '/card', },
         { name: 'List', to: '/list', },
+        { name: 'Alert', to: '/alert', },
         {
           name: 'Inputs',
           to: '/inputs',

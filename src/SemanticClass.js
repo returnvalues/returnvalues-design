@@ -3,6 +3,7 @@ const prefix = {
   RdButton: 'btn',
   RdButtonCheckbox: 'btn',
   RdButtonRadio: 'btn',
+  RdAlert: 'alert',
 };
 
 export default {
