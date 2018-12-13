@@ -6,6 +6,7 @@ const prefix = {
   RdAlert: 'alert',
   RdBadge: 'badge',
   RdNavbar: 'navbar',
+  RdProgress: 'bg',
 };
 
 export default {
