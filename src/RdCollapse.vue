@@ -2,16 +2,16 @@
 export default {
   name: 'RdCollapse',
   model: {
-    prop: 'modelValue',
+    prop: 'show',
     event: 'change'
   },
-  props: { modelValue: Boolean },
-  data() { return { value: this.modelValue }; },
+  props: { show: Boolean },
+  data() { return { value: this.show }; },
   watch: {
     value(v) {
       window.$(this.$el).collapse(v ? 'show' : 'hide');
     },
-    modelValue(v) {
+    show(v) {
       this.value = v;
     },
   },
