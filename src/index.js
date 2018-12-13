@@ -25,6 +25,9 @@ import RdNavbarBrand from './RdNavbarBrand.vue';
 import RdNavbarToggler from './RdNavbarToggler.vue';
 import RdNavbarCollapse from './RdNavbarCollapse.vue';
 import RdNavbarText from './RdNavbarText.vue';
+import RdCardHeader from './RdCardHeader.vue';
+import RdCardBody from './RdCardBody.vue';
+import RdCardFooter from './RdCardFooter.vue';
 
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -58,6 +61,9 @@ export {
   RdNavbarToggler,
   RdNavbarCollapse,
   RdNavbarText,
+  RdCardHeader,
+  RdCardBody,
+  RdCardFooter,
 };
 
 const isBrowser = typeof window !== 'undefined' && typeof window.document !== 'undefined';

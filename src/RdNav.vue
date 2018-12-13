@@ -15,14 +15,18 @@ export default {
   },
   computed: {
     classes() {
-      return ['tabs', 'pills', 'fill', 'justified'].filter(x => this[x]).map(x => `nav-${x}`);
+      const type = ['tabs', 'pills', 'fill', 'justified'].filter(x => this[x]);
+      const ret = type.map(x => `nav-${x}`);
+      if (this.$parent.$options.name === 'RdCardHeader') ret.push(...type.map(x => `card-header-${x}`));
+      return ret;
     }
   },
   render(h) {
     const tag = this.tag === 'nav' ? 'nav' : 'ul';
     const nodes = this.$slots.default || [];
     const aTags = nodes.filter(x => x.tag === 'a');
-    const cls = this.$parent.$options.name.includes('RdNavbar') ? 'navbar-nav' : 'nav';
+    const parentName = this.$parent.$options.name;
+    const staticClass = parentName.includes('RdNavbar') ? 'navbar-nav' : 'nav';
 
 
     let child;
@@ -45,7 +49,7 @@ export default {
       data.class['nav-link'] = true;
     });
 
-    return h(tag, { class: [cls, ...this.classes] }, child);
+    return h(tag, { staticClass, class: this.classes }, child);
   },
 };
 </script>
