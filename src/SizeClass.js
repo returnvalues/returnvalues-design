@@ -3,6 +3,7 @@ const prefix = {
   RdButton: 'btn',
   RdInput: 'form-control',
   RdNavbar: 'navbar-expand',
+  RdPagination: 'pagination',
 };
 
 export default {

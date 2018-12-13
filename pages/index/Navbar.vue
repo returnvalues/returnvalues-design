@@ -18,6 +18,7 @@
       <rd-navbar-collapse>
         <rd-nav>
           <a
+            class="active"
             href="javascript:"
           >
             Home <span class="sr-only">
