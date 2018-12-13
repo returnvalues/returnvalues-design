@@ -2,8 +2,6 @@
   <button
     class="navbar-toggler"
     type="button"
-    data-toggle="collapse"
-    :data-target="navbarId&&`#${navbarId}`"
   >
     <span class="navbar-toggler-icon" />
   </button>
@@ -12,7 +10,6 @@
 <script>
 export default {
   name: 'RdNavbarToggler',
-  props: { navbarId: { type: String, default: undefined } }
 };
 </script>
 

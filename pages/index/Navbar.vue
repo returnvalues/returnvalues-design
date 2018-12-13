@@ -14,8 +14,8 @@
       <rd-navbar-text>
         short
       </rd-navbar-text>
-      <rd-navbar-toggler />
-      <rd-navbar-collapse>
+      <rd-navbar-toggler @click.native="$refs.collapse.toggle()" />
+      <rd-collapse ref="collapse">
         <rd-nav>
           <a
             class="active"
@@ -55,7 +55,7 @@
             Search
           </rd-button>
         </form>
-      </rd-navbar-collapse>
+      </rd-collapse>
     </rd-navbar>
   </div>
 </template>
@@ -64,9 +64,8 @@
 import {
   RdNavbar, RdNavbarBrand,
   RdNavbarToggler,
-  RdNavbarCollapse,
   RdNavbarText,
-  RdNav, RdInput
+  RdNav, RdInput, RdCollapse
 } from '~/src';
 import RdButton from '../../src/RdButton';
 
@@ -76,12 +75,12 @@ export default {
   components: {
     RdButton,
     RdNav,
-    RdNavbarCollapse,
     RdNavbarToggler,
     RdNavbarBrand,
     RdNavbarText,
     RdNavbar,
     RdInput,
+    RdCollapse
   }
 };
 </script>

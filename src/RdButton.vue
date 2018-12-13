@@ -2,7 +2,8 @@
   <component
     :is="tag"
     class="btn"
-    :class="[{active,disabled,'btn-block':block},semanticClass,sizeClass,outlineClass]"
+    :class="[{active,disabled,'btn-block':block,'btn-link':link},
+             semanticClass,sizeClass,outlineClass]"
     :active="active"
     :disabled="disabled"
   >
@@ -24,18 +25,10 @@ export default {
       type: String,
       default: 'button'
     },
-    active: {
-      type: Boolean,
-      default: undefined
-    },
-    disabled: {
-      type: Boolean,
-      default: undefined
-    },
-    block: {
-      type: Boolean,
-      default: undefined
-    },
+    active: Boolean,
+    link: Boolean,
+    disabled: Boolean,
+    block: Boolean,
     outline: {
       type: String,
       default: ''
