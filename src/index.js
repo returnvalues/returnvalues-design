@@ -1,67 +1,32 @@
-import RdButton from './RdButton.vue';
-import RdButtonGroup from './RdButtonGroup.vue';
-import RdButtonRadio from './RdButtonRadio.vue';
-import RdButtonCheckbox from './RdButtonCheckbox.vue';
-import RdCard from './RdCard.vue';
-import RdListGroup from './RdListGroup.vue';
-import RdListItem from './RdListItem.vue';
-import RdInputGroup from './RdInputGroup.vue';
-import RdDropdown from './RdDropdown.vue';
-import RdInput from './RdInput.vue';
-import RdSelect from './RdSelect.vue';
-import RdTextarea from './RdTextarea.vue';
-import RdAlert from './RdAlert.vue';
-import RdBadge from './RdBadge.vue';
-import RdBreadcrumb from './RdBreadcrumb.vue';
-import RdCarousel from './RdCarousel.vue';
-import RdCollapse from './RdCollapse.vue';
-import RdJumbotron from './RdJumbotron.vue';
-import RdModal from './RdModal.vue';
-import RdNavbar from './RdNavbar.vue';
-import RdNav from './RdNav.vue';
-import RdPagination from './RdPagination.vue';
-import RdProgress from './RdProgress.vue';
-import RdNavbarBrand from './RdNavbarBrand.vue';
-import RdNavbarToggler from './RdNavbarToggler.vue';
-import RdNavbarCollapse from './RdNavbarCollapse.vue';
-import RdNavbarText from './RdNavbarText.vue';
-import RdCardHeader from './RdCardHeader.vue';
-import RdCardBody from './RdCardBody.vue';
-import RdCardFooter from './RdCardFooter.vue';
-
-
 import 'bootstrap/dist/css/bootstrap.css';
 
-
-export {
-  RdButton,
-  RdButtonGroup,
-  RdButtonRadio,
-  RdButtonCheckbox,
-  RdCard,
-  RdListGroup,
-  RdListItem,
-  RdInputGroup,
-  RdDropdown,
-  RdInput,
-  RdSelect,
-  RdTextarea,
-  RdAlert,
-  RdBadge,
-  RdBreadcrumb,
-  RdCarousel,
-  RdCollapse,
-  RdJumbotron,
-  RdModal,
-  RdNavbar,
-  RdNav,
-  RdPagination,
-  RdProgress,
-  RdNavbarBrand,
-  RdNavbarToggler,
-  RdNavbarCollapse,
-  RdNavbarText,
-  RdCardHeader,
-  RdCardBody,
-  RdCardFooter,
-};
+export { default as RdButton } from './RdButton.vue';
+export { default as RdButtonGroup } from './RdButtonGroup.vue';
+export { default as RdButtonRadio } from './RdButtonRadio.vue';
+export { default as RdButtonCheckbox } from './RdButtonCheckbox.vue';
+export { default as RdCard } from './RdCard.vue';
+export { default as RdListGroup } from './RdListGroup.vue';
+export { default as RdListItem } from './RdListItem.vue';
+export { default as RdInputGroup } from './RdInputGroup.vue';
+export { default as RdDropdown } from './RdDropdown.vue';
+export { default as RdInput } from './RdInput.vue';
+export { default as RdSelect } from './RdSelect.vue';
+export { default as RdTextarea } from './RdTextarea.vue';
+export { default as RdAlert } from './RdAlert.vue';
+export { default as RdBadge } from './RdBadge.vue';
+export { default as RdBreadcrumb } from './RdBreadcrumb.vue';
+export { default as RdCarousel } from './RdCarousel.vue';
+export { default as RdCollapse } from './RdCollapse.vue';
+export { default as RdJumbotron } from './RdJumbotron.vue';
+export { default as RdModal } from './RdModal.vue';
+export { default as RdNavbar } from './RdNavbar.vue';
+export { default as RdNav } from './RdNav.vue';
+export { default as RdPagination } from './RdPagination.vue';
+export { default as RdProgress } from './RdProgress.vue';
+export { default as RdNavbarBrand } from './RdNavbarBrand.vue';
+export { default as RdNavbarToggler } from './RdNavbarToggler.vue';
+export { default as RdNavbarCollapse } from './RdNavbarCollapse.vue';
+export { default as RdNavbarText } from './RdNavbarText.vue';
+export { default as RdCardHeader } from './RdCardHeader.vue';
+export { default as RdCardBody } from './RdCardBody.vue';
+export { default as RdCardFooter } from './RdCardFooter.vue';
