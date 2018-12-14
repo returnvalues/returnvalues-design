@@ -481,7 +481,3 @@ export default {
   components: { RdDropdown, RdButton }
 };
 </script>
-
-<style scoped>
-
-</style>

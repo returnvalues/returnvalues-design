@@ -32,7 +32,3 @@ export default {
   components: { RdBreadcrumb }
 };
 </script>
-
-<style scoped>
-
-</style>

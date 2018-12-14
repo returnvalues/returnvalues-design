@@ -42,7 +42,3 @@ export default {
   components: { RdJumbotron }
 };
 </script>
-
-<style scoped>
-
-</style>

@@ -43,7 +43,3 @@ export default {
   components: { RdListGroup, RdListItem }
 };
 </script>
-
-<style scoped>
-
-</style>

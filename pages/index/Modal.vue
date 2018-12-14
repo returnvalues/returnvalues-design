@@ -10,7 +10,3 @@ export default {
   components: { RdModal }
 };
 </script>
-
-<style scoped>
-
-</style>

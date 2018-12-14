@@ -122,7 +122,3 @@ export default {
   data() { return { test: 1 }; }
 };
 </script>
-
-<style scoped>
-
-</style>

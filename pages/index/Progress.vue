@@ -79,7 +79,3 @@ export default {
   components: { RdProgress }
 };
 </script>
-
-<style scoped>
-
-</style>

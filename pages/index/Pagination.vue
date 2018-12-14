@@ -183,7 +183,3 @@ export default {
   components: { RdPagination }
 };
 </script>
-
-<style scoped>
-
-</style>

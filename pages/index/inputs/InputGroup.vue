@@ -744,7 +744,3 @@ export default {
   components: { RdInputGroup, RdButton, RdInput }
 };
 </script>
-
-<style scoped>
-
-</style>
