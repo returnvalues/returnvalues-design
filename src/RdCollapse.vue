@@ -1,5 +1,6 @@
 <script>
 import './bootstrap';
+
 export default {
   name: 'RdCollapse',
   model: {
@@ -9,10 +10,8 @@ export default {
   props: { show: Boolean },
   data() { return { value: this.show }; },
   watch: {
-    value(v) {
-      window.$(this.$el).collapse(v ? 'show' : 'hide');
-    },
     show(v) {
+      window.$(this.$el).collapse(v ? 'show' : 'hide');
       this.value = v;
     },
   },
@@ -24,6 +23,10 @@ export default {
       const toAssign = arguments.length === 0 ? !this.value : v;
       const ret = this.value !== toAssign;
       this.value = toAssign;
+      if (ret) {
+        this.$emit('change', this.value);
+        window.$(this.$el).collapse(this.value ? 'show' : 'hide');
+      }
       return ret;
     }
   },

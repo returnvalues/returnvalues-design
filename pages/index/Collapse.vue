@@ -6,7 +6,7 @@
         primary
         tag="a"
         href="javascript:"
-        @click.native="$refs.collapse1.toggle()"
+        @click.native="test=!test"
       >
         Link with href
       </rd-button>
@@ -18,7 +18,10 @@
         Button with data-target
       </rd-button>
     </p>
-    <rd-collapse ref="collapse1">
+    <rd-collapse
+      ref="collapse1"
+      v-model="test"
+    >
       <div class="card card-body">
         Anim pariatur cliche reprehenderit,
         enim eiusmod high life accusamus terry richardson ad squid.
@@ -214,7 +217,7 @@ export default {
     RdCardHeader,
   },
   data() {
-    return { accordion: 1 };
+    return { accordion: 1, test: false };
   },
 };
 </script>
