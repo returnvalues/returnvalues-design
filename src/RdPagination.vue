@@ -1,6 +1,6 @@
 <script>
 /* eslint-disable no-param-reassign */
-import SizeClass from './SizeClass';
+import SizeClass from './mixins/SizeClass';
 
 export default {
   name: 'RdPagination',

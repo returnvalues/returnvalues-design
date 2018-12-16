@@ -13,9 +13,9 @@
 
 <script>
 
-import SemanticClass from './SemanticClass';
-import SizeClass from './SizeClass';
-import OutlineClass from './OutlineClass';
+import SemanticClass from './mixins/SemanticClass';
+import SizeClass from './mixins/SizeClass';
+import OutlineClass from './mixins/OutlineClass';
 
 export default {
   name: 'RdButton',

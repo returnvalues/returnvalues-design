@@ -1,5 +1,5 @@
 <script>
-import SizeClass from './SizeClass';
+import SizeClass from './mixins/SizeClass';
 
 export default {
   name: 'RdInputGroup',

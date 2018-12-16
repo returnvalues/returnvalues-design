@@ -1,8 +1,8 @@
 <script>
 /* eslint-disable no-param-reassign */
 
-import SemanticClass from './SemanticClass';
-import SizeClass from './SizeClass';
+import SemanticClass from './mixins/SemanticClass';
+import SizeClass from './mixins/SizeClass';
 
 export default {
   name: 'RdNavbar',

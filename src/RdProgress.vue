@@ -1,7 +1,7 @@
 <script>
 /* eslint-disable no-param-reassign */
 
-import SemanticClass from './SemanticClass';
+import SemanticClass from './mixins/SemanticClass';
 
 export default {
   name: 'RdProgress',

@@ -10,7 +10,7 @@
 
 <script>
 
-import SemanticClass from './SemanticClass';
+import SemanticClass from './mixins/SemanticClass';
 
 export default {
   name: 'RdBadge',
