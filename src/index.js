@@ -30,3 +30,4 @@ export { default as RdNavbarText } from './RdNavbarText.vue';
 export { default as RdCardHeader } from './RdCardHeader.vue';
 export { default as RdCardBody } from './RdCardBody.vue';
 export { default as RdCardFooter } from './RdCardFooter.vue';
+export { default as RdPopover } from './RdPopover.vue';

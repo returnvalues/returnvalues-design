@@ -38,6 +38,7 @@ export default {
         { name: 'Navs', to: '/navs' },
         { name: 'Pagination', to: '/pagination' },
         { name: 'Progress', to: '/progress' },
+        { name: 'Popover', to: '/popover' },
         {
           name: 'Inputs',
           to: '/inputs',
