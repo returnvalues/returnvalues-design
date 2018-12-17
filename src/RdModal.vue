@@ -33,6 +33,13 @@ export default {
     fade: { type: Boolean, default: true },
   },
   data() { return { value: this.open }; },
+  watch: {
+    open(v) {
+      if (v === this.value) return;
+      window.$(this.$el).modal(v ? 'show' : 'hide');
+      this.value = v;
+    },
+  },
   mounted() {
     window.$(this.$el).modal(this.value ? 'show' : 'hide');
   },
@@ -41,16 +48,21 @@ export default {
       this.$nextTick(() => window.$(this.$el).modal(name));
     },
     toggle() {
-      this.action('toggle');
+      if (this.value) this.hide();
+      else this.show();
     },
     show() {
       this.action('show');
+      this.value = true;
+      this.$emit('change', this.value);
     },
     hide() {
       this.action('hide');
+      this.value = false;
+      this.$emit('change', this.value);
     },
     handleUpdate() {
-      this.action('next');
+      this.action('handleUpdate');
     },
     dispose() {
       this.action('dispose');
@@ -63,15 +75,3 @@ export default {
   }
 };
 </script>
-<style>
-/*.modal,.modal.fade {position: relative;*/
-  /*top: auto;*/
-  /*right: auto;*/
-  /*bottom: auto;*/
-  /*left: auto;*/
-  /*z-index: 1;*/
-  /*display: block;*/
-  /*opacity: 1;*/
-/*}*/
-/*.modal.fade .modal-dialog {transform:none;}*/
-</style>
