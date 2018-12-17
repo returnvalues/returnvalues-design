@@ -17,10 +17,11 @@ import SemanticClass from './mixins/SemanticClass';
 import SizeClass from './mixins/SizeClass';
 import OutlineClass from './mixins/OutlineClass';
 import RdPopover from './RdPopover.vue';
+import RdTooltip from './RdTooltip.vue'
 
 export default {
   name: 'RdButton',
-  mixins: [SemanticClass, SizeClass, OutlineClass, RdPopover],
+  mixins: [SemanticClass, SizeClass, OutlineClass, RdPopover,RdTooltip],
   props: {
     tag: {
       type: String,
