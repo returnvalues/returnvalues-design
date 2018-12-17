@@ -171,19 +171,20 @@
         <hr>
         <h5>Tooltips in a modal</h5>
         <p>
-          <a
-            href="#"
-            class="tooltip-test"
+          <rd-tooltip
+            tag="a"
+            href="javascript:"
             title="Tooltip"
           >
             This link
-          </a> and <a
-            href="#"
+          </rd-tooltip> and <rd-tooltip
+            tag="a"
+            href="javascript:"
             class="tooltip-test"
             title="Tooltip"
           >
             that link
-          </a> have tooltips on hover.
+          </rd-tooltip> have tooltips on hover.
         </p>
       </rd-modal-body>
       <rd-modal-footer>
@@ -298,7 +299,7 @@
 </template>
 <script>
 import {
-  RdModal, RdModalFooter, RdModalHeader, RdModalBody, RdButton
+  RdModal, RdModalFooter, RdModalHeader, RdModalBody, RdButton, RdTooltip
 } from '~/src';
 
 export default {
@@ -308,7 +309,8 @@ export default {
     RdModalBody,
     RdModalHeader,
     RdModalFooter,
-    RdModal
+    RdModal,
+    RdTooltip
   },
   data() {
     return { open: false };
