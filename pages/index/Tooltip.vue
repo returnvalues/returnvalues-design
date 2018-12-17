@@ -35,7 +35,6 @@
       Tooltip on left
     </rd-button>
   </div>
-
 </template>
 
 <script>
