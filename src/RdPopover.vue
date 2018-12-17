@@ -1,10 +1,20 @@
 <template>
-  <div />
+  <comment :is="tag">
+    <slot />
+  </comment>
 </template>
 
 <script>
 export default {
-  name: 'RdPopover'
+  name: 'RdPopover',
+  props: {
+    tag: { type: String, default: 'div' },
+    popover: { type: Object, default: undefined }
+  },
+  mounted() {
+    if (this.popover) window.$(this.$el).popover(this.popover);
+  }
+
 };
 </script>
 
