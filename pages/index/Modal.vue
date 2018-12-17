@@ -160,6 +160,10 @@
           This <rd-button
             href="javascript:"
             secondary
+            :popover="{
+              title:'Popover title',
+              content:'Popover body content is set in this attribute.'
+            }"
           >
             button
           </rd-button> triggers a popover on click.
