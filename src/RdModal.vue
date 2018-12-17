@@ -24,18 +24,17 @@ export default {
   name: 'RdModal',
   mixins: [SizeClass],
   model: {
-    prop: 'modelValue',
+    prop: 'open',
     event: 'change'
   },
   props: {
+    open: Boolean,
     backdrop: Boolean,
     fade: { type: Boolean, default: true },
   },
-  data() {
-    return { value: this.modelValue };
-  },
+  data() { return { value: this.open }; },
   mounted() {
-    // window.$(this.$el)
+    window.$(this.$el).modal(this.value ? 'show' : 'hide');
   },
   methods: {
     action(name) {
@@ -48,7 +47,7 @@ export default {
       this.action('show');
     },
     hide() {
-      this.action('prev');
+      this.action('hide');
     },
     handleUpdate() {
       this.action('next');
@@ -65,14 +64,14 @@ export default {
 };
 </script>
 <style>
-.modal,.modal.fade {position: relative;
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
-  z-index: 1;
-  display: block;
-  opacity: 1;
-}
-.modal.fade .modal-dialog {transform:none;}
+/*.modal,.modal.fade {position: relative;*/
+  /*top: auto;*/
+  /*right: auto;*/
+  /*bottom: auto;*/
+  /*left: auto;*/
+  /*z-index: 1;*/
+  /*display: block;*/
+  /*opacity: 1;*/
+/*}*/
+/*.modal.fade .modal-dialog {transform:none;}*/
 </style>
