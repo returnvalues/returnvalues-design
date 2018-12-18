@@ -5,7 +5,7 @@
       :navigations="navigations"
     />
     <div class="col content d-flex flex-grow-1 border rounded py-3 pl-5">
-      <nuxt-child  class="container-fluid"/>
+      <nuxt-child class="container-fluid" />
     </div>
   </div>
 </template>
@@ -25,7 +25,6 @@ export default {
     return {
       navigations: [
         { name: 'Main', to: '/', },
-        { name: 'Semantic', to: '/semantic', },
         { name: 'Alert', to: '/alert', },
         { name: 'Card', to: '/card', },
         { name: 'List', to: '/list', },
