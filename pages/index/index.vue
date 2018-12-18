@@ -3,19 +3,15 @@
     index
     <hightlight
       type="html"
-      code="<!DOCTYPE html>
-<title>Title</title>
-
-<style>body {width: 500px;}</style>
-
-<script type=&quot;application/javascript&quot;>
-  function $init() {return true;}
-</script>
-
-<body>
-  <p checked class=&quot;title&quot; id=&quot;title&quot;>Title</p>
-  <!-- here goes the rest of the page -->
-</body>"
+      code="<div class=&quot;container-fluid d-flex flex-nowrap&quot;>
+  <side-nav
+    class=&quot;sidenav&quot;
+    :navigations=&quot;navigations&quot;
+  />
+  <div class=&quot;col content d-flex flex-grow-1 border rounded py-3 pl-5&quot;>
+    <nuxt-child />
+  </div>
+</div>"
     />
   </div>
 </template>

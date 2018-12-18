@@ -1,5 +1,5 @@
 <template>
-  <pre><code
+  <pre class="border rounded"><code
 ref="code"
   :class="type"
   >{{ code }}</code></pre>
@@ -16,6 +16,9 @@ export default {
   name: 'Hightlight',
   props: { type: { type: String, default: undefined }, code: { type: String, default: undefined } },
   mounted() {
+    hljs.highlightBlock(this.$refs.code);
+  },
+  updated() {
     hljs.highlightBlock(this.$refs.code);
   }
 };
