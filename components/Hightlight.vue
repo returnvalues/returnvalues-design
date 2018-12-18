@@ -1,5 +1,5 @@
 <template>
-  <pre class="border rounded"><code
+  <pre class="border border-top-0"><code class="p-3"
 ref="code"
   :class="type"
   >{{ code }}</code></pre>
@@ -14,7 +14,7 @@ import 'highlight.js/styles/github.css';
 hljs.registerLanguage('html', html);
 export default {
   name: 'Hightlight',
-  props: { type: { type: String, default: undefined }, code: { type: String, default: undefined } },
+  props: { type: { type: String, default: 'html' }, code: { type: String, default: undefined } },
   mounted() {
     hljs.highlightBlock(this.$refs.code);
   },
