@@ -54,6 +54,37 @@
              Disabled
            </a>
          </rd-nav>
+         Vertical
+         <rd-nav
+           class="flex-column"
+         >
+           <a
+             class="active"
+             href="javascript:"
+           >
+             Active
+           </a>
+           <a
+
+             href="javascript:"
+           >
+             Link
+           </a>
+           <a
+
+             href="javascript:"
+           >
+             Link
+           </a>
+           <a
+             class="disabled"
+             href="javascript:"
+           >
+             Disabled
+           </a>
+         </rd-nav>
+
+
          Tabs
          <rd-nav tabs>
            <a
