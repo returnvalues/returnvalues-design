@@ -26,19 +26,28 @@ export default {
       navigations: [
         { name: 'Main', to: '/', },
         { name: 'Alert', to: '/alert', },
-        { name: 'Card', to: '/card', },
-        { name: 'List', to: '/list', },
         { name: 'Badge', to: '/badge', },
         { name: 'Breadcrumb', to: '/breadcrumb' },
+        {
+          name: 'Buttons',
+          to: '/buttons',
+          child: [
+            { name: 'Button', to: '/button', },
+            { name: 'Checkbox', to: '/checkbox', },
+            { name: 'Radio', to: '/radio', },
+          ]
+        },
+        { name: 'Card', to: '/card', },
         { name: 'Carousel', to: '/carousel' },
         { name: 'Collapse', to: '/collapse' },
         { name: 'Jumbotron', to: '/jumbotron' },
+        { name: 'List', to: '/list', },
         { name: 'Modal', to: '/modal' },
-        { name: 'Navbar', to: '/navbar' },
         { name: 'Navs', to: '/navs' },
+        { name: 'Navbar', to: '/navbar' },
         { name: 'Pagination', to: '/pagination' },
-        { name: 'Progress', to: '/progress' },
         { name: 'Popover', to: '/popover' },
+        { name: 'Progress', to: '/progress' },
         { name: 'Tooltip', to: '/tooltip' },
         {
           name: 'Inputs',
@@ -47,15 +56,6 @@ export default {
             { name: 'Input group', to: '/inputgroup' },
             { name: 'Dropdown', to: '/dropdown' },
             { name: 'Form', to: '/form' },
-          ]
-        },
-        {
-          name: 'Buttons',
-          to: '/buttons',
-          child: [
-            { name: 'Button', to: '/button', },
-            { name: 'Checkbox', to: '/checkbox', },
-            { name: 'Radio', to: '/radio', },
           ]
         },
       ]
