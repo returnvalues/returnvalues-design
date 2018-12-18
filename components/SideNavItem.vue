@@ -1,26 +1,34 @@
 <template>
-  <li class="nav-item">
-    <nuxt-link :to="item.child?'':(toStack+item.to)">
-      {{ item.name }}
-    </nuxt-link>
-    <ul
-      v-if="item.child"
-      class="nav flex-column"
-    >
-      <side-nav-item
-        v-for="child of item.child"
-        :key="child.to"
-        :to-stack="item.to"
-        :depth="depth+1"
-        :item="child"
-      />
-    </ul>
-  </li>
+  <rd-nav
+    v-if="item.child"
+    class="flex-column"
+  >
+    <span>{{ item.name }}</span>
+    <side-nav-item
+      v-for="child of item.child"
+      :key="child.to"
+      class="ml-3"
+      :to-stack="item.to"
+      :depth="depth+1"
+      :item="child"
+    />
+  </rd-nav>
+  <nuxt-link
+    v-else
+    :to="item.child?'':(toStack+item.to)"
+  >
+    {{ item.name }}
+  </nuxt-link>
 </template>
 
 <script>
+import { RdNav } from '~/src';
+
 export default {
   name: 'SideNavItem',
+  components: {
+    RdNav,
+  },
   props: {
     item: { type: Object, default: null },
     depth: { type: Number, default: 1 },

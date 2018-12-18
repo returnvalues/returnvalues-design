@@ -4,7 +4,7 @@
       class="sidenav"
       :navigations="navigations"
     />
-    <div class="col content d-flex flex-grow-1 border rounded">
+    <div class="col content d-flex flex-grow-1 border rounded py-3 pl-5">
       <nuxt-child />
     </div>
   </div>
@@ -67,5 +67,5 @@ export default {
 <style scoped>
   .sidenav {width: 200px;}
   .container-fluid {height: 100%}
-  .content {background: #fff;}
+  .content {background: #fff; overflow: auto;}
 </style>
