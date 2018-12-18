@@ -1,7 +1,8 @@
 <template>
-  <pre class="border border-top-0"><code class="p-3"
+  <pre class="border border-top-0"><code
 ref="code"
-  :class="type"
+                                         class="p-3"
+                                         :class="type"
   >{{ code }}</code></pre>
 </template>
 <script>
