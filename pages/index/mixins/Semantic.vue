@@ -6,7 +6,10 @@
       사용하는 컴포넌트는 아래와 같습니다.
     </p>
     <ul>
-      <li v-for="item of comps" :key="item">
+      <li
+        v-for="item of comps"
+        :key="item"
+      >
         {{ item }}
       </li>
     </ul>
@@ -61,7 +64,7 @@ export default {
         'RdAlert',
         'RdBadge',
         'RdNavbar',
-        'RdProgress',],
+        'RdProgress'],
       props: [
         ['primary', '', 'Boolean', 'false', ''],
         ['secondary', '', 'Boolean', 'false', ''],
