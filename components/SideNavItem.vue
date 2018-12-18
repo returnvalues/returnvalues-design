@@ -13,8 +13,8 @@
       :item="child"
     />
   </rd-nav>
-  <nuxt-link
-    v-else
+  <nuxt-link active-class="on"
+    v-else exact
     :to="item.child?'':(toStack+item.to)"
   >
     {{ item.name }}
@@ -36,3 +36,6 @@ export default {
   },
 };
 </script>
+<style>
+  .on{font-weight: bold;}
+</style>
