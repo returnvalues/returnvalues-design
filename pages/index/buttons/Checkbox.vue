@@ -11,6 +11,7 @@
         </nuxt-link>
       </li>
     </ul>
+    <h2>Example</h2>
     <div class="border p-3">
       <rd-button-group>
         <rd-button-checkbox
