@@ -5,12 +5,5 @@
 </template>
 
 <script>
-export default {
-  name: 'RdCardFooter',
-
-};
+export default { name: 'RdCardFooter' };
 </script>
-
-<style scoped>
-
-</style>

@@ -2026,6 +2026,78 @@
   </rd-card>
 </rd-card>"
     />
+    <h2>RdCard</h2>
+    <h3>Props</h3>
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th style="width:100px;">
+            속성
+          </th>
+          <th>
+            설명
+          </th>
+          <th style="width:80px;">
+            타입
+          </th>
+          <th style="width:80px;">
+            기본값
+          </th>
+          <th style="width: 200px">
+            사용 가능한 값
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          v-for="(row,idx) of props"
+          :key="idx"
+        >
+          <td
+            v-for="(col,idx2) of row"
+            :key="idx2"
+          >
+            {{ col }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>RdCardBody</h2>
+    <h3>Props</h3>
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th style="width:100px;">
+            속성
+          </th>
+          <th>
+            설명
+          </th>
+          <th style="width:80px;">
+            타입
+          </th>
+          <th style="width:80px;">
+            기본값
+          </th>
+          <th style="width: 200px">
+            사용 가능한 값
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          v-for="(row,idx) of propsBody"
+          :key="idx"
+        >
+          <td
+            v-for="(col,idx2) of row"
+            :key="idx2"
+          >
+            {{ col }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
@@ -2051,11 +2123,13 @@ export default {
   data() {
     return {
       props: [
-        ['tag', '렌더링 될 HTML 엘리먼트의 태그', 'String', '', 'button, input ...'],
-        ['block', 'width 100%', 'Boolean', 'false', ''],
-        ['active', '활성화 상태', 'Boolean', 'false', ''],
-        ['disabled', '비활성화 상태', 'Boolean', 'false', ''],
-      ]
+        ['group', 'card-group 사용시 래퍼에 사용', 'Boolean', 'false', ''],
+        ['deck', 'card-deck 사용시 래퍼에 사용', 'Boolean', 'false', ''],
+        ['columns', 'card-columns 사용시 래퍼에 사용', 'Boolean', 'false', ''],
+      ],
+      propsBody: [
+        ['overlay', 'Image overlay시 사용', 'Boolean', 'false', ''],
+      ],
     };
   }
 };
