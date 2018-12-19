@@ -32,10 +32,6 @@ export default {
     link: Boolean,
     disabled: Boolean,
     block: Boolean,
-    outline: {
-      type: String,
-      default: ''
-    },
     id: { type: String, default: undefined },
     name: { type: String, default: undefined },
     autocomplete: { type: String, default: undefined },

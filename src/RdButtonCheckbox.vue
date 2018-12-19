@@ -27,7 +27,7 @@ export default {
     event: 'change'
   },
   props: {
-    modelValue: { type: null, default: undefined }
+    modelValue: { type: Boolean, default: false }
   }
 };
 </script>
