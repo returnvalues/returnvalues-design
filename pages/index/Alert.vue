@@ -37,7 +37,7 @@
         A simple dark alert—check it out!
       </rd-alert>
     </div>
-    <hightlight
+    <highlight
       class="border-top-0"
       code="<rd-alert primary>
   A simple primary alert—check it out!
@@ -69,12 +69,12 @@
 
 <script>
 import { RdAlert } from '~/src';
-import Hightlight from '../../components/Hightlight';
+import Highlight from '../../components/Highlight';
 
 export default {
   name: 'Alert',
   components: {
-    Hightlight,
+    Highlight,
     RdAlert
   },
 };

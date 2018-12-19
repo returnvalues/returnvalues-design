@@ -42,8 +42,7 @@
         </rd-badge>
       </h6>
     </div>
-    <hightlight
-      class="border-top-0"
+    <highlight
       code="<h1>
   Example heading <rd-badge secondary>
   New
@@ -90,7 +89,7 @@
         </rd-badge>
       </rd-button>
     </div>
-    <hightlight
+    <highlight
       code="<rd-button primary>
   Notifications <rd-badge light>
     4
@@ -133,7 +132,7 @@
         Dark
       </rd-badge>
     </div>
-    <hightlight
+    <highlight
       code="<rd-badge primary>
   Primary
 </rd-badge>
@@ -211,7 +210,7 @@
         Dark
       </rd-badge>
     </div>
-    <hightlight
+    <highlight
       code="<rd-badge
   pill
   primary
@@ -321,7 +320,7 @@
         Dark
       </rd-badge>
     </div>
-    <hightlight
+    <highlight
       code="<rd-badge
   tag=&quot;a&quot;
   href=&quot;javascript:&quot;
@@ -419,12 +418,12 @@
 
 <script>
 import { RdBadge, RdButton } from '~/src';
-import Hightlight from '../../components/Hightlight';
+import Highlight from '../../components/Highlight';
 
 export default {
   name: 'Badge',
   components: {
-    Hightlight,
+    Highlight,
     RdBadge,
     RdButton
   },

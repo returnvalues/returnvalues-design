@@ -1,7 +1,7 @@
 <template>
   <div>
     index
-    <hightlight
+    <highlight
       type="html"
       code="<div class=&quot;container-fluid d-flex flex-nowrap&quot;>
   <side-nav
@@ -17,10 +17,10 @@
 </template>
 
 <script>
-import Hightlight from '~/components/Hightlight.vue';
+import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Index',
-  components: { Hightlight },
+  components: { Highlight },
 };
 </script>
