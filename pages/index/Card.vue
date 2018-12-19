@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Card</h1>
+    <h2>Example</h2>
     <div class="border p-3">
       <rd-card style="width: 18rem;">
         <img
@@ -49,7 +50,7 @@
   </rd-card-body>
 </rd-card>"
     />
-    <h2>Body</h2>
+    <h3>Body</h3>
     <div class="border p-3">
       <rd-card>
         <rd-card-body>
@@ -64,7 +65,7 @@
   </rd-card-body>
 </rd-card>"
     />
-    <h2>Titles, text, and links</h2>
+    <h3>Titles, text, and links</h3>
     <div class="border p-3">
       <rd-card style="width: 18rem;">
         <rd-card-body>
@@ -127,7 +128,7 @@
   </rd-card-body>
 </rd-card>"
     />
-    <h2>Images</h2>
+    <h3>Images</h3>
     <div class="border p-3">
       <rd-card style="width: 18rem;">
         <img
@@ -157,7 +158,7 @@
   </rd-card-body>
 </rd-card>"
     />
-    <h2>List groups</h2>
+    <h3>List groups</h3>
     <div class="border p-3">
       <rd-card style="width: 18rem;">
         <rd-card-header>
@@ -183,7 +184,7 @@
   </rd-list-group>
 </rd-card>"
     />
-    <h2>Kitchen sink</h2>
+    <h3>Kitchen sink</h3>
     <div class="border p-3">
       <rd-card
         style="width: 18rem;"
@@ -266,7 +267,7 @@
   </rd-card-body>
 </rd-card>"
     />
-    <h2>Header and footer</h2>
+    <h3>Header and footer</h3>
     <div class="border p-3">
       <rd-card>
         <rd-card-header>
@@ -440,7 +441,7 @@
   </rd-card-footer>
 </rd-card>"
     />
-    <h2>Navigation</h2>
+    <h3>Navigation</h3>
     <div class="border p-3">
       <rd-card class="text-center">
         <rd-card-header>
@@ -610,7 +611,7 @@
   </rd-card-body>
 </rd-card>"
     />
-    <h2>Image caps</h2>
+    <h3>Image caps</h3>
     <div class="border p-3">
       <rd-card class="mb-3">
         <img
@@ -700,7 +701,7 @@
   >
 </rd-card>"
     />
-    <h2>Image overlays</h2>
+    <h3>Image overlays</h3>
     <div class="border p-3">
       <rd-card class="bg-dark text-white">
         <img
@@ -740,7 +741,7 @@
   </rd-card-body>
 </rd-card>"
     />
-    <h2>Background and color</h2>
+    <h3>Background and color</h3>
     <div class="border p-3">
       <rd-card
         class="text-white bg-primary mb-3"
@@ -985,7 +986,7 @@
   </rd-card-body>
 </rd-card>"
     />
-    <h2>Border</h2>
+    <h3>Border</h3>
     <div class="border p-3">
       <rd-card
         class="border-primary mb-3"
@@ -1230,7 +1231,7 @@
   </rd-card-body>
 </rd-card>"
     />
-    <h2>Mixins utilities</h2>
+    <h3>Mixins utilities</h3>
     <div class="border p-3">
       <rd-card
         class="border-success mb-3"
@@ -1275,7 +1276,7 @@
   </rd-card-footer>
 </rd-card>"
     />
-    <h2>Card groups</h2>
+    <h3>Card groups</h3>
     <div class="border p-3">
       <rd-card group>
         <rd-card>
@@ -1532,7 +1533,7 @@
   </rd-card>
 </rd-card>"
     />
-    <h2>Card decks</h2>
+    <h3>Card decks</h3>
     <div class="border p-3">
       <rd-card deck>
         <rd-card>
@@ -1791,7 +1792,7 @@
   </rd-card>
 </rd-card>"
     />
-    <h2>Card columns</h2>
+    <h3>Card columns</h3>
     <div class="border p-3">
       <rd-card columns>
         <rd-card>
