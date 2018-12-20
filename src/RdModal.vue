@@ -42,7 +42,10 @@ export default {
   },
   mounted() {
     const { backdrop, value: show } = this;
-    window.$(this.$el).modal({ backdrop, show });
+    window.$(this.$el).modal({ backdrop, show }).on('hide.bs.modal', () => {
+      this.value = false;
+      if (this.open === true) this.$emit('change', false);
+    });
   },
   methods: {
     action(name) {
