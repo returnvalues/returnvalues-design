@@ -1,106 +1,309 @@
 <template>
   <div>
-    Collapse
-    <p>
-      <rd-button
-        primary
-        tag="a"
-        href="javascript:"
-        @click.native="test=!test"
-      >
-        Link with href
-      </rd-button>
-      <rd-button
-        primary
-        type="button"
-        @click.native="$refs.collapse1.toggle()"
-      >
-        Button with data-target
-      </rd-button>
-    </p>
-    <rd-collapse
-      ref="collapse1"
-      v-model="test"
-    >
-      <div class="card card-body">
-        Anim pariatur cliche reprehenderit,
-        enim eiusmod high life accusamus terry richardson ad squid.
-        Nihil anim keffiyeh helvetica,
-        craft beer labore wes anderson cred nesciunt sapiente ea proident.
-      </div>
-    </rd-collapse>
+    <h1>Collapse</h1>
 
-    Multiple targets
-    <p>
-      <rd-button
-        tag="a"
-        primary
-        href="javascript:"
-        @click.native="$refs.collapse2.toggle()"
-      >
-        Toggle first element
-      </rd-button>
-      <rd-button
-        primary
-        type="button"
-        @click.native="$refs.collapse3.toggle()"
-      >
-        Toggle second element
-      </rd-button>
-      <rd-button
-        primary
-        type="button"
-        @click.native="$refs.collapse2.toggle()&&$refs.collapse3.toggle()"
-      >
-        Toggle both elements
-      </rd-button>
-    </p>
-    <div class="row">
-      <div class="col">
-        <rd-collapse
-          ref="collapse2"
-          class=" multi-collapse"
+    <h2>Example</h2>
+    <div class="border p-3">
+      <p>
+        <rd-button
+          primary
+          tag="a"
+          href="javascript:"
+          @click.native="test=!test"
         >
-          <rd-card>
-            <rd-card-body>
-              Anim pariatur cliche reprehenderit,
-              enim eiusmod high life accusamus terry richardson ad squid.
-              Nihil anim keffiyeh helvetica,
-              craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </rd-card-body>
-          </rd-card>
-        </rd-collapse>
-      </div>
-      <div class="col">
-        <rd-collapse
-          ref="collapse3"
-          class=" multi-collapse"
+          Link with href
+        </rd-button>
+        <rd-button
+          primary
+          type="button"
+          @click.native="$refs.collapse1.toggle()"
         >
-          <rd-card>
-            <rd-card-body>
-              Anim pariatur cliche reprehenderit,
-              enim eiusmod high life accusamus terry richardson ad squid.
-              Nihil anim keffiyeh helvetica,
-              craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </rd-card-body>
-          </rd-card>
-        </rd-collapse>
+          Button with data-target
+        </rd-button>
+      </p>
+      <rd-collapse
+        ref="collapse1"
+        v-model="test"
+      >
+        <div class="card card-body">
+          Anim pariatur cliche reprehenderit,
+          enim eiusmod high life accusamus terry richardson ad squid.
+          Nihil anim keffiyeh helvetica,
+          craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+      </rd-collapse>
+    </div>
+    <highlight
+      code="<rd-button
+  primary
+  tag=&quot;a&quot;
+  href=&quot;javascript:&quot;
+  @click.native=&quot;test=!test&quot;
+>
+  Link with href
+</rd-button>
+<rd-button
+  primary
+  type=&quot;button&quot;
+  @click.native=&quot;$refs.collapse1.toggle()&quot;
+>
+  Button with data-target
+</rd-button>
+</p>
+<rd-collapse
+ref=&quot;collapse1&quot;
+v-model=&quot;test&quot;
+>
+<div class=&quot;card card-body&quot;>
+  Anim pariatur cliche reprehenderit,
+  enim eiusmod high life accusamus terry richardson ad squid.
+  Nihil anim keffiyeh helvetica,
+  craft beer labore wes anderson cred nesciunt sapiente ea proident.
+</div>
+</rd-collapse>
+"
+    />
+    <h3>Multiple targets</h3>
+    <div class="border p-3">
+      <p>
+        <rd-button
+          tag="a"
+          primary
+          href="javascript:"
+          @click.native="$refs.collapse2.toggle()"
+        >
+          Toggle first element
+        </rd-button>
+        <rd-button
+          primary
+          type="button"
+          @click.native="$refs.collapse3.toggle()"
+        >
+          Toggle second element
+        </rd-button>
+        <rd-button
+          primary
+          type="button"
+          @click.native="$refs.collapse2.toggle()&&$refs.collapse3.toggle()"
+        >
+          Toggle both elements
+        </rd-button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <rd-collapse
+            ref="collapse2"
+            class=" multi-collapse"
+          >
+            <rd-card>
+              <rd-card-body>
+                Anim pariatur cliche reprehenderit,
+                enim eiusmod high life accusamus terry richardson ad squid.
+                Nihil anim keffiyeh helvetica,
+                craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </rd-card-body>
+            </rd-card>
+          </rd-collapse>
+        </div>
+        <div class="col">
+          <rd-collapse
+            ref="collapse3"
+            class=" multi-collapse"
+          >
+            <rd-card>
+              <rd-card-body>
+                Anim pariatur cliche reprehenderit,
+                enim eiusmod high life accusamus terry richardson ad squid.
+                Nihil anim keffiyeh helvetica,
+                craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </rd-card-body>
+            </rd-card>
+          </rd-collapse>
+        </div>
       </div>
     </div>
-    Accordion example
-    <div
-      id="accordionExample"
-      class="accordion"
+    <highlight
+      code="<p>
+  <rd-button
+    tag=&quot;a&quot;
+    primary
+    href=&quot;javascript:&quot;
+    @click.native=&quot;$refs.collapse2.toggle()&quot;
+  >
+    Toggle first element
+  </rd-button>
+  <rd-button
+    primary
+    type=&quot;button&quot;
+    @click.native=&quot;$refs.collapse3.toggle()&quot;
+  >
+    Toggle second element
+  </rd-button>
+  <rd-button
+    primary
+    type=&quot;button&quot;
+    @click.native=&quot;$refs.collapse2.toggle()&&$refs.collapse3.toggle()&quot;
+  >
+    Toggle both elements
+  </rd-button>
+</p>
+<div class=&quot;row&quot;>
+  <div class=&quot;col&quot;>
+    <rd-collapse
+      ref=&quot;collapse2&quot;
+      class=&quot; multi-collapse&quot;
+    >
+      <rd-card>
+        <rd-card-body>
+          Anim pariatur cliche reprehenderit,
+          enim eiusmod high life accusamus terry richardson ad squid.
+          Nihil anim keffiyeh helvetica,
+          craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </rd-card-body>
+      </rd-card>
+    </rd-collapse>
+  </div>
+  <div class=&quot;col&quot;>
+    <rd-collapse
+      ref=&quot;collapse3&quot;
+      class=&quot; multi-collapse&quot;
+    >
+      <rd-card>
+        <rd-card-body>
+          Anim pariatur cliche reprehenderit,
+          enim eiusmod high life accusamus terry richardson ad squid.
+          Nihil anim keffiyeh helvetica,
+          craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </rd-card-body>
+      </rd-card>
+    </rd-collapse>
+  </div>
+</div>"
+    />
+
+    <h3>Accordion example</h3>
+    <div class="border p-3">
+      <div
+        id="accordionExample"
+        class="accordion"
+      >
+        <rd-card>
+          <rd-card-header
+            id="headingOne"
+          >
+            <h5 class="mb-0">
+              <rd-button
+                link
+                type="button"
+                @click.native="accordion=1"
+              >
+                Collapsible Group Item #1
+              </rd-button>
+            </h5>
+          </rd-card-header>
+
+          <rd-collapse
+            :show="accordion===1"
+            @change="v=>v&&(accordion=1)"
+          >
+            <rd-card-body>
+              Anim pariatur cliche reprehenderit,
+              enim eiusmod high life accusamus terry richardson ad squid.
+              3 wolf moon officia aute,
+              non cupidatat skateboard dolor brunch.
+              Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor,
+              sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+              Nihil anim keffiyeh helvetica,
+              craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              Ad vegan excepteur butcher vice lomo.
+              Leggings occaecat craft beer farm-to-table,
+              raw denim aesthetic synth nesciunt
+              you probably havent heard of them accusamus labore sustainable VHS.
+            </rd-card-body>
+          </rd-collapse>
+        </rd-card>
+        <rd-card>
+          <rd-card-header>
+            <h5 class="mb-0">
+              <rd-button
+                link
+                type="button"
+                @click.native="accordion=2"
+              >
+                Collapsible Group Item #2
+              </rd-button>
+            </h5>
+          </rd-card-header>
+          <rd-collapse
+            :show="accordion===2"
+            @change="v=>v&&(accordion=2)"
+          >
+            <rd-card-body>
+              Anim pariatur cliche reprehenderit,
+              enim eiusmod high life accusamus terry richardson ad squid.
+              3 wolf moon officia aute,
+              non cupidatat skateboard dolor brunch.
+              Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor,
+              sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+              Nihil anim keffiyeh helvetica,
+              craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              Ad vegan excepteur butcher vice lomo.
+              Leggings occaecat craft beer farm-to-table,
+              raw denim aesthetic synth nesciunt
+              you probably havent heard of them accusamus labore sustainable VHS.
+            </rd-card-body>
+          </rd-collapse>
+        </rd-card>
+        <rd-card>
+          <rd-card-header>
+            <h5 class="mb-0">
+              <rd-button
+                link
+                type="button"
+                @click.native="accordion=3"
+              >
+                Collapsible Group Item #3
+              </rd-button>
+            </h5>
+          </rd-card-header>
+          <rd-collapse
+            :show="accordion===3"
+            @change="v=>v&&(accordion=3)"
+          >
+            <rd-card-body>
+              Anim pariatur cliche reprehenderit,
+              enim eiusmod high life accusamus terry richardson ad squid.
+              3 wolf moon officia aute,
+              non cupidatat skateboard dolor brunch.
+              Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor,
+              sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+              Nihil anim keffiyeh helvetica,
+              craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              Ad vegan excepteur butcher vice lomo.
+              Leggings occaecat craft beer farm-to-table,
+              raw denim aesthetic synth nesciunt
+              you probably havent heard of them accusamus labore sustainable VHS.
+            </rd-card-body>
+          </rd-collapse>
+        </rd-card>
+      </div>
+    </div><highlight
+      code="<div
+      id=&quot;accordionExample&quot;
+      class=&quot;accordion&quot;
     >
       <rd-card>
         <rd-card-header
-          id="headingOne"
+          id=&quot;headingOne&quot;
         >
-          <h5 class="mb-0">
+          <h5 class=&quot;mb-0&quot;>
             <rd-button
               link
-              type="button"
-              @click.native="accordion=1"
+              type=&quot;button&quot;
+              @click.native=&quot;accordion=1&quot;
             >
               Collapsible Group Item #1
             </rd-button>
@@ -108,93 +311,126 @@
         </rd-card-header>
 
         <rd-collapse
-          :show="accordion===1"
-          @change="v=>v&&(accordion=1)"
+          :show=&quot;accordion===1&quot;
+          @change=&quot;v=>v&&(accordion=1)&quot;
         >
           <rd-card-body>
-            Anim pariatur cliche reprehenderit,
-            enim eiusmod high life accusamus terry richardson ad squid.
-            3 wolf moon officia aute,
-            non cupidatat skateboard dolor brunch.
-            Food truck quinoa nesciunt laborum eiusmod.
-            Brunch 3 wolf moon tempor,
-            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-            Nihil anim keffiyeh helvetica,
-            craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            Ad vegan excepteur butcher vice lomo.
-            Leggings occaecat craft beer farm-to-table,
-            raw denim aesthetic synth nesciunt
-            you probably haven't heard of them accusamus labore sustainable VHS.
+            ...
           </rd-card-body>
         </rd-collapse>
       </rd-card>
       <rd-card>
         <rd-card-header>
-          <h5 class="mb-0">
+          <h5 class=&quot;mb-0&quot;>
             <rd-button
               link
-              type="button"
-              @click.native="accordion=2"
+              type=&quot;button&quot;
+              @click.native=&quot;accordion=2&quot;
             >
               Collapsible Group Item #2
             </rd-button>
           </h5>
         </rd-card-header>
         <rd-collapse
-          :show="accordion===2"
-          @change="v=>v&&(accordion=2)"
+          :show=&quot;accordion===2&quot;
+          @change=&quot;v=>v&&(accordion=2)&quot;
         >
           <rd-card-body>
-            Anim pariatur cliche reprehenderit,
-            enim eiusmod high life accusamus terry richardson ad squid.
-            3 wolf moon officia aute,
-            non cupidatat skateboard dolor brunch.
-            Food truck quinoa nesciunt laborum eiusmod.
-            Brunch 3 wolf moon tempor,
-            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-            Nihil anim keffiyeh helvetica,
-            craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            Ad vegan excepteur butcher vice lomo.
-            Leggings occaecat craft beer farm-to-table,
-            raw denim aesthetic synth nesciunt
-            you probably haven't heard of them accusamus labore sustainable VHS.
+            ...
           </rd-card-body>
         </rd-collapse>
       </rd-card>
       <rd-card>
         <rd-card-header>
-          <h5 class="mb-0">
+          <h5 class=&quot;mb-0&quot;>
             <rd-button
               link
-              type="button"
-              @click.native="accordion=3"
+              type=&quot;button&quot;
+              @click.native=&quot;accordion=3&quot;
             >
               Collapsible Group Item #3
             </rd-button>
           </h5>
         </rd-card-header>
         <rd-collapse
-          :show="accordion===3"
-          @change="v=>v&&(accordion=3)"
+          :show=&quot;accordion===3&quot;
+          @change=&quot;v=>v&&(accordion=3)&quot;
         >
           <rd-card-body>
-            Anim pariatur cliche reprehenderit,
-            enim eiusmod high life accusamus terry richardson ad squid.
-            3 wolf moon officia aute,
-            non cupidatat skateboard dolor brunch.
-            Food truck quinoa nesciunt laborum eiusmod.
-            Brunch 3 wolf moon tempor,
-            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-            Nihil anim keffiyeh helvetica,
-            craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            Ad vegan excepteur butcher vice lomo.
-            Leggings occaecat craft beer farm-to-table,
-            raw denim aesthetic synth nesciunt
-            you probably haven't heard of them accusamus labore sustainable VHS.
+            ...
           </rd-card-body>
         </rd-collapse>
       </rd-card>
-    </div>
+    </div>"
+    />
+
+    <h2>Props</h2>
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th style="width:100px;">
+            속성
+          </th>
+          <th>
+            설명
+          </th>
+          <th style="width:80px;">
+            타입
+          </th>
+          <th style="width:80px;">
+            기본값
+          </th>
+          <th style="width: 200px">
+            사용 가능한 값
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          v-for="(row,idx) of props"
+          :key="idx"
+        >
+          <td
+            v-for="(col,idx2) of row"
+            :key="idx2"
+          >
+            {{ col }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Methods</h2>
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th style="width:100px;">
+            이름
+          </th>
+          <th style="width:180px;">
+            파라미터
+          </th>
+          <th>
+            설명
+          </th>
+          <th style="width:180px;">
+            리턴값
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          v-for="(row,idx) of methods"
+          :key="idx"
+        >
+          <td
+            v-for="(col,idx2) of row"
+            :key="idx2"
+          >
+            {{ col }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
@@ -206,6 +442,7 @@ import {
   RdCardHeader,
   RdCardBody
 } from '~/src';
+import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Collapse',
@@ -215,9 +452,19 @@ export default {
     RdButton,
     RdCard,
     RdCardHeader,
+    Highlight
   },
   data() {
-    return { accordion: 1, test: false };
+    return {
+      accordion: 1,
+      test: false,
+      props: [
+        ['show', 'v-model', 'Boolean', 'false', ''],
+      ],
+      methods: [
+        ['toggle', '{Boolean} show', '표시 토글. 파라미터는 필수 아님', '변화 여부 true/false']
+      ]
+    };
   },
 };
 </script>
