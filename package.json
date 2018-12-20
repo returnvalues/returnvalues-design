@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node node_modules/.bin/nuxt",
-    "gh-pages": "node node_modules/.bin/nuxt generate && node_modules/.bin/push-dir --dir=dist --branch=gh-pages --cleanup",
+    "gh-pages": "node node_modules/.bin/nuxt generate -c nuxt.config.gh-pages.js && node_modules/.bin/push-dir --dir=dist --branch=gh-pages --cleanup",
     "lint": "node_modules/.bin/eslint pages src components --ext .js,.mjs,.vue",
     "lint:fix": "node_modules/.bin/eslint pages src components --ext .js,.mjs,.vue --fix"
   },
