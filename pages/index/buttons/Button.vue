@@ -452,6 +452,11 @@
     <h2>Props</h2>
     추가로 <nuxt-link to="/mixins/semantic">
       Semantic
+    </nuxt-link>,
+    <nuxt-link to="/mixins/outline">
+      Outline
+    </nuxt-link>, <nuxt-link to="/mixins/size">
+      Size
     </nuxt-link> 속성을 쓸 수 있습니다.
     <table class="table table-striped table-sm">
       <thead>

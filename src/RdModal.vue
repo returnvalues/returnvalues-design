@@ -29,7 +29,7 @@ export default {
   },
   props: {
     open: Boolean,
-    backdrop: Boolean,
+    backdrop: { type: null, default: true },
     fade: { type: Boolean, default: true },
   },
   data() { return { value: this.open }; },
@@ -41,7 +41,8 @@ export default {
     },
   },
   mounted() {
-    window.$(this.$el).modal(this.value ? 'show' : 'hide');
+    const { backdrop, value: show } = this;
+    window.$(this.$el).modal({ backdrop, show });
   },
   methods: {
     action(name) {
