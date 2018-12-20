@@ -450,6 +450,9 @@
 </rd-button>"
     />
     <h2>Props</h2>
+    추가로 <nuxt-link to="/mixins/semantic">
+      Semantic
+    </nuxt-link> 속성을 쓸 수 있습니다.
     <table class="table table-striped table-sm">
       <thead>
         <tr>
@@ -497,7 +500,7 @@ export default {
   data() {
     return {
       props: [
-        ['tag', '렌더링 될 HTML 엘리먼트의 태그', 'String', '', 'button, input ...'],
+        ['tag', '렌더링 될 HTML 엘리먼트의 태그', 'String', 'button', 'button, input ...'],
         ['block', 'width 100%', 'Boolean', 'false', ''],
         ['active', '활성화 상태', 'Boolean', 'false', ''],
         ['disabled', '비활성화 상태', 'Boolean', 'false', ''],
