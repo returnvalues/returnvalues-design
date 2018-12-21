@@ -28,7 +28,6 @@ export { default as RdPagination } from './RdPagination.vue';
 export { default as RdProgress } from './RdProgress.vue';
 export { default as RdNavbarBrand } from './RdNavbarBrand.vue';
 export { default as RdNavbarToggler } from './RdNavbarToggler.vue';
-export { default as RdNavbarCollapse } from './RdNavbarCollapse.vue';
 export { default as RdNavbarText } from './RdNavbarText.vue';
 export { default as RdCardHeader } from './RdCardHeader.vue';
 export { default as RdCardBody } from './RdCardBody.vue';
