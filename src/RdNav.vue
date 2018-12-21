@@ -32,7 +32,7 @@ export default {
     let child;
     if (tag === 'nav') child = nodes;
     else {
-      child = nodes.map((x) => {
+      child = nodes.filter(x => x.tag || `${x.text}`.trim()).map((x) => {
         if (`${x.tag}`.includes('RdDropdown')) {
           x.data.class = x.data.class || {};
           x.data.class['nav-item'] = true;
@@ -53,7 +53,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-
-</style>
