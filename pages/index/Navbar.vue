@@ -74,7 +74,7 @@
       </rd-navbar>
     </div>
     <highlight
-code="<rd-navbar
+      code="<rd-navbar
   lg
   light
   class=&quot;bg-light&quot;
@@ -141,7 +141,7 @@ code="<rd-navbar
     </form>
   </rd-collapse>
 </rd-navbar>"
-/>
+    />
     <h3>Brand</h3>
     <div class="p-3 border">
       <rd-navbar
@@ -164,7 +164,7 @@ code="<rd-navbar
       </rd-navbar>
     </div>
     <highlight
-code="<rd-navbar
+      code="<rd-navbar
   light
   class=&quot;bg-light&quot;
 >
@@ -182,7 +182,7 @@ code="<rd-navbar
     Navbar
   </rd-navbar-brand>
 </rd-navbar>"
- />
+    />
 
     <h3>Nav</h3>
     <div class="p-3 border">
@@ -227,7 +227,7 @@ code="<rd-navbar
       </rd-navbar>
     </div>
     <highlight
-code="<rd-navbar
+      code="<rd-navbar
   lg
   light
   class=&quot;bg-light&quot;
@@ -266,7 +266,7 @@ code="<rd-navbar
     </rd-nav>
   </rd-collapse>
 </rd-navbar>"
- />
+    />
     <div class="p-3 border">
       <rd-navbar
         lg
@@ -309,7 +309,7 @@ code="<rd-navbar
       </rd-navbar>
     </div>
     <highlight
-code="<rd-navbar
+      code="<rd-navbar
   lg
   light
   class=&quot;bg-light&quot;
@@ -347,8 +347,8 @@ code="<rd-navbar
       </a>
     </rd-nav>
   </rd-collapse>
-</rd-navbar>" 
-/>
+</rd-navbar>"
+    />
     <div class="p-3 border">
       <rd-navbar
         lg
@@ -409,7 +409,7 @@ code="<rd-navbar
       </rd-navbar>
     </div>
     <highlight
-code="<rd-navbar
+      code="<rd-navbar
   lg
   light
   class=&quot;bg-light&quot;
@@ -465,8 +465,8 @@ code="<rd-navbar
       </rd-dropdown>
     </rd-nav>
   </rd-collapse>
-</rd-navbar>" 
-/>
+</rd-navbar>"
+    />
 
     <h3>Forms</h3>
     <div class="p-3 border">
@@ -491,7 +491,7 @@ code="<rd-navbar
       </rd-navbar>
     </div>
     <highlight
-code="<rd-navbar
+      code="<rd-navbar
   light
   class=&quot;bg-light&quot;
 >
@@ -510,7 +510,7 @@ code="<rd-navbar
     </button>
   </form>
 </rd-navbar>"
-/>
+    />
     <div class="p-3 border">
       <rd-navbar
         light
@@ -536,7 +536,7 @@ code="<rd-navbar
       </rd-navbar>
     </div>
     <highlight
-code="<rd-navbar
+      code="<rd-navbar
   light
   class=&quot;bg-light&quot;
 >
@@ -558,7 +558,7 @@ code="<rd-navbar
     </button>
   </form>
 </rd-navbar>"
- />
+    />
     <div class="p-3 border">
       <rd-navbar
         light
@@ -586,7 +586,7 @@ code="<rd-navbar
       </rd-navbar>
     </div>
     <highlight
-code="<rd-navbar
+      code="<rd-navbar
   light
   class=&quot;bg-light&quot;
 >
@@ -609,8 +609,8 @@ code="<rd-navbar
       >
     </div>
   </form>
-</rd-navbar>" 
-/>
+</rd-navbar>"
+    />
     <div class="p-3 border">
       <rd-navbar
         light
@@ -633,7 +633,7 @@ code="<rd-navbar
       </rd-navbar>
     </div>
     <highlight
-code="<rd-navbar
+      code="<rd-navbar
   light
   class=&quot;bg-light&quot;
 >
@@ -652,7 +652,7 @@ code="<rd-navbar
     </button>
   </form>
 </rd-navbar>"
- />
+    />
 
     <h3>Text</h3>
     <div class="p-3 border">
@@ -665,7 +665,8 @@ code="<rd-navbar
         </rd-navbar-text>
       </rd-navbar>
     </div>
-    <highlight code="<rd-navbar
+    <highlight
+      code="<rd-navbar
   light
   class=&quot;bg-light&quot;
 >
@@ -673,7 +674,7 @@ code="<rd-navbar
     Navbar text with an inline element
   </rd-navbar-text>
 </rd-navbar>"
- />
+    />
     <div class="p-3 border">
       <rd-navbar
         lg
@@ -715,7 +716,7 @@ code="<rd-navbar
       </rd-navbar>
     </div>
     <highlight
-code="<rd-navbar
+      code="<rd-navbar
   lg
   light
   class=&quot;bg-light&quot;
@@ -753,7 +754,7 @@ code="<rd-navbar
     </rd-navbar-text>
   </rd-collapse>
 </rd-navbar>"
- />
+    />
 
 
     <h3>
@@ -851,7 +852,7 @@ code="<rd-navbar
       </rd-navbar>
     </div>
     <highlight
-code="<rd-navbar
+      code="<rd-navbar
   dark
   class=&quot;bg-dark&quot;
 >
@@ -940,7 +941,87 @@ code="<rd-navbar
     </a>
   </rd-nav>
 </rd-navbar>"
-/>
+    />
+
+    <h3>RdNavbar</h3>
+    <h4>Props</h4>
+    <nuxt-link to="/mixins/semantic">
+      Semantic
+    </nuxt-link>, <nuxt-link to="/mixins/size">
+      Size
+    </nuxt-link> 속성을 쓸 수 있습니다.
+    <h3>RdNavbarBrand</h3>
+    <h4>Props</h4>
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th style="width:100px;">
+            속성
+          </th>
+          <th>
+            설명
+          </th>
+          <th style="width:80px;">
+            타입
+          </th>
+          <th style="width:80px;">
+            기본값
+          </th>
+          <th style="width: 200px">
+            사용 가능한 값
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          v-for="(row,idx) of propsBrand"
+          :key="idx"
+        >
+          <td
+            v-for="(col,idx2) of row"
+            :key="idx2"
+          >
+            {{ col }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>RdNavbarText</h3>
+    <h4>Props</h4>
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th style="width:100px;">
+            속성
+          </th>
+          <th>
+            설명
+          </th>
+          <th style="width:80px;">
+            타입
+          </th>
+          <th style="width:80px;">
+            기본값
+          </th>
+          <th style="width: 200px">
+            사용 가능한 값
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          v-for="(row,idx) of propsText"
+          :key="idx"
+        >
+          <td
+            v-for="(col,idx2) of row"
+            :key="idx2"
+          >
+            {{ col }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
@@ -968,6 +1049,16 @@ export default {
     RdInput,
     RdCollapse,
     RdDropdown
+  },
+  data() {
+    return {
+      propsText: [
+        ['tag', '렌더링 될 HTML 엘리먼트의 태그', 'String', 'span', 'span, a ...'],
+      ],
+      propsBrand: [
+        ['tag', '렌더링 될 HTML 엘리먼트의 태그', 'String', 'a', 'span, a ...'],
+      ],
+    };
   }
 };
 </script>
