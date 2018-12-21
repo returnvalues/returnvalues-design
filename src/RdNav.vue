@@ -25,8 +25,15 @@ export default {
     const tag = this.tag === 'nav' ? 'nav' : 'ul';
     const nodes = this.$slots.default || [];
     const aTags = nodes.filter(x => x.tag === 'a');
-    const parentName = this.$parent.$options.name;
-    const staticClass = parentName.includes('RdNavbar') ? 'navbar-nav' : 'nav';
+    let parent = this.$parent;
+    let staticClass = 'nav';
+    while (parent) {
+      if (parent.$options.name === 'RdNavbar') {
+        staticClass = 'navbar-nav';
+        break;
+      }
+      parent = parent.$parent;
+    }
 
 
     let child;
