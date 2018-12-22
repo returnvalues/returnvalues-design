@@ -1336,6 +1336,41 @@
   </a>
 </rd-dropdown>"
     />
+    <h3>Props</h3>
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th style="width:100px;">
+            속성
+          </th>
+          <th>
+            설명
+          </th>
+          <th style="width:80px;">
+            타입
+          </th>
+          <th style="width:80px;">
+            기본값
+          </th>
+          <th style="width: 200px">
+            사용 가능한 값
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          v-for="(row,idx) of props"
+          :key="idx"
+        >
+          <td
+            v-for="(col,idx2) of row"
+            :key="idx2"
+          >
+            {{ col }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
@@ -1345,6 +1380,18 @@ import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Dropdown',
-  components: { RdDropdown, RdButton, Highlight }
+  components: { RdDropdown, RdButton, Highlight },
+  data() {
+    return {
+      props: [
+        ['tag', '렌더링 될 HTML 엘리먼트의 태그', 'String', 'div', 'div ...'],
+        ['inline', 'inline으로 표시. Split 버튼일 경우 필수', 'Boolean', 'false', ''],
+        ['dropright', '오른쪽으로 나옵니다.', 'Boolean', 'false', ''],
+        ['dropleft', '왼쪽으로 나옵니다.', 'Boolean', 'false', ''],
+        ['dropup', '위로 나옵니다.', 'Boolean', 'false', ''],
+        ['alignright', '메뉴가 오른쪽으로 붙게 됩니다.', 'Boolean', 'false', ''],
+      ]
+    };
+  }
 };
 </script>

@@ -4,12 +4,12 @@ import './bootstrap';
 export default {
   name: 'RdDropdown',
   props: {
+    tag: { type: String, default: 'div' },
     inline: Boolean,
     dropright: Boolean,
     dropleft: Boolean,
     dropup: Boolean,
     alignright: Boolean,
-    tag: { type: String, default: 'div' }
   },
   render(createElement) {
     const { button: buttons = [] } = this.$slots;
@@ -58,7 +58,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-
-</style>
