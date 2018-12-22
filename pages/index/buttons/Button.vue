@@ -457,6 +457,8 @@
       Outline
     </nuxt-link>, <nuxt-link to="/mixins/size">
       Size
+    </nuxt-link>, <nuxt-link to="/popover">
+      Popover
     </nuxt-link> 속성을 쓸 수 있습니다.
     <table class="table table-striped table-sm">
       <thead>

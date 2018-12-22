@@ -8,7 +8,7 @@
 export default {
   name: 'RdPopover',
   props: {
-    tag: { type: String, default: 'div' },
+    tag: { type: String, default: 'span' },
     popover: { type: Object, default: undefined }
   },
   mounted() {
