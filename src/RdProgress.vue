@@ -10,13 +10,14 @@ export default {
     striped: Boolean,
     animated: Boolean,
     multiple: Boolean,
+    bar: Boolean,
     percent: { type: Number, default: 0 },
   },
   render(h) {
     const nodes = this.$slots.default;
 
     if (this.multiple) {
-      nodes.filter(x => x.componentOptions).forEach((x) => { x.propsData.bar = true; });
+      nodes.map(x => x.componentOptions).filter(x => x).forEach((x) => { x.propsData.bar = true; });
       return h('div', { class: 'progress' }, nodes);
     }
 
@@ -26,6 +27,7 @@ export default {
     };
     if (this.striped) data.class.push('progress-bar-striped');
     if (this.animated) data.class.push('progress-bar-animated');
+    if (this.bar) return h('div', data);
     return h('div', { class: 'progress' }, [h('div', data, nodes)]);
   }
 };
