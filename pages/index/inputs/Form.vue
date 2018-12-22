@@ -437,8 +437,74 @@
   3 (disabled)
 </rd-input>"
     />
-    <h2>Props</h2>
-    <h3>RdInput</h3>
+    <h2>RdInput</h2>
+    <h3>Props</h3>
+    추가로 <nuxt-link to="/mixins/size">
+      Size
+    </nuxt-link> 속성을 쓸 수 있습니다.
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th style="width:100px;">
+            속성
+          </th>
+          <th>
+            설명
+          </th>
+          <th style="width:80px;">
+            타입
+          </th>
+          <th style="width:80px;">
+            기본값
+          </th>
+          <th style="width: 200px">
+            사용 가능한 값
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          v-for="(row,idx) of propsInput"
+          :key="idx"
+        >
+          <td
+            v-for="(col,idx2) of row"
+            :key="idx2"
+          >
+            {{ col }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Events</h3>
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th style="width:100px;">
+            이벤트명
+          </th>
+          <th>
+            설명
+          </th>
+          <th style="width:120px;">
+            파라미터
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          v-for="(row,idx) of eventsInput"
+          :key="idx"
+        >
+          <td
+            v-for="(col,idx2) of row"
+            :key="idx2"
+          >
+            {{ col }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
@@ -462,7 +528,12 @@ export default {
       b: { b: 2 },
       c: { c: 3 },
       test2: 'wfwe',
-      test3: 2
+      test3: 2,
+      propsInput: [
+        ['modelValue', 'v-model', 'Any', '', ''],
+        ['type', 'input type', 'String', 'text', 'text, checkbox, radio ...'],
+      ],
+      eventsInput: [['change', '값이 바뀌었을때 발생', '(value)']]
     };
   }
 };

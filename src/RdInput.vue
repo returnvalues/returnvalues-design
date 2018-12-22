@@ -11,7 +11,7 @@ export default {
     event: 'change'
   },
   props: {
-    type: { type: String, default: 'div' },
+    type: { type: String, default: 'text' },
     placeholder: { type: String, default: undefined },
     id: { type: String, default: undefined },
     readonly: Boolean,
