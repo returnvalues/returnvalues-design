@@ -8,7 +8,7 @@
 export default {
   name: 'RdTooltip',
   props: {
-    tag: { type: String, default: 'div' },
+    tag: { type: String, default: 'span' },
     tooltip: { type: null, default: undefined }
   },
   mounted() {
