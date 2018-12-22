@@ -4,9 +4,10 @@ import './bootstrap';
 export default {
   name: 'RdDropdown',
   props: {
-    split: Boolean,
+    inline: Boolean,
     dropright: Boolean,
     dropleft: Boolean,
+    dropup: Boolean,
     alignright: Boolean,
     tag: { type: String, default: 'div' }
   },
@@ -37,9 +38,10 @@ export default {
     }
     return createElement(this.tag, {
       class: {
-        [this.split ? 'btn-group' : 'dropdown']: true,
+        [(buttons.length > 1 || this.inline) ? 'btn-group' : 'dropdown']: true,
         dropleft: this.dropleft,
-        dropright: this.dropright
+        dropright: this.dropright,
+        dropup: this.dropup
       }
     }, [
       this.$slots.button,

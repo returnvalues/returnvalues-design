@@ -53,9 +53,9 @@ export default {
           name: 'Inputs',
           to: '/inputs',
           child: [
-            { name: 'Input group', to: '/inputgroup' },
             { name: 'Dropdown', to: '/dropdown' },
             { name: 'Form', to: '/form' },
+            { name: 'Input group', to: '/inputgroup' },
           ]
         },
       ]
