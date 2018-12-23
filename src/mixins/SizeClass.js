@@ -4,7 +4,8 @@ const prefix = {
   RdInput: 'form-control',
   RdNavbar: 'navbar-expand',
   RdPagination: 'pagination',
-  RdModal: 'modal'
+  RdModal: 'modal',
+  RdInputGroup: 'input-group'
 };
 
 export default {
