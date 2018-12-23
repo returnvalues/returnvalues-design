@@ -1,4 +1,5 @@
 <script>
+/* eslint-disable no-param-reassign */
 import SizeClass from './mixins/SizeClass';
 
 export default {
@@ -10,8 +11,8 @@ export default {
     const pna = prepend.concat(append);
     pna.forEach(({ data }) => {
       if (data.attrs.text === '' || data.attrs.text) {
-        data.class = data.class || {}; // eslint-disable-line no-param-reassign
-        data.class['input-group-text'] = true; // eslint-disable-line no-param-reassign
+        data.class = data.class || {};
+        data.class['input-group-text'] = true;
       }
     });
     if (prepend.length) {
@@ -20,10 +21,11 @@ export default {
     if (append.length) {
       append = createElement('div', { class: { 'input-group-append': true } }, append);
     }
-    pna.concat(deflt).forEach(({ data, tag }) => {
-      if (tag === 'input' || tag === 'textarea') {
-        data.class = data.class || {}; // eslint-disable-line no-param-reassign
-        data.class['form-control'] = true; // eslint-disable-line no-param-reassign
+    pna.concat(deflt).forEach((x) => {
+      if (x.tag === 'input' || x.tag === 'textarea') {
+        x.data = x.data || {};
+        x.data.class = x.data.class || {};
+        x.data.class['form-control'] = true;
       }
     });
 
