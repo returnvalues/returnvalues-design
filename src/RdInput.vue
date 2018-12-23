@@ -41,11 +41,14 @@ export default {
     },
     radio() {
       return this.type === 'radio';
-    }
+    },
+    file() {
+      return this.type === 'file';
+    },
   },
   render(h) {
     const {
-      check, radio, inline, inputId, type,
+      check, radio, inline, inputId, type, file,
       placeholder,
       readonly,
       disabled,
@@ -72,7 +75,6 @@ export default {
       },
       domProps: {
         value: modelValue || value,
-        checked: modelValue === value
       },
       class: [sizeClass, inputClass],
       on: {
@@ -108,6 +110,10 @@ export default {
     const hasLabel = this.$slots.default;
     let hasFormGroup = (hasLabel || check || radio);
     if (this.$parent.$options.name === 'RdInputGroup') {
+      if (file) {
+        input.class = 'custom-file-input';
+        return h('div', { staticClass: 'custom-file' }, [h('input', input), h('label', { class: 'custom-file-label' }, this.$slots.default)]);
+      }
       input.class = (check || radio) ? undefined : 'form-control';
       hasFormGroup = false;
     }
