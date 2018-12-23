@@ -38,3 +38,13 @@ export default {
   }
 };
 </script>
+<style scoped>
+  .input-group>.input-group-prepend .btn{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .input-group>.input-group-append .btn{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+</style>
