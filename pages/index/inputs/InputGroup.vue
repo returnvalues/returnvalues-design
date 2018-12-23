@@ -451,16 +451,13 @@
     </h3>
     <div class="p-3 border">
       <rd-input-group class="mb-3">
-        <label
+        <span
           slot="prepend"
+          text
         >
           Options
-        </label>
-
-        <select>
-          <option selected>
-            Choose...
-          </option>
+        </span>
+        <rd-select>
           <option value="1">
             One
           </option>
@@ -470,14 +467,11 @@
           <option value="3">
             Three
           </option>
-        </select>
+        </rd-select>
       </rd-input-group>
 
       <rd-input-group class="mb-3">
-        <select>
-          <option selected>
-            Choose...
-          </option>
+        <rd-select>
           <option value="1">
             One
           </option>
@@ -487,13 +481,14 @@
           <option value="3">
             Three
           </option>
-        </select>
+        </rd-select>
 
-        <label
+        <span
           slot="append"
+          text
         >
           Options
-        </label>
+        </span>
       </rd-input-group>
 
       <rd-input-group class="mb-3">
@@ -505,10 +500,7 @@
           Button
         </rd-button>
 
-        <select>
-          <option selected>
-            Choose...
-          </option>
+        <rd-select>
           <option value="1">
             One
           </option>
@@ -518,14 +510,11 @@
           <option value="3">
             Three
           </option>
-        </select>
+        </rd-select>
       </rd-input-group>
 
       <rd-input-group>
-        <select>
-          <option selected>
-            Choose...
-          </option>
+        <rd-select>
           <option value="1">
             One
           </option>
@@ -535,7 +524,7 @@
           <option value="3">
             Three
           </option>
-        </select>
+        </rd-select>
 
         <rd-button
           slot="append"
@@ -559,26 +548,15 @@
           Upload
         </span>
 
-        <div class="custom-file">
-          <rd-input
-            type="file"
-          />
-          <label>
-            Choose file
-          </label>
-        </div>
+        <rd-input type="file">
+          Choose file
+        </rd-input>
       </rd-input-group>
 
       <rd-input-group class="mb-3">
-        <div class="custom-file">
-          <rd-input
-            type="file"
-          />
-          <label class="custom-file-label">
-            Choose file
-          </label>
-        </div>
-
+        <rd-input type="file">
+          Choose file
+        </rd-input>
         <span
           slot="append"
           text
@@ -596,25 +574,15 @@
           Button
         </rd-button>
 
-        <div class="custom-file">
-          <rd-input
-            type="file"
-          />
-          <label class="custom-file-label">
-            Choose file
-          </label>
-        </div>
+        <rd-input type="file">
+          Choose file
+        </rd-input>
       </rd-input-group>
 
       <rd-input-group>
-        <div class="custom-file">
-          <rd-input
-            type="file"
-          />
-          <label class="custom-file-label">
-            Choose file
-          </label>
-        </div>
+        <rd-input type="file">
+          Choose file
+        </rd-input>
 
         <rd-button
           slot="append"
@@ -631,14 +599,14 @@
 
 <script>
 import {
-  RdInputGroup, RdInput, RdButton, RdDropdown
+  RdInputGroup, RdInput, RdButton, RdDropdown, RdSelect
 } from '~/src';
 import Highlight from '~/components/Highlight';
 
 export default {
   name: 'InputGroup',
   components: {
-    RdInputGroup, RdButton, RdInput, Highlight, RdDropdown
+    RdInputGroup, RdButton, RdInput, Highlight, RdDropdown, RdSelect
   }
 };
 </script>
