@@ -1,5 +1,17 @@
 <template>
-  <div class="form-group">
+  <select
+    v-if="inputGroup"
+    ref="select"
+    v-model="value"
+    class="custom-select"
+    :multiple="multiple"
+  >
+    <slot />
+  </select>
+  <div
+    v-else
+    class="form-group"
+  >
     <label>
       <slot name="label" />
       <select
@@ -72,12 +84,15 @@ export default {
     multiple: Boolean
   },
   data() {
-    return { value: this.modelValue };
+    return { value: this.modelValue, inputGroup: false };
   },
   watch: {
     value() {
       this.$emit('change', this.value);
     }
+  },
+  created() {
+    this.inputGroup = this.$parent.$options.name === 'RdInputGroup';
   },
   mounted() {
     this.setSelected();
