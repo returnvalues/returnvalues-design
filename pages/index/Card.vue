@@ -2103,22 +2103,12 @@
 </template>
 
 <script>
-import {
-  RdCard, RdCardBody, RdButton, RdListGroup, RdListItem, RdCardHeader, RdCardFooter, RdNav
-} from '~/src';
 import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Card',
   components: {
-    RdCard,
-    RdCardBody,
-    RdButton,
-    RdListGroup,
-    RdListItem,
-    RdCardHeader,
-    RdCardFooter,
-    RdNav,
+
     Highlight
   },
   data() {

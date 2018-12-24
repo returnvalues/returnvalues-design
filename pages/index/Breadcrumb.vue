@@ -49,11 +49,10 @@
 </template>
 
 <script>
-import { RdBreadcrumb } from '~/src';
 import Highlight from '../../components/Highlight.vue';
 
 export default {
   name: 'Breadcrumb',
-  components: { RdBreadcrumb, Highlight }
+  components: { Highlight }
 };
 </script>

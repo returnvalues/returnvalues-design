@@ -103,12 +103,11 @@
 </template>
 
 <script>
-import { RdButtonGroup, RdButtonCheckbox } from '~/src';
 import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Checkbox',
-  components: { RdButtonGroup, RdButtonCheckbox, Highlight },
+  components: { Highlight },
   data() {
     return {
       checked: true,

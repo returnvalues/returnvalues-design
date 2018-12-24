@@ -1378,12 +1378,11 @@
 </template>
 
 <script>
-import { RdDropdown, RdButton } from '~/src';
 import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Dropdown',
-  components: { RdDropdown, RdButton, Highlight },
+  components: { Highlight },
   data() {
     return {
       props: [

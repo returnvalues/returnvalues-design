@@ -1103,15 +1103,13 @@
 </template>
 
 <script>
-import {
-  RdInputGroup, RdInput, RdButton, RdDropdown, RdSelect
-} from '~/src';
+
 import Highlight from '~/components/Highlight';
 
 export default {
   name: 'InputGroup',
   components: {
-    RdInputGroup, RdButton, RdInput, Highlight, RdDropdown, RdSelect
+    Highlight
   }
 };
 </script>

@@ -455,11 +455,10 @@
 </template>
 
 <script>
-import { RdPagination } from '~/src';
 import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Pagination',
-  components: { RdPagination, Highlight }
+  components: { Highlight }
 };
 </script>

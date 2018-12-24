@@ -50,12 +50,11 @@
 </template>
 
 <script>
-import { RdInputAddress } from '~/src';
 import Highlight from '~/components/Highlight';
 
 export default {
   name: 'InputAddress',
-  components: { RdInputAddress, Highlight },
+  components: { Highlight },
   data() {
     return {
       address: null,

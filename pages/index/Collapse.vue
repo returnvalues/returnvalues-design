@@ -435,23 +435,12 @@ v-model=&quot;test&quot;
 </template>
 
 <script>
-import {
-  RdCollapse,
-  RdButton,
-  RdCard,
-  RdCardHeader,
-  RdCardBody
-} from '~/src';
 import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Collapse',
   components: {
-    RdCardBody,
-    RdCollapse,
-    RdButton,
-    RdCard,
-    RdCardHeader,
+
     Highlight
   },
   data() {

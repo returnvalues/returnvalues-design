@@ -148,12 +148,11 @@
 </template>
 
 <script>
-import { RdButton } from '~/src';
 import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Tooltip',
-  components: { RdButton, Highlight },
+  components: { Highlight },
   data() {
     return {
       props: [

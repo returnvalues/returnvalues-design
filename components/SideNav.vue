@@ -24,12 +24,10 @@
 
 <script>
 import SideNavItem from './SideNavItem.vue';
-import { RdNav } from '~/src';
 
 export default {
   name: 'SideNav',
   components: {
-    RdNav,
     SideNavItem
   },
   props: { navigations: { type: Array, default: undefined } },

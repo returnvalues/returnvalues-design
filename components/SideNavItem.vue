@@ -24,13 +24,9 @@
 </template>
 
 <script>
-import { RdNav } from '~/src';
 
 export default {
   name: 'SideNavItem',
-  components: {
-    RdNav,
-  },
   props: {
     item: { type: Object, default: null },
     depth: { type: Number, default: 1 },

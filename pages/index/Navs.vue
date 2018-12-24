@@ -689,14 +689,11 @@
 </template>
 
 <script>
-import { RdDropdown, RdNav } from '~/src';
 import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Navs',
   components: {
-    RdDropdown,
-    RdNav,
     Highlight
   },
   data() {

@@ -1026,29 +1026,13 @@
 </template>
 
 <script>
-import {
-  RdNavbar, RdNavbarBrand,
-  RdNavbarToggler,
-  RdNavbarText,
-  RdNav, RdInput, RdCollapse, RdDropdown
-} from '~/src';
-import RdButton from '../../src/RdButton';
 import Highlight from '~/components/Highlight';
 // TODO: InputGroup 페이지 작성 후에 여기 form 수정하기
 
 export default {
   name: 'Navbar',
   components: {
-    RdButton,
-    RdNav,
-    RdNavbarToggler,
-    RdNavbarBrand,
-    RdNavbarText,
     Highlight,
-    RdNavbar,
-    RdInput,
-    RdCollapse,
-    RdDropdown
   },
   data() {
     return {

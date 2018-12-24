@@ -420,15 +420,12 @@
 </template>
 
 <script>
-import { RdBadge, RdButton } from '~/src';
-import Highlight from '../../components/Highlight';
+import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Badge',
   components: {
     Highlight,
-    RdBadge,
-    RdButton
   },
   data() {
     return {

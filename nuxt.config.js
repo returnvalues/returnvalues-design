@@ -5,5 +5,6 @@ module.exports = {
         config.devtool = 'inline-source-map'; // eslint-disable-line no-param-reassign
       }
     },
-  }
+  },
+  plugins: ['~/plugins/ReturnvaluesDesign']
 };

@@ -688,20 +688,11 @@
   </div>
 </template>
 <script>
-import {
-  RdModal, RdModalFooter, RdModalHeader, RdModalBody, RdButton, RdTooltip
-} from '~/src';
 import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Modal',
   components: {
-    RdButton,
-    RdModalBody,
-    RdModalHeader,
-    RdModalFooter,
-    RdModal,
-    RdTooltip,
     Highlight
   },
   data() {

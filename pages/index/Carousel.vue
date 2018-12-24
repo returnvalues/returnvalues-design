@@ -286,12 +286,11 @@
   </div>
 </template>
 <script>
-import { RdCarousel } from '~/src';
 import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Carousel',
-  components: { RdCarousel, Highlight },
+  components: { Highlight },
   data() {
     return {
       test: 1,

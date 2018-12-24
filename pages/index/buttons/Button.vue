@@ -500,12 +500,11 @@
 </template>
 
 <script>
-import { RdButton } from '~/src';
 import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Button',
-  components: { RdButton, Highlight },
+  components: { Highlight },
   data() {
     return {
       props: [

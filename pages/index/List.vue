@@ -165,12 +165,11 @@
 </template>
 
 <script>
-import { RdListGroup, RdListItem } from '~/src';
 import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'List',
-  components: { RdListGroup, RdListItem, Highlight },
+  components: { Highlight },
   data() {
     return {
       props: [

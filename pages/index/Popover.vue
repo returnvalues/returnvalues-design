@@ -253,12 +253,11 @@
 </template>
 
 <script>
-import { RdPopover, RdButton } from '~/src';
 import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Popover',
-  components: { RdPopover, Highlight, RdButton },
+  components: { Highlight },
   data() {
     return {
       props: [

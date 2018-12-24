@@ -112,12 +112,11 @@
 </template>
 
 <script>
-import { RdJumbotron } from '~/src';
 import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Jumbotron',
-  components: { RdJumbotron, Highlight },
+  components: { Highlight },
   data() {
     return {
       props: [

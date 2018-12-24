@@ -68,14 +68,12 @@
 </template>
 
 <script>
-import { RdAlert } from '~/src';
-import Highlight from '../../components/Highlight';
+import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Alert',
   components: {
     Highlight,
-    RdAlert
   },
 };
 </script>

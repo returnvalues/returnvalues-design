@@ -133,12 +133,11 @@
 </template>
 
 <script>
-import { RdButtonGroup, RdButtonRadio } from '~/src';
 import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Radio',
-  components: { RdButtonGroup, RdButtonRadio, Highlight },
+  components: { Highlight },
   data() {
     return {
       picked: 'one',

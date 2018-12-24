@@ -283,12 +283,11 @@
 </template>
 
 <script>
-import { RdProgress } from '~/src';
 import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Progress',
-  components: { RdProgress, Highlight },
+  components: { Highlight },
   data() {
     return {
       props: [

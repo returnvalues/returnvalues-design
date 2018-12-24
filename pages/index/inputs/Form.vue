@@ -509,16 +509,12 @@
 </template>
 
 <script>
-import {
-  RdInput, RdButton, RdSelect, RdTextarea
-} from '~/src';
+
 import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Form',
-  components: {
-    RdInput, RdButton, RdSelect, RdTextarea, Highlight
-  },
+  components: { Highlight },
   data() {
     return {
       testEmail: '123',
