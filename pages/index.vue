@@ -58,6 +58,11 @@ export default {
             { name: 'Input group', to: '/inputgroup' },
           ]
         },
+        {
+          name: 'Ethereum',
+          to: '/ethereum',
+          child: [{ name: 'Address Input', to: '/addressinput' }]
+        }
       ]
     };
   }

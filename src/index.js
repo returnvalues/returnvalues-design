@@ -34,3 +34,4 @@ export { default as RdCardBody } from './RdCardBody.vue';
 export { default as RdCardFooter } from './RdCardFooter.vue';
 export { default as RdPopover } from './RdPopover.vue';
 export { default as RdTooltip } from './RdTooltip.vue';
+export { default as RdAddressInput } from './RdAddressInput.vue';
