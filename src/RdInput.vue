@@ -1,11 +1,12 @@
 <script>
 import SizeClass from './mixins/SizeClass';
+import OutlineClass from './mixins/OutlineClass';
 
 let uid = 0;
 
 export default {
   name: 'RdInput',
-  mixins: [SizeClass],
+  mixins: [SizeClass, OutlineClass],
   model: {
     prop: 'modelValue',
     event: 'change'
@@ -54,7 +55,7 @@ export default {
       disabled,
       modelValue,
       value,
-      sizeClass, inputClass
+      sizeClass, inputClass, outlineClass
     } = this;
     const self = this;
     const formGroup = {
@@ -76,7 +77,7 @@ export default {
       domProps: {
         value: modelValue || value,
       },
-      class: [sizeClass, inputClass],
+      class: [sizeClass, inputClass, outlineClass],
       on: {
         change() {
           self.$emit('change', self.$refs.input.value);

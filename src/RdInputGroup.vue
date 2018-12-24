@@ -11,8 +11,8 @@ export default {
     const pna = prepend.concat(append);
     pna.forEach(({ data }) => {
       if (data.attrs.text === '' || data.attrs.text) {
-        data.class = data.class || {};
-        data.class['input-group-text'] = true;
+        data.class = [data.class];
+        data.class.push('input-group-text');
       }
     });
     if (prepend.length) {
@@ -24,8 +24,8 @@ export default {
     pna.concat(deflt).forEach((x) => {
       if (x.tag === 'input' || x.tag === 'textarea') {
         x.data = x.data || {};
-        x.data.class = x.data.class || {};
-        x.data.class['form-control'] = true;
+        x.data.class = [x.data.class];
+        x.data.class.push('form-control');
       }
     });
 

@@ -61,7 +61,7 @@ export default {
         {
           name: 'Ethereum',
           to: '/ethereum',
-          child: [{ name: 'Address Input', to: '/addressinput' }]
+          child: [{ name: 'Input Address', to: '/inputaddress' }]
         }
       ]
     };

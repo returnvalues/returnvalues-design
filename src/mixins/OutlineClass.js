@@ -1,5 +1,6 @@
 const prefix = {
-  RdButton: 'btn-outline'
+  RdButton: 'btn-outline',
+  RdInput: 'border'
 };
 
 export default {

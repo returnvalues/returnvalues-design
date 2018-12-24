@@ -1337,6 +1337,9 @@
 </rd-dropdown>"
     />
     <h3>Props</h3>
+    추가로 <nuxt-link to="/mixins/semantic">
+      Semantic
+    </nuxt-link> 속성을 쓸 수 있습니다.
     <table class="table table-striped table-sm">
       <thead>
         <tr>
