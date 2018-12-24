@@ -15,7 +15,6 @@
           placeholder="Username"
         />
       </rd-input-group>
-
       <rd-input-group class="mb-3">
         <rd-input
           type="text"
@@ -28,10 +27,6 @@
           @example.com
         </span>
       </rd-input-group>
-
-      <label for="basic-url">
-        Your vanity URL
-      </label>
       <rd-input-group class="mb-3">
         <span
           slot="prepend"
@@ -41,7 +36,6 @@
         </span>
         <rd-input />
       </rd-input-group>
-
       <rd-input-group class="mb-3">
         <span
           slot="prepend"
@@ -58,7 +52,6 @@
           </span>
         </rd-input>
       </rd-input-group>
-
       <rd-input-group>
         <span
           slot="prepend"
@@ -69,7 +62,66 @@
         <textarea />
       </rd-input-group>
     </div>
-    <highlight />
+    <highlight
+      code="<rd-input-group class=&quot;mb-3&quot;>
+  <span
+    slot=&quot;prepend&quot;
+    text
+  >
+    @
+  </span>
+  <rd-input
+    type=&quot;text&quot;
+    placeholder=&quot;Username&quot;
+  />
+</rd-input-group>
+<rd-input-group class=&quot;mb-3&quot;>
+  <rd-input
+    type=&quot;text&quot;
+    placeholder=&quot;Recipient's username&quot;
+  />
+  <span
+    slot=&quot;append&quot;
+    text
+  >
+    @example.com
+  </span>
+</rd-input-group>
+<rd-input-group class=&quot;mb-3&quot;>
+  <span
+    slot=&quot;prepend&quot;
+    text
+  >
+    https://example.com/users/
+  </span>
+  <rd-input />
+</rd-input-group>
+<rd-input-group class=&quot;mb-3&quot;>
+  <span
+    slot=&quot;prepend&quot;
+    text
+  >
+    $
+  </span>
+  <rd-input>
+    <span
+      slot=&quot;append&quot;
+      text
+    >
+      .00
+    </span>
+  </rd-input>
+</rd-input-group>
+<rd-input-group>
+  <span
+    slot=&quot;prepend&quot;
+    text
+  >
+    With textarea
+  </span>
+  <textarea />
+</rd-input-group>"
+    />
     <h3>
       Sizing
     </h3>
@@ -86,7 +138,6 @@
         </span>
         <rd-input />
       </rd-input-group>
-
       <rd-input-group class=" mb-3">
         <span
           slot="prepend"
@@ -96,7 +147,6 @@
         </span>
         <rd-input />
       </rd-input-group>
-
       <rd-input-group lg>
         <span
           slot="prepend"
@@ -107,7 +157,38 @@
         <rd-input />
       </rd-input-group>
     </div>
-    <highlight />
+    <highlight
+      code="<rd-input-group
+  class=&quot;mb-3&quot;
+  sm
+>
+  <span
+    slot=&quot;prepend&quot;
+    text
+  >
+    Small
+  </span>
+  <rd-input />
+</rd-input-group>
+<rd-input-group class=&quot; mb-3&quot;>
+  <span
+    slot=&quot;prepend&quot;
+    text
+  >
+    Default
+  </span>
+  <rd-input />
+</rd-input-group>
+<rd-input-group lg>
+  <span
+    slot=&quot;prepend&quot;
+    text
+  >
+    Large
+  </span>
+  <rd-input />
+</rd-input-group>"
+    />
     <h3>
       Checkboxes and radios
     </h3>
@@ -126,7 +207,6 @@
           type="text"
         />
       </rd-input-group>
-
       <rd-input-group>
         <div
           slot="prepend"
@@ -142,7 +222,36 @@
         />
       </rd-input-group>
     </div>
-    <highlight />
+    <highlight
+      code="<rd-input-group class=&quot;mb-3&quot;>
+  <div
+    slot=&quot;prepend&quot;
+    text
+  >
+    <rd-input
+      type=&quot;checkbox&quot;
+    />
+  </div>
+
+  <rd-input
+    type=&quot;text&quot;
+  />
+</rd-input-group>
+<rd-input-group>
+  <div
+    slot=&quot;prepend&quot;
+    text
+  >
+    <rd-input
+      type=&quot;radio&quot;
+    />
+  </div>
+
+  <rd-input
+    type=&quot;text&quot;
+  />
+</rd-input-group>"
+    />
     <h3>
       Multiple inputs
     </h3>
@@ -158,7 +267,18 @@
         <rd-input />
       </rd-input-group>
     </div>
-    <highlight />
+    <highlight
+      code="<rd-input-group>
+  <span
+    slot=&quot;prepend&quot;
+    text
+  >
+    First and last name
+  </span>
+  <rd-input />
+  <rd-input />
+</rd-input-group>"
+    />
     <h3>
       Multiple addons
     </h3>
@@ -178,7 +298,6 @@
         </span>
         <rd-input />
       </rd-input-group>
-
       <rd-input-group>
         <rd-input />
         <span
@@ -195,7 +314,38 @@
         </span>
       </rd-input-group>
     </div>
-    <highlight />
+    <highlight
+      code="<rd-input-group class=&quot;mb-3&quot;>
+  <span
+    slot=&quot;prepend&quot;
+    text
+  >
+    $
+  </span>
+  <span
+    slot=&quot;prepend&quot;
+    text
+  >
+    0.00
+  </span>
+  <rd-input />
+</rd-input-group>
+<rd-input-group>
+  <rd-input />
+  <span
+    slot=&quot;append&quot;
+    text
+  >
+    $
+  </span>
+  <span
+    slot=&quot;append&quot;
+    text
+  >
+    0.00
+  </span>
+</rd-input-group>"
+    />
     <h3>
       Button addons
     </h3>
@@ -210,7 +360,6 @@
         </rd-button>
         <rd-input />
       </rd-input-group>
-
       <rd-input-group class="mb-3">
         <rd-input placeholder="Recipient's username" />
         <rd-button
@@ -221,7 +370,6 @@
           Button
         </rd-button>
       </rd-input-group>
-
       <rd-input-group class="mb-3">
         <rd-button
           slot="prepend"
@@ -240,7 +388,6 @@
 
         <rd-input />
       </rd-input-group>
-
       <rd-input-group>
         <rd-input placeholder="Recipient's username" />
         <rd-button
@@ -259,7 +406,63 @@
         </rd-button>
       </rd-input-group>
     </div>
-    <highlight />
+    <highlight
+      code="<rd-input-group class=&quot;mb-3&quot;>
+  <rd-button
+    slot=&quot;prepend&quot;
+    outline-secondary
+    type=&quot;button&quot;
+  >
+    Button
+  </rd-button>
+  <rd-input />
+</rd-input-group>
+<rd-input-group class=&quot;mb-3&quot;>
+  <rd-input placeholder=&quot;Recipient&apos;s username&quot; />
+  <rd-button
+    slot=&quot;append&quot;
+    outline-secondary
+    type=&quot;button&quot;
+  >
+    Button
+  </rd-button>
+</rd-input-group>
+<rd-input-group class=&quot;mb-3&quot;>
+  <rd-button
+    slot=&quot;prepend&quot;
+    outline-secondary
+    type=&quot;button&quot;
+  >
+    Button
+  </rd-button>
+  <rd-button
+    slot=&quot;prepend&quot;
+    outline-secondary
+    type=&quot;button&quot;
+  >
+    Button
+  </rd-button>
+
+  <rd-input />
+</rd-input-group>
+<rd-input-group>
+  <rd-input placeholder=&quot;Recipient&apos;s username&quot; />
+  <rd-button
+    slot=&quot;append&quot;
+    outline-secondary
+    type=&quot;button&quot;
+  >
+    Button
+  </rd-button>
+  <rd-button
+    slot=&quot;append&quot;
+    outline-secondary
+    type=&quot;button&quot;
+  >
+    Button
+  </rd-button>
+</rd-input-group>"
+    />
     <h3>
       Buttons with dropdowns
     </h3>
@@ -297,7 +500,6 @@
         </rd-dropdown>
         <rd-input />
       </rd-input-group>
-
       <rd-input-group>
         <rd-input />
         <rd-dropdown slot="append">
@@ -339,7 +541,81 @@
         </rd-dropdown>
       </rd-input-group>
     </div>
-    <highlight />
+    <highlight
+      code="<rd-input-group class=&quot;mb-3&quot;>
+  <rd-dropdown slot=&quot;prepend&quot;>
+    <rd-button
+      slot=&quot;button&quot;
+      outline-secondary
+      type=&quot;button&quot;
+    >
+      Dropdown
+    </rd-button>
+    <a
+      href=&quot;javascript:&quot;
+    >
+      Action
+    </a>
+    <a
+      href=&quot;javascript:&quot;
+    >
+      Another action
+    </a>
+    <a
+      href=&quot;javascript:&quot;
+    >
+      Something else here
+    </a>
+    <div class=&quot;dropdown-divider&quot; />
+    <a
+      href=&quot;javascript:&quot;
+    >
+      Separated link
+    </a>
+  </rd-dropdown>
+  <rd-input />
+</rd-input-group>
+<rd-input-group>
+  <rd-input />
+  <rd-dropdown slot=&quot;append&quot;>
+    <rd-button
+      slot=&quot;button&quot;
+      outline-secondary
+      type=&quot;button&quot;
+    >
+      Dropdown
+    </rd-button>
+    <a
+      class=&quot;dropdown-item&quot;
+      href=&quot;javascript:&quot;
+    >
+      Action
+    </a>
+    <a
+      class=&quot;dropdown-item&quot;
+      href=&quot;javascript:&quot;
+    >
+      Another action
+    </a>
+    <a
+      class=&quot;dropdown-item&quot;
+      href=&quot;javascript:&quot;
+    >
+      Something else here
+    </a>
+    <div
+      role=&quot;separator&quot;
+      class=&quot;dropdown-divider&quot;
+    />
+    <a
+      class=&quot;dropdown-item&quot;
+      href=&quot;javascript:&quot;
+    >
+      Separated link
+    </a>
+  </rd-dropdown>
+</rd-input-group>"
+    />
     <h3>
       Segmented buttons
     </h3>
@@ -395,7 +671,6 @@
         </rd-dropdown>
         <rd-input />
       </rd-input-group>
-
       <rd-input-group>
         <rd-input />
         <rd-dropdown slot="append">
@@ -445,7 +720,107 @@
         </rd-dropdown>
       </rd-input-group>
     </div>
-    <highlight />
+    <highlight
+      code="<rd-input-group class=&quot;mb-3&quot;>
+  <rd-dropdown
+    slot=&quot;prepend&quot;
+    inline
+  >
+    <rd-button
+      slot=&quot;button&quot;
+      outline-secondary
+    >
+      Action
+    </rd-button>
+    <rd-button
+      slot=&quot;button&quot;
+      outline-secondary
+    >
+      <span class=&quot;sr-only&quot;>
+        Toggle Dropdown
+      </span>
+    </rd-button>
+
+    <a
+      class=&quot;dropdown-item&quot;
+      href=&quot;javascript:&quot;
+    >
+      Action
+    </a>
+    <a
+      class=&quot;dropdown-item&quot;
+      href=&quot;javascript:&quot;
+    >
+      Another action
+    </a>
+    <a
+      class=&quot;dropdown-item&quot;
+      href=&quot;javascript:&quot;
+    >
+      Something else here
+    </a>
+    <div
+      role=&quot;separator&quot;
+      class=&quot;dropdown-divider&quot;
+    />
+    <a
+      class=&quot;dropdown-item&quot;
+      href=&quot;javascript:&quot;
+    >
+      Separated link
+    </a>
+  </rd-dropdown>
+  <rd-input />
+</rd-input-group>
+<rd-input-group>
+  <rd-input />
+  <rd-dropdown slot=&quot;append&quot;>
+    <rd-button
+      slot=&quot;button&quot;
+      type=&quot;button&quot;
+      outline-secondary
+    >
+      Action
+    </rd-button>
+    <rd-button
+      slot=&quot;button&quot;
+      outline-secondary
+    >
+      <span class=&quot;sr-only&quot;>
+        Toggle Dropdown
+      </span>
+    </rd-button>
+    <a
+      class=&quot;dropdown-item&quot;
+      href=&quot;javascript:&quot;
+    >
+      Action
+    </a>
+    <a
+      class=&quot;dropdown-item&quot;
+      href=&quot;javascript:&quot;
+    >
+      Another action
+    </a>
+    <a
+      class=&quot;dropdown-item&quot;
+      href=&quot;javascript:&quot;
+    >
+      Something else here
+    </a>
+    <div
+      role=&quot;separator&quot;
+      class=&quot;dropdown-divider&quot;
+    />
+    <a
+      class=&quot;dropdown-item&quot;
+      href=&quot;javascript:&quot;
+    >
+      Separated link
+    </a>
+  </rd-dropdown>
+</rd-input-group>"
+    />
     <h3>
       Custom select
     </h3>
@@ -469,7 +844,6 @@
           </option>
         </rd-select>
       </rd-input-group>
-
       <rd-input-group class="mb-3">
         <rd-select>
           <option value="1">
@@ -490,7 +864,6 @@
           Options
         </span>
       </rd-input-group>
-
       <rd-input-group class="mb-3">
         <rd-button
           slot="prepend"
@@ -512,7 +885,6 @@
           </option>
         </rd-select>
       </rd-input-group>
-
       <rd-input-group>
         <rd-select>
           <option value="1">
@@ -535,7 +907,89 @@
         </rd-button>
       </rd-input-group>
     </div>
-    <highlight />
+    <highlight
+      code="<rd-input-group class=&quot;mb-3&quot;>
+  <span
+    slot=&quot;prepend&quot;
+    text
+  >
+    Options
+  </span>
+  <rd-select>
+    <option value=&quot;1&quot;>
+      One
+    </option>
+    <option value=&quot;2&quot;>
+      Two
+    </option>
+    <option value=&quot;3&quot;>
+      Three
+    </option>
+  </rd-select>
+</rd-input-group>
+<rd-input-group class=&quot;mb-3&quot;>
+  <rd-select>
+    <option value=&quot;1&quot;>
+      One
+    </option>
+    <option value=&quot;2&quot;>
+      Two
+    </option>
+    <option value=&quot;3&quot;>
+      Three
+    </option>
+  </rd-select>
+
+  <span
+    slot=&quot;append&quot;
+    text
+  >
+    Options
+  </span>
+</rd-input-group>
+<rd-input-group class=&quot;mb-3&quot;>
+  <rd-button
+    slot=&quot;prepend&quot;
+    type=&quot;button&quot;
+    outline-secondary
+  >
+    Button
+  </rd-button>
+
+  <rd-select>
+    <option value=&quot;1&quot;>
+      One
+    </option>
+    <option value=&quot;2&quot;>
+      Two
+    </option>
+    <option value=&quot;3&quot;>
+      Three
+    </option>
+  </rd-select>
+</rd-input-group>
+<rd-input-group>
+  <rd-select>
+    <option value=&quot;1&quot;>
+      One
+    </option>
+    <option value=&quot;2&quot;>
+      Two
+    </option>
+    <option value=&quot;3&quot;>
+      Three
+    </option>
+  </rd-select>
+
+  <rd-button
+    slot=&quot;append&quot;
+    outline-secondary
+    type=&quot;button&quot;
+  >
+    Button
+  </rd-button>
+</rd-input-group>"
+    />
     <h3>
       Custom file input
     </h3>
@@ -552,7 +1006,6 @@
           Choose file
         </rd-input>
       </rd-input-group>
-
       <rd-input-group class="mb-3">
         <rd-input type="file">
           Choose file
@@ -564,7 +1017,6 @@
           Upload
         </span>
       </rd-input-group>
-
       <rd-input-group class="mb-3">
         <rd-button
           slot="prepend"
@@ -578,7 +1030,6 @@
           Choose file
         </rd-input>
       </rd-input-group>
-
       <rd-input-group>
         <rd-input type="file">
           Choose file
@@ -593,7 +1044,61 @@
         </rd-button>
       </rd-input-group>
     </div>
-    <highlight />
+    <highlight
+      code="<rd-input-group class=&quot;mb-3&quot;>
+  <span
+    slot=&quot;prepend&quot;
+    text
+  >
+    Upload
+  </span>
+
+  <rd-input type=&quot;file&quot;>
+    Choose file
+  </rd-input>
+</rd-input-group>
+<rd-input-group class=&quot;mb-3&quot;>
+  <rd-input type=&quot;file&quot;>
+    Choose file
+  </rd-input>
+  <span
+    slot=&quot;append&quot;
+    text
+  >
+    Upload
+  </span>
+</rd-input-group>
+<rd-input-group class=&quot;mb-3&quot;>
+  <rd-button
+    slot=&quot;prepend&quot;
+    type=&quot;button&quot;
+    outline-secondary
+  >
+    Button
+  </rd-button>
+
+  <rd-input type=&quot;file&quot;>
+    Choose file
+  </rd-input>
+</rd-input-group>
+<rd-input-group>
+  <rd-input type=&quot;file&quot;>
+    Choose file
+  </rd-input>
+
+  <rd-button
+    slot=&quot;append&quot;
+    outline-secondary
+    type=&quot;button&quot;
+  >
+    Button
+  </rd-button>
+</rd-input-group>"
+    />
+    <h3>Props</h3>
+    <nuxt-link to="/mixins/size">
+      Size
+    </nuxt-link> 속성을 쓸 수 있습니다.
   </div>
 </template>
 
