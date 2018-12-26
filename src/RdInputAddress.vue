@@ -49,7 +49,6 @@ export default {
   mounted() {
     this.$refs.input.value = this.modelValue || '';
     this.check();
-    window.peek = Web3;
   },
   methods: {
     check() {
