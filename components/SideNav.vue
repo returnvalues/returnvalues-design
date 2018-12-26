@@ -49,6 +49,25 @@ export default {
         { name: 'Card', to: '/card', icon: 'far fa-id-card' },
         { name: 'Carousel', to: '/carousel', icon: 'far fa-images' },
         { name: 'Collapse', to: '/collapse', icon: 'far fa-caret-square-down' },
+        {
+          name: 'Ethereum',
+          icon: 'fab fa-ethereum',
+          to: '/ethereum',
+          child: [
+            { name: 'Input Address', to: '/inputaddress' },
+            { name: 'Address Filter', to: '/addressfilter' }
+          ]
+        },
+        {
+          name: 'Inputs',
+          to: '/inputs',
+          icon: 'far fa-edit',
+          child: [
+            { name: 'Dropdown', to: '/dropdown' },
+            { name: 'Form', to: '/form' },
+            { name: 'Input group', to: '/inputgroup' },
+          ]
+        },
         { name: 'Jumbotron', to: '/jumbotron', icon: 'fas fa-square-full' },
         { name: 'List', to: '/list', icon: 'fas fa-list' },
         { name: 'Modal', to: '/modal', icon: 'far fa-window-maximize' },
@@ -64,26 +83,7 @@ export default {
         { name: 'Pagination', to: '/pagination', icon: 'fas fa-angle-right' },
         { name: 'Popover', to: '/popover', icon: 'far fa-comment-alt' },
         { name: 'Progress', to: '/progress', icon: 'fas fa-percentage' },
-        { name: 'Tooltip', to: '/tooltip', icon: 'fas fa-comment-alt' },
-        {
-          name: 'Inputs',
-          to: '/inputs',
-          icon: 'far fa-edit',
-          child: [
-            { name: 'Dropdown', to: '/dropdown' },
-            { name: 'Form', to: '/form' },
-            { name: 'Input group', to: '/inputgroup' },
-          ]
-        },
-        {
-          name: 'Ethereum',
-          icon: 'fab fa-ethereum',
-          to: '/ethereum',
-          child: [
-            { name: 'Input Address', to: '/inputaddress' },
-            { name: 'Address Filter', to: '/addressfilter' }
-          ]
-        }
+        { name: 'Tooltip', to: '/tooltip', icon: 'fas fa-comment-alt' }
       ]
     };
   },

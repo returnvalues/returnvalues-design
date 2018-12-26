@@ -1,5 +1,5 @@
 <template>
-  <div class="app container-fluid d-flex flex-nowrap">
+  <div class="app container-fluid d-flex flex-nowrap p-0">
     <side-nav
       class="sidenav border-right py-3"
     />
