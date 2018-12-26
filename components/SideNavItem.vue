@@ -3,7 +3,9 @@
     v-if="item.child"
     class="flex-column"
   >
-    <span>{{ item.name }}</span>
+    <span class="nav-link">
+      {{ item.name }}
+    </span>
     <side-nav-item
       v-for="child of item.child"
       :key="child.to"
@@ -17,6 +19,7 @@
     v-else
     active-class="on"
     exact
+    class="nav-link"
     :to="item.child?'':(toStack+item.to)"
   >
     {{ item.name }}
@@ -34,6 +37,8 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
   .on{font-weight: bold;}
+  .nav-link{color:#333;}
+
 </style>

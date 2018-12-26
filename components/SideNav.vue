@@ -2,7 +2,18 @@
   <rd-nav
     class="flex-column"
   >
-    <h5>Return Values Design</h5>
+    <div class="row m-0 py-2 px-3 align-items-center">
+      <img
+        src="~/assets/logo.png"
+        class="logo"
+      >
+      <div class="col">
+        <h5>
+          Return Values Design
+        </h5>
+      </div>
+    </div>
+
     <side-nav-item
       v-for="item of navigations"
       :key="item.to"
@@ -10,18 +21,6 @@
     />
   </rd-nav>
 </template>
-
-  <ul class="nav flex-column">
-    <li class="nav-item">
-      <h5>Return Values Design</h5>
-    </li>
-    <side-nav-item
-      v-for="item of navigations"
-      :key="item.to"
-      :item="item"
-    />
-  </ul>
-
 <script>
 import SideNavItem from './SideNavItem.vue';
 
@@ -34,3 +33,7 @@ export default {
 
 };
 </script>
+
+<style scoped>
+  .logo {width:40px;height: 40px;}
+</style>
