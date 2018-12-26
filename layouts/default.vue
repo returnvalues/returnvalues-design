@@ -11,7 +11,6 @@
 
 <script>
 
-import 'bootstrap/dist/css/bootstrap.css';
 import SideNav from '~/components/SideNav.vue';
 
 export default {
