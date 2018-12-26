@@ -1,7 +1,7 @@
 <template>
   <div class="app container-fluid d-flex flex-nowrap">
     <side-nav
-      class="sidenav border-right"
+      class="sidenav border-right py-3"
       :navigations="navigations"
     />
     <div class="content d-flex flex-grow-1 p-4">
@@ -84,8 +84,8 @@ export default {
 
 <style scoped>
   .sidenav {
-    width: 270px;
-    min-width: 270px;
+    width: 240px;
+    min-width: 240px;
     overflow-y: auto;
     max-height: 100vh;
     z-index: 10;
@@ -93,7 +93,7 @@ export default {
     position: fixed;
     height: 100%;
   }
-  .content{margin-left: 270px;}
+  .content{margin-left: 240px;}
   .container-fluid {height: 100%}
   .app{ max-width: 1100px;width: 1100px; }
   .app::before{
@@ -102,13 +102,12 @@ export default {
     width: 100%;
     height: 100%;
     background: #f5f8fa;
-    margin-left: 270px;
+    margin-left: 240px;
     z-index: -1;
   }
 </style>
 
 <style>
-a{color:#106ba3;}
 body, #__nuxt, #__layout {
   height: 100%;
 }

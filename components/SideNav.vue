@@ -8,7 +8,7 @@
         class="logo"
       >
       <div class="col">
-        <h5>
+        <h5 class="m-0">
           Return Values Design
         </h5>
       </div>

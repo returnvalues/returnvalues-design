@@ -3,21 +3,29 @@
     v-if="item.child"
     class="flex-column"
   >
-    <span class="nav-link group">
+    <a
+      class="nav-link group"
+      href="javascript:"
+      @click="open=!open"
+    >
       <i
         v-if="item.icon"
         :class="item.icon"
       />
       {{ item.name }}
-    </span>
-    <side-nav-item
-      v-for="child of item.child"
-      :key="child.to"
-      class="ml-3"
-      :to-stack="item.to"
-      :depth="depth+1"
-      :item="child"
-    />
+    </a>
+    <rd-collapse :show="open">
+      <rd-nav class="flex-column">
+        <side-nav-item
+          v-for="child of item.child"
+          :key="child.to"
+          class="ml-3"
+          :to-stack="item.to"
+          :depth="depth+1"
+          :item="child"
+        />
+      </rd-nav>
+    </rd-collapse>
   </rd-nav>
   <nuxt-link
     v-else
@@ -43,11 +51,12 @@ export default {
     depth: { type: Number, default: 1 },
     toStack: { type: String, default: '' }
   },
+  data() { return { open: false }; }
 };
 </script>
 <style scoped>
   .on{font-weight: bold;}
   .nav-link{color:#333;}
-  .group{font-weight: bold;}
+  .group{font-weight: bold; color:#3562ab;}
 
 </style>
