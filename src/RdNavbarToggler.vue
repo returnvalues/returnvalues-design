@@ -12,7 +12,3 @@ export default {
   name: 'RdNavbarToggler',
 };
 </script>
-
-<style scoped>
-
-</style>

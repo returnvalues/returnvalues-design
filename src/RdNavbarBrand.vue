@@ -13,7 +13,3 @@ export default {
   props: { tag: { type: String, default: 'a' } }
 };
 </script>
-
-<style scoped>
-
-</style>

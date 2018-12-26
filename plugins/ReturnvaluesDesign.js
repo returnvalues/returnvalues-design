@@ -1,4 +1,4 @@
 import Vue from 'vue';
-import ReturnvaluesDesign from '~/src';
+import ReturnvaluesDesign from '../build';
 
 Vue.use(ReturnvaluesDesign);

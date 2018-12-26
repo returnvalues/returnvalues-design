@@ -9,7 +9,3 @@ export default {
   name: 'RdButtonGroup'
 };
 </script>
-
-<style scoped>
-
-</style>
