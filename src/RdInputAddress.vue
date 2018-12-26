@@ -5,7 +5,7 @@
       :class="outlineClass"
       text
     >
-      @
+      <i class="fab fa-ethereum" />
     </span>
     <input
       ref="input"
