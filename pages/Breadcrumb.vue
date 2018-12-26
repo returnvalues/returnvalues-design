@@ -49,7 +49,7 @@
 </template>
 
 <script>
-import Highlight from '../../components/Highlight.vue';
+import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Breadcrumb',
