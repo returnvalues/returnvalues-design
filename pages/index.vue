@@ -1,10 +1,10 @@
 <template>
-  <div class="container-fluid d-flex flex-nowrap">
+  <div class="app container-fluid d-flex flex-nowrap">
     <side-nav
-      class="sidenav"
+      class="sidenav border-right"
       :navigations="navigations"
     />
-    <div class="col content d-flex flex-grow-1 border rounded py-3 pl-5">
+    <div class="content d-flex flex-grow-1 p-4">
       <nuxt-child class="container-fluid" />
     </div>
   </div>
@@ -12,12 +12,12 @@
 
 <script>
 
-import '~/css/style.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import SideNav from '~/components/SideNav.vue';
 
 export default {
   name: 'Index',
+  layout: false,
   components: {
     SideNav,
   },
@@ -73,7 +73,33 @@ export default {
 </script>
 
 <style scoped>
-  .sidenav {width: 200px;}
+  .sidenav {
+    width: 270px;
+    min-width: 270px;
+    overflow-y: auto;
+    max-height: 100vh;
+    z-index: 10;
+    flex-wrap: nowrap;
+    position: fixed;
+    height: 100%;
+  }
+  .content{margin-left: 270px;}
   .container-fluid {height: 100%}
-  .content {background: #fff; overflow: auto;}
+  .app{ max-width: 1100px;width: 1100px; }
+  .app::before{
+    content:' ';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #f5f8fa;
+    margin-left: 270px;
+    z-index: -1;
+  }
+</style>
+
+<style>
+body, #__nuxt, #__layout {
+  height: 100%;
+}
+#__nuxt{ min-height: 100%;}
 </style>
