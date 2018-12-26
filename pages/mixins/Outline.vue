@@ -57,7 +57,7 @@ export default {
   name: 'Size',
   data() {
     return {
-      comps: ['RdButton'],
+      comps: ['RdButton', 'RdInput'],
       props: [
         ['outlinePrimary', '', 'Boolean', 'false', ''],
         ['outlineSecondary', '', 'Boolean', 'false', ''],
@@ -67,7 +67,7 @@ export default {
         ['outlineInfo', '', 'Boolean', 'false', ''],
         ['outlineLight', '', 'Boolean', 'false', ''],
         ['outlineDark', '', 'Boolean', 'false', ''],
-        ['outline', 'outline을 문자열로 줄 수 있습니다.', 'String', 'false', 'outlinePrimary, outlineSecondary, outlineSuccess, outlineDanger, outlineWarning, outlineInfo, outlineLight, outlineDark'],
+        ['outline', 'outline을 문자열로 줄 수 있습니다.', 'String', '', 'primary, secondary, success, danger, warning, info, light, dark'],
       ]
     };
   },
