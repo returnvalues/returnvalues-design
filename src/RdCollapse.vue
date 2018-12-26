@@ -11,12 +11,9 @@ export default {
   data() { return { value: this.show }; },
   watch: {
     show(v) {
-      window.$(this.$el).collapse(v ? 'show' : 'hide');
       this.value = v;
+      this.$nextTick(() => window.$(this.$el).collapse(v ? 'show' : 'hide'));
     },
-  },
-  mounted() {
-    window.$(this.$el).collapse({ toggle: this.value });
   },
   methods: {
     toggle(v) {
