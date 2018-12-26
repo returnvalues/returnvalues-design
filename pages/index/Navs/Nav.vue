@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>
-      Navs
+      Nav
     </h1>
 
     <h2>Example</h2>
@@ -692,7 +692,7 @@
 import Highlight from '~/components/Highlight';
 
 export default {
-  name: 'Navs',
+  name: 'Nav',
   components: {
     Highlight
   },

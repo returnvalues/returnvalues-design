@@ -3,7 +3,11 @@
     v-if="item.child"
     class="flex-column"
   >
-    <span class="nav-link">
+    <span class="nav-link group">
+      <i
+        v-if="item.icon"
+        :class="item.icon"
+      />
       {{ item.name }}
     </span>
     <side-nav-item
@@ -22,6 +26,10 @@
     class="nav-link"
     :to="item.child?'':(toStack+item.to)"
   >
+    <i
+      v-if="item.icon"
+      :class="item.icon"
+    />
     {{ item.name }}
   </nuxt-link>
 </template>
@@ -40,5 +48,6 @@ export default {
 <style scoped>
   .on{font-weight: bold;}
   .nav-link{color:#333;}
+  .group{font-weight: bold;}
 
 </style>
