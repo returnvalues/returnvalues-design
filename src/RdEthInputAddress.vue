@@ -28,7 +28,7 @@ import Web3 from 'web3';
 import RdInputGroup from './RdInputGroup.vue';
 
 export default {
-  name: 'RdInputAddress',
+  name: 'RdEthInputAddress',
   components: { RdInputGroup },
   model: {
     prop: 'modelValue',

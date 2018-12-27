@@ -5,18 +5,18 @@
     <div class="p-3 border">
       <rd-list-group>
         <rd-list-item>0xFBC82B9eBBA1F9ab0C36FB6Ca05Be71344DA0c5E</rd-list-item>
-        <rd-list-item>{{ '0xFBC82B9eBBA1F9ab0C36FB6Ca05Be71344DA0c5E'|RdAddress }}</rd-list-item>
+        <rd-list-item>{{ '0xFBC82B9eBBA1F9ab0C36FB6Ca05Be71344DA0c5E'|RdEthAddress }}</rd-list-item>
         <rd-list-item>
-          {{ '0xFBC82B9eBBA1F9ab0C36FB6Ca05Be71344DA0c5E'|RdAddress(16) }}
+          {{ '0xFBC82B9eBBA1F9ab0C36FB6Ca05Be71344DA0c5E'|RdEthAddress(16) }}
         </rd-list-item>
       </rd-list-group>
     </div>
     <highlight
       :code="`<rd-list-group>
   <rd-list-item>0xFBC82B9eBBA1F9ab0C36FB6Ca05Be71344DA0c5E</rd-list-item>
-  <rd-list-item>{{ '0xFBC82B9eBBA1F9ab0C36FB6Ca05Be71344DA0c5E'|RdAddress }}</rd-list-item>
+  <rd-list-item>{{ '0xFBC82B9eBBA1F9ab0C36FB6Ca05Be71344DA0c5E'|RdEthAddress }}</rd-list-item>
   <rd-list-item>
-    {{ '0xFBC82B9eBBA1F9ab0C36FB6Ca05Be71344DA0c5E'|RdAddress(16) }}
+    {{ '0xFBC82B9eBBA1F9ab0C36FB6Ca05Be71344DA0c5E'|RdEthAddress(16) }}
   </rd-list-item>
 </rd-list-group>`"
     />

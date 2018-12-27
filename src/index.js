@@ -35,11 +35,11 @@ import RdCardBody from './RdCardBody.vue';
 import RdCardFooter from './RdCardFooter.vue';
 import RdPopover from './RdPopover.vue';
 import RdTooltip from './RdTooltip.vue';
-import RdInputAddress from './RdInputAddress.vue';
+import RdEthInputAddress from './RdEthInputAddress.vue';
 
 export default {
   install(Vue) {
-    Vue.filter('RdAddress', (value, length = 26) => {
+    Vue.filter('RdEthAddress', (value, length = 26) => {
       const val = `${value || ''}`;
       const ret = val.startsWith('0x') ? val.slice(2) : val;
       const len = length < 9 ? 9 : length;
@@ -81,6 +81,6 @@ export default {
     Vue.component('RdCardFooter', RdCardFooter);
     Vue.component('RdPopover', RdPopover);
     Vue.component('RdTooltip', RdTooltip);
-    Vue.component('RdInputAddress', RdInputAddress);
+    Vue.component('RdEthInputAddress', RdEthInputAddress);
   }
 };

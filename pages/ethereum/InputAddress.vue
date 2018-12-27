@@ -3,11 +3,11 @@
     <h1>Input Address</h1>
     <h2>Example</h2>
     <div class="p-3 border">
-      <rd-input-address v-model="address" />
+      <rd-eth-input-address v-model="address" />
       <p>Address: {{ address || '' }}</p>
     </div>
     <highlight
-      :code="`<rd-input-address v-model=&quot;address&quot; />
+      :code="`<rd-eth-input-address v-model=&quot;address&quot; />
 <p>Address: {{ address || '' }}</p>`"
     />
 
