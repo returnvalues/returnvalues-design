@@ -19,7 +19,7 @@ export default {
     top.forEach(({ data }) => { data.staticClass = `${data.staticClass || ''} card-img-top`; });
     bottom.forEach(({ data }) => { data.staticClass = `${data.staticClass || ''} card-img-bottom`; });
 
-    return h('div', { staticClass: 'card' }, [img, top, body, bottom]);
+    return h('div', { staticClass: 'card rd-card' }, [img, top, body, bottom]);
   }
 };
 </script>

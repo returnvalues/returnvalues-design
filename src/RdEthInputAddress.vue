@@ -1,5 +1,5 @@
 <template>
-  <rd-input-group>
+  <rd-input-group class="rd-eth-input-address">
     <span
       slot="prepend"
       :class="outlineClass"

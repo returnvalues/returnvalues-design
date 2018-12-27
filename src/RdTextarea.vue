@@ -3,7 +3,7 @@
     <slot />
     <textarea
       ref="textarea"
-      class="form-control"
+      class="form-control rd-textarea"
       :rows="rows"
       :value="modelValue"
       @change="$emit('change',$refs.textarea.value)"

@@ -3,7 +3,7 @@
     v-if="inputGroup"
     ref="select"
     v-model="value"
-    class="custom-select"
+    class="custom-select rd-select"
     :multiple="multiple"
   >
     <slot />
@@ -17,7 +17,7 @@
       <select
         ref="select"
         v-model="value"
-        class="form-control"
+        class="form-control rd-select"
         :multiple="multiple"
       >
         <slot />

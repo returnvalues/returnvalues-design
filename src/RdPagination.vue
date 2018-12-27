@@ -7,7 +7,7 @@ export default {
   mixins: [SizeClass],
   render(h) {
     const $vnode = this.$vnode.data;
-    const ul = { class: ['pagination', this.sizeClass, $vnode.class], staticClass: $vnode.staticClass };
+    const ul = { class: ['pagination', 'rd-pagination', this.sizeClass, $vnode.class], staticClass: $vnode.staticClass };
     Object.assign($vnode, { class: undefined, staticClass: undefined });
     const nodes = this.$slots.default || [];
     const child = nodes.map((x) => {

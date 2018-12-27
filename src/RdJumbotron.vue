@@ -1,6 +1,6 @@
 <template>
   <div
-    class="jumbotron"
+    class="jumbotron rd-jumbotron"
     :class="{'jumbotron-fluid':fluid}"
   >
     <div

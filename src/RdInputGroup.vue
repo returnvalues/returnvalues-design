@@ -30,7 +30,7 @@ export default {
     });
 
     return createElement('div',
-      { class: [{ 'input-group': true }, this.sizeClass] },
+      { staticClass: 'input-group, rd-input-group', class: [this.sizeClass] },
       [prepend, deflt, append]);
   }
 };

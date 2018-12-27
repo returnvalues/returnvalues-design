@@ -1,6 +1,6 @@
 <template>
   <div
-    class="alert"
+    class="alert rd-alert"
     :class="semanticClass"
   >
     <slot />

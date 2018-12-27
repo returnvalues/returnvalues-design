@@ -28,7 +28,7 @@ export default {
     if (this.striped) data.class.push('progress-bar-striped');
     if (this.animated) data.class.push('progress-bar-animated');
     if (this.bar) return h('div', data);
-    return h('div', { class: 'progress' }, [h('div', data, nodes)]);
+    return h('div', { staticClass: 'progress rd-progress' }, [h('div', data, nodes)]);
   }
 };
 </script>

@@ -138,7 +138,7 @@ export default {
           h('span', { staticClass: 'carousel-control-next-icon' })
         ]));
     }
-    return h('div', { staticClass: 'carousel', class: { slide: slide || fade, 'carousel-fade': fade } }, nodes);
+    return h('div', { staticClass: 'carousel rd-carousel', class: { slide: slide || fade, 'carousel-fade': fade } }, nodes);
   }
 };
 </script>

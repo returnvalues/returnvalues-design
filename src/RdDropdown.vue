@@ -37,6 +37,7 @@ export default {
       });
     }
     return createElement(this.tag, {
+      staticClass: 'rd-dropdown',
       class: {
         [(buttons.length > 1 || this.inline) ? 'btn-group' : 'dropdown']: true,
         dropleft: this.dropleft,

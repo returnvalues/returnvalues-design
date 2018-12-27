@@ -1,7 +1,7 @@
 <template>
   <component
     :is="tag"
-    class="list-group"
+    class="list-group rd-list-group"
     :class="{'list-group-flush':flush}"
   >
     <slot />

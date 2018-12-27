@@ -7,7 +7,7 @@ export default {
     const items = nodes && nodes
       .filter(x => x.tag || `${x.text}`.trim())
       .map((x, i, arr) => h('li', { class: { 'breadcrumb-item': true, active: i === arr.length - 1 } }, [x]));
-    return h('nav', [h('ol', { class: 'breadcrumb' }, items)]);
+    return h('nav', [h('ol', { class: 'breadcrumb rd-breadcrumb' }, items)]);
   },
 };
 </script>

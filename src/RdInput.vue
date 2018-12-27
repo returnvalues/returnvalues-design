@@ -59,6 +59,7 @@ export default {
     } = this;
     const self = this;
     const formGroup = {
+      staticClass: 'rd-form-group',
       class: ['form-group', {
         'form-check': check || radio,
         'form-check-inline': (radio || check) && inline
@@ -71,6 +72,7 @@ export default {
 
     const input = {
       ref: 'input',
+      staticClass: 'rd-input',
       attrs: {
         id: inputId, type, readonly, disabled, placeholder
       },
@@ -113,7 +115,7 @@ export default {
     if (this.$parent.$options.name === 'RdInputGroup') {
       if (file) {
         input.class = 'custom-file-input';
-        return h('div', { staticClass: 'custom-file' }, [h('input', input), h('label', { class: 'custom-file-label' }, this.$slots.default)]);
+        return h('div', { staticClass: 'custom-file rd-custom-file' }, [h('input', input), h('label', { class: 'custom-file-label' }, this.$slots.default)]);
       }
       input.class = (check || radio) ? undefined : 'form-control';
       hasFormGroup = false;

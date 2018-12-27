@@ -1,7 +1,7 @@
 <template>
   <component
     :is="tag"
-    class="badge"
+    class="badge rd-badge"
     :class="[semanticClass, {'badge-pill':pill}]"
   >
     <slot />

@@ -28,7 +28,7 @@ export default {
     }
   },
   render(h) {
-    const div = { class: ['collapse'] };
+    const div = { class: ['collapse', 'rd-collapse'] };
     if (this.$parent.$options.name === 'RdNavbar') div.class.push('navbar-collapse');
     return h('div', div, this.$slots.default);
   },

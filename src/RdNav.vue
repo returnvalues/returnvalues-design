@@ -26,10 +26,10 @@ export default {
     const nodes = this.$slots.default || [];
     const aTags = nodes.filter(x => x.tag === 'a');
     let parent = this.$parent;
-    let staticClass = 'nav';
+    let staticClass = 'nav rd-nav';
     while (parent) {
       if (parent.$options.name === 'RdNavbar') {
-        staticClass = 'navbar-nav';
+        staticClass = 'navbar-nav rd-nav';
         break;
       }
       parent = parent.$parent;
