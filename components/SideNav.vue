@@ -92,5 +92,5 @@ export default {
 </script>
 
 <style scoped>
-  .logo {width:40px;height: 40px;}
+  .logo {width:50px;height: 50px;}
 </style>
