@@ -32,7 +32,7 @@ export default {
   data() {
     return {
       navigations: [
-        { name: 'Main', to: '/', icon: 'far fa-newspaper' },
+        { name: 'Getting started', to: '/', icon: 'far fa-newspaper' },
         { name: 'Alert', to: '/alert', icon: 'fas fa-exclamation-circle' },
         { name: 'Badge', to: '/badge', icon: 'fab fa-flickr' },
         { name: 'Breadcrumb', to: '/breadcrumb', icon: 'fas fa-percentage' },
