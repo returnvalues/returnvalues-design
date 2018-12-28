@@ -2,7 +2,7 @@
   <rd-input-group class="rd-eth-input-address">
     <span
       slot="prepend"
-      :class="outlineClass"
+      :class="[outlineClass,textClass]"
       text
     >
       <i class="fab fa-ethereum" />
@@ -40,10 +40,13 @@ export default {
     disabled: Boolean,
     placeholder: { type: String, default: '0x0f167026022632e38c919700d6B466E598905f9C' }
   },
-  data() { return { value: this.modelValue, valid: null, outline: undefined }; },
+  data() { return { value: this.modelValue, valid: null, semantic: undefined }; },
   computed: {
     outlineClass() {
-      return this.outline && `border-${this.outline}`;
+      return this.semantic && `border-${this.semantic}`;
+    },
+    textClass() {
+      return this.semantic && `text-${this.semantic}`;
     }
   },
   mounted() {
@@ -57,10 +60,10 @@ export default {
         const minLength = /^(0x)?((?!0x).){40,}$/i.test(value);
         if (minLength) {
           this.valid = Web3.utils.isAddress(value);
-          this.outline = this.valid ? 'success' : 'danger';
+          this.semantic = this.valid ? 'success' : 'danger';
         } else {
           this.valid = false;
-          this.outline = undefined;
+          this.semantic = undefined;
         }
         const newValue = this.valid ? this.$refs.input.value : undefined;
         if (newValue !== this.modelValue) this.$emit('change', newValue);
