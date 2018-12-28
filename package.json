@@ -37,6 +37,7 @@
     "nuxt": "^2.3.4",
     "push-dir": "^0.4.1",
     "rollup": "^0.68.2",
+    "rollup-plugin-terser": "^3.0.0",
     "rollup-plugin-vue": "^4.3.2"
   }
 }
