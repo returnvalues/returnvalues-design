@@ -12,7 +12,9 @@ export default {
   props: {
     size: { type: String, default: undefined },
     sm: { type: Boolean, default: undefined },
-    lg: { type: Boolean, default: undefined }
+    md: { type: Boolean, default: undefined },
+    lg: { type: Boolean, default: undefined },
+    xl: { type: Boolean, default: undefined },
   },
   computed: {
     sizeClass() {
@@ -20,8 +22,12 @@ export default {
       let ret;
       if (this.size) ret = this.size;
       else {
-        const { sm, lg } = this;
-        const classes = { lg, sm };
+        const {
+          sm, md, lg, xl
+        } = this;
+        const classes = {
+          xl, lg, md, sm
+        };
         Object.keys(classes).every((key) => {
           if (classes[key] === undefined) return true;
           ret = key;

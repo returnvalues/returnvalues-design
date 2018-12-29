@@ -1,6 +1,11 @@
 <template>
-  <div class="flex-column d-flex">
-    <div class="row m-0 py-2 px-3 align-items-center flex-shrink-0">
+  <rd-navbar
+    class="flex-column d-flex"
+    md
+  >
+    <div
+      class="row m-0 align-items-center flex-shrink-0"
+    >
       <img
         src="~/assets/logo.png"
         class="logo"
@@ -11,16 +16,27 @@
         </h5>
       </div>
     </div>
-    <rd-nav
-      class="flex-column flex-nowrap"
+    <rd-navbar-toggler @click.native="$refs.nav.toggle()" />
+    <rd-collapse
+      ref="nav"
+      class="flex-nowrap align-items-start"
     >
-      <side-nav-item
-        v-for="item of navigations"
-        :key="item.to"
-        :item="item"
-      />
-    </rd-nav>
-  </div>
+      <rd-nav
+        class="flex-column"
+      >
+        <side-nav-item
+          v-for="item of navigations"
+          :key="item.to"
+          :item="item"
+        />
+        <side-nav-item
+          v-for="item of navigations"
+          :key="item.to"
+          :item="item"
+        />
+      </rd-nav>
+    </rd-collapse>
+  </rd-navbar>
 </template>
 <script>
 import SideNavItem from './SideNavItem.vue';
@@ -94,9 +110,9 @@ export default {
 
 <style scoped>
   .logo {width:32px;height: 32px;}
-  .rd-nav {overflow-y:scroll;}
+  .rd-nav {width: 100%;}
+  .rd-collapse { width:100%;}
   @media (min-width: 768px) {
-    .rd-nav {overflow: visible;}
     .logo {width:50px;height: 50px;}
   }
 </style>
