@@ -28,14 +28,19 @@ export default {
   .sidenav{
     position: fixed;
     background: white;
+    flex-wrap: nowrap;
+    width: 100%;
+    z-index: 10;
+    height: 100%;
+    max-height: 100vh;
+    min-width: 100vw;
+  }
+  .content{
+    max-width: 100vw;
   }
 
   /* Small */
   @media (min-width: 576px) {
-    .sidenav{
-      width: 100%;
-      z-index: 10;
-    }
   }
   /* Medium */
   @media (min-width: 768px) {
@@ -43,12 +48,7 @@ export default {
       display: block;
       width: 240px;
       min-width: 240px;
-      overflow-y: auto;
-      max-height: 100vh;
-      z-index: 10;
-      flex-wrap: nowrap;
-      height: 100%;
-      background: #fff;
+      overflow-y:scroll;
     }
     .content{margin-left: 240px;}
     .app{ max-width: 1100px;width: 1100px; }
@@ -71,6 +71,7 @@ export default {
 <style>
 body, #__nuxt, #__layout {
   height: 100%;
+  height: 100vh;
 }
 #__nuxt{ min-height: 100%;}
 </style>

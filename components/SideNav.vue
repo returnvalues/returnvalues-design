@@ -1,8 +1,6 @@
 <template>
-  <rd-nav
-    class="flex-column"
-  >
-    <div class="row m-0 py-2 px-3 align-items-center">
+  <div class="flex-column d-flex">
+    <div class="row m-0 py-2 px-3 align-items-center flex-shrink-0">
       <img
         src="~/assets/logo.png"
         class="logo"
@@ -13,13 +11,16 @@
         </h5>
       </div>
     </div>
-
-    <side-nav-item
-      v-for="item of navigations"
-      :key="item.to"
-      :item="item"
-    />
-  </rd-nav>
+    <rd-nav
+      class="flex-column flex-nowrap"
+    >
+      <side-nav-item
+        v-for="item of navigations"
+        :key="item.to"
+        :item="item"
+      />
+    </rd-nav>
+  </div>
 </template>
 <script>
 import SideNavItem from './SideNavItem.vue';
@@ -93,4 +94,8 @@ export default {
 
 <style scoped>
   .logo {width:50px;height: 50px;}
+  .rd-nav {overflow-y:scroll;}
+  @media (min-width: 768px) {
+    .rd-nav {overflow: visible;}
+  }
 </style>
