@@ -4,19 +4,24 @@
     md
   >
     <div
-      class="row m-0 align-items-center flex-shrink-0"
+      class="row m-0 p-0 flex-shrink-0 container-fluid"
     >
       <img
         src="~/assets/logo.png"
         class="logo"
       >
-      <div class="col p-0 ml-1">
+      <div class="col p-0 ml-1 text-center text-md-left">
         <h5 class="m-0">
           Return Values Design
         </h5>
       </div>
+      <rd-button
+        class="d-md-none"
+        @click.native="$refs.nav.toggle()"
+      >
+        <i class="fas fa-bars" />
+      </rd-button>
     </div>
-    <rd-navbar-toggler @click.native="$refs.nav.toggle()" />
     <rd-collapse
       ref="nav"
       class="flex-nowrap align-items-start"
@@ -24,11 +29,6 @@
       <rd-nav
         class="flex-column"
       >
-        <side-nav-item
-          v-for="item of navigations"
-          :key="item.to"
-          :item="item"
-        />
         <side-nav-item
           v-for="item of navigations"
           :key="item.to"
@@ -109,10 +109,14 @@ export default {
 </script>
 
 <style scoped>
-  .logo {width:32px;height: 32px;}
+  .logo {width:35px;height: 35px;}
   .rd-nav {width: 100%;}
-  .rd-collapse { width:100%;}
+  .rd-collapse {
+    width:100%;
+    overflow-y: scroll;
+  }
   @media (min-width: 768px) {
     .logo {width:50px;height: 50px;}
+    .rd-collapse{overflow-y:visible;}
   }
 </style>

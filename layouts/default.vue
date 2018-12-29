@@ -1,7 +1,7 @@
 <template>
   <div class="app container-fluid d-flex flex-nowrap p-0">
     <side-nav
-      class="sidenav border-right py-md-3"
+      class="sidenav py-md-3"
     />
     <div class="content d-flex flex-grow-1 p-md-4">
       <nuxt class="container-fluid" />
@@ -33,9 +33,12 @@ export default {
     z-index: 10;
     max-height: 100vh;
     min-width: 100vw;
+    border-bottom: 1px solid #dee2e6
   }
+  .app{background: #f5f8fa;}
   .content{
     max-width: 100vw;
+    margin-top: 4rem;
   }
 
   /* Small */
@@ -49,9 +52,11 @@ export default {
       height: 100%;
       min-width: 240px;
       overflow-y:scroll;
+      border-right: 1px solid #dee2e6;
+      border-bottom: none;
     }
-    .content{margin-left: 240px;}
-    .app{ max-width: 1100px;width: 1100px; }
+    .content{margin-left: 240px;background: none;}
+    .app{ max-width: 1100px;width: 1100px;}
     .app::before{
       content:' ';
       position: fixed;
