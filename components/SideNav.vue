@@ -5,7 +5,7 @@
         src="~/assets/logo.png"
         class="logo"
       >
-      <div class="col">
+      <div class="col p-0 ml-1">
         <h5 class="m-0">
           Return Values Design
         </h5>
@@ -93,9 +93,10 @@ export default {
 </script>
 
 <style scoped>
-  .logo {width:50px;height: 50px;}
+  .logo {width:32px;height: 32px;}
   .rd-nav {overflow-y:scroll;}
   @media (min-width: 768px) {
     .rd-nav {overflow: visible;}
+    .logo {width:50px;height: 50px;}
   }
 </style>

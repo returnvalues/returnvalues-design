@@ -31,7 +31,6 @@ export default {
     flex-wrap: nowrap;
     width: 100%;
     z-index: 10;
-    height: 100%;
     max-height: 100vh;
     min-width: 100vw;
   }
@@ -47,6 +46,7 @@ export default {
     .sidenav {
       display: block;
       width: 240px;
+      height: 100%;
       min-width: 240px;
       overflow-y:scroll;
     }
