@@ -55,7 +55,11 @@ export default {
       border-right: 1px solid #dee2e6;
       border-bottom: none;
     }
-    .content{margin-left: 240px;background: none;}
+    .content{
+      margin-left: 240px;
+      background: none;
+      margin-top: 0rem;
+    }
     .app{ max-width: 1100px;width: 1100px;}
     .app::before{
       content:' ';
