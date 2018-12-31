@@ -23,8 +23,8 @@ export default {
     update() {
       const style = window.$(this.$refs.canvas).attr('style');
       QRCode.toCanvas(this.$refs.canvas, this.text, this.options, (error) => {
-        if (error) return console.error(error);
-        window.$(this.$refs.canvas).attr('style', style);
+        if (error) console.error(error);
+        else window.$(this.$refs.canvas).attr('style', style);
       });
     }
   }

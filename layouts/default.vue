@@ -35,7 +35,14 @@ export default {
     min-width: 100%;
     border-bottom: 1px solid #dee2e6;
   }
-  .app{background: #f5f8fa;}
+  .app::before{
+      content:' ';
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #f5f8fa;
+      z-index: -1;
+    }
   .content{
     max-width: 100%;
     margin-top: 4rem;
@@ -61,15 +68,6 @@ export default {
       margin-top: 0rem;
     }
     .app{ max-width: 1100px;width: 1100px;}
-    .app::before{
-      content:' ';
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background: #f5f8fa;
-      margin-left: 240px;
-      z-index: -1;
-    }
    }
   /* Large */
   @media (min-width: 992px) {  }
