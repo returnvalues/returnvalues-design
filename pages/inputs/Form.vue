@@ -5,7 +5,7 @@
       폼 컨트롤 스타일, 레이아웃 옵션 및 다양한 폼양식을 만들기 위한 사용자 지정 컴포넌트 대한 예제 및 사용 가이드.
     </p>
     <h2>Example</h2>
-    <div class="p-3 border">
+    <example>
       <form>
         <rd-input
           v-model="testEmail"
@@ -36,7 +36,7 @@
           Submit
         </rd-button>
       </form>
-    </div>
+    </example>
     <highlight
       code="<form>
   <rd-input
@@ -72,7 +72,7 @@
     <h3>
       Form controls
     </h3>
-    <div class="p-3 border">
+    <example>
       <form>
         <rd-input
           type="email"
@@ -121,7 +121,7 @@
           Example file input
         </rd-input>
       </form>
-    </div>
+    </example>
     <highlight
       code="<form>
   <rd-input
@@ -175,7 +175,7 @@
     <h3>
       Sizing
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-input
         lg
         type="text"
@@ -193,7 +193,7 @@
         class="mt-1"
         placeholder=".form-control-sm"
       />
-    </div>
+    </example>
     <highlight
       code="
   lg
@@ -216,13 +216,13 @@
     <h3>
       Readonly
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-input
         type="text"
         placeholder="Readonly input here…"
         readonly
       />
-    </div>
+    </example>
     <highlight
       code="<rd-input
   type=&quot;text&quot;
@@ -233,7 +233,7 @@
     <h3>
       Readonly plain text
     </h3>
-    <div class="p-3 border">
+    <example>
       <form>
         <rd-input
           plaintext
@@ -243,7 +243,7 @@
           Email
         </rd-input>
       </form>
-    </div>
+    </example>
     <highlight
       code="<form>
   <rd-input
@@ -258,13 +258,13 @@
     <h3>
       Range Inputs
     </h3>
-    <div class="p-3 border">
+    <example>
       <form>
         <rd-input type="range">
           Example Range input
         </rd-input>
       </form>
-    </div>
+    </example>
     <highlight
       code="<form>
   <rd-input type=&quot;range&quot;>
@@ -275,7 +275,7 @@
     <h3>
       Checkboxes and radios
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-input type="checkbox">
         Default checkbox
       </rd-input>
@@ -307,7 +307,7 @@
       >
         Disabled radio
       </rd-input>
-    </div>
+    </example>
     <highlight
       code="<rd-input type=&quot;checkbox&quot;>
   Default checkbox
@@ -344,7 +344,7 @@
     <h3>
       Inline
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-input
         inline
         type="checkbox"
@@ -391,7 +391,7 @@
       >
         3 (disabled)
       </rd-input>
-    </div>
+    </example>
     <highlight
       code="<rd-input
   inline

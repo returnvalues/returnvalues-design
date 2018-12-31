@@ -8,7 +8,7 @@
     <h3>
       Single button
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-dropdown inline>
         <rd-button
           slot="button"
@@ -153,7 +153,7 @@
           Something else here
         </a>
       </rd-dropdown>
-    </div>
+    </example>
     <highlight
       code="<rd-dropdown inline>
   <rd-button
@@ -185,7 +185,7 @@
     <h3>
       Split button
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-dropdown>
         <rd-button
           slot="button"
@@ -360,7 +360,7 @@
           Separated link
         </a>
       </rd-dropdown>
-    </div>
+    </example>
     <highlight
       code="<rd-dropdown>
   <rd-button
@@ -395,7 +395,7 @@
     <h3>
       Sizing
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-dropdown inline>
         <rd-button
           slot="button"
@@ -507,7 +507,7 @@
           Separated link
         </a>
       </rd-dropdown>
-    </div>
+    </example>
     <highlight
       code="<rd-dropdown inline>
   <rd-button
@@ -626,7 +626,7 @@
     <h3>
       Dropup
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-dropdown
         dropup
         inline
@@ -684,7 +684,7 @@
           Separated link
         </a>
       </rd-dropdown>
-    </div>
+    </example>
     <highlight
       code="<rd-dropdown
   dropup
@@ -749,7 +749,7 @@
     <h3>
       Dropright
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-dropdown
         dropright
         inline
@@ -807,7 +807,7 @@
           Separated link
         </a>
       </rd-dropdown>
-    </div>
+    </example>
     <highlight
       code="<rd-dropdown
   dropright
@@ -872,7 +872,7 @@
     <h3>
       Dropleft
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-dropdown
         dropleft
         inline
@@ -934,7 +934,7 @@
           Split dropleft
         </rd-button>
       </rd-dropdown>
-    </div>
+    </example>
     <highlight
       code="<rd-dropdown
         dropleft
@@ -1003,7 +1003,7 @@
     <h3>
       Menu items
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-dropdown>
         <rd-button
           slot="button"
@@ -1030,7 +1030,7 @@
           Something else here
         </button>
       </rd-dropdown>
-    </div>
+    </example>
     <highlight
       code="<rd-dropdown>
   <rd-button
@@ -1064,7 +1064,7 @@
     <h3>
       Menu alignment
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-dropdown alignright>
         <rd-button
           slot="button"
@@ -1091,7 +1091,7 @@
           Something else here
         </button>
       </rd-dropdown>
-    </div>
+    </example>
     <highlight
       code="<rd-dropdown alignright>
   <rd-button
@@ -1127,7 +1127,7 @@
     <h4>
       Headers
     </h4>
-    <div class="p-3 border">
+    <example>
       <rd-dropdown>
         <rd-button
           slot="button"
@@ -1145,7 +1145,7 @@
           Another action
         </a>
       </rd-dropdown>
-    </div>
+    </example>
     <highlight
       code="<rd-dropdown>
   <rd-button
@@ -1170,7 +1170,7 @@
     <h4>
       Text
     </h4>
-    <div class="p-3 border">
+    <example>
       <rd-dropdown>
         <rd-button
           slot="button"
@@ -1185,7 +1185,7 @@
           </p>
         </div>
       </rd-dropdown>
-    </div>
+    </example>
     <highlight
       code="<rd-dropdown>
   <rd-button
@@ -1207,7 +1207,7 @@
     <h4>
       Forms
     </h4>
-    <div class="p-3 border">
+    <example>
       <rd-dropdown>
         <rd-button
           slot="button"
@@ -1272,7 +1272,7 @@
           Forgot password?
         </a>
       </rd-dropdown>
-    </div>
+    </example>
     <highlight
       code="<rd-dropdown>
   <rd-button

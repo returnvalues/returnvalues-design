@@ -5,7 +5,7 @@
       몇개의 클래스와 자바스크립트 플러그인을 사용하여 프로젝트 전체에 콘텐츠 가시성을 토글합니다.
     </p>
     <h2>Example</h2>
-    <div class="border p-3">
+    <example>
       <p>
         <rd-button
           primary
@@ -34,7 +34,7 @@
           craft beer labore wes anderson cred nesciunt sapiente ea proident.
         </div>
       </rd-collapse>
-    </div>
+    </example>
     <highlight
       code="<rd-button
   primary
@@ -66,7 +66,7 @@ v-model=&quot;test&quot;
 "
     />
     <h3>Multiple targets</h3>
-    <div class="border p-3">
+    <example>
       <p>
         <rd-button
           tag="a"
@@ -123,7 +123,7 @@ v-model=&quot;test&quot;
           </rd-collapse>
         </div>
       </div>
-    </div>
+    </example>
     <highlight
       code="<p>
   <rd-button
@@ -184,7 +184,7 @@ v-model=&quot;test&quot;
     />
 
     <h3>Accordion example</h3>
-    <div class="border p-3">
+    <example>
       <div
         id="accordionExample"
         class="accordion"
@@ -292,7 +292,8 @@ v-model=&quot;test&quot;
           </rd-collapse>
         </rd-card>
       </div>
-    </div><highlight
+    </example>
+    <highlight
       code="<div
       id=&quot;accordionExample&quot;
       class=&quot;accordion&quot;

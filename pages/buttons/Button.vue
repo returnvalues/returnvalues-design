@@ -23,7 +23,7 @@
     </ul>
     <h2>Examples</h2>
     <h3>Semantic purpose</h3>
-    <div class="border p-3">
+    <example>
       <rd-button semantic="primary">
         Primary
       </rd-button>
@@ -51,7 +51,7 @@
       <rd-button semantic="link">
         Link
       </rd-button>
-    </div>
+    </example>
     <highlight
       code="<rd-button semantic=&quot;primary&quot;>
   Primary
@@ -82,7 +82,7 @@
 </rd-button>"
     />
     <h3>Button tags</h3>
-    <div class="border p-3">
+    <example>
       <rd-button
         tag="a"
         href="javascript:"
@@ -116,7 +116,7 @@
         value="Reset"
         primary
       />
-    </div>
+    </example>
     <highlight
       code="<rd-button
   tag=&quot;a&quot;
@@ -154,7 +154,7 @@
     />
 
     <h3>Outline buttons</h3>
-    <div class="border p-3">
+    <example>
       <rd-button
         type="button"
         outline="primary"
@@ -203,7 +203,7 @@
       >
         Dark
       </rd-button>
-    </div>
+    </example>
     <highlight
       code="<rd-button
   type=&quot;button&quot;
@@ -256,7 +256,7 @@
     />
 
     <h3>Sizes</h3>
-    <div class="border p-3">
+    <example>
       <rd-button
         type="button"
         semantic="primary"
@@ -271,7 +271,7 @@
       >
         Small button
       </rd-button>
-    </div>
+    </example>
     <highlight
       code="<rd-button
         type=&quot;button&quot;
@@ -288,7 +288,7 @@
         Small button
       </rd-button>"
     />
-    <div class="border p-3">
+    <example>
       <rd-button
         type="button"
         semantic="primary"
@@ -305,7 +305,7 @@
       >
         Block level button
       </rd-button>
-    </div>
+    </example>
     <highlight
       code="<rd-button
         type=&quot;button&quot;
@@ -325,7 +325,7 @@
       </rd-button>"
     />
     <h3>State</h3>
-    <div class="border p-3">
+    <example>
       <rd-button
         tag="a"
         href="javascript:"
@@ -348,7 +348,7 @@
       >
         Link
       </rd-button>
-    </div>
+    </example>
     <highlight
       code="<rd-button
   tag=&quot;a&quot;
@@ -373,7 +373,7 @@
   Link
 </rd-button>"
     />
-    <div class="border p-3">
+    <example>
       <rd-button
         type="button"
         size="lg"
@@ -390,7 +390,7 @@
       >
         Button
       </rd-button>
-    </div>
+    </example>
     <highlight
       code="<rd-button
   type=&quot;button&quot;
@@ -409,7 +409,7 @@
   Button
 </rd-button>"
     />
-    <div class="border p-3">
+    <example>
       <rd-button
         tag="a"
         href="javascript:"
@@ -428,7 +428,7 @@
       >
         Link
       </rd-button>
-    </div>
+    </example>
     <highlight
       code="<rd-button
   tag=&quot;a&quot;

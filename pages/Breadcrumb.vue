@@ -5,7 +5,7 @@
       CSS를 통해 자동으로 추가된 구분기호로 현재 페이지의 위치를 나타냅니다.
     </p>
     <h2>Example</h2>
-    <div class="border p-3">
+    <example>
       <rd-breadcrumb>
         Home
       </rd-breadcrumb>
@@ -25,7 +25,7 @@
         </a>
         Data
       </rd-breadcrumb>
-    </div>
+    </example>
     <highlight
       code="<rd-breadcrumb>
   Home

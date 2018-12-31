@@ -6,7 +6,7 @@
     </p>
 
     <h2>Example</h2>
-    <div class="border p-3">
+    <example>
       <rd-alert primary>
         A simple primary alert—check it out!
       </rd-alert>
@@ -31,7 +31,7 @@
       <rd-alert dark>
         A simple dark alert—check it out!
       </rd-alert>
-    </div>
+    </example>
     <highlight
       class="border-top-0"
       code="<rd-alert primary>

@@ -8,7 +8,7 @@
       그리고 로컬 타이틀 저장을 위한 애니메이션 및 데이터 속성.
     </p>
     <h2>Example</h2>
-    <div class="p-3 border">
+    <example>
       <rd-button
         type="button"
         secondary
@@ -41,7 +41,7 @@
       >
         Tooltip on left
       </rd-button>
-    </div>
+    </example>
     <highlight
       code="<rd-button
   type=&quot;button&quot;

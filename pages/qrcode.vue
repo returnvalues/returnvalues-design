@@ -3,12 +3,12 @@
     <h1>Qrcode</h1>
     <p>qrcode 이미지를 출력합니다.</p>
     <h2>Example</h2>
-    <div class="border p-3">
+    <example>
       <rd-qrcode
         text="0x0f167026022632e38c919700d6B466E598905f9C"
         :options="{'color':{dark:'#343a40',light:'#ffffff00'}}"
       />
-    </div>
+    </example>
     <highlight
       code="<rd-qrcode
     text=&quot;0x0f167026022632e38c919700d6B466E598905f9C&quot;

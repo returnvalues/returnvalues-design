@@ -6,7 +6,7 @@
     </p>
     <h2>Example</h2>
 
-    <div class="p-3 border">
+    <example>
       <rd-navbar
         lg
         light
@@ -74,7 +74,7 @@
           </form>
         </rd-collapse>
       </rd-navbar>
-    </div>
+    </example>
     <highlight
       code="<rd-navbar
   lg
@@ -145,7 +145,7 @@
 </rd-navbar>"
     />
     <h3>Brand</h3>
-    <div class="p-3 border">
+    <example>
       <rd-navbar
         light
         class="bg-light"
@@ -164,7 +164,7 @@
           Navbar
         </rd-navbar-brand>
       </rd-navbar>
-    </div>
+    </example>
     <highlight
       code="<rd-navbar
   light
@@ -187,7 +187,7 @@
     />
 
     <h3>Nav</h3>
-    <div class="p-3 border">
+    <example>
       <rd-navbar
         lg
         light
@@ -227,7 +227,7 @@
           </rd-nav>
         </rd-collapse>
       </rd-navbar>
-    </div>
+    </example>
     <highlight
       code="<rd-navbar
   lg
@@ -269,7 +269,7 @@
   </rd-collapse>
 </rd-navbar>"
     />
-    <div class="p-3 border">
+    <example>
       <rd-navbar
         lg
         light
@@ -309,7 +309,7 @@
           </rd-nav>
         </rd-collapse>
       </rd-navbar>
-    </div>
+    </example>
     <highlight
       code="<rd-navbar
   lg
@@ -351,7 +351,7 @@
   </rd-collapse>
 </rd-navbar>"
     />
-    <div class="p-3 border">
+    <example>
       <rd-navbar
         lg
         light
@@ -409,7 +409,7 @@
           </rd-nav>
         </rd-collapse>
       </rd-navbar>
-    </div>
+    </example>
     <highlight
       code="<rd-navbar
   lg
@@ -471,7 +471,7 @@
     />
 
     <h3>Forms</h3>
-    <div class="p-3 border">
+    <example>
       <rd-navbar
         light
         class="bg-light"
@@ -491,7 +491,7 @@
           </button>
         </form>
       </rd-navbar>
-    </div>
+    </example>
     <highlight
       code="<rd-navbar
   light
@@ -513,7 +513,7 @@
   </form>
 </rd-navbar>"
     />
-    <div class="p-3 border">
+    <example>
       <rd-navbar
         light
         class="bg-light"
@@ -536,7 +536,7 @@
           </button>
         </form>
       </rd-navbar>
-    </div>
+    </example>
     <highlight
       code="<rd-navbar
   light
@@ -561,7 +561,7 @@
   </form>
 </rd-navbar>"
     />
-    <div class="p-3 border">
+    <example>
       <rd-navbar
         light
         class="bg-light"
@@ -586,7 +586,7 @@
           </div>
         </form>
       </rd-navbar>
-    </div>
+    </example>
     <highlight
       code="<rd-navbar
   light
@@ -613,7 +613,7 @@
   </form>
 </rd-navbar>"
     />
-    <div class="p-3 border">
+    <example>
       <rd-navbar
         light
         class="bg-light"
@@ -633,7 +633,7 @@
           </button>
         </form>
       </rd-navbar>
-    </div>
+    </example>
     <highlight
       code="<rd-navbar
   light
@@ -657,7 +657,7 @@
     />
 
     <h3>Text</h3>
-    <div class="p-3 border">
+    <example>
       <rd-navbar
         light
         class="bg-light"
@@ -666,7 +666,7 @@
           Navbar text with an inline element
         </rd-navbar-text>
       </rd-navbar>
-    </div>
+    </example>
     <highlight
       code="<rd-navbar
   light
@@ -677,7 +677,7 @@
   </rd-navbar-text>
 </rd-navbar>"
     />
-    <div class="p-3 border">
+    <example>
       <rd-navbar
         lg
         light
@@ -716,7 +716,7 @@
           </rd-navbar-text>
         </rd-collapse>
       </rd-navbar>
-    </div>
+    </example>
     <highlight
       code="<rd-navbar
   lg
@@ -762,7 +762,7 @@
     <h3>
       Color schemes
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-navbar
         dark
         class="bg-dark"
@@ -852,7 +852,7 @@
           </a>
         </rd-nav>
       </rd-navbar>
-    </div>
+    </example>
     <highlight
       code="<rd-navbar
   dark

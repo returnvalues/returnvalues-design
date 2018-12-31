@@ -6,7 +6,7 @@
     </p>
 
     <h2>Example</h2>
-    <div class="border p-3">
+    <example>
       <h1>
         Example heading <rd-badge secondary>
           New
@@ -37,7 +37,7 @@
           New
         </rd-badge>
       </h6>
-    </div>
+    </example>
     <highlight
       code="<h1>
   Example heading <rd-badge secondary>
@@ -72,7 +72,7 @@
     />
 
 
-    <div class="border p-3">
+    <example>
       <rd-button primary>
         Notifications <rd-badge light>
           4
@@ -84,7 +84,7 @@
           9
         </rd-badge>
       </rd-button>
-    </div>
+    </example>
     <highlight
       code="<rd-button primary>
   Notifications <rd-badge light>
@@ -102,7 +102,7 @@
 
     <h3>Contextual variations</h3>
 
-    <div class="border p-3">
+    <example>
       <rd-badge primary>
         Primary
       </rd-badge>
@@ -127,7 +127,7 @@
       <rd-badge dark>
         Dark
       </rd-badge>
-    </div>
+    </example>
     <highlight
       code="<rd-badge primary>
   Primary
@@ -156,7 +156,7 @@
     />
 
     <h3>Pill badges</h3>
-    <div class="border p-3">
+    <example>
       <rd-badge
         pill
         primary
@@ -205,7 +205,7 @@
       >
         Dark
       </rd-badge>
-    </div>
+    </example>
     <highlight
       code="<rd-badge
   pill
@@ -258,7 +258,7 @@
     />
 
     <h3>Links</h3>
-    <div class="border p-3">
+    <example>
       <rd-badge
         tag="a"
         href="javascript:"
@@ -315,7 +315,7 @@
       >
         Dark
       </rd-badge>
-    </div>
+    </example>
     <highlight
       code="<rd-badge
   tag=&quot;a&quot;

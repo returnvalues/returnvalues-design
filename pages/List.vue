@@ -11,7 +11,7 @@
     <h3>
       Basic example
     </h3>
-    <div class="border p-3">
+    <example>
       <rd-list-group>
         <rd-list-item>Cras justo odio</rd-list-item>
         <rd-list-item>Dapibus ac facilisis in</rd-list-item>
@@ -19,7 +19,7 @@
         <rd-list-item>Porta ac consectetur ac</rd-list-item>
         <rd-list-item>Vestibulum at eros</rd-list-item>
       </rd-list-group>
-    </div>
+    </example>
     <highlight
       code="<rd-list-group>
   <rd-list-item>Cras justo odio</rd-list-item>
@@ -32,7 +32,7 @@
     <h3>
       Active, Disabled items
     </h3>
-    <div class="border p-3">
+    <example>
       <rd-list-group tag="div">
         <rd-list-item
           tag="button"
@@ -59,7 +59,7 @@
           Vestibulum at eros
         </rd-list-item>
       </rd-list-group>
-    </div>
+    </example>
     <highlight
       code="<rd-list-group tag=&quot;div&quot;>
   <rd-list-item

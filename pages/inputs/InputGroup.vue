@@ -5,7 +5,7 @@
       입력폼 양쪽에 텍스트, 버튼 또는 버튼 그룹을 추가하여 폼 컨트롤을 쉽게 확장 할 수 있습니다.
     </p>
     <h2>Example</h2>
-    <div class="p-3 border">
+    <example>
       <rd-input-group class="mb-3">
         <span
           slot="prepend"
@@ -64,7 +64,7 @@
         </span>
         <textarea />
       </rd-input-group>
-    </div>
+    </example>
     <highlight
       code="<rd-input-group class=&quot;mb-3&quot;>
   <span
@@ -128,7 +128,7 @@
     <h3>
       Sizing
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-input-group
         class="mb-3"
         sm
@@ -159,7 +159,7 @@
         </span>
         <rd-input />
       </rd-input-group>
-    </div>
+    </example>
     <highlight
       code="<rd-input-group
   class=&quot;mb-3&quot;
@@ -195,7 +195,7 @@
     <h3>
       Checkboxes and radios
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-input-group class="mb-3">
         <div
           slot="prepend"
@@ -224,7 +224,7 @@
           type="text"
         />
       </rd-input-group>
-    </div>
+    </example>
     <highlight
       code="<rd-input-group class=&quot;mb-3&quot;>
   <div
@@ -258,7 +258,7 @@
     <h3>
       Multiple inputs
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-input-group>
         <span
           slot="prepend"
@@ -269,7 +269,7 @@
         <rd-input />
         <rd-input />
       </rd-input-group>
-    </div>
+    </example>
     <highlight
       code="<rd-input-group>
   <span
@@ -285,7 +285,7 @@
     <h3>
       Multiple addons
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-input-group class="mb-3">
         <span
           slot="prepend"
@@ -316,7 +316,7 @@
           0.00
         </span>
       </rd-input-group>
-    </div>
+    </example>
     <highlight
       code="<rd-input-group class=&quot;mb-3&quot;>
   <span
@@ -352,7 +352,7 @@
     <h3>
       Button addons
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-input-group class="mb-3">
         <rd-button
           slot="prepend"
@@ -408,7 +408,7 @@
           Button
         </rd-button>
       </rd-input-group>
-    </div>
+    </example>
     <highlight
       code="<rd-input-group class=&quot;mb-3&quot;>
   <rd-button
@@ -469,7 +469,7 @@
     <h3>
       Buttons with dropdowns
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-input-group class="mb-3">
         <rd-dropdown slot="prepend">
           <rd-button
@@ -543,7 +543,7 @@
           </a>
         </rd-dropdown>
       </rd-input-group>
-    </div>
+    </example>
     <highlight
       code="<rd-input-group class=&quot;mb-3&quot;>
   <rd-dropdown slot=&quot;prepend&quot;>
@@ -622,7 +622,7 @@
     <h3>
       Segmented buttons
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-input-group class="mb-3">
         <rd-dropdown
           slot="prepend"
@@ -722,7 +722,7 @@
           </a>
         </rd-dropdown>
       </rd-input-group>
-    </div>
+    </example>
     <highlight
       code="<rd-input-group class=&quot;mb-3&quot;>
   <rd-dropdown
@@ -827,7 +827,7 @@
     <h3>
       Custom select
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-input-group class="mb-3">
         <span
           slot="prepend"
@@ -909,7 +909,7 @@
           Button
         </rd-button>
       </rd-input-group>
-    </div>
+    </example>
     <highlight
       code="<rd-input-group class=&quot;mb-3&quot;>
   <span
@@ -996,7 +996,7 @@
     <h3>
       Custom file input
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-input-group class="mb-3">
         <span
           slot="prepend"
@@ -1046,7 +1046,7 @@
           Button
         </rd-button>
       </rd-input-group>
-    </div>
+    </example>
     <highlight
       code="<rd-input-group class=&quot;mb-3&quot;>
   <span

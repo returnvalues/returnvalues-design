@@ -5,7 +5,7 @@
     </h1>
     <p>내부적으로 RdButton을 쓰는 컴포넌트 입니다.</p>
     <h2>Example</h2>
-    <div class="border p-3">
+    <example>
       <rd-button-group>
         <rd-button-checkbox
           v-model="checked"
@@ -14,7 +14,7 @@
           Checked
         </rd-button-checkbox>
       </rd-button-group>
-    </div>
+    </example>
     <highlight
       code="<rd-button-group>
   <rd-button-checkbox

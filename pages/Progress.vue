@@ -5,7 +5,7 @@
       누적막대, 애니메이션 배경 및 텍스트 레이블을 지원하는 부트스트랩 사용자 정의 진행률 표시 바 사용에 대한 설명서 및 예제.
     </p>
     <h2>Example</h2>
-    <div class="p-3 border">
+    <example>
       <rd-progress :percent="0" />
       <rd-progress
         :percent="25"
@@ -23,7 +23,7 @@
         :percent="100"
         class="mt-2"
       />
-    </div>
+    </example>
     <highlight
       code="<rd-progress :percent=&quot;0&quot; />
 <rd-progress
@@ -46,13 +46,13 @@
     <h3>
       Labels
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-progress
         :percent="25"
       >
         25%
       </rd-progress>
-    </div>
+    </example>
     <highlight
       code="<rd-progress
   :percent=&quot;25&quot;
@@ -63,7 +63,7 @@
     <h3>
       Height
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-progress
         style="height: 1px;"
         :percent="25"
@@ -73,7 +73,7 @@
         :percent="25"
         class="mt-2"
       />
-    </div>
+    </example>
     <highlight
       code="<rd-progress
   style=&quot;height: 1px;&quot;
@@ -88,7 +88,7 @@
     <h3>
       Backgrounds
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-progress
         success
         :percent="25"
@@ -108,7 +108,7 @@
         :percent="100"
         class="mt-2"
       />
-    </div>
+    </example>
     <highlight
       code="<rd-progress
   success
@@ -133,7 +133,7 @@
     <h3>
       Multiple bars
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-progress multiple>
         <rd-progress :percent="15" />
         <rd-progress
@@ -145,7 +145,7 @@
           :percent="20"
         />
       </rd-progress>
-    </div>
+    </example>
     <highlight
       code="<rd-progress multiple>
   <rd-progress :percent=&quot;15&quot; />
@@ -162,7 +162,7 @@
     <h3>
       Striped
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-progress
         striped
         :percent="10"
@@ -191,7 +191,7 @@
         :percent="100"
         class="mt-2"
       />
-    </div>
+    </example>
     <highlight
       code="<rd-progress
   striped
@@ -225,14 +225,14 @@
     <h3>
       Animated stripes
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-progress
         striped
         animated
         :percent="75"
         class="mt-2"
       />
-    </div>
+    </example>
     <highlight
       code="<rd-progress
   striped

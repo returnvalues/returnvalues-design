@@ -5,7 +5,7 @@
       부트스트랩 카드는 다양한 변형과 옵션을 갖춘 유연하고 확장 가능한 콘텐츠 컨테이너를 제공합니다.
     </p>
     <h2>Example</h2>
-    <div class="border p-3">
+    <example>
       <rd-card style="width: 18rem;">
         <img
           slot="top"
@@ -28,7 +28,7 @@
           </rd-button>
         </rd-card-body>
       </rd-card>
-    </div>
+    </example>
     <highlight
       code="<rd-card style=&quot;width: 18rem;&quot;>
   <img
@@ -54,13 +54,13 @@
 </rd-card>"
     />
     <h3>Body</h3>
-    <div class="border p-3">
+    <example>
       <rd-card>
         <rd-card-body>
           This is some text within a card body.
         </rd-card-body>
       </rd-card>
-    </div>
+    </example>
     <highlight
       code="<rd-card>
   <rd-card-body>
@@ -69,7 +69,7 @@
 </rd-card>"
     />
     <h3>Titles, text, and links</h3>
-    <div class="border p-3">
+    <example>
       <rd-card style="width: 18rem;">
         <rd-card-body>
           <h5 slot="title">
@@ -99,7 +99,7 @@
           </a>
         </rd-card-body>
       </rd-card>
-    </div>
+    </example>
     <highlight
       code="<rd-card style=&quot;width: 18rem;&quot;>
   <rd-card-body>
@@ -132,7 +132,7 @@
 </rd-card>"
     />
     <h3>Images</h3>
-    <div class="border p-3">
+    <example>
       <rd-card style="width: 18rem;">
         <img
           slot="top"
@@ -145,7 +145,7 @@
           </p>
         </rd-card-body>
       </rd-card>
-    </div>
+    </example>
 
     <highlight
       code="<rd-card style=&quot;width: 18rem;&quot;>
@@ -162,7 +162,7 @@
 </rd-card>"
     />
     <h3>List groups</h3>
-    <div class="border p-3">
+    <example>
       <rd-card style="width: 18rem;">
         <rd-card-header>
           Featured
@@ -173,7 +173,7 @@
           <rd-list-item>Vestibulum at eros</rd-list-item>
         </rd-list-group>
       </rd-card>
-    </div>
+    </example>
 
     <highlight
       code="<rd-card style=&quot;width: 18rem;&quot;>
@@ -188,7 +188,7 @@
 </rd-card>"
     />
     <h3>Kitchen sink</h3>
-    <div class="border p-3">
+    <example>
       <rd-card
         style="width: 18rem;"
       >
@@ -227,7 +227,7 @@
           </a>
         </rd-card-body>
       </rd-card>
-    </div>
+    </example>
 
 
     <highlight
@@ -271,7 +271,7 @@
 </rd-card>"
     />
     <h3>Header and footer</h3>
-    <div class="border p-3">
+    <example>
       <rd-card>
         <rd-card-header>
           Featured
@@ -291,7 +291,7 @@
           </rd-button>
         </rd-card-body>
       </rd-card>
-    </div>
+    </example>
     <highlight
       code="<rd-card>
   <rd-card-header>
@@ -313,7 +313,7 @@
   </rd-card-body>
 </rd-card>"
     />
-    <div class="border p-3">
+    <example>
       <rd-card>
         <rd-card-header>
           <h5>Featured</h5>
@@ -333,7 +333,7 @@
           </rd-button>
         </rd-card-body>
       </rd-card>
-    </div>
+    </example>
     <highlight
       code="<rd-card>
   <rd-card-header>
@@ -355,7 +355,7 @@
   </rd-card-body>
 </rd-card>"
     />
-    <div class="border p-3">
+    <example>
       <rd-card>
         <rd-card-header>
           Quote
@@ -374,7 +374,7 @@
           </blockquote>
         </rd-card-body>
       </rd-card>
-    </div>
+    </example>
     <highlight
       code="<rd-card>
   <rd-card-header>
@@ -395,7 +395,7 @@
   </rd-card-body>
 </rd-card>"
     />
-    <div class="border p-3">
+    <example>
       <rd-card class="text-center">
         <rd-card-header>
           Featured
@@ -418,7 +418,7 @@
           2 days ago
         </rd-card-footer>
       </rd-card>
-    </div>
+    </example>
 
     <highlight
       code="<rd-card class=&quot;text-center&quot;>
@@ -445,7 +445,7 @@
 </rd-card>"
     />
     <h3>Navigation</h3>
-    <div class="border p-3">
+    <example>
       <rd-card class="text-center">
         <rd-card-header>
           <rd-nav
@@ -486,7 +486,7 @@
           </rd-button>
         </rd-card-body>
       </rd-card>
-    </div>
+    </example>
     <highlight
       code="<rd-card class=&quot;text-center&quot;>
   <rd-card-header>
@@ -529,7 +529,7 @@
   </rd-card-body>
 </rd-card>"
     />
-    <div class="border p-3">
+    <example>
       <rd-card class="text-center">
         <rd-card-header>
           <rd-nav
@@ -570,7 +570,7 @@
           </rd-button>
         </rd-card-body>
       </rd-card>
-    </div>
+    </example>
 
     <highlight
       code="<rd-card class=&quot;text-center&quot;>
@@ -615,7 +615,7 @@
 </rd-card>"
     />
     <h3>Image caps</h3>
-    <div class="border p-3">
+    <example>
       <rd-card class="mb-3">
         <img
           slot="top"
@@ -658,7 +658,7 @@
           alt="Card image cap"
         >
       </rd-card>
-    </div>
+    </example>
 
     <highlight
       code="<rd-card class=&quot;mb-3&quot;>
@@ -705,7 +705,7 @@
 </rd-card>"
     />
     <h3>Image overlays</h3>
-    <div class="border p-3">
+    <example>
       <rd-card class="bg-dark text-white">
         <img
           slot="img"
@@ -723,7 +723,7 @@
           <p>Last updated 3 mins ago</p>
         </rd-card-body>
       </rd-card>
-    </div>
+    </example>
 
     <highlight
       code="<rd-card class=&quot;bg-dark text-white&quot;>
@@ -745,7 +745,7 @@
 </rd-card>"
     />
     <h3>Background and color</h3>
-    <div class="border p-3">
+    <example>
       <rd-card
         class="text-white bg-primary mb-3"
         style="max-width: 18rem;"
@@ -866,7 +866,7 @@
           </p>
         </rd-card-body>
       </rd-card>
-    </div>
+    </example>
     <highlight
       code="<rd-card
   class=&quot;text-white bg-primary mb-3&quot;
@@ -990,7 +990,7 @@
 </rd-card>"
     />
     <h3>Border</h3>
-    <div class="border p-3">
+    <example>
       <rd-card
         class="border-primary mb-3"
         style="max-width: 18rem;"
@@ -1111,7 +1111,7 @@
           </p>
         </rd-card-body>
       </rd-card>
-    </div>
+    </example>
     <highlight
       code="<rd-card
   class=&quot;border-primary mb-3&quot;
@@ -1235,7 +1235,7 @@
 </rd-card>"
     />
     <h3>Mixins utilities</h3>
-    <div class="border p-3">
+    <example>
       <rd-card
         class="border-success mb-3"
         style="max-width: 18rem;"
@@ -1256,7 +1256,7 @@
           Footer
         </rd-card-footer>
       </rd-card>
-    </div>
+    </example>
     <highlight
       code="<rd-card
   class=&quot;border-success mb-3&quot;
@@ -1280,7 +1280,7 @@
 </rd-card>"
     />
     <h3>Card groups</h3>
-    <div class="border p-3">
+    <example>
       <rd-card group>
         <rd-card>
           <img
@@ -1407,7 +1407,7 @@
           </rd-card-footer>
         </rd-card>
       </rd-card>
-    </div>
+    </example>
     <highlight
       code="<rd-card group>
   <rd-card>
@@ -1537,7 +1537,7 @@
 </rd-card>"
     />
     <h3>Card decks</h3>
-    <div class="border p-3">
+    <example>
       <rd-card deck>
         <rd-card>
           <img
@@ -1665,7 +1665,7 @@
           </rd-card-footer>
         </rd-card>
       </rd-card>
-    </div>
+    </example>
     <highlight
       code="<rd-card deck>
   <rd-card>
@@ -1796,7 +1796,7 @@
 </rd-card>"
     />
     <h3>Card columns</h3>
-    <div class="border p-3">
+    <example>
       <rd-card columns>
         <rd-card>
           <img
@@ -1912,7 +1912,7 @@
           </rd-card-body>
         </rd-card>
       </rd-card>
-    </div>
+    </example>
     <highlight
       code="<rd-card columns>
   <rd-card>

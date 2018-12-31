@@ -5,7 +5,7 @@
       부트스트랩의 자바스크립트 모달 플러그인을 사용하여 라이트 박스, 사용자 알림 또는 사용자 정의 컨텐츠 대화상자를 사이트에 추가하십시오.
     </p>
     <h2>Example</h2>
-    <div class="p-3 border">
+    <example>
       <rd-button
         type="button"
         primary
@@ -45,7 +45,7 @@
           </rd-button>
         </rd-modal-footer>
       </rd-modal>
-    </div>
+    </example>
     <highlight
       code="<rd-button
   type=&quot;button&quot;
@@ -90,7 +90,7 @@
     <h3>
       Scrolling long content
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-button
         type="button"
         primary
@@ -131,7 +131,7 @@
           </rd-button>
         </rd-modal-footer>
       </rd-modal>
-    </div>
+    </example>
     <highlight
       code="<rd-button
   type=&quot;button&quot;
@@ -177,7 +177,7 @@
     <h3>
       Vertically centered
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-button
         type="button"
         primary
@@ -220,7 +220,7 @@
           </rd-button>
         </rd-modal-footer>
       </rd-modal>
-    </div>
+    </example>
     <highlight
       code="<rd-button
   type=&quot;button&quot;
@@ -268,7 +268,7 @@
     <h3>
       Tooltips and popovers
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-button
         type="button"
         primary
@@ -339,7 +339,7 @@
           </rd-button>
         </rd-modal-footer>
       </rd-modal>
-    </div>
+    </example>
     <highlight
       code="<rd-button
   type=&quot;button&quot;
@@ -415,7 +415,7 @@
     <h3>
       Optional sizes
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-button
         type="button"
         primary
@@ -501,7 +501,7 @@
           </rd-button>
         </rd-modal-footer>
       </rd-modal>
-    </div>
+    </example>
     <highlight
       code="<rd-button
   type=&quot;button&quot;

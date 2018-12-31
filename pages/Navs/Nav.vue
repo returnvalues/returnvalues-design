@@ -5,7 +5,7 @@
       부트스트랩에 포함된 네비게이션 컴포넌트를 사용하는 방법에 대한 문서 및 예제.
     </p>
     <h2>Example</h2>
-    <div class="p-3 border">
+    <example>
       <rd-nav>
         <a
           class="active"
@@ -30,7 +30,7 @@
           Disabled
         </a>
       </rd-nav>
-    </div>
+    </example>
     <highlight
       code="<rd-nav>
   <a
@@ -58,7 +58,7 @@
 </rd-nav>"
     />
 
-    <div class="p-3 border">
+    <example>
       <rd-nav tag="nav">
         <a
           class="active"
@@ -85,7 +85,7 @@
           Disabled
         </a>
       </rd-nav>
-    </div>
+    </example>
     <highlight
       code="<rd-nav tag=&quot;nav&quot;>
   <a
@@ -117,7 +117,7 @@
     <h3>
       Vertical
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-nav
         class="flex-column"
       >
@@ -146,7 +146,7 @@
           Disabled
         </a>
       </rd-nav>
-    </div>
+    </example>
     <highlight
       code="<rd-nav
   class=&quot;flex-column&quot;
@@ -180,7 +180,7 @@
     <h3>
       Tabs
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-nav tabs>
         <a
           class="active"
@@ -207,7 +207,7 @@
           Disabled
         </a>
       </rd-nav>
-    </div>
+    </example>
     <highlight
       code="<rd-nav tabs>
   <a
@@ -239,7 +239,7 @@
     <h3>
       Pills
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-nav pills>
         <a
           class="active"
@@ -266,7 +266,7 @@
           Disabled
         </a>
       </rd-nav>
-    </div>
+    </example>
     <highlight
       code="<rd-nav pills>
   <a
@@ -298,7 +298,7 @@
     <h3>
       Fill and justify
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-nav
         pills
         fill
@@ -328,7 +328,7 @@
           Disabled
         </a>
       </rd-nav>
-    </div>
+    </example>
     <highlight
       code="<rd-nav
   pills
@@ -361,7 +361,7 @@
 </rd-nav>"
     />
 
-    <div class="p-3 border">
+    <example>
       <rd-nav
         pills
         justified
@@ -391,7 +391,7 @@
           Disabled
         </a>
       </rd-nav>
-    </div>
+    </example>
     <highlight
       code="<rd-nav
   pills
@@ -426,7 +426,7 @@
     <h3>
       Using dropdowns
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-nav tabs>
         <a
           class="active"
@@ -480,7 +480,7 @@
           Disabled
         </a>
       </rd-nav>
-    </div>
+    </example>
     <highlight
       code="<rd-nav tabs>
   <a
@@ -539,7 +539,7 @@
     <h3>
       Pills with dropdowns
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-nav pills>
         <a
           class="active"
@@ -593,7 +593,7 @@
           Disabled
         </a>
       </rd-nav>
-    </div>
+    </example>
     <highlight
       code="<rd-nav pills>
   <a

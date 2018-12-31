@@ -7,7 +7,7 @@
 
     <h2>Example</h2>
 
-    <div class="p-3 border">
+    <example>
       <rd-pagination>
         <a href="javascript:">
           Previous
@@ -25,7 +25,7 @@
           Next
         </a>
       </rd-pagination>
-    </div>
+    </example>
     <highlight
       code="<rd-pagination>
   <a href=&quot;javascript:&quot;>
@@ -48,7 +48,7 @@
     <h3>
       Working with icons
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-pagination>
         <a
           href="javascript:"
@@ -88,7 +88,7 @@
           </span>
         </a>
       </rd-pagination>
-    </div>
+    </example>
     <highlight
       code="<rd-pagination>
   <a
@@ -133,7 +133,7 @@
     <h3>
       Disabled and active states
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-pagination>
         <a
           href="javascript:"
@@ -167,7 +167,7 @@
           Next
         </a>
       </rd-pagination>
-    </div><highlight
+    </example><highlight
       code="<rd-pagination>
   <a
     href=&quot;javascript:&quot;
@@ -203,7 +203,7 @@
 </rd-pagination>"
     />
 
-    <div class="p-3 border">
+    <example>
       <rd-pagination>
         <span disabled>
           Previous
@@ -230,7 +230,7 @@
           Next
         </a>
       </rd-pagination>
-    </div>
+    </example>
     <highlight
       code="<rd-pagination>
   <span disabled>
@@ -263,7 +263,7 @@
     <h3>
       Sizing
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-pagination lg>
         <a
           disabled
@@ -282,7 +282,7 @@
           3
         </a>
       </rd-pagination>
-    </div>
+    </example>
     <highlight
       code="<rd-pagination lg>
   <a
@@ -303,7 +303,7 @@
   </a>
 </rd-pagination>"
     />
-    <div class="p-3 border">
+    <example>
       <rd-pagination sm>
         <a
           disabled
@@ -322,7 +322,7 @@
           3
         </a>
       </rd-pagination>
-    </div>
+    </example>
     <highlight
       code="<rd-pagination sm>
   <a
@@ -347,7 +347,7 @@
     <h3>
       Alignment
     </h3>
-    <div class="p-3 border">
+    <example>
       <rd-pagination class="justify-content-center">
         <a
           disabled
@@ -368,7 +368,7 @@
           Next
         </a>
       </rd-pagination>
-    </div><highlight
+    </example><highlight
       code="<rd-pagination class=&quot;justify-content-center&quot;>
   <a
     disabled
@@ -390,7 +390,7 @@
   </a>
 </rd-pagination>"
     />
-    <div class="p-3 border">
+    <example>
       <rd-pagination class="justify-content-end">
         <a
           disabled
@@ -419,7 +419,7 @@
           Next
         </a>
       </rd-pagination>
-    </div>
+    </example>
     <highlight
       code="<rd-pagination class=&quot;justify-content-end&quot;>
   <a

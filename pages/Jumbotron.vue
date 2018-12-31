@@ -8,7 +8,7 @@
     </p>
     <p>가볍고 유연한 컴포넌트로서 선택적으로 전체 뷰포트를 확장하여 주요 마케팅 메시지를 사이트에 표시 할 수 있습니다.</p>
     <h2>Example</h2>
-    <div class="p-3 border">
+    <example>
       <rd-jumbotron>
         <h1 class="display-4">
           Hello, world!
@@ -30,7 +30,7 @@
           Learn more
         </a>
       </rd-jumbotron>
-    </div>
+    </example>
     <highlight
       code="<rd-jumbotron>
   <h1 class=&quot;display-4&quot;>
@@ -56,7 +56,7 @@
     />
 
 
-    <div class="border p-3">
+    <example>
       <rd-jumbotron fluid>
         <h1 class="display-4">
           Fluid jumbotron
@@ -65,7 +65,7 @@
           This is a modified jumbotron that occupies the entire horizontal space of its parent.
         </p>
       </rd-jumbotron>
-    </div>
+    </example>
     <highlight
       code="<rd-jumbotron fluid>
   <h1 class=&quot;display-4&quot;>

@@ -5,7 +5,7 @@
       회전목마와 같이 순환하는 슬라이드 쇼(이미지 또는 텍스트 슬라이드)를 구성하는 컴포넌트.
     </p>
     <h2>Example</h2>
-    <div class="border p-3">
+    <example>
       <rd-carousel v-model="test">
         <img
           src="http://dummyimage.com/800x400/777777/555555&text=First slide"
@@ -20,7 +20,7 @@
           alt="Third slide"
         >
       </rd-carousel>
-    </div>
+    </example>
     <highlight
       code="<rd-carousel v-model=&quot;test&quot;>
   <img
@@ -38,7 +38,7 @@
 </rd-carousel>"
     />
     <h3>With controls</h3>
-    <div class="border p-3">
+    <example>
       <rd-carousel control>
         <img
           src="http://dummyimage.com/800x400/777777/555555&text=First slide"
@@ -51,7 +51,7 @@
           alt="Third slide"
         >
       </rd-carousel>
-    </div>
+    </example>
     <highlight
       code="<rd-carousel control>
   <img
@@ -67,7 +67,7 @@
 </rd-carousel>"
     />
     <h3>With indicators</h3>
-    <div class="border p-3">
+    <example>
       <rd-carousel
         control
         indicator
@@ -85,7 +85,7 @@
           alt="Third slide"
         >
       </rd-carousel>
-    </div>
+    </example>
     <highlight
       code="<rd-carousel
   control
@@ -106,7 +106,7 @@
 </rd-carousel>"
     />
     <h3>With captions</h3>
-    <div class="border p-3">
+    <example>
       <rd-carousel
         indicator
         control
@@ -142,7 +142,7 @@
           </div>
         </div>
       </rd-carousel>
-    </div>
+    </example>
     <highlight
       code="<rd-carousel
   indicator
@@ -181,7 +181,7 @@
 </rd-carousel>"
     />
     <h3>Crossfade</h3>
-    <div class="border p-3">
+    <example>
       <rd-carousel
         fade
         control
@@ -199,7 +199,7 @@
           alt="Third slide"
         >
       </rd-carousel>
-    </div>
+    </example>
     <highlight
       code="<rd-carousel
   fade

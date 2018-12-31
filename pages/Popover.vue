@@ -9,7 +9,7 @@
       Example
     </h2>
 
-    <div class="p-3 border">
+    <example>
       <rd-button
         type="button"
         lg
@@ -21,7 +21,7 @@
       >
         Click to toggle popover
       </rd-button>
-    </div>
+    </example>
     <highlight
       code="&lt;rd-button
   type=&quot;button&quot;
@@ -36,7 +36,7 @@
 &lt;/rd-button&gt;"
     />
     <h3>Four directions</h3>
-    <div class="p-3 border">
+    <example>
       <rd-button
         secondary
         :popover="{
@@ -76,7 +76,7 @@
       >
         Popover on left
       </rd-button>
-    </div>
+    </example>
     <highlight
       code="&lt;rd-button
   secondary
@@ -119,7 +119,7 @@
 &lt;/rd-button&gt;"
     />
     <h3>Dismiss on next click</h3>
-    <div class="p-3 border">
+    <example>
       <rd-button
         tag="a"
         lg
@@ -134,7 +134,7 @@
       >
         Dismissible popover
       </rd-button>
-    </div>
+    </example>
     <highlight
       code="&lt;rd-button
   tag=&quot;a&quot;
@@ -152,7 +152,7 @@
 &lt;/rd-button&gt;"
     />
     <h3>Disabled elements</h3>
-    <div class="p-3 border">
+    <example>
       <rd-popover
         :popover="{content:'Disabled popover'}"
       >
@@ -164,7 +164,7 @@
           Disabled button
         </rd-button>
       </rd-popover>
-    </div>
+    </example>
     <highlight
       code="&lt;rd-popover
   :popover=&quot;{content:'Disabled popover'}&quot;
