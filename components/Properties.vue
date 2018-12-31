@@ -58,12 +58,23 @@ export default {
           { name: '설명' },
           { name: '리턴값', style: { width: '80px' } },
         ]
+      },
+      args: {
+        columns: [
+          { name: '이름', style: { width: '100px' } },
+          { name: '설명' },
+          { name: '타입', style: { width: '80px' } },
+          { name: '기본값', style: { width: '80px' } },
+        ]
       }
     };
   },
   computed: {
     columns() {
-      return this[this.type].columns;
+      const ret = this[this.type].columns;
+      let slice = 0;
+      this.data.forEach(({ length }) => { slice = Math.max(slice, length); });
+      return slice ? ret.slice(0, slice) : ret;
     }
   },
 };

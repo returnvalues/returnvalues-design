@@ -382,40 +382,10 @@
     추가로 <nuxt-link to="/mixins/semantic">
       Semantic
     </nuxt-link> 속성을 쓸 수 있습니다.
-    <table class="table table-striped table-sm">
-      <thead>
-        <tr>
-          <th style="width:100px;">
-            속성
-          </th>
-          <th>
-            설명
-          </th>
-          <th style="width:80px;">
-            타입
-          </th>
-          <th style="width:80px;">
-            기본값
-          </th>
-          <th style="width: 200px">
-            사용 가능한 값
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr
-          v-for="(row,idx) of props"
-          :key="idx"
-        >
-          <td
-            v-for="(col,idx2) of row"
-            :key="idx2"
-          >
-            {{ col }}
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <properties
+      type="props"
+      :data="props"
+    />
   </div>
 </template>
 

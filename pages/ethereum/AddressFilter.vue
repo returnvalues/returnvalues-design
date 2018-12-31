@@ -21,37 +21,10 @@
 </rd-list-group>`"
     />
     <h2>Arguments</h2>
-    <table class="table table-striped table-sm">
-      <thead>
-        <tr>
-          <th style="width:100px;">
-            이름
-          </th>
-          <th>
-            설명
-          </th>
-          <th style="width:80px;">
-            타입
-          </th>
-          <th style="width:80px;">
-            기본값
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr
-          v-for="(row,idx) of args"
-          :key="idx"
-        >
-          <td
-            v-for="(col,idx2) of row"
-            :key="idx2"
-          >
-            {{ col }}
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <properties
+      type="args"
+      :data="args"
+    />
   </div>
 </template>
 
