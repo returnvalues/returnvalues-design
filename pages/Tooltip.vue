@@ -107,7 +107,7 @@ export default {
         ['trigger', 'How tooltip is triggered - click | hover | focus | manual. You may pass multiple triggers; separate them with a space.\n\'manual\' indicates that the tooltip will be triggered programmatically via the .tooltip(\'show\'), .tooltip(\'hide\') and .tooltip(\'toggle\') methods; this value cannot be combined with any other trigger.\n\'hover\' on its own will result in tooltips that cannot be triggered via the keyboard, and should only be used if alternative methods for conveying the same information for keyboard users is present.', 'String', 'hover focus'],
         ['offset', 'Offset of the tooltip relative to its target.', 'Number | String', '0'],
         ['fallbackPlacement', 'Allow to specify which position Popper will use on fallback.', 'String | array', 'flip'],
-        ['boundary', 'dOverflow constraint boundary of the tooltip. Accepts the values of \'viewport\', \'window\', \'scrollParent\', or an HTMLElement reference (JavaScript only).', 'String | Element', 'scrollParent'],
+        ['boundary', 'Overflow constraint boundary of the tooltip. Accepts the values of \'viewport\', \'window\', \'scrollParent\', or an HTMLElement reference (JavaScript only).', 'String | Element', 'scrollParent'],
       ]
     };
   }

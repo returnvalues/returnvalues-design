@@ -32,12 +32,12 @@ export default {
     width: 100%;
     z-index: 10;
     max-height: 100vh;
-    min-width: 100vw;
-    border-bottom: 1px solid #dee2e6
+    min-width: 100%;
+    border-bottom: 1px solid #dee2e6;
   }
   .app{background: #f5f8fa;}
   .content{
-    max-width: 100vw;
+    max-width: 100%;
     margin-top: 4rem;
   }
 
@@ -51,7 +51,7 @@ export default {
       width: 240px;
       height: 100%;
       min-width: 240px;
-      overflow-y:scroll;
+      overflow-y:auto;
       border-right: 1px solid #dee2e6;
       border-bottom: none;
     }

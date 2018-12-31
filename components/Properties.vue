@@ -6,9 +6,8 @@
           v-for="th of columns"
           :key="th.name"
           :style="th.style"
-        >
-          {{ th.name }}
-        </th>
+          v-text="th.name"
+        />
       </tr>
     </thead>
     <tbody>
@@ -19,9 +18,8 @@
         <td
           v-for="(col,idx2) of row"
           :key="idx2"
-        >
-          {{ col }}
-        </td>
+          v-text="col"
+        />
       </tr>
     </tbody>
   </table>
@@ -37,34 +35,34 @@ export default {
     return {
       props: {
         columns: [
-          { name: '속성', style: { width: '100px' } },
-          { name: '설명', },
-          { name: '타입', style: { width: '80px' } },
-          { name: '기본값', style: { width: '80px' } },
-          { name: '사용 가능한 값', style: { width: '200px' } },
+          { name: '속성', style: { width: '7rem' } },
+          { name: '설명', style: { minWidth: '18rem' } },
+          { name: '타입', style: { width: '6rem' } },
+          { name: '기본값', style: { width: '6rem' } },
+          { name: '사용 가능한 값', style: { width: '14rem' } },
         ]
       },
       events: {
         columns: [
-          { name: '이벤트명', style: { width: '100px' } },
-          { name: '설명' },
-          { name: '파라미터', style: { width: '120px' } }
+          { name: '이벤트명', style: { width: '7rem' } },
+          { name: '설명', style: { minWidth: '18rem' } },
+          { name: '파라미터', style: { width: '8rem' } }
         ]
       },
       methods: {
         columns: [
-          { name: '이름', style: { width: '100px' } },
-          { name: '파라미터', style: { width: '80px' } },
-          { name: '설명' },
-          { name: '리턴값', style: { width: '80px' } },
+          { name: '이름', style: { width: '7rem' } },
+          { name: '파라미터', style: { width: '6rem' } },
+          { name: '설명', style: { minWidth: '18rem' } },
+          { name: '리턴값', style: { width: '6rem' } },
         ]
       },
       args: {
         columns: [
-          { name: '이름', style: { width: '100px' } },
-          { name: '설명' },
-          { name: '타입', style: { width: '80px' } },
-          { name: '기본값', style: { width: '80px' } },
+          { name: '이름', style: { width: '7rem' } },
+          { name: '설명', style: { minWidth: '18rem' } },
+          { name: '타입', style: { width: '6rem' } },
+          { name: '기본값', style: { width: '6rem' } },
         ]
       }
     };
@@ -79,3 +77,7 @@ export default {
   },
 };
 </script>
+<style scoped>
+  .table{display: block;overflow-x: auto;}
+  .table td{white-space: pre-line;}
+</style>

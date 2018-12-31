@@ -1,26 +1,24 @@
 <template>
   <div>
     <h1>Buttons</h1>
-    <p>
-      내부적으로 쓰이는 믹스인들의 Props는 아래 링크에서 확인하세요.<br>
-                                     <ul>
-                                       <li>
-                                         <nuxt-link to="/mixins/semantic">
-                                           Semantic
-                                         </nuxt-link>
-                                       </li>
-                                       <li>
-                                         <nuxt-link to="/mixins/outline">
-                                           Outline
-                                         </nuxt-link>
-                                       </li>
-                                       <li>
-                                         <nuxt-link to="/mixins/size">
-                                           Size
-                                         </nuxt-link>
-                                       </li>
-                                     </ul>
-    </p>
+    내부적으로 쓰이는 믹스인들의 Props는 아래 링크에서 확인하세요.
+    <ul>
+      <li>
+        <nuxt-link to="/mixins/semantic">
+          Semantic
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/mixins/outline">
+          Outline
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/mixins/size">
+          Size
+        </nuxt-link>
+      </li>
+    </ul>
     <h2>Examples</h2>
     <h3>Semantic purpose</h3>
     <div class="border p-3">

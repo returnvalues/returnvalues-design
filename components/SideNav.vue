@@ -16,6 +16,7 @@
         </h5>
       </div>
       <rd-button
+        light
         class="d-md-none"
         @click.native="$refs.nav.toggle()"
       >
@@ -104,7 +105,11 @@ export default {
       ]
     };
   },
-
+  watch: {
+    '$route.path': function fn() {
+      this.$refs.nav.toggle(false);
+    }
+  }
 };
 </script>
 
@@ -113,7 +118,7 @@ export default {
   .rd-nav {width: 100%;}
   .rd-collapse {
     width:100%;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   @media (min-width: 768px) {
     .logo {width:50px;height: 50px;}
