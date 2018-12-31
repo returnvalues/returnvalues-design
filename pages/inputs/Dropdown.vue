@@ -1,6 +1,9 @@
 <template>
   <div>
     <h1>Dropdown</h1>
+    <p class="bd-lead">
+      부트스트랩 드롭다운 플러그인을 사용하여 링크 목록 등을 표시하기 위한 관련 오버레이를 토글합니다.
+    </p>
     <h2>Example</h2>
     <h3>
       Single button

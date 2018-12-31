@@ -1,14 +1,10 @@
 <template>
   <div>
     <h1>Badges</h1>
-    <p>
-      내부적으로 <nuxt-link to="/mixins/semantic">
-        Semantic
-      </nuxt-link> 믹스인을 사용하여 색상을 표시합니다.<br>
-      Props는 <nuxt-link to="/mixins/semantic">
-        Semantic
-      </nuxt-link>를 참조하세요
+    <p class="bd-lead">
+      카운터 숫자 및 라벨 구성요소인 배지에 대한 문서 및 예제
     </p>
+
     <h2>Example</h2>
     <div class="border p-3">
       <h1>

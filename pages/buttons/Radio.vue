@@ -3,14 +3,7 @@
     <h1>
       Radio
     </h1>
-    내부적으로 쓰이는 믹스인들의 Props는 아래 링크에서 확인하세요.<br>
-    <ul>
-      <li>
-        <nuxt-link to="/buttons/button">
-          Button
-        </nuxt-link>
-      </li>
-    </ul>
+    <p>내부적으로 RdButton을 쓰는 컴포넌트 입니다.</p>
     <h2>Example</h2>
     <div class="border p-3">
       <rd-button-group>

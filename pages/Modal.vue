@@ -1,6 +1,9 @@
 <template>
   <div>
     <h1>Modal</h1>
+    <p class="bd-lead">
+      부트스트랩의 자바스크립트 모달 플러그인을 사용하여 라이트 박스, 사용자 알림 또는 사용자 정의 컨텐츠 대화상자를 사이트에 추가하십시오.
+    </p>
     <h2>Example</h2>
     <div class="p-3 border">
       <rd-button

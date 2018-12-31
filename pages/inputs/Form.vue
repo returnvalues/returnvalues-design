@@ -1,6 +1,9 @@
 <template>
   <div>
     <h1>Form</h1>
+    <p class="bd-lead">
+      폼 컨트롤 스타일, 레이아웃 옵션 및 다양한 폼양식을 만들기 위한 사용자 지정 컴포넌트 대한 예제 및 사용 가이드.
+    </p>
     <h2>Example</h2>
     <div class="p-3 border">
       <form>

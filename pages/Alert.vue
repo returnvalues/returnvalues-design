@@ -1,13 +1,8 @@
 <template>
   <div>
     <h1>Alert</h1>
-    <p>
-      내부적으로 <nuxt-link to="/mixins/semantic">
-        Semantic
-      </nuxt-link> 믹스인을 사용하여 색상을 표시합니다.<br>
-      Props는 <nuxt-link to="/mixins/semantic">
-        Semantic
-      </nuxt-link>를 참조하세요
+    <p class="bd-lead">
+      유연한 알림 메시지를 통해 일반적 사용자 작업에 대한 상황별 피드백 메시지를 제공하십시오.
     </p>
 
     <h2>Example</h2>
@@ -64,6 +59,11 @@
   A simple dark alert—check it out!
 </rd-alert>"
     />
+
+    <h2>Props</h2>
+    <nuxt-link to="/mixins/semantic">
+      Semantic
+    </nuxt-link> 속성을 쓸 수 있습니다.
   </div>
 </template>
 

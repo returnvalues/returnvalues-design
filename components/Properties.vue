@@ -45,7 +45,7 @@ export default {
       events: {
         columns: [
           { name: '이벤트명', style: { width: '7rem' } },
-          { name: '설명', style: { minWidth: '18rem' } },
+          { name: '설명', style: { minWidth: '18rem', width: '34rem' } },
           { name: '파라미터', style: { width: '8rem' } }
         ]
       },
@@ -53,7 +53,7 @@ export default {
         columns: [
           { name: '이름', style: { width: '7rem' } },
           { name: '파라미터', style: { width: '6rem' } },
-          { name: '설명', style: { minWidth: '18rem' } },
+          { name: '설명', style: { minWidth: '18rem', width: '30rem' } },
           { name: '리턴값', style: { width: '6rem' } },
         ]
       },
@@ -79,5 +79,6 @@ export default {
 </script>
 <style scoped>
   .table{display: block;overflow-x: auto;}
+  .table th{white-space: nowrap;}
   .table td{white-space: pre-line;}
 </style>

@@ -3,6 +3,10 @@
     <h1>
       List
     </h1>
+    <p class="bd-lead">
+      목록은 시리즈 컨텐츠를 보여 주는 유연하고 강력한 구성 요소입니다.
+      Modify and extend them to support just about any content within.
+    </p>
     <h2>Example</h2>
     <h3>
       Basic example

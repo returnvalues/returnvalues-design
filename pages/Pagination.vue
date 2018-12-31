@@ -1,6 +1,9 @@
 <template>
   <div>
     <h1>Pagination</h1>
+    <p class="bd-lead">
+      여러 페이지에 일련의 관련 콘텐츠가 있음을 나타내는 페이지 번호 매김을 보여주는 문서와 예제.
+    </p>
 
     <h2>Example</h2>
 

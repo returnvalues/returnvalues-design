@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1>
-      Nav
-    </h1>
-
+    <h1>Nav</h1>
+    <p class="bd-lead">
+      부트스트랩에 포함된 네비게이션 컴포넌트를 사용하는 방법에 대한 문서 및 예제.
+    </p>
     <h2>Example</h2>
     <div class="p-3 border">
       <rd-nav>

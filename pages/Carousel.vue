@@ -1,6 +1,9 @@
 <template>
   <div>
     <h1>Carousel</h1>
+    <p class="bd-lead">
+      회전목마와 같이 순환하는 슬라이드 쇼(이미지 또는 텍스트 슬라이드)를 구성하는 컴포넌트.
+    </p>
     <h2>Example</h2>
     <div class="border p-3">
       <rd-carousel v-model="test">

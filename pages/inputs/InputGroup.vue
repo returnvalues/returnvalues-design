@@ -1,6 +1,9 @@
 <template>
   <div>
     <h1>Input group</h1>
+    <p class="bd-lead">
+      입력폼 양쪽에 텍스트, 버튼 또는 버튼 그룹을 추가하여 폼 컨트롤을 쉽게 확장 할 수 있습니다.
+    </p>
     <h2>Example</h2>
     <div class="p-3 border">
       <rd-input-group class="mb-3">

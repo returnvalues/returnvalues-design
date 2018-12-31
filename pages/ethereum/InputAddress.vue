@@ -1,6 +1,9 @@
 <template>
   <div>
     <h1>Input Address</h1>
+    <p class="bd-lead">
+      hex 주소의 유효성을 검사하는 컴포넌트
+    </p>
     <h2>Example</h2>
     <div class="p-3 border">
       <rd-eth-input-address v-model="address" />

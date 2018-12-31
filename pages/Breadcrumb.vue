@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>Breadcrumb</h1>
-    <p>Props가 따로 없는 단순한 컴포넌트 입니다.</p>
+    <p class="bd-lead">
+      CSS를 통해 자동으로 추가된 구분기호로 현재 페이지의 위치를 나타냅니다.
+    </p>
     <h2>Example</h2>
     <div class="border p-3">
       <rd-breadcrumb>

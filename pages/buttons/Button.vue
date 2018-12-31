@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>Buttons</h1>
-    내부적으로 쓰이는 믹스인들의 Props는 아래 링크에서 확인하세요.
+    <p class="bd-lead">
+      폼 액션, 대화상자 등의 작업에 다양한 크기, 상태 등을 지원하는 사용자 정의 버튼 스타일을 사용하십시오.
+    </p>
     <ul>
       <li>
         <nuxt-link to="/mixins/semantic">
