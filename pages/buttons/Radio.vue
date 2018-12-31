@@ -133,11 +133,9 @@
 </template>
 
 <script>
-import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Radio',
-  components: { Highlight },
   data() {
     return {
       picked: 'one',

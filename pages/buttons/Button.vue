@@ -500,11 +500,9 @@
 </template>
 
 <script>
-import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Button',
-  components: { Highlight },
   data() {
     return {
       props: [

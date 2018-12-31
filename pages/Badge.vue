@@ -420,13 +420,9 @@
 </template>
 
 <script>
-import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Badge',
-  components: {
-    Highlight,
-  },
   data() {
     return {
       props: [

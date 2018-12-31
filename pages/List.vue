@@ -165,11 +165,9 @@
 </template>
 
 <script>
-import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'List',
-  components: { Highlight },
   data() {
     return {
       props: [

@@ -286,11 +286,9 @@
   </div>
 </template>
 <script>
-import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Carousel',
-  components: { Highlight },
   data() {
     return {
       test: 1,

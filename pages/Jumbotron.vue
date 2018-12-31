@@ -112,11 +112,9 @@
 </template>
 
 <script>
-import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Jumbotron',
-  components: { Highlight },
   data() {
     return {
       props: [

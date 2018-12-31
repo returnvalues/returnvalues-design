@@ -253,11 +253,9 @@
 </template>
 
 <script>
-import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Popover',
-  components: { Highlight },
   data() {
     return {
       props: [

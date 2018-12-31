@@ -50,11 +50,9 @@
 </template>
 
 <script>
-import Highlight from '~/components/Highlight';
 
 export default {
   name: 'InputAddress',
-  components: { Highlight },
   data() {
     return {
       address: null,

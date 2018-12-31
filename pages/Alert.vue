@@ -68,12 +68,8 @@
 </template>
 
 <script>
-import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Alert',
-  components: {
-    Highlight,
-  },
 };
 </script>

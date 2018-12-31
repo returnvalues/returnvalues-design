@@ -435,14 +435,9 @@ v-model=&quot;test&quot;
 </template>
 
 <script>
-import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Collapse',
-  components: {
-
-    Highlight
-  },
   data() {
     return {
       accordion: 1,

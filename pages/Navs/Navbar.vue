@@ -1026,14 +1026,10 @@
 </template>
 
 <script>
-import Highlight from '~/components/Highlight';
 // TODO: InputGroup 페이지 작성 후에 여기 form 수정하기
 
 export default {
   name: 'Navbar',
-  components: {
-    Highlight,
-  },
   data() {
     return {
       propsText: [

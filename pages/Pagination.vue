@@ -455,10 +455,8 @@
 </template>
 
 <script>
-import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Pagination',
-  components: { Highlight }
 };
 </script>

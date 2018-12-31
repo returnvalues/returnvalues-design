@@ -688,13 +688,9 @@
   </div>
 </template>
 <script>
-import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Modal',
-  components: {
-    Highlight
-  },
   data() {
     return {
       open: false,

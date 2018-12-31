@@ -2103,14 +2103,9 @@
 </template>
 
 <script>
-import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Card',
-  components: {
-
-    Highlight
-  },
   data() {
     return {
       props: [

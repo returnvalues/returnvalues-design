@@ -13,10 +13,8 @@ Vue.use(ReturnvaluesDesign);"
 </template>
 
 <script>
-import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Index',
-  components: { Highlight }
 };
 </script>

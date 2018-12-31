@@ -1,7 +1,7 @@
 <template>
-  <pre class="border highlight"><code
+  <pre class="highlight"><code
 ref="code"
-                                         class="p-3"
+                                         class="p-3 border"
                                          :class="type"
   >{{ code }}</code></pre>
 </template>
@@ -27,7 +27,7 @@ export default {
 };
 </script>
 <style>
-.border + pre.border.highlight{
+.border + pre.highlight .border{
   border-top: 0px !important;
 }
 </style>

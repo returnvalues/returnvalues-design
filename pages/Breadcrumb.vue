@@ -49,10 +49,8 @@
 </template>
 
 <script>
-import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Breadcrumb',
-  components: { Highlight }
 };
 </script>

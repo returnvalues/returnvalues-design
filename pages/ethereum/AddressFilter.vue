@@ -56,11 +56,9 @@
 </template>
 
 <script>
-import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'AddressFilter',
-  components: { Highlight },
   data() { return { args: [['length', '표시할 주소의 문자열 길이. 최소 9', 'Number', 26]] }; }
 };
 </script>

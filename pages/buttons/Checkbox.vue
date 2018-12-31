@@ -103,11 +103,9 @@
 </template>
 
 <script>
-import Highlight from '~/components/Highlight.vue';
 
 export default {
   name: 'Checkbox',
-  components: { Highlight },
   data() {
     return {
       checked: true,

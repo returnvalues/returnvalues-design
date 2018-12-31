@@ -510,11 +510,9 @@
 
 <script>
 
-import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Form',
-  components: { Highlight },
   data() {
     return {
       testEmail: '123',

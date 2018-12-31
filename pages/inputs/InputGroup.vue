@@ -1104,12 +1104,8 @@
 
 <script>
 
-import Highlight from '~/components/Highlight';
 
 export default {
   name: 'InputGroup',
-  components: {
-    Highlight
-  }
 };
 </script>

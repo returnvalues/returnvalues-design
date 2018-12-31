@@ -1378,11 +1378,9 @@
 </template>
 
 <script>
-import Highlight from '~/components/Highlight';
 
 export default {
   name: 'Dropdown',
-  components: { Highlight },
   data() {
     return {
       props: [
