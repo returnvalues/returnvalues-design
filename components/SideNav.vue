@@ -101,7 +101,8 @@ export default {
         { name: 'Pagination', to: '/pagination', icon: 'fas fa-angle-right' },
         { name: 'Popover', to: '/popover', icon: 'far fa-comment-alt' },
         { name: 'Progress', to: '/progress', icon: 'fas fa-percentage' },
-        { name: 'Tooltip', to: '/tooltip', icon: 'fas fa-comment-alt' }
+        { name: 'Qrcode', to: '/qrcode', icon: 'fas fa-qrcode' },
+        { name: 'Tooltip', to: '/tooltip', icon: 'fas fa-comment-alt' },
       ]
     };
   },

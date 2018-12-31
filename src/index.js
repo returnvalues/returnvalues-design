@@ -34,6 +34,7 @@ import RdCardHeader from './RdCardHeader.vue';
 import RdCardBody from './RdCardBody.vue';
 import RdCardFooter from './RdCardFooter.vue';
 import RdPopover from './RdPopover.vue';
+import RdQrcode from './RdQrcode.vue';
 import RdTooltip from './RdTooltip.vue';
 import RdEthInputAddress from './RdEthInputAddress.vue';
 
@@ -80,6 +81,7 @@ export default {
     Vue.component('RdCardBody', RdCardBody);
     Vue.component('RdCardFooter', RdCardFooter);
     Vue.component('RdPopover', RdPopover);
+    Vue.component('RdQrcode', RdQrcode);
     Vue.component('RdTooltip', RdTooltip);
     Vue.component('RdEthInputAddress', RdEthInputAddress);
   }
