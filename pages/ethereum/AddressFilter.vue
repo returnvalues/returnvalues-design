@@ -5,7 +5,7 @@
       필터를 이용하여 hex 주소를 필요한 길이로 보여 줄 수 있습니다.
     </p>
     <h2>Example</h2>
-    <example>
+    <example style="overflow:auto">
       <rd-list-group>
         <rd-list-item>0xFBC82B9eBBA1F9ab0C36FB6Ca05Be71344DA0c5E</rd-list-item>
         <rd-list-item>{{ '0xFBC82B9eBBA1F9ab0C36FB6Ca05Be71344DA0c5E'|RdEthAddress }}</rd-list-item>

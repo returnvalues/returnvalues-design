@@ -8,6 +8,3 @@ export default {
   name: 'Example'
 };
 </script>
-<style scoped>
-  .example{overflow: auto;}
-</style>
