@@ -73,7 +73,8 @@ export default {
           to: '/ethereum',
           child: [
             { name: 'Input Address', to: '/inputaddress' },
-            { name: 'Address Filter', to: '/addressfilter' }
+            { name: 'Address Filter', to: '/addressfilter' },
+            { name: 'Hex Filter', to: '/hexfilter' }
           ]
         },
         {

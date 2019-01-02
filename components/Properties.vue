@@ -63,6 +63,7 @@ export default {
           { name: '설명', style: { minWidth: '18rem' } },
           { name: '타입', style: { width: '6rem' } },
           { name: '기본값', style: { width: '6rem' } },
+          { name: '사용 가능한 값', style: { width: '14rem' } }
         ]
       }
     };
