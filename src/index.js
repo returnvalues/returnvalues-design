@@ -37,7 +37,7 @@ import RdPopover from './RdPopover.vue';
 import RdQrcode from './RdQrcode.vue';
 import RdTooltip from './RdTooltip.vue';
 import RdEthInputAddress from './RdEthInputAddress.vue';
-import { RdEthAddress } from './filters';
+import { RdEthAddress, RdEthHex } from './filters';
 
 export default {
   install(Vue) {
@@ -78,5 +78,6 @@ export default {
     Vue.component('RdTooltip', RdTooltip);
     Vue.component('RdEthInputAddress', RdEthInputAddress);
     Vue.filter('RdEthAddress', RdEthAddress);
+    Vue.filter('RdEthHex', RdEthHex);
   }
 };

@@ -1,3 +1,5 @@
+import Web3 from 'web3';
+
 export function RdEthAddress(value, length = 26) {
   const val = `${value || ''}`;
   const ret = val.startsWith('0x') ? val.slice(2) : val;
@@ -7,4 +9,16 @@ export function RdEthAddress(value, length = 26) {
   return `0x${ret.slice(0, sideLength + 0.5)}...${ret.slice(-sideLength)}`;
 }
 
-export default { RdEthAddress };
+export const hexTo = {
+  utf8: hex => Web3.utils.hexToUtf8(hex),
+  ascii: hex => Web3.utils.hexToAscii(hex),
+  bytes: hex => Web3.utils.hexToBytes(hex),
+  number: hex => Web3.utils.hexToNumber(hex),
+  numberString: hex => Web3.utils.hexToNumberString(hex),
+  string: hex => Web3.utils.hexToString(hex)
+};
+export function RdEthHex(hex, to = 'utf-8') {
+  const fn = hexTo[to] || hexTo.utf8;
+  return fn(hex);
+}
+export default { RdEthAddress, RdEthHex };
