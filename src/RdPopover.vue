@@ -13,6 +13,9 @@ export default {
   },
   mounted() {
     if (this.popover) window.$(this.$el).popover(this.popover);
+  },
+  beforeDestroy() {
+    if (this.popover) window.$(this.$el).popover('dispose');
   }
 
 };

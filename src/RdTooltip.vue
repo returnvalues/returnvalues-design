@@ -15,7 +15,11 @@ export default {
     if (this.$options.name === 'RdTooltip' || this.tooltip === '' || this.tooltip) {
       window.$(this.$el).tooltip(this.tooltip || undefined);
     }
+  },
+  beforeDestroy() {
+    if (this.$options.name === 'RdTooltip' || this.tooltip === '' || this.tooltip) {
+      window.$(this.$el).tooltip('dispose');
+    }
   }
-
 };
 </script>

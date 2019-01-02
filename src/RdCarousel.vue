@@ -39,6 +39,9 @@ export default {
       if (this.value !== v) this.to(v);
     },
   },
+  beforeDestroy() {
+    window.$(this.$el).carousel('dispose');
+  },
   mounted() {
     window.$(this.$el)
       .carousel(this.options)
