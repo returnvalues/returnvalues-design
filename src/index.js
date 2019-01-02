@@ -37,10 +37,13 @@ import RdPopover from './RdPopover.vue';
 import RdQrcode from './RdQrcode.vue';
 import RdTooltip from './RdTooltip.vue';
 import RdEthInputAddress from './RdEthInputAddress.vue';
-import { RdEthAddress, RdEthHex, RdEthToHex } from './filters';
+import {
+  RdEthAddress, RdEthHex, RdEthToHex, hexFrom, hexTo
+} from './filters';
 
 export default {
   install(Vue) {
+    Object.assign(Vue.prototype, { RdEth: { hexFrom, hexTo } });
     Vue.component('RdButton', RdButton);
     Vue.component('RdButtonGroup', RdButtonGroup);
     Vue.component('RdButtonRadio', RdButtonRadio);
