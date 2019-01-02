@@ -295,76 +295,76 @@ v-model=&quot;test&quot;
     </example>
     <highlight
       code="<div
-      id=&quot;accordionExample&quot;
-      class=&quot;accordion&quot;
+  id=&quot;accordionExample&quot;
+  class=&quot;accordion&quot;
+>
+  <rd-card>
+    <rd-card-header
+      id=&quot;headingOne&quot;
     >
-      <rd-card>
-        <rd-card-header
-          id=&quot;headingOne&quot;
+      <h5 class=&quot;mb-0&quot;>
+        <rd-button
+          link
+          type=&quot;button&quot;
+          @click.native=&quot;accordion=1&quot;
         >
-          <h5 class=&quot;mb-0&quot;>
-            <rd-button
-              link
-              type=&quot;button&quot;
-              @click.native=&quot;accordion=1&quot;
-            >
-              Collapsible Group Item #1
-            </rd-button>
-          </h5>
-        </rd-card-header>
+          Collapsible Group Item #1
+        </rd-button>
+      </h5>
+    </rd-card-header>
 
-        <rd-collapse
-          :show=&quot;accordion===1&quot;
-          @change=&quot;v=>v&&(accordion=1)&quot;
+    <rd-collapse
+      :show=&quot;accordion===1&quot;
+      @change=&quot;v=>v&&(accordion=1)&quot;
+    >
+      <rd-card-body>
+        ...
+      </rd-card-body>
+    </rd-collapse>
+  </rd-card>
+  <rd-card>
+    <rd-card-header>
+      <h5 class=&quot;mb-0&quot;>
+        <rd-button
+          link
+          type=&quot;button&quot;
+          @click.native=&quot;accordion=2&quot;
         >
-          <rd-card-body>
-            ...
-          </rd-card-body>
-        </rd-collapse>
-      </rd-card>
-      <rd-card>
-        <rd-card-header>
-          <h5 class=&quot;mb-0&quot;>
-            <rd-button
-              link
-              type=&quot;button&quot;
-              @click.native=&quot;accordion=2&quot;
-            >
-              Collapsible Group Item #2
-            </rd-button>
-          </h5>
-        </rd-card-header>
-        <rd-collapse
-          :show=&quot;accordion===2&quot;
-          @change=&quot;v=>v&&(accordion=2)&quot;
+          Collapsible Group Item #2
+        </rd-button>
+      </h5>
+    </rd-card-header>
+    <rd-collapse
+      :show=&quot;accordion===2&quot;
+      @change=&quot;v=>v&&(accordion=2)&quot;
+    >
+      <rd-card-body>
+        ...
+      </rd-card-body>
+    </rd-collapse>
+  </rd-card>
+  <rd-card>
+    <rd-card-header>
+      <h5 class=&quot;mb-0&quot;>
+        <rd-button
+          link
+          type=&quot;button&quot;
+          @click.native=&quot;accordion=3&quot;
         >
-          <rd-card-body>
-            ...
-          </rd-card-body>
-        </rd-collapse>
-      </rd-card>
-      <rd-card>
-        <rd-card-header>
-          <h5 class=&quot;mb-0&quot;>
-            <rd-button
-              link
-              type=&quot;button&quot;
-              @click.native=&quot;accordion=3&quot;
-            >
-              Collapsible Group Item #3
-            </rd-button>
-          </h5>
-        </rd-card-header>
-        <rd-collapse
-          :show=&quot;accordion===3&quot;
-          @change=&quot;v=>v&&(accordion=3)&quot;
-        >
-          <rd-card-body>
-            ...
-          </rd-card-body>
-        </rd-collapse>
-      </rd-card>
-    </div>"
+          Collapsible Group Item #3
+        </rd-button>
+      </h5>
+    </rd-card-header>
+    <rd-collapse
+      :show=&quot;accordion===3&quot;
+      @change=&quot;v=>v&&(accordion=3)&quot;
+    >
+      <rd-card-body>
+        ...
+      </rd-card-body>
+    </rd-collapse>
+  </rd-card>
+</div>"
     />
 
     <h2>Props</h2>

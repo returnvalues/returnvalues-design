@@ -274,19 +274,19 @@
     </example>
     <highlight
       code="<rd-button
-        type=&quot;button&quot;
-        semantic=&quot;primary&quot;
-        size=&quot;sm&quot;
-      >
-        Small button
-      </rd-button>
-      <rd-button
-        type=&quot;button&quot;
-        semantic=&quot;secondary&quot;
-        size=&quot;sm&quot;
-      >
-        Small button
-      </rd-button>"
+  type=&quot;button&quot;
+  semantic=&quot;primary&quot;
+  size=&quot;sm&quot;
+>
+  Small button
+</rd-button>
+<rd-button
+  type=&quot;button&quot;
+  semantic=&quot;secondary&quot;
+  size=&quot;sm&quot;
+>
+  Small button
+</rd-button>"
     />
     <example>
       <rd-button
@@ -308,21 +308,21 @@
     </example>
     <highlight
       code="<rd-button
-        type=&quot;button&quot;
-        semantic=&quot;primary&quot;
-        size=&quot;lg&quot;
-        block
-      >
-        Block level button
-      </rd-button>
-      <rd-button
-        type=&quot;button&quot;
-        semantic=&quot;secondary&quot;
-        size=&quot;lg&quot;
-        block
-      >
-        Block level button
-      </rd-button>"
+  type=&quot;button&quot;
+  semantic=&quot;primary&quot;
+  size=&quot;lg&quot;
+  block
+>
+  Block level button
+</rd-button>
+<rd-button
+  type=&quot;button&quot;
+  semantic=&quot;secondary&quot;
+  size=&quot;lg&quot;
+  block
+>
+  Block level button
+</rd-button>"
     />
     <h3>State</h3>
     <example>
