@@ -37,17 +37,10 @@ import RdPopover from './RdPopover.vue';
 import RdQrcode from './RdQrcode.vue';
 import RdTooltip from './RdTooltip.vue';
 import RdEthInputAddress from './RdEthInputAddress.vue';
+import { RdEthAddress } from './filters';
 
 export default {
   install(Vue) {
-    Vue.filter('RdEthAddress', (value, length = 26) => {
-      const val = `${value || ''}`;
-      const ret = val.startsWith('0x') ? val.slice(2) : val;
-      const len = length < 9 ? 9 : length;
-      if (ret.length <= len) return `0x${ret}`;
-      const sideLength = (len - 5) / 2;
-      return `0x${ret.slice(0, sideLength + 0.5)}...${ret.slice(-sideLength)}`;
-    });
     Vue.component('RdButton', RdButton);
     Vue.component('RdButtonGroup', RdButtonGroup);
     Vue.component('RdButtonRadio', RdButtonRadio);
@@ -84,5 +77,6 @@ export default {
     Vue.component('RdQrcode', RdQrcode);
     Vue.component('RdTooltip', RdTooltip);
     Vue.component('RdEthInputAddress', RdEthInputAddress);
+    Vue.filter('RdEthAddress', RdEthAddress);
   }
 };
