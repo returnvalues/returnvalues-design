@@ -12,7 +12,7 @@
       >
       <div class="col p-0 ml-1 text-center text-md-left">
         <h5 class="m-0">
-          Return Values Design
+          ReturnValues Design
         </h5>
       </div>
       <rd-button

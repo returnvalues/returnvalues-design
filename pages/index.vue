@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Return Values Design</h1>
+    <h1>ReturnValues Design</h1>
     <h2>사용법</h2>
     <highlight
       type="javascript"
