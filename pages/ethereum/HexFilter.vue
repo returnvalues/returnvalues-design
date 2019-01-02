@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>HexFilter</h1>
+    <h1>Hex Filter</h1>
     <p class="bd-lead">
       필터를 이용하여 hex 스트링을 원하는 형식으로 변환합니다.
     </p>

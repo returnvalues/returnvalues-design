@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>AddressFilter</h1>
+    <h1>Address Filter</h1>
     <p class="bd-lead">
       필터를 이용하여 hex 주소를 필요한 길이로 보여 줄 수 있습니다.
     </p>
