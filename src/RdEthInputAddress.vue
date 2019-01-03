@@ -15,9 +15,7 @@
       :disabled="disabled"
       :placeholder="placeholder"
       :class="outlineClass"
-      @keydown="check"
-      @paste="check"
-      @change="check"
+      @input="check"
     >
   </rd-input-group>
 </template>
