@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node node_modules/.bin/rollup -c rollup.config.js",
+    "build": "node node_modules/rollup/bin/rollup -c rollup.config.js",
     "start": "node node_modules/nuxt/bin/nuxt",
     "gh-pages": "node node_modules/nuxt/bin/nuxt generate -c nuxt.config.gh-pages.js && node node_modules/push-dir/bin/push-dir --dir=dist --branch=gh-pages --cleanup",
     "lint": "node_modules/.bin/eslint pages src components plugins layouts --ext .js,.mjs,.vue",
