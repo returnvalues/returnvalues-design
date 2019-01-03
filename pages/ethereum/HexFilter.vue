@@ -35,6 +35,6 @@
 
 export default {
   name: 'HexFilter',
-  data() { return { args: [['to', '보여줄 형식', 'String', 'utf8', 'utf8, ascii, number, numberString, string']] }; }
+  data() { return { args: [['to', '보여줄 형식', 'String', 'utf8', 'ascii, bytes, number, numberString, utf8']] }; }
 };
 </script>

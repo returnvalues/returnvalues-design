@@ -31,6 +31,6 @@
 
 export default {
   name: 'ToHexFilter',
-  data() { return { args: [['from', '값의 형식', 'String', 'utf8', 'ascii, decimal, utf8, bytes, wei']] }; }
+  data() { return { args: [['from', '값의 형식', 'String', 'utf8', 'ascii, bytes, number, numberString, utf8']] }; }
 };
 </script>
