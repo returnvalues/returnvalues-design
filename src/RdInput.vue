@@ -81,7 +81,7 @@ export default {
       },
       class: [sizeClass, inputClass, outlineClass],
       on: {
-        change() {
+        input() {
           self.$emit('change', self.$refs.input.value);
         }
       }
