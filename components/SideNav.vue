@@ -72,6 +72,7 @@ export default {
           icon: 'fab fa-ethereum',
           to: '/ethereum',
           child: [
+            { name: 'Input', to: '/input' },
             { name: 'Input Address', to: '/inputaddress' },
             { name: 'Address Filter', to: '/addressfilter' },
             { name: 'Hex Filter', to: '/hexfilter' },
