@@ -21,7 +21,7 @@ import RdButton from './RdButton.vue';
 
 export default {
   name: 'RdButtonCheckbox',
-  mixins: [Object.assign({}, RdButton, { name: undefined })],
+  mixins: [RdButton],
   model: {
     prop: 'modelValue',
     event: 'change'

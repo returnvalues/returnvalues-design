@@ -21,7 +21,7 @@ import RdButton from './RdButton.vue';
 
 export default {
   name: 'RdButtonRadio',
-  mixins: [Object.assign({}, RdButton, { name: undefined })],
+  mixins: [RdButton],
   model: {
     prop: 'modelValue',
     event: 'change'
