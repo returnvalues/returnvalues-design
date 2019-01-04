@@ -15,6 +15,32 @@
     :options=&quot;{'color':{dark:'#343a40',light:'#ffffff00'}}&quot;
 />"
     />
+    <h3>Ethereum address check</h3>
+    <example>
+      <rd-qrcode
+        eth-address
+        text="0x0f167026022632e38c919700d6B466E598905f9C"
+        :options="{'color':{dark:'#343a40',light:'#ffffff00'}}"
+      />
+      <rd-qrcode
+        eth-address
+        text="invalid address"
+        :options="{'color':{dark:'#343a40',light:'#ffffff00'}}"
+      />
+    </example>
+    <highlight
+      code="<rd-qrcode
+  eth-address
+  text=&quot;0x0f167026022632e38c919700d6B466E598905f9C&quot;
+  :options=&quot;{'color':{dark:'#343a40',light:'#ffffff00'}}&quot;
+/>
+<rd-qrcode
+  eth-address
+  text=&quot;invalid address&quot;
+  :options=&quot;{'color':{dark:'#343a40',light:'#ffffff00'}}&quot;
+/>"
+    />
+
     <h2>Props</h2>
     <properties
       type="props"
@@ -34,6 +60,7 @@ export default {
     return {
       props: [
         ['tag', '렌더링 될 HTML 엘리먼트의 태그', 'String', 'span', 'span, div ...'],
+        ['ethAddress', '주소 체크를 활성화 합니다. 주소가 아닐경우 나오지 않습니다.', 'Boolean', 'false', 'true, false'],
         ['options', 'Qrcode options 생략가능', 'Object', '', ''],
       ],
       propsQrcode: [
