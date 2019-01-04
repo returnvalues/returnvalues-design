@@ -6,7 +6,7 @@
     <thead>
       <tr>
         <th>화폐</th>
-        <th>가격 (USD)</th>
+        <th>가격 ({{ this.currencyDisplay }})</th>
         <th>1시간대비</th>
         <th>거래대금</th>
       </tr>
@@ -16,12 +16,12 @@
         v-for="item of filteredData"
         :key="item.base"
       >
-        <td>{{ currency[item.base] }} {{ item.base }}</td>
-        <td>{{ item.price }}</td>
+        <td>{{ cryptocurrencies[item.base] }} {{ item.base }}</td>
+        <td>{{ item.priceDisplay|numberComma }}</td>
         <td :class="item.class">
-          {{ item.change }}
+          {{ item.changeDisplay|numberComma }}
         </td>
-        <td>{{ item.volume }}</td>
+        <td>{{ item.volumeDisplay|numberComma }}</td>
       </tr>
     </tbody>
   </table>
@@ -31,10 +31,20 @@ import axios from 'axios';
 
 export default {
   name: 'RdEthCyptocurrency',
+  filters: {
+    numberComma: (n) => {
+      const [int, float] = `${n || 0}`.split('.');
+      return int.replace(/\B(?=(\d{3})+(?!\d))/g, ',') + (float ? `.${float}` : '');
+    }
+  },
+  props: { currency: { type: String, default: 'KRW' } },
   data() {
     return {
+      currencyDisplay: 'USD',
       data: [],
-      currency: {
+      exchangeRatePromise: undefined,
+      exchangeRates: { USD: 1 },
+      cryptocurrencies: {
         ETH: '이더리움',
         BTC: '비트코인',
         XRP: '리플',
@@ -75,18 +85,60 @@ export default {
       return this.data.filter(x => x && !x.error);
     }
   },
+  watch: {
+    currency() {
+      if (this.exchangeRates[this.currency]) { // 이미 받아온게 있을 경우 먼저 표시.
+        this.currencyDisplay = this.currency;
+        this.filteredData.forEach(x => this.updateCurrency(x));
+      }
+      if (this.currency === 'USD') return;
+      this.refreshExchangeRate(); // 그 후 새로 고침
+      this.exchangeRatePromise.then(() => {
+        this.filteredData.forEach(x => this.updateCurrency(x));
+      });
+    }
+  },
   beforeMount() {
     this.refresh();
   },
   methods: {
+    updateCurrency(res) {
+      const item = res;
+      const props = ['price', 'change', 'volume'];
+      props.forEach((p) => { item[`${p}Display`] = item[p]; });
+      this.exchangeRatePromise.then(() => {
+        const rate = this.exchangeRates[this.currency];
+        props.forEach((p) => { item[`${p}Display`] = +item[p] * rate; });
+      });
+    },
+    setClass(res) {
+      const item = res;
+      if (+item.change > 0) {
+        item.change = `+${item.change}`;
+        item.class = 'text-danger';
+      } else if (+item.change < 0) {
+        item.class = 'text-primary';
+      }
+    },
+    refreshExchangeRate() {
+      this.exchangeRatePromise = axios.get(`https://api.exchangeratesapi.io/latest?base=USD&symbols=${this.currency}`).then((r) => {
+        if (r.data && r.data.rates) {
+          Object.keys(r.data.rates).forEach((key) => {
+            this.$set(this.exchangeRates, key, r.data.rates[key]);
+          });
+          this.currencyDisplay = this.currency;
+        }
+        return r.data;
+      });
+    },
     refresh() {
-      Object.keys(this.currency).forEach((base, i) => {
+      this.refreshExchangeRate();
+      Object.keys(this.cryptocurrencies).forEach((base, i) => {
         axios.get(`https://www.cryptonator.com/api/ticker/${base}-usd`).then(({ data }) => {
-          let res = data && data.ticker;
-          if (data && data.success) {
-            res.up = +res.change >= 0;
-            if (res.up) res.change = `+${res.change}`;
-            res.class = res.up ? 'text-danger' : 'text-primary';
+          let res = data && data.success && data.ticker;
+          if (res) {
+            this.setClass(res);
+            this.updateCurrency(res);
           } else res = { error: data.error, base };
           this.$set(this.data, i, res);
         });
