@@ -74,9 +74,10 @@ export default {
           child: [
             { name: 'Input', to: '/input' },
             { name: 'Input Address', to: '/inputaddress' },
+            { name: 'Cryptocurrency', to: '/cryptocurrency' },
+            { name: 'Qrcode', to: '/qrcode' },
             { name: 'Address Filter', to: '/addressfilter' },
             { name: 'Hex Filter', to: '/hexfilter' },
-            { name: 'Qrcode', to: '/qrcode' },
             { name: 'ToHex Filter', to: '/tohexfilter' },
             { name: 'Units Filter', to: '/unitsfilter' },
           ]
