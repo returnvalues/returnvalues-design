@@ -1,18 +1,29 @@
 <template>
   <div>
-    <h1>Qrcode</h1>
-    <p>QR Code 이미지를 출력합니다.</p>
+    <h1>Ethereum Qrcode</h1>
+    <p>
+      QR Code 이미지를 출력합니다.<br>
+      주소가 유효하지 않을 경우 나오지 않습니다.
+    </p>
     <h2>Example</h2>
     <example>
-      <rd-qrcode
-        text="ReturnValues Design"
+      <rd-eth-qrcode
+        text="0x0f167026022632e38c919700d6B466E598905f9C"
+        :options="{'color':{dark:'#343a40',light:'#ffffff00'}}"
+      />
+      <rd-eth-qrcode
+        text="invalid address"
         :options="{'color':{dark:'#343a40',light:'#ffffff00'}}"
       />
     </example>
     <highlight
-      code="<rd-qrcode
-    text=&quot;ReturnValues Design&quot;
-    :options=&quot;{'color':{dark:'#343a40',light:'#ffffff00'}}&quot;
+      code="<rd-eth-qrcode
+  text=&quot;0x0f167026022632e38c919700d6B466E598905f9C&quot;
+  :options=&quot;{'color':{dark:'#343a40',light:'#ffffff00'}}&quot;
+/>
+<rd-eth-qrcode
+  text=&quot;invalid address&quot;
+  :options=&quot;{'color':{dark:'#343a40',light:'#ffffff00'}}&quot;
 />"
     />
 

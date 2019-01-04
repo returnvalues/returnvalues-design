@@ -38,6 +38,7 @@ import RdQrcode from './RdQrcode.vue';
 import RdTooltip from './RdTooltip.vue';
 import RdEthInputAddress from './RdEthInputAddress.vue';
 import RdEthInput from './RdEthInput.vue';
+import RdEthQrcode from './RdEthQrcode.vue';
 import {
   RdEthAddress, RdEthHex, RdEthToHex, hexFrom, hexTo, RdEthUnits
 } from './filters';
@@ -86,6 +87,7 @@ export default {
     Vue.component('RdTooltip', RdTooltip);
     Vue.component('RdEthInputAddress', RdEthInputAddress);
     Vue.component('RdEthInput', RdEthInput);
+    Vue.component('RdEthQrcode', RdEthQrcode);
     Object.keys(filters).forEach(key => Vue.filter(key, filters[key]));
   }
 };

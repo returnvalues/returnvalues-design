@@ -76,6 +76,7 @@ export default {
             { name: 'Input Address', to: '/inputaddress' },
             { name: 'Address Filter', to: '/addressfilter' },
             { name: 'Hex Filter', to: '/hexfilter' },
+            { name: 'Qrcode', to: '/qrcode' },
             { name: 'ToHex Filter', to: '/tohexfilter' },
             { name: 'Units Filter', to: '/unitsfilter' },
           ]
