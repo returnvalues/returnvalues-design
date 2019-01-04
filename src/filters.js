@@ -1,4 +1,5 @@
 import Web3 from 'web3';
+import Units from 'ethereumjs-units';
 
 export function RdEthAddress(value, length = 26) {
   const val = `${value || ''}`;
@@ -33,6 +34,11 @@ export function RdEthToHex(value, from = 'utf8', ...args) {
   return fn(value, ...args);
 }
 
+export function RdEthUnits(value, ...args) {
+  const [to = 'wei', from = 'eth'] = args.reverse();
+  return Units.convert(`${value}`, from, to);
+}
+
 export default {
-  RdEthAddress, RdEthHex, RdEthToHex
+  RdEthAddress, RdEthHex, RdEthToHex, RdEthUnits
 };

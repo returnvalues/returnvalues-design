@@ -39,12 +39,16 @@ import RdTooltip from './RdTooltip.vue';
 import RdEthInputAddress from './RdEthInputAddress.vue';
 import RdEthInput from './RdEthInput.vue';
 import {
-  RdEthAddress, RdEthHex, RdEthToHex, hexFrom, hexTo
+  RdEthAddress, RdEthHex, RdEthToHex, hexFrom, hexTo, RdEthUnits
 } from './filters';
 
+const filters = {
+  RdEthAddress, RdEthHex, RdEthToHex, RdEthUnits
+};
 export default {
   install(Vue) {
     Object.assign(Vue.prototype, { RdEth: { hexFrom, hexTo } });
+    Object.assign(Vue.prototype, filters);
     Vue.component('RdButton', RdButton);
     Vue.component('RdButtonGroup', RdButtonGroup);
     Vue.component('RdButtonRadio', RdButtonRadio);
@@ -82,8 +86,6 @@ export default {
     Vue.component('RdTooltip', RdTooltip);
     Vue.component('RdEthInputAddress', RdEthInputAddress);
     Vue.component('RdEthInput', RdEthInput);
-    Vue.filter('RdEthAddress', RdEthAddress);
-    Vue.filter('RdEthHex', RdEthHex);
-    Vue.filter('RdEthToHex', RdEthToHex);
+    Object.keys(filters).forEach(key => Vue.filter(key, filters[key]));
   }
 };
