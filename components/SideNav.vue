@@ -25,7 +25,7 @@
     </div>
     <rd-collapse
       ref="nav"
-      class="flex-nowrap align-items-start"
+      class="flex-nowrap align-items-start mt-2"
     >
       <rd-nav
         class="flex-column"
@@ -76,7 +76,8 @@ export default {
             { name: 'Input Address', to: '/inputaddress' },
             { name: 'Address Filter', to: '/addressfilter' },
             { name: 'Hex Filter', to: '/hexfilter' },
-            { name: 'ToHex Filter', to: '/tohexfilter' }
+            { name: 'ToHex Filter', to: '/tohexfilter' },
+            { name: 'Units Filter', to: '/unitsfilter' },
           ]
         },
         {
