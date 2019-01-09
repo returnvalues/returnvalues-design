@@ -16,7 +16,14 @@ export default {
   },
   beforeDestroy() {
     if (this.popover) window.$(this.$el).popover('dispose');
+  },
+  methods: {
+    popoverShow() {
+      window.$(this.$el).popover('show');
+    },
+    popoverHide() {
+      window.$(this.$el).popover('hide');
+    },
   }
-
 };
 </script>
