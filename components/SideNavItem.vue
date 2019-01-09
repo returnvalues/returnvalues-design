@@ -20,7 +20,7 @@
           v-for="child of item.child"
           :key="child.to"
           class="ml-3"
-          :to-stack="item.to"
+          :to-stack="toStack+item.to"
           :depth="depth+1"
           :item="child"
         />
