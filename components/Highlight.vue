@@ -5,7 +5,7 @@
   class="copy m-1"
   :popover="{
     content:'복사 되었습니다.',
-    placement:'top',
+    placement:'left',
 }"
 ><rd-badge
   pill
