@@ -6,7 +6,7 @@
     <thead>
       <tr>
         <th>화폐</th>
-        <th>가격 ({{ this.currencyDisplay }})</th>
+        <th>가격 ({{ currencyDisplay }})</th>
         <th>1시간대비</th>
         <th>거래대금</th>
       </tr>

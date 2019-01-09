@@ -1,4 +1,5 @@
 <template>
+  <!-- eslint-disable vue/no-v-html -->
   <pre class="highlight"><rd-popover
   ref="popover"
   class="copy m-1"
@@ -12,12 +13,12 @@
   @click.native="copy"
 >Copy</rd-badge></rd-popover><code
   ref="code"
-  class="p-3 border"
+  class="p-3 border hljs"
   :class="type"
-  >{{ code }}</code></pre>
+  v-html="result.value"
+  /></pre>
 </template>
 <script>
-
 import hljs from 'highlight.js/lib/highlight';
 import html from 'highlight.js/lib/languages/xml';
 import javascript from 'highlight.js/lib/languages/javascript';
@@ -28,11 +29,10 @@ hljs.registerLanguage('javascript', javascript);
 export default {
   name: 'Hightlight',
   props: { type: { type: String, default: 'html' }, code: { type: String, default: undefined } },
-  mounted() {
-    hljs.highlightBlock(this.$refs.code);
-  },
-  updated() {
-    hljs.highlightBlock(this.$refs.code);
+  computed: {
+    result() {
+      return hljs.highlight(this.type, this.code);
+    }
   },
   methods: {
     copy() {
