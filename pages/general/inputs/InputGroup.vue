@@ -1099,7 +1099,10 @@
 </rd-input-group>"
     />
     <h3>Props</h3>
-    <nuxt-link to="/general/mixins/size">
+    <nuxt-link
+      append
+      to="../../mixins/size"
+    >
       Size
     </nuxt-link> 속성을 쓸 수 있습니다.
   </div>

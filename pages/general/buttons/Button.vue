@@ -6,17 +6,26 @@
     </p>
     <ul>
       <li>
-        <nuxt-link to="/general/mixins/semantic">
+        <nuxt-link
+          append
+          to="../../mixins/semantic"
+        >
           Semantic
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/general/mixins/outline">
+        <nuxt-link
+          append
+          to="../../mixins/outline"
+        >
           Outline
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/general/mixins/size">
+        <nuxt-link
+          append
+          to="../../mixins/size"
+        >
           Size
         </nuxt-link>
       </li>
@@ -450,16 +459,31 @@
 </rd-button>"
     />
     <h2>Props</h2>
-    추가로 <nuxt-link to="/general/mixins/semantic">
+    추가로 <nuxt-link
+      append
+      to="../../mixins/semantic"
+    >
       Semantic
     </nuxt-link>,
-    <nuxt-link to="/general/mixins/outline">
+    <nuxt-link
+      append
+      to="../../mixins/outline"
+    >
       Outline
-    </nuxt-link>, <nuxt-link to="/general/mixins/size">
+    </nuxt-link>, <nuxt-link
+      append
+      to="../../mixins/size"
+    >
       Size
-    </nuxt-link>, <nuxt-link to="/popover">
+    </nuxt-link>, <nuxt-link
+      append
+      to="../../popover"
+    >
       Popover
-    </nuxt-link>, <nuxt-link to="/tooltip">
+    </nuxt-link>, <nuxt-link
+      append
+      to="../../tooltip"
+    >
       Tooltip
     </nuxt-link> 속성을 쓸 수 있습니다.
     <properties

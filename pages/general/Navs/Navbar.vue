@@ -947,9 +947,15 @@
 
     <h3>RdNavbar</h3>
     <h4>Props</h4>
-    <nuxt-link to="/general/mixins/semantic">
+    <nuxt-link
+      append
+      to="../../mixins/semantic"
+    >
       Semantic
-    </nuxt-link>, <nuxt-link to="/general/mixins/size">
+    </nuxt-link>, <nuxt-link
+      append
+      to="../../mixins/size"
+    >
       Size
     </nuxt-link> 속성을 쓸 수 있습니다.
     <h3>RdNavbarBrand</h3>

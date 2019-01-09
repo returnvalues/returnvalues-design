@@ -375,7 +375,10 @@
 </rd-badge>"
     />
     <h2>Props</h2>
-    추가로 <nuxt-link to="/general/mixins/semantic">
+    추가로 <nuxt-link
+      append
+      to="../mixins/semantic"
+    >
       Semantic
     </nuxt-link> 속성을 쓸 수 있습니다.
     <properties

@@ -442,7 +442,10 @@
     />
     <h2>RdInput</h2>
     <h3>Props</h3>
-    추가로 <nuxt-link to="/general/mixins/size">
+    추가로 <nuxt-link
+      append
+      to="../../mixins/size"
+    >
       Size
     </nuxt-link> 속성을 쓸 수 있습니다.
     <properties
