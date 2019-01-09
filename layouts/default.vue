@@ -59,6 +59,7 @@ export default {
       height: 100%;
       min-width: 240px;
       overflow-y:auto;
+      overflow-x: hidden;
       border-right: 1px solid #dee2e6;
       border-bottom: none;
     }

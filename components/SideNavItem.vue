@@ -56,7 +56,6 @@ export default {
 </script>
 <style scoped>
   .on{font-weight: bold;}
-  .nav-link{color:#333;}
+  .nav-link{color:#333;white-space: nowrap;}
   .group{font-weight: bold; color:#3562ab;}
-
 </style>
