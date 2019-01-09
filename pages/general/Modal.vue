@@ -590,7 +590,7 @@
 </rd-modal>"
     />
     <h2>Props</h2>
-    추가로 <nuxt-link to="/mixins/size">
+    추가로 <nuxt-link to="/general/mixins/size">
       Size
     </nuxt-link> 속성을 쓸 수 있습니다.
     <properties

@@ -451,7 +451,7 @@
 </rd-pagination>"
     />
     <h3>Props</h3>
-    <nuxt-link to="/mixins/size">
+    <nuxt-link to="/general/mixins/size">
       Size
     </nuxt-link> 속성을 쓸 수 있습니다.
   </div>

@@ -6,17 +6,17 @@
     </p>
     <ul>
       <li>
-        <nuxt-link to="/mixins/semantic">
+        <nuxt-link to="/general/mixins/semantic">
           Semantic
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/mixins/outline">
+        <nuxt-link to="/general/mixins/outline">
           Outline
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/mixins/size">
+        <nuxt-link to="/general/mixins/size">
           Size
         </nuxt-link>
       </li>
@@ -450,12 +450,12 @@
 </rd-button>"
     />
     <h2>Props</h2>
-    추가로 <nuxt-link to="/mixins/semantic">
+    추가로 <nuxt-link to="/general/mixins/semantic">
       Semantic
     </nuxt-link>,
-    <nuxt-link to="/mixins/outline">
+    <nuxt-link to="/general/mixins/outline">
       Outline
-    </nuxt-link>, <nuxt-link to="/mixins/size">
+    </nuxt-link>, <nuxt-link to="/general/mixins/size">
       Size
     </nuxt-link>, <nuxt-link to="/popover">
       Popover

@@ -61,7 +61,7 @@
     />
 
     <h2>Props</h2>
-    <nuxt-link to="/mixins/semantic">
+    <nuxt-link to="/general/mixins/semantic">
       Semantic
     </nuxt-link> 속성을 쓸 수 있습니다.
   </div>
