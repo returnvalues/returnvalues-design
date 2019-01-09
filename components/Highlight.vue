@@ -22,10 +22,12 @@
 import hljs from 'highlight.js/lib/highlight';
 import html from 'highlight.js/lib/languages/xml';
 import javascript from 'highlight.js/lib/languages/javascript';
+import bash from 'highlight.js/lib/languages/bash';
 import 'highlight.js/styles/github.css';
 
 hljs.registerLanguage('html', html);
 hljs.registerLanguage('javascript', javascript);
+hljs.registerLanguage('bash', bash);
 export default {
   name: 'Hightlight',
   props: { type: { type: String, default: 'html' }, code: { type: String, default: undefined } },

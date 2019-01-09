@@ -1,99 +1,38 @@
-# returnvalues-design
-# 아래 내용은 0.0.1 버전 정도에 불과하며, 이제 하나씩 정리해나가면 됨.
-
-
-
-
-## 폴더 기본 구성
-- web/
-  - client/ webpack 기반 vue 프로젝트폴더(프론트엔드)
-    - build/ 웹팩 빌드
-    - config/ 웹팩 설정
-    - dist/ 빌드타겟디렉터리
-    - src/
-      - assets/ css,image 등
-      - components/ ui components
-      - layout/ 모바일,데스크탑,여러유형의 레이아웃 들
-      - locale/ 언어지원 ko.js, en.js 등등
-      - pages/  페이지(Register.vue, Login.vue 등등)
-      - plugins/ 추가라이브러리 들
-      - router/ 라우터 (index.js 를 기본으로 하고 의미 또는 기능적으로 분리하여 import 하여 처리)
-      - service/ request,response handler 명명규칙 :  UserService.js
-      - store/ vuex store 디렉터리
-      - utils/ 추가유틸리티 들
-  - server/ sailsjs 기반 프로젝트폴더(백엔드)
-  
-
-클라이언트 디렉터리에서 기본이 되는 것들을 추가시켜놓았고, 대략 이런 정도가 있으면 좀 구조적으로 분리가 되겠다 싶은 것들을 정리한 것이고, 추가적으로 필요하다고 생각되는 것들이나 빼도 되겠다 싶은 것들이나 그외 좋은 의견 및 아이디어는 얼마든지 환영하니까 의견주거나 바로 반영해도 됨.
-
-## 주요 dependency
-
+# Getting started
+## 빌드 하는 법
+```bash
+npm run build
 ```
-npm install --saved axios bootstrap bootstrap-vue popper.js vue vue-router vuex vue-i18n
+빌드 명령 실행시 `/build` 폴더에 빌드가 됩니다.
+
+#### NPM 패키지
+빌드 폴더를 패키지 폴더로 사용하여 NPM에 업로드를 하거나
+`npm pack`을 통해 `.tgz` 파일을 생성하고  
+원하는 프로젝트에서 인스톨 하여 쓸 수도 있습니다.
+
+```bash
+cd /build
+npm pack
 ```
-## devDependency
-babel, eslint, webpack, cypress 정도 그 외 eslint 관련 eslint-plugin-vue
-
-## 테스트
-테스트는 cypress 사용함.
-
-
-## ESlint 
-es6 = true
-아래 eslintrc 파일 설정에 extend 에 vue/recommended, airbnb-base 와 rule 설정 참고해서 봐주면 될 것 같음.
-
+생성된 `.tgz` 파일을 원하는 프로젝트로 이동 후 
+```bash
+npm i returnvalues-design-1.*.*.tgz
 ```
-// https://eslint.org/docs/user-guide/configuring
+## 사용법
+Vue.js Plugin 형태로 `webpack` 혹은 `rollup` 등을 통해
+`import` 하여 사용합니다.
 
-module.exports = {
-  root: true,
-  parserOptions: {
-    sourceType: 'module',
-    parser: 'babel-eslint'
-  },
-  env: {
-    browser: true,
-    es6: true,
-    node: true
-  },
-  extends: [
-    'plugin:vue/recommended',
-    'airbnb-base'
-  ],
-  // required to lint *.vue files
-  plugins: [
-    'vue'
-  ],
-  // check if imports actually resolve
-  settings: {
-    'import/resolver': {
-      webpack: {
-        config: 'build/webpack.base.conf.js'
-      },
-      // 'alias': true
-    }
-  },
-  // add your custom rules here
+```javascript
+import Vue from 'vue';
+import ReturnvaluesDesign from 'returnvalues-design';
 
-  rules: {
-    'comma-dangle': 0,
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
-  },
-  'globals': {
-    "$": true
-  }
-}
-
+Vue.use(ReturnvaluesDesign);
 ```
+## Github Pages 브랜치 빌드 및 업로드
+저장소에 푸시 권한이 있는 상태여야 합니다.   
+모든 변경 사항을 커밋한 후 아래 명령을 실행하면   
+자동으로 빌드 완료 후 `gh-pages` 브랜치에 푸시를 하게 됩니다.
 
-# 참고 URL
-
-[https://github.com/vuejs/awesome-vue#component-collections](https://github.com/vuejs/awesome-vue#component-collections)
-
-[consensys-design](https://consensys.github.io/rimble-ui/?selectedKind=Getting%20Started&selectedStory=Theming&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel)
-
-https://blueprintjs.com/docs/#timezone/timezone-picker
-
-
-
+```bash
+npm run gh-pages
+```
