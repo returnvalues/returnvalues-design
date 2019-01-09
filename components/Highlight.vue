@@ -1,10 +1,16 @@
 <template>
-  <pre class="highlight"><rd-badge
+  <pre class="highlight"><rd-popover
+  ref="popover"
+  class="copy m-1"
+  :popover="{
+    content:'복사 되었습니다.',
+    placement:'top',
+}"
+><rd-badge
   pill
   secondary
-  class="copy m-1"
   @click.native="copy"
->Copy</rd-badge><code
+>Copy</rd-badge></rd-popover><code
   ref="code"
   class="p-3 border"
   :class="type"
@@ -16,7 +22,6 @@ import hljs from 'highlight.js/lib/highlight';
 import html from 'highlight.js/lib/languages/xml';
 import javascript from 'highlight.js/lib/languages/javascript';
 import 'highlight.js/styles/github.css';
-
 
 hljs.registerLanguage('html', html);
 hljs.registerLanguage('javascript', javascript);
@@ -38,6 +43,7 @@ export default {
       selection.addRange(range);
       document.execCommand('copy');
       selection.removeAllRanges();
+      window.setTimeout(() => { this.$refs.popover.popoverHide(); }, 300);
     }
   },
 };
