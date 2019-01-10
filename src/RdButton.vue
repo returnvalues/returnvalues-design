@@ -23,10 +23,7 @@ export default {
   name: 'RdButton',
   mixins: [SemanticClass, SizeClass, OutlineClass, RdPopover, RdTooltip],
   props: {
-    tag: {
-      type: String,
-      default: 'button'
-    },
+    tag: { type: String, default: 'button' },
     active: Boolean,
     close: Boolean,
     link: Boolean,

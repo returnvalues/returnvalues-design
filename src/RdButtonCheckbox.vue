@@ -22,10 +22,7 @@ import RdButton from './RdButton.vue';
 export default {
   name: 'RdButtonCheckbox',
   mixins: [RdButton],
-  model: {
-    prop: 'modelValue',
-    event: 'change'
-  },
+  model: { prop: 'modelValue', event: 'change' },
   props: {
     modelValue: { type: Boolean, default: false }
   }

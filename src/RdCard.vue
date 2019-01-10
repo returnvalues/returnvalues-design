@@ -1,16 +1,15 @@
 <script>
 /* eslint-disable no-param-reassign */
-
 export default {
   name: 'RdCard',
   props: {
     group: Boolean, deck: Boolean, columns: Boolean
   },
   render(h) {
-    const wrapperTypes = ['group', 'deck', 'columns'];
+    const wrapperTypes = ['group', 'deck', 'columns']; // 래퍼 용도로 쓰일 경우 바로 리턴
     for (let i = 0; i < wrapperTypes.length; i += 1) {
       const type = wrapperTypes[i];
-      if (this[type]) return h('div', { staticClass: `card-${type}` }, this.$slots.default);
+      if (this[type]) return h('div', { staticClass: `card-${type} rd-card-wrap` }, this.$slots.default);
     }
     const {
       top = [], img = [], default: body, bottom = []

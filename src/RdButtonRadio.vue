@@ -11,7 +11,6 @@
       :checked="checked"
       @change="$emit('change',value)"
     >
-
     <slot />
   </label>
 </template>
@@ -22,10 +21,7 @@ import RdButton from './RdButton.vue';
 export default {
   name: 'RdButtonRadio',
   mixins: [RdButton],
-  model: {
-    prop: 'modelValue',
-    event: 'change'
-  },
+  model: { prop: 'modelValue', event: 'change' },
   props: {
     value: { type: null, default: undefined },
     modelValue: { type: null, default: undefined }
