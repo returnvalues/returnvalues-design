@@ -1,4 +1,4 @@
-const prefix = {
+const prefix = { // 컴포넌트이름:클래스
   RdButton: 'btn-outline',
   RdInput: 'border'
 };
