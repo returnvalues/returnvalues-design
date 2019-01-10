@@ -17,10 +17,10 @@ export default {
   },
   methods: {
     toggle(v) {
-      const toAssign = arguments.length === 0 ? !this.value : v;
-      const ret = this.value !== toAssign;
+      const toAssign = arguments.length === 0 ? !this.value : v; // 들어온 값이 없으면 토글
+      const ret = this.value !== toAssign; // 값이 다르면
       this.value = toAssign;
-      if (ret) {
+      if (ret) { // 값이 다를때
         this.$emit('change', this.value);
         window.$(this.$el).collapse(this.value ? 'show' : 'hide');
       }
