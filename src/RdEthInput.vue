@@ -39,17 +39,17 @@ export default {
     }
   },
   methods: {
-    convertInputValue() {
+    convertInputValue() { // 들어온 값을 반대로 인풋에 표시
       const toFn = v => ((this.from !== 'hex' && Web3.utils.isHexStrict(v)) ? (hexTo[this.from] || hexTo.utf8)(v) : v);
       const fromFn = v => (this.to === 'hex' ? v : (hexFrom[this.to] || (x => x))(v));
       const hex = fromFn(this.modelValue);
       return toFn(hex);
     },
-    fromFn(v) {
+    fromFn(v) { // 입력한 값을 hex로 변환
       if (this.from === 'hex') return v;
       return (hexFrom[this.from] || hexFrom.utf8)(v);
     },
-    toFn(v) {
+    toFn(v) { // hex 값을 보여줄 형식으로 변환
       if (!Web3.utils.isHexStrict(v) || this.to === 'hex' || !hexTo[this.to]) return v;
       return hexTo[this.to](v);
     },
