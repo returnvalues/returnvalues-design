@@ -27,6 +27,7 @@
 </template>
 
 <script>
+// util 함수들. 뷰 내부에서 작동하는 로직 가져옴.
 function getValue(option) {
   const key = '_value';
   return key in option ? option[key] : option.value;
@@ -92,13 +93,13 @@ export default {
     }
   },
   created() {
-    this.inputGroup = this.$parent.$options.name === 'RdInputGroup';
+    this.inputGroup = this.$parent.$options.name === 'RdInputGroup'; // RdInputGroup으로 감싸있는지 여부
   },
   mounted() {
     this.setSelected();
   },
   methods: {
-    setSelected() {
+    setSelected() { // 컴파일된 템플릿 소스코드에서 가져옴
       const el = this.$refs.select;
       const value = this.modelValue;
       let selected;
