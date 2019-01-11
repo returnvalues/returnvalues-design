@@ -29,7 +29,7 @@ export default {
   },
   props: {
     open: Boolean,
-    backdrop: { type: null, default: true },
+    backdrop: { type: null, default: true }, // true, false, 'static'
     fade: { type: Boolean, default: true },
   },
   data() { return { value: this.open }; },

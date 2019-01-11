@@ -21,14 +21,8 @@ export default {
       type: String,
       default: 'li'
     },
-    active: {
-      type: Boolean,
-      default: undefined
-    },
-    disabled: {
-      type: Boolean,
-      default: undefined
-    }
+    active: Boolean,
+    disabled: Boolean
   },
   computed: {
     action() {
