@@ -55,8 +55,8 @@ export default {
     check() {
       return this.$nextTick().then(() => {
         const { value } = this.$refs.input;
-        const minLength = /^(0x)?((?!0x).){40,}$/i.test(value);
-        if (minLength) {
+        const minLength = /^(0x)?((?!0x).){40,}$/i.test(value); // 0x로 시작해서 40자 이상인지 체크
+        if (minLength) { // 최소 글자 수를 만족했을때 유효성 검사
           this.valid = Web3.utils.isAddress(value);
           this.semantic = this.valid ? 'success' : 'danger';
         } else {

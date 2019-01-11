@@ -2,7 +2,7 @@
 import SizeClass from './mixins/SizeClass';
 import OutlineClass from './mixins/OutlineClass';
 
-let uid = 0;
+let uid = 0; // 라벨과 인풋을 같은 아이디로 맞추는 용도
 
 export default {
   name: 'RdInput',
@@ -112,12 +112,15 @@ export default {
 
     const hasLabel = this.$slots.default;
     let hasFormGroup = (hasLabel || check || radio);
-    if (this.$parent.$options.name === 'RdInputGroup') {
+    if (this.$parent.$options.name === 'RdInputGroup') { // 옵션에 이미 InputGroup으로 감싸져 있을 경우
       if (file) {
-        input.class = 'custom-file-input';
-        return h('div', { staticClass: 'custom-file rd-custom-file' }, [h('input', input), h('label', { class: 'custom-file-label' }, this.$slots.default)]);
+        input.staticClass = 'custom-file-input';
+        return h('div', { staticClass: 'custom-file rd-custom-file' }, [
+          h('input', input),
+          h('label', { staticClass: 'custom-file-label' }, this.$slots.default)
+        ]);
       }
-      input.class = (check || radio) ? undefined : 'form-control';
+      input.staticClass = (check || radio) ? undefined : 'form-control';
       hasFormGroup = false;
     }
 
