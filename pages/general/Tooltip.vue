@@ -2,10 +2,7 @@
   <div>
     <h1>Tooltips</h1>
     <p class="bd-lead">
-      Documentation and examples for adding custom Bootstrap tooltips
-      with CSS and JavaScript using CSS3 for animations and data-attributes for local title storage.
-      CSS3를 사용하여 CSS 및 JavaScript로 사용자 정의 부트스트랩 툴팁을 추가하는데 필요한 설명서 및 예제.
-      그리고 로컬 타이틀 저장을 위한 애니메이션 및 데이터 속성.
+      A tooltip is a lightweight popover for showing additional infromation on hover.
     </p>
     <h2>Example</h2>
     <example>

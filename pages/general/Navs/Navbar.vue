@@ -2,7 +2,7 @@
   <div>
     <h1>Navbar</h1>
     <p class="bd-lead">
-      부트스트랩의 강력하고 반응형 네비게이션 헤더 인 navbar에 대한 문서와 예제. 컬랩스 플러그인에 대한 지원을 포함하여 브랜딩, 네비게이션 등을 포함 합니다.
+      Navbars present useful navigation controls at the top of an application.
     </p>
     <h2>Example</h2>
 

@@ -2,7 +2,7 @@
   <div>
     <h1>Breadcrumb</h1>
     <p class="bd-lead">
-      CSS를 통해 자동으로 추가된 구분기호로 현재 페이지의 위치를 나타냅니다.
+      Breadcrumbs identify the path to the current resource in an application.
     </p>
     <h2>Example</h2>
     <example>

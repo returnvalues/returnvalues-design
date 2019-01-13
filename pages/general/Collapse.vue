@@ -2,7 +2,7 @@
   <div>
     <h1>Collapse</h1>
     <p class="bd-lead">
-      몇개의 클래스와 자바스크립트 플러그인을 사용하여 프로젝트 전체에 콘텐츠 가시성을 토글합니다.
+      The Collapse element shows and hides content with a built-in slide in/out animation. You might use this to create a panel of settings for your application, with sub-sections that can be expanded and collapsed.
     </p>
     <h2>Example</h2>
     <example>

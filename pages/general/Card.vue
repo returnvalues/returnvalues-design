@@ -2,7 +2,7 @@
   <div>
     <h1>Card</h1>
     <p class="bd-lead">
-      부트스트랩 카드는 다양한 변형과 옵션을 갖춘 유연하고 확장 가능한 콘텐츠 컨테이너를 제공합니다.
+      A card is a bounded unit of UI content with a solid background color.
     </p>
     <h2>Example</h2>
     <example>

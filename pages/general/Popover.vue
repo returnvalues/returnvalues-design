@@ -2,7 +2,7 @@
   <div>
     <h1>Popover</h1>
     <p class="bd-lead">
-      iOS에서와 유사한 부트스트랩 팝오버를 사이트의 모든 요소에 추가하는 데 필요한 문서와 예제.
+      Popovers display floating content next to a target element.
     </p>
     <rd-popover />
     <h2>

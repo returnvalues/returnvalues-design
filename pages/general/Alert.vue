@@ -2,7 +2,7 @@
   <div>
     <h1>Alert</h1>
     <p class="bd-lead">
-      유연한 알림 메시지를 통해 일반적 사용자 작업에 대한 상황별 피드백 메시지를 제공하십시오.
+      Alerts notify users of important information and force them to acknowledge the alert content before continuing.
     </p>
 
     <h2>Example</h2>

@@ -2,7 +2,7 @@
   <div>
     <h1>Progress</h1>
     <p class="bd-lead">
-      누적막대, 애니메이션 배경 및 텍스트 레이블을 지원하는 부트스트랩 사용자 정의 진행률 표시 바 사용에 대한 설명서 및 예제.
+      Progress bars indicate progress towards the completion of a task or an indeterminate loading state.
     </p>
     <h2>Example</h2>
     <example>
