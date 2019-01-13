@@ -2,7 +2,7 @@
   <div>
     <h1>Ethereum Input</h1>
     <p class="bd-lead">
-      지정한 형식으로 입력을 받아 지정한 형식으로 모델을 갱신하는 컴포넌트.
+      스마트컨트랙트에 문자열을 저장할때 bytes 타입으로 저장하는 경우 사용하게 됩니다. 문자열을 bytes 값으로 변환해 줍니다. 
     </p>
     <h2>Example</h2>
     <example>

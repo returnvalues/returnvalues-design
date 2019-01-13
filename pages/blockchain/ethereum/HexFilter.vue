@@ -2,7 +2,7 @@
   <div>
     <h1>Hex Filter</h1>
     <p class="bd-lead">
-      필터를 이용하여 hex 스트링을 원하는 형식으로 변환합니다.
+      스마트컨트랙트에 bytes 타입으로 저장되어져 있는 데이터를 문자열로 변환해 줍니다.
     </p>
     <h2>Example</h2>
     <example style="overflow:auto">

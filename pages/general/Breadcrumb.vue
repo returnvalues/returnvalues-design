@@ -2,7 +2,7 @@
   <div>
     <h1>Breadcrumb</h1>
     <p class="bd-lead">
-      Breadcrumbs identify the path to the current resource in an application.
+      Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.
     </p>
     <h2>Example</h2>
     <example>

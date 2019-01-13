@@ -2,7 +2,7 @@
   <div>
     <h1>Alert</h1>
     <p class="bd-lead">
-      Alerts notify users of important information and force them to acknowledge the alert content before continuing.
+      Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
     </p>
 
     <h2>Example</h2>

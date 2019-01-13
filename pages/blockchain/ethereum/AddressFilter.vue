@@ -2,7 +2,7 @@
   <div>
     <h1>Address Filter</h1>
     <p class="bd-lead">
-      필터를 이용하여 hex 주소를 필요한 길이로 보여 줄 수 있습니다.
+      Account, 스마트컨트랙트 address를 필요한 길이로 보여 줄 수 있습니다.
     </p>
     <h2>Example</h2>
     <example style="overflow:auto">

@@ -2,7 +2,7 @@
   <div>
     <h1>Units filter</h1>
     <p class="bd-lead">
-      단위 변환 필터
+      이더리움 ETH 단위 변환 필터
     </p>
     <h2>Example</h2>
     <example>

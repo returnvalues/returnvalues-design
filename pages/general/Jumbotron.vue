@@ -6,7 +6,7 @@
     <p class="bd-lead">
       hero 유닛 스타일 콘텐츠를 보여주는 가볍고 유연한 컴포넌트.
     </p>
-    <p>가볍고 유연한 컴포넌트로서 선택적으로 전체 뷰포트를 확장하여 주요 마케팅 메시지를 사이트에 표시 할 수 있습니다.</p>
+    <p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key marketing messages on your site.</p>
     <h2>Example</h2>
     <example>
       <rd-jumbotron>

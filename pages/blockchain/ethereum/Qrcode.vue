@@ -2,7 +2,7 @@
   <div>
     <h1>Ethereum Qrcode</h1>
     <p>
-      QR Code 이미지를 출력합니다.<br>
+      Account 혹은 스마트컨트랙트 address를 QR Code 이미지를 출력합니다.<br>
       주소가 유효하지 않을 경우 나오지 않습니다.
     </p>
     <h2>Example</h2>
