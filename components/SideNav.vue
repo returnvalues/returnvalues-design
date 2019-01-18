@@ -131,6 +131,16 @@ export default {
             { name: 'Tooltip', to: '/tooltip', icon: 'fas fa-comment-alt' },
           ]
         },
+        {
+          name: 'Advanced Components',
+          icon: 'fas fa-cubes',
+          child: [{ name: 'Comming soon', icon: 'fas fa-tools' }]
+        },
+        {
+          name: 'Iconfonts',
+          icon: 'fas fa-font',
+          href: 'http://iconfont.io/iconfont'
+        }
       ]
     };
   },
