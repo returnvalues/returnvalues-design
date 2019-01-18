@@ -28,7 +28,7 @@
     </rd-collapse>
   </rd-nav>
   <nuxt-link
-    v-else
+    v-else-if="item.to"
     active-class="on"
     exact
     class="nav-link"
@@ -40,6 +40,28 @@
     />
     {{ item.name }}
   </nuxt-link>
+  <a
+    v-else-if="item.href"
+    class="nav-link"
+    :href="item.href"
+    target="_blank"
+  >
+    <i
+      v-if="item.icon"
+      :class="item.icon"
+    />
+    {{ item.name }}
+  </a>
+  <span
+    v-else
+    class="nav-link"
+  >
+    <i
+      v-if="item.icon"
+      :class="item.icon"
+    />
+    {{ item.name }}
+  </span>
 </template>
 
 <script>
