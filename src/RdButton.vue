@@ -18,6 +18,7 @@ import SizeClass from './mixins/SizeClass';
 import OutlineClass from './mixins/OutlineClass';
 import RdPopover from './RdPopover.vue';
 import RdTooltip from './RdTooltip.vue';
+import './RdButton.css';
 
 export default {
   name: 'RdButton',

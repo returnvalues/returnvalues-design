@@ -1,0 +1,8 @@
+.input-group>.input-group-prepend .rd-button.btn{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+.input-group>.input-group-append .rd-button.btn{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
