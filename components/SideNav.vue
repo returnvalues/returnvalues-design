@@ -95,6 +95,14 @@ export default {
             { name: 'Carousel', to: '/carousel', icon: 'far fa-images' },
             { name: 'Collapse', to: '/collapse', icon: 'far fa-caret-square-down' },
             {
+              name: 'Filters',
+              to: '/filters',
+              icon: 'fas fa-filter',
+              child: [
+                { name: 'Date Filter', to: '/datefilter' }
+              ]
+            },
+            {
               name: 'Inputs',
               to: '/inputs',
               icon: 'far fa-edit',

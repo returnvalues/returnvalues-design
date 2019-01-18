@@ -41,11 +41,11 @@ import RdEthInput from './RdEthInput.vue';
 import RdEthQrcode from './RdEthQrcode.vue';
 import RdEthCyptocurrency from './RdEthCyptocurrency.vue';
 import {
-  RdEthAddress, RdEthHex, RdEthToHex, hexFrom, hexTo, RdEthUnits
+  RdEthAddress, RdEthHex, RdEthToHex, hexFrom, hexTo, RdEthUnits, RdDate, RdDateLocale
 } from './filters';
 
 const filters = {
-  RdEthAddress, RdEthHex, RdEthToHex, RdEthUnits
+  RdEthAddress, RdEthHex, RdEthToHex, RdEthUnits, RdDate, RdDateLocale
 };
 export default {
   install(Vue) {

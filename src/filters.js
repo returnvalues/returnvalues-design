@@ -1,5 +1,8 @@
 import Web3 from 'web3';
 import Units from 'ethereumjs-units';
+import moment from 'moment';
+
+const momentConstructor = moment().constructor;
 
 export function RdEthAddress(value, length = 26) {
   const val = `${value || ''}`;
@@ -39,6 +42,17 @@ export function RdEthUnits(value, ...args) {
   return Units.convert(`${value}`, from, to);
 }
 
+export function RdDate(v, ...args) {
+  const toFormat = args.shift() || 'YYYY-MM-DD';
+  if (v && v.constructor === momentConstructor) return v.format(toFormat);
+  return moment(v, ...args).format(toFormat);
+}
+export function RdDateLocale(v, locale, ...args) {
+  const toFormat = args.shift() || 'YYYY-MM-DD';
+  if (v && v.constructor === momentConstructor) return v.clone().locale(locale).format(toFormat);
+  return moment(v, ...args).locale(locale).format(toFormat);
+}
+
 export default {
-  RdEthAddress, RdEthHex, RdEthToHex, RdEthUnits
+  RdEthAddress, RdEthHex, RdEthToHex, RdEthUnits, RdDate, RdDateLocale
 };
