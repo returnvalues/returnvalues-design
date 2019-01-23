@@ -72,10 +72,5 @@ export default {
       this.action('dispose');
     },
   },
-  render(h) {
-    const { fade, $slots } = this;
-    const nodes = $slots.default;
-    return h('div', { staticClass: 'modal', class: { fade } }, nodes);
-  }
 };
 </script>
