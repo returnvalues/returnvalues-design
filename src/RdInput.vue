@@ -106,9 +106,17 @@ export default {
         }
       }
     };
+    const inputFile = {
+      on: {
+        change($event) {
+          self.$emit('change', $event);
+        }
+      }
+    };
 
     if (check) Object.assign(input, inputCheck);
     else if (radio) Object.assign(input, inputRadio);
+    else if (file) Object.assign(input, inputFile);
 
     const hasLabel = this.$slots.default;
     let hasFormGroup = (hasLabel || check || radio);
