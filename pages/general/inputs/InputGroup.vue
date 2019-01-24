@@ -48,14 +48,13 @@
         >
           $
         </span>
-        <rd-input>
-          <span
-            slot="append"
-            text
-          >
-            .00
-          </span>
-        </rd-input>
+        <rd-input />
+        <span
+          slot="append"
+          text
+        >
+          .00
+        </span>
       </rd-input-group>
       <rd-input-group>
         <span
@@ -108,14 +107,13 @@
   >
     $
   </span>
-  <rd-input>
+  <rd-input/>
     <span
       slot=&quot;append&quot;
       text
     >
       .00
     </span>
-  </rd-input>
 </rd-input-group>
 <rd-input-group>
   <span
