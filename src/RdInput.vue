@@ -32,10 +32,17 @@ export default {
         file: 'form-control-file',
         plaintext: 'form-control-plaintext',
         range: 'form-control-range',
+        checkbox: '',
+        radio: ''
+      };
+      return Object.hasOwnProperty.call(type, this.type) ? type[this.type] : `form-control${this.plaintext ? '-plaintext' : ''}`;
+    },
+    formInputClass() {
+      const type = {
         checkbox: 'form-check-input',
         radio: 'form-check-input'
       };
-      return type[this.type] || `form-control${this.plaintext ? '-plaintext' : ''}`;
+      return type[this.type] || '';
     },
     check() {
       return this.type === 'checkbox';
@@ -55,7 +62,7 @@ export default {
       disabled,
       modelValue,
       value,
-      sizeClass, inputClass, outlineClass
+      sizeClass, inputClass, formInputClass, outlineClass
     } = this;
     const self = this;
     const formGroup = {
@@ -106,9 +113,17 @@ export default {
         }
       }
     };
+    const inputFile = {
+      on: {
+        change($event) {
+          self.$emit('change', $event);
+        }
+      }
+    };
 
     if (check) Object.assign(input, inputCheck);
     else if (radio) Object.assign(input, inputRadio);
+    else if (file) Object.assign(input, inputFile);
 
     const hasLabel = this.$slots.default;
     let hasFormGroup = (hasLabel || check || radio);
@@ -124,7 +139,8 @@ export default {
       hasFormGroup = false;
     }
 
-    if (!hasFormGroup) return h('input', input);
+    if (hasFormGroup) input.class.push(formInputClass);
+    else return h('input', input);
 
     const order = [hasLabel && h('label', label, this.$slots.default)];
     if (check || radio) order.unshift(h('input', input));

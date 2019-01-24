@@ -28,11 +28,30 @@
     <h3>Active, Disabled items</h3>
     <example>
       <rd-list-group tag="div">
-        <rd-list-item tag="button" active>Cras justo odio</rd-list-item>
-        <rd-list-item tag="button" disabled>Dapibus ac facilisis in</rd-list-item>
-        <rd-list-item tag="button" primary>Morbi leo risus</rd-list-item>
-        <rd-list-item tag="button">Porta ac consectetur ac</rd-list-item>
-        <rd-list-item tag="button">Vestibulum at eros</rd-list-item>
+        <rd-list-item
+          tag="button"
+          active
+        >
+          Cras justo odio
+        </rd-list-item>
+        <rd-list-item
+          tag="button"
+          disabled
+        >
+          Dapibus ac facilisis in
+        </rd-list-item>
+        <rd-list-item
+          tag="button"
+          primary
+        >
+          Morbi leo risus
+        </rd-list-item>
+        <rd-list-item tag="button">
+          Porta ac consectetur ac
+        </rd-list-item>
+        <rd-list-item tag="button">
+          Vestibulum at eros
+        </rd-list-item>
       </rd-list-group>
     </example>
     <highlight
@@ -65,41 +84,53 @@
     />
     <h2>RdListGroup</h2>
     <h3>Props</h3>
-    <properties type="props" :data="props"/>
+    <properties
+      type="props"
+      :data="props"
+    />
     <h2>RdListItem</h2>
     <h3>Props</h3>
-    <p>You can also use
-      <nuxt-link append to="../mixins/semantic">Semantic</nuxt-link>attributes .
+    <p>
+      You can also use
+      <nuxt-link
+        append
+        to="../mixins/semantic"
+      >
+        Semantic
+      </nuxt-link>attributes .
     </p>
-    <properties type="props" :data="propsItem"/>
+    <properties
+      type="props"
+      :data="propsItem"
+    />
   </div>
 </template>
 
 <script>
 export default {
-  name: "List",
+  name: 'List',
   data() {
     return {
       props: [
         [
-          "tag",
-          "Tags of HTML elements to be rendered ",
-          "String",
-          "ul",
-          "ul, div ..."
+          'tag',
+          'Tags of HTML elements to be rendered ',
+          'String',
+          'ul',
+          'ul, div ...'
         ],
-        ["flush", "Remove some borders", "Boolean", "false", ""]
+        ['flush', 'Remove some borders', 'Boolean', 'false', '']
       ],
       propsItem: [
         [
-          "tag",
-          "Tags of HTML elements to be rendered ",
-          "String",
-          "li",
-          "li, div ..."
+          'tag',
+          'Tags of HTML elements to be rendered ',
+          'String',
+          'li',
+          'li, div ...'
         ],
-        ["active", "active", "Boolean", "false", ""],
-        ["disabled", "disabled", "Boolean", "false", ""]
+        ['active', 'active', 'Boolean', 'false', ''],
+        ['disabled', 'disabled', 'Boolean', 'false', '']
       ]
     };
   }

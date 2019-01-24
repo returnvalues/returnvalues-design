@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>Address Filter</h1>
-    <p class="bd-lead">It is used to get the length of an account for smart contract address.</p>
+    <p class="bd-lead">
+      It is used to get the length of an account for smart contract address.
+    </p>
     <h2>Example</h2>
     <example style="overflow:auto">
       <rd-list-group>
@@ -20,16 +22,19 @@
 </rd-list-group>`"
     />
     <h2>Arguments</h2>
-    <properties type="args" :data="args"/>
+    <properties
+      type="args"
+      :data="args"
+    />
   </div>
 </template>
 
 <script>
 export default {
-  name: "AddressFilter",
+  name: 'AddressFilter',
   data() {
     return {
-      args: [["length", "Length of the address. Minimum 9", "Number", 26]]
+      args: [['length', 'Length of the address. Minimum 9', 'Number', 26]]
     };
   }
 };
