@@ -193,7 +193,7 @@
       />
     </example>
     <highlight
-      code="
+      code="<rd-input
   lg
   type=&quot;text&quot;
   class=&quot;mt-1&quot;
