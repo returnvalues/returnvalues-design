@@ -459,7 +459,7 @@
 </rd-button>"
     />
     <h2>Props</h2>
-    추가로 <nuxt-link
+    We can also use <nuxt-link
       append
       to="../../mixins/semantic"
     >
@@ -485,7 +485,7 @@
       to="../../tooltip"
     >
       Tooltip
-    </nuxt-link> 속성을 쓸 수 있습니다.
+    </nuxt-link> attributes.
     <properties
       type="props"
       :data="props"
@@ -500,10 +500,10 @@ export default {
   data() {
     return {
       props: [
-        ['tag', '렌더링 될 HTML 엘리먼트의 태그', 'String', 'button', 'button, input ...'],
+        ['tag', 'Tags of HTML elements to be rendered ', 'String', 'button', 'button, input ...'],
         ['block', 'width 100%', 'Boolean', 'false', ''],
-        ['active', '활성화 상태', 'Boolean', 'false', ''],
-        ['disabled', '비활성화 상태', 'Boolean', 'false', ''],
+        ['active', 'activated', 'Boolean', 'false', ''],
+        ['disabled', 'disabled', 'Boolean', 'false', ''],
       ]
     };
   }
