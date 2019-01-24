@@ -85,14 +85,14 @@ export default {
         ["modelValue", "v-model", "Array|String", "", ""],
         [
           "from",
-          "입력할 형식",
+          "input type",
           "String",
           "utf8",
           "ascii, bytes, hex, number, numberString, utf8"
         ],
         [
           "to",
-          "모델을 갱신할 형식",
+          "output type",
           "String",
           "hex",
           "ascii, bytes, hex, number, numberString, utf8"

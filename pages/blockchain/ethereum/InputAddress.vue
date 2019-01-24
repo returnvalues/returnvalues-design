@@ -28,7 +28,7 @@ export default {
       props: [
         [
           "modelValue",
-          "v-model 유효할 경우에만 값이 채워집니다.",
+          "you can fills in the value only if v-model value is validate",
           "String",
           "",
           ""

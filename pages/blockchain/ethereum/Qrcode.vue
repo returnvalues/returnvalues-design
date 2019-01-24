@@ -37,7 +37,7 @@ export default {
   name: "Qrcode",
   data() {
     return {
-      props: [["options", "Qrcode options 생략가능", "Object", "", ""]],
+      props: [["options", "Qrcode options", "Object", "", ""]],
       propsQrcode: [
         [
           "version",
