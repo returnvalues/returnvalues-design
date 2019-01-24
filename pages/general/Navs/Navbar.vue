@@ -1,76 +1,32 @@
 <template>
   <div>
     <h1>Navbar</h1>
-    <p class="bd-lead">
-      Navbars present useful navigation controls at the top of an application.
-    </p>
+    <p class="bd-lead">Navbars present useful navigation controls at the top of an application.</p>
     <h2>Example</h2>
 
     <example>
-      <rd-navbar
-        lg
-        light
-        class="bg-light"
-      >
-        <rd-navbar-brand href="javascript:">
-          Navbar
-        </rd-navbar-brand>
-        <rd-navbar-toggler @click.native="$refs.collapse1.toggle()" />
+      <rd-navbar lg light class="bg-light">
+        <rd-navbar-brand href="javascript:">Navbar</rd-navbar-brand>
+        <rd-navbar-toggler @click.native="$refs.collapse1.toggle()"/>
 
         <rd-collapse ref="collapse1">
           <rd-nav class="mr-auto">
-            <a
-              class="nav-lik"
-              href="javascript:"
-            >
-              Home <span class="sr-only">
-                (current)
-              </span>
+            <a class="nav-lik" href="javascript:">Home
+              <span class="sr-only">(current)</span>
             </a>
-            <a
-              class="nav-link"
-              href="javascript:"
-            >
-              Link
-            </a>
+            <a class="nav-link" href="javascript:">Link</a>
             <rd-dropdown>
-              <a
-                slot="button"
-                href="javascript:"
-              >
-                Dropdown
-              </a>
-              <a href="javascript:">
-                Action
-              </a>
-              <a href="javascript:">
-                Another action
-              </a>
-              <div class="dropdown-divider" />
-              <a href="javascript:">
-                Something else here
-              </a>
+              <a slot="button" href="javascript:">Dropdown</a>
+              <a href="javascript:">Action</a>
+              <a href="javascript:">Another action</a>
+              <div class="dropdown-divider"/>
+              <a href="javascript:">Something else here</a>
             </rd-dropdown>
-            <a
-              class="disabled"
-              href="javascript:"
-            >
-              Disabled
-            </a>
+            <a class="disabled" href="javascript:">Disabled</a>
           </rd-nav>
           <form class="form-inline my-2 my-lg-0">
-            <rd-input
-              class="mr-sm-2"
-              type="search"
-              placeholder="Search"
-            />
-            <rd-button
-              outline-success
-              class="my-2 my-sm-0"
-              type="submit"
-            >
-              Search
-            </rd-button>
+            <rd-input class="mr-sm-2" type="search" placeholder="Search"/>
+            <rd-button outline-success class="my-2 my-sm-0" type="submit">Search</rd-button>
           </form>
         </rd-collapse>
       </rd-navbar>
@@ -146,23 +102,11 @@
     />
     <h3>Brand</h3>
     <example>
-      <rd-navbar
-        light
-        class="bg-light"
-      >
-        <rd-navbar-brand
-          href="javascript:"
-        >
-          Navbar
-        </rd-navbar-brand>
+      <rd-navbar light class="bg-light">
+        <rd-navbar-brand href="javascript:">Navbar</rd-navbar-brand>
       </rd-navbar>
-      <rd-navbar
-        light
-        class="bg-light mt-3"
-      >
-        <rd-navbar-brand class="mb-0 h1">
-          Navbar
-        </rd-navbar-brand>
+      <rd-navbar light class="bg-light mt-3">
+        <rd-navbar-brand class="mb-0 h1">Navbar</rd-navbar-brand>
       </rd-navbar>
     </example>
     <highlight
@@ -188,42 +132,16 @@
 
     <h3>Nav</h3>
     <example>
-      <rd-navbar
-        lg
-        light
-        class="bg-light"
-      >
-        <rd-navbar-brand
-          href="javascript:"
-        >
-          Navbar
-        </rd-navbar-brand>
-        <rd-navbar-toggler @click.native="$refs.collapse2.toggle()" />
+      <rd-navbar lg light class="bg-light">
+        <rd-navbar-brand href="javascript:">Navbar</rd-navbar-brand>
+        <rd-navbar-toggler @click.native="$refs.collapse2.toggle()"/>
 
         <rd-collapse ref="collapse2">
           <rd-nav>
-            <a
-              class="active"
-              href="javascript:"
-            >
-              Home
-            </a>
-            <a
-              href="javascript:"
-            >
-              Features
-            </a>
-            <a
-              href="javascript:"
-            >
-              Pricing
-            </a>
-            <a
-              class="disabled"
-              href="javascript:"
-            >
-              Disabled
-            </a>
+            <a class="active" href="javascript:">Home</a>
+            <a href="javascript:">Features</a>
+            <a href="javascript:">Pricing</a>
+            <a class="disabled" href="javascript:">Disabled</a>
           </rd-nav>
         </rd-collapse>
       </rd-navbar>
@@ -270,42 +188,16 @@
 </rd-navbar>"
     />
     <example>
-      <rd-navbar
-        lg
-        light
-        class="bg-light"
-      >
-        <rd-navbar-brand
-          href="javascript:"
-        >
-          Navbar
-        </rd-navbar-brand>
-        <rd-navbar-toggler @click.native="$refs.collapse3.toggle()" />
+      <rd-navbar lg light class="bg-light">
+        <rd-navbar-brand href="javascript:">Navbar</rd-navbar-brand>
+        <rd-navbar-toggler @click.native="$refs.collapse3.toggle()"/>
 
         <rd-collapse ref="collapse3">
           <rd-nav>
-            <a
-              class="active"
-              href="javascript:"
-            >
-              Home
-            </a>
-            <a
-              href="javascript:"
-            >
-              Features
-            </a>
-            <a
-              href="javascript:"
-            >
-              Pricing
-            </a>
-            <a
-              class="disabled"
-              href="javascript:"
-            >
-              Disabled
-            </a>
+            <a class="active" href="javascript:">Home</a>
+            <a href="javascript:">Features</a>
+            <a href="javascript:">Pricing</a>
+            <a class="disabled" href="javascript:">Disabled</a>
           </rd-nav>
         </rd-collapse>
       </rd-navbar>
@@ -352,59 +244,21 @@
 </rd-navbar>"
     />
     <example>
-      <rd-navbar
-        lg
-        light
-        class="bg-light"
-      >
-        <rd-navbar-brand
-          href="javascript:"
-        >
-          Navbar
-        </rd-navbar-brand>
-        <rd-navbar-toggler @click.native="$refs.collapse4.toggle()" />
+      <rd-navbar lg light class="bg-light">
+        <rd-navbar-brand href="javascript:">Navbar</rd-navbar-brand>
+        <rd-navbar-toggler @click.native="$refs.collapse4.toggle()"/>
 
         <rd-collapse ref="collapse4">
           <rd-nav>
-            <a
-              class="active"
-              href="javascript:"
-            >
-              Home
-            </a>
-            <a
-              href="javascript:"
-            >
-              Features
-            </a>
-
-            <a
-              href="javascript:"
-            >
-              Pricing
-            </a>
+            <a class="active" href="javascript:">Home</a>
+            <a href="javascript:">Features</a>
+            
+            <a href="javascript:">Pricing</a>
             <rd-dropdown>
-              <a
-                slot="button"
-                href="javascript:"
-              >
-                Dropdown link
-              </a>
-              <a
-                href="javascript:"
-              >
-                Action
-              </a>
-              <a
-                href="javascript:"
-              >
-                Another action
-              </a>
-              <a
-                href="javascript:"
-              >
-                Something else here
-              </a>
+              <a slot="button" href="javascript:">Dropdown link</a>
+              <a href="javascript:">Action</a>
+              <a href="javascript:">Another action</a>
+              <a href="javascript:">Something else here</a>
             </rd-dropdown>
           </rd-nav>
         </rd-collapse>
@@ -472,10 +326,7 @@
 
     <h3>Forms</h3>
     <example>
-      <rd-navbar
-        light
-        class="bg-light"
-      >
+      <rd-navbar light class="bg-light">
         <form class="form-inline">
           <input
             class="form-control mr-sm-2"
@@ -483,12 +334,7 @@
             placeholder="Search"
             aria-label="Search"
           >
-          <button
-            class="btn btn-outline-success my-2 my-sm-0"
-            type="submit"
-          >
-            Search
-          </button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
       </rd-navbar>
     </example>
@@ -514,13 +360,8 @@
 </rd-navbar>"
     />
     <example>
-      <rd-navbar
-        light
-        class="bg-light"
-      >
-        <rd-navbar-brand>
-          Navbar
-        </rd-navbar-brand>
+      <rd-navbar light class="bg-light">
+        <rd-navbar-brand>Navbar</rd-navbar-brand>
         <form class="form-inline">
           <input
             class="form-control mr-sm-2"
@@ -528,12 +369,7 @@
             placeholder="Search"
             aria-label="Search"
           >
-          <button
-            class="btn btn-outline-success my-2 my-sm-0"
-            type="submit"
-          >
-            Search
-          </button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
       </rd-navbar>
     </example>
@@ -562,19 +398,11 @@
 </rd-navbar>"
     />
     <example>
-      <rd-navbar
-        light
-        class="bg-light"
-      >
+      <rd-navbar light class="bg-light">
         <form class="form-inline">
           <div class="input-group">
             <div class="input-group-prepend">
-              <span
-                id="basic-addon1"
-                class="input-group-text"
-              >
-                @
-              </span>
+              <span id="basic-addon1" class="input-group-text">@</span>
             </div>
             <input
               type="text"
@@ -614,23 +442,10 @@
 </rd-navbar>"
     />
     <example>
-      <rd-navbar
-        light
-        class="bg-light"
-      >
+      <rd-navbar light class="bg-light">
         <form class="form-inline">
-          <button
-            class="btn btn-outline-success"
-            type="button"
-          >
-            Main button
-          </button>
-          <button
-            class="btn btn-sm btn-outline-secondary"
-            type="button"
-          >
-            Smaller button
-          </button>
+          <button class="btn btn-outline-success" type="button">Main button</button>
+          <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
         </form>
       </rd-navbar>
     </example>
@@ -658,13 +473,8 @@
 
     <h3>Text</h3>
     <example>
-      <rd-navbar
-        light
-        class="bg-light"
-      >
-        <rd-navbar-text>
-          Navbar text with an inline element
-        </rd-navbar-text>
+      <rd-navbar light class="bg-light">
+        <rd-navbar-text>Navbar text with an inline element</rd-navbar-text>
       </rd-navbar>
     </example>
     <highlight
@@ -678,42 +488,19 @@
 </rd-navbar>"
     />
     <example>
-      <rd-navbar
-        lg
-        light
-        class="bg-light"
-      >
-        <rd-navbar-brand
-          href="javascript:"
-        >
-          Navbar w/ text
-        </rd-navbar-brand>
-        <rd-navbar-toggler @click.native="$refs.collapse5.toggle()" />
+      <rd-navbar lg light class="bg-light">
+        <rd-navbar-brand href="javascript:">Navbar w/ text</rd-navbar-brand>
+        <rd-navbar-toggler @click.native="$refs.collapse5.toggle()"/>
 
         <rd-collapse ref="collapse5">
           <rd-nav class="mr-auto">
-            <a
-              class="active"
-              href="javascript:"
-            >
-              Home <span class="sr-only">
-                (current)
-              </span>
+            <a class="active" href="javascript:">Home
+              <span class="sr-only">(current)</span>
             </a>
-            <a
-              href="javascript:"
-            >
-              Features
-            </a>
-            <a
-              href="javascript:"
-            >
-              Pricing
-            </a>
+            <a href="javascript:">Features</a>
+            <a href="javascript:">Pricing</a>
           </rd-nav>
-          <rd-navbar-text>
-            Navbar text with an inline element
-          </rd-navbar-text>
+          <rd-navbar-text>Navbar text with an inline element</rd-navbar-text>
         </rd-collapse>
       </rd-navbar>
     </example>
@@ -758,98 +545,31 @@
 </rd-navbar>"
     />
 
-
-    <h3>
-      Color schemes
-    </h3>
+    <h3>Color schemes</h3>
     <example>
-      <rd-navbar
-        dark
-        class="bg-dark"
-      >
+      <rd-navbar dark class="bg-dark">
         <rd-nav>
-          <a
-            class="active"
-            href="javascript:"
-          >
-            Home
-          </a>
-          <a
-            href="javascript:"
-          >
-            Features
-          </a>
-          <a
-            href="javascript:"
-          >
-            Pricing
-          </a>
-          <a
-            class="disabled"
-            href="javascript:"
-          >
-            Disabled
-          </a>
+          <a class="active" href="javascript:">Home</a>
+          <a href="javascript:">Features</a>
+          <a href="javascript:">Pricing</a>
+          <a class="disabled" href="javascript:">Disabled</a>
         </rd-nav>
       </rd-navbar>
 
-      <rd-navbar
-        dark
-        class="bg-primary mt-3"
-      >
+      <rd-navbar dark class="bg-primary mt-3">
         <rd-nav>
-          <a
-            class="active"
-            href="javascript:"
-          >
-            Home
-          </a>
-          <a
-            href="javascript:"
-          >
-            Features
-          </a>
-          <a
-            href="javascript:"
-          >
-            Pricing
-          </a>
-          <a
-            class="disabled"
-            href="javascript:"
-          >
-            Disabled
-          </a>
+          <a class="active" href="javascript:">Home</a>
+          <a href="javascript:">Features</a>
+          <a href="javascript:">Pricing</a>
+          <a class="disabled" href="javascript:">Disabled</a>
         </rd-nav>
       </rd-navbar>
-      <rd-navbar
-        light
-        class="mt-3"
-        style="background-color: #e3f2fd;"
-      >
+      <rd-navbar light class="mt-3" style="background-color: #e3f2fd;">
         <rd-nav>
-          <a
-            class="active"
-            href="javascript:"
-          >
-            Home
-          </a>
-          <a
-            href="javascript:"
-          >
-            Features
-          </a>
-          <a
-            href="javascript:"
-          >
-            Pricing
-          </a>
-          <a
-            class="disabled"
-            href="javascript:"
-          >
-            Disabled
-          </a>
+          <a class="active" href="javascript:">Home</a>
+          <a href="javascript:">Features</a>
+          <a href="javascript:">Pricing</a>
+          <a class="disabled" href="javascript:">Disabled</a>
         </rd-nav>
       </rd-navbar>
     </example>
@@ -946,30 +666,15 @@
     />
 
     <h3>RdNavbar</h3>
-    <h4>Props</h4>
-    <nuxt-link
-      append
-      to="../../mixins/semantic"
-    >
-      Semantic
-    </nuxt-link>, <nuxt-link
-      append
-      to="../../mixins/size"
-    >
-      Size
-    </nuxt-link> 속성을 쓸 수 있습니다.
+    <h4>Props</h4>You can use
+    <nuxt-link append to="../../mixins/semantic">Semantic</nuxt-link>,
+    <nuxt-link append to="../../mixins/size">Size</nuxt-link>attributes.
     <h3>RdNavbarBrand</h3>
     <h4>Props</h4>
-    <properties
-      type="props"
-      :data="propsBrand"
-    />
+    <properties type="props" :data="propsBrand"/>
     <h3>RdNavbarText</h3>
     <h4>Props</h4>
-    <properties
-      type="props"
-      :data="propsText"
-    />
+    <properties type="props" :data="propsText"/>
   </div>
 </template>
 
@@ -977,15 +682,27 @@
 // TODO: InputGroup 페이지 작성 후에 여기 form 수정하기
 
 export default {
-  name: 'Navbar',
+  name: "Navbar",
   data() {
     return {
       propsText: [
-        ['tag', '렌더링 될 HTML 엘리먼트의 태그', 'String', 'span', 'span, a ...'],
+        [
+          "tag",
+          "Tags of HTML elements to be rendered ",
+          "String",
+          "span",
+          "span, a ..."
+        ]
       ],
       propsBrand: [
-        ['tag', '렌더링 될 HTML 엘리먼트의 태그', 'String', 'a', 'span, a ...'],
-      ],
+        [
+          "tag",
+          "Tags of HTML elements to be rendered ",
+          "String",
+          "a",
+          "span, a ..."
+        ]
+      ]
     };
   }
 };

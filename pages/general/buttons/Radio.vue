@@ -1,33 +1,13 @@
 <template>
   <div>
-    <h1>
-      Radio
-    </h1>
-    <p>내부적으로 RdButton을 쓰는 컴포넌트 입니다.</p>
+    <h1>Radio</h1>
+    <p>A component that uses RdButton internally.</p>
     <h2>Example</h2>
     <example>
       <rd-button-group>
-        <rd-button-radio
-          v-model="picked"
-          semantic="secondary"
-          value="one"
-        >
-          Active
-        </rd-button-radio>
-        <rd-button-radio
-          v-model="picked"
-          semantic="secondary"
-          value="two"
-        >
-          Radio
-        </rd-button-radio>
-        <rd-button-radio
-          v-model="picked"
-          semantic="secondary"
-          value="three"
-        >
-          Radio
-        </rd-button-radio>
+        <rd-button-radio v-model="picked" semantic="secondary" value="one">Active</rd-button-radio>
+        <rd-button-radio v-model="picked" semantic="secondary" value="two">Radio</rd-button-radio>
+        <rd-button-radio v-model="picked" semantic="secondary" value="three">Radio</rd-button-radio>
       </rd-button-group>
     </example>
     <highlight
@@ -55,40 +35,30 @@
   </rd-button-radio>
 </rd-button-group>"
     />
-    <h2>Props</h2>
-    추가로 <nuxt-link
-      append
-      to="../button"
-    >
-      Button
-    </nuxt-link> 속성을 쓸 수 있습니다.
-    <properties
-      type="props"
-      :data="props"
-    />
+    <h2>Props</h2>We can also use
+    <nuxt-link append to="../button">Button</nuxt-link>attributes
+    <properties type="props" :data="props"/>
 
     <h2>Events</h2>
-    <properties
-      type="events"
-      :data="events"
-    />
+    <properties type="events" :data="events"/>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'Radio',
+  name: "Radio",
   data() {
     return {
-      picked: 'one',
-      props: [
-        ['modelValue', 'v-model', 'Boolean', 'false', ''],
-      ],
+      picked: "one",
+      props: [["modelValue", "v-model", "Boolean", "false", ""]],
       events: [
-        ['change', '값이 바뀌었을때 발생', '(value)']
-      ],
+        [
+          "change",
+          "The change event triggers when the value has changed",
+          "(value)"
+        ]
+      ]
     };
-  },
+  }
 };
 </script>

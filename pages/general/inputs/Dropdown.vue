@@ -1,157 +1,47 @@
 <template>
   <div>
     <h1>Dropdown</h1>
-    <p class="bd-lead">
-      부트스트랩 드롭다운 플러그인을 사용하여 링크 목록 등을 표시하기 위한 관련 오버레이를 토글합니다.
-    </p>
+    <p
+      class="bd-lead"
+    >Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.</p>
     <h2>Example</h2>
-    <h3>
-      Single button
-    </h3>
+    <h3>Single button</h3>
     <example>
       <rd-dropdown inline>
-        <rd-button
-          slot="button"
-          primary
-        >
-          Primary
-        </rd-button>
-        <a
-          href="javascript:"
-        >
-          Action
-        </a>
-        <a
-          href="javascript:"
-        >
-          Another action
-        </a>
-        <a
-
-          href="javascript:"
-        >
-          Something else here
-        </a>
+        <rd-button slot="button" primary>Primary</rd-button>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
       </rd-dropdown>
       <rd-dropdown inline>
-        <rd-button
-          slot="button"
-          secondary
-        >
-          Secondary
-        </rd-button>
-        <a
-          href="javascript:"
-        >
-          Action
-        </a>
-        <a
-          href="javascript:"
-        >
-          Another action
-        </a>
-        <a
-
-          href="javascript:"
-        >
-          Something else here
-        </a>
+        <rd-button slot="button" secondary>Secondary</rd-button>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
       </rd-dropdown>
       <rd-dropdown inline>
-        <rd-button
-          slot="button"
-          success
-        >
-          Success
-        </rd-button>
-        <a
-          href="javascript:"
-        >
-          Action
-        </a>
-        <a
-          href="javascript:"
-        >
-          Another action
-        </a>
-        <a
-
-          href="javascript:"
-        >
-          Something else here
-        </a>
+        <rd-button slot="button" success>Success</rd-button>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
       </rd-dropdown>
       <rd-dropdown inline>
-        <rd-button
-          slot="button"
-          info
-        >
-          Info
-        </rd-button>
-        <a
-          href="javascript:"
-        >
-          Action
-        </a>
-        <a
-          href="javascript:"
-        >
-          Another action
-        </a>
-        <a
-
-          href="javascript:"
-        >
-          Something else here
-        </a>
+        <rd-button slot="button" info>Info</rd-button>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
       </rd-dropdown>
       <rd-dropdown inline>
-        <rd-button
-          slot="button"
-          warning
-        >
-          Warning
-        </rd-button>
-        <a
-          href="javascript:"
-        >
-          Action
-        </a>
-        <a
-          href="javascript:"
-        >
-          Another action
-        </a>
-        <a
-
-          href="javascript:"
-        >
-          Something else here
-        </a>
+        <rd-button slot="button" warning>Warning</rd-button>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
       </rd-dropdown>
       <rd-dropdown inline>
-        <rd-button
-          slot="button"
-          danger
-        >
-          Danger
-        </rd-button>
-        <a
-          href="javascript:"
-        >
-          Action
-        </a>
-        <a
-          href="javascript:"
-        >
-          Another action
-        </a>
-        <a
-
-          href="javascript:"
-        >
-          Something else here
-        </a>
+        <rd-button slot="button" danger>Danger</rd-button>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
       </rd-dropdown>
     </example>
     <highlight
@@ -181,184 +71,73 @@
 </rd-dropdown>"
     />
 
-
-    <h3>
-      Split button
-    </h3>
+    <h3>Split button</h3>
     <example>
       <rd-dropdown>
-        <rd-button
-          slot="button"
-          primary
-        >
-          Primary
+        <rd-button slot="button" primary>Primary</rd-button>
+        <rd-button slot="button" primary>
+          <span class="sr-only">Toggle Dropdown</span>
         </rd-button>
-        <rd-button
-          slot="button"
-          primary
-        >
-          <span class="sr-only">
-            Toggle Dropdown
-          </span>
-        </rd-button>
-        <a href="javascript:">
-          Action
-        </a>
-        <a href="javascript:">
-          Another action
-        </a>
-        <a href="javascript:">
-          Something else here
-        </a>
-        <div class="dropdown-divider" />
-        <a href="javascript:">
-          Separated link
-        </a>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
+        <div class="dropdown-divider"/>
+        <a href="javascript:">Separated link</a>
       </rd-dropdown>
       <rd-dropdown>
-        <rd-button
-          slot="button"
-          secondary
-        >
-          Secondary
+        <rd-button slot="button" secondary>Secondary</rd-button>
+        <rd-button slot="button" secondary>
+          <span class="sr-only">Toggle Dropdown</span>
         </rd-button>
-        <rd-button
-          slot="button"
-          secondary
-        >
-          <span class="sr-only">
-            Toggle Dropdown
-          </span>
-        </rd-button>
-        <a href="javascript:">
-          Action
-        </a>
-        <a href="javascript:">
-          Another action
-        </a>
-        <a href="javascript:">
-          Something else here
-        </a>
-        <div class="dropdown-divider" />
-        <a href="javascript:">
-          Separated link
-        </a>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
+        <div class="dropdown-divider"/>
+        <a href="javascript:">Separated link</a>
       </rd-dropdown>
       <rd-dropdown>
-        <rd-button
-          slot="button"
-          success
-        >
-          Success
+        <rd-button slot="button" success>Success</rd-button>
+        <rd-button slot="button" success>
+          <span class="sr-only">Toggle Dropdown</span>
         </rd-button>
-        <rd-button
-          slot="button"
-          success
-        >
-          <span class="sr-only">
-            Toggle Dropdown
-          </span>
-        </rd-button>
-        <a href="javascript:">
-          Action
-        </a>
-        <a href="javascript:">
-          Another action
-        </a>
-        <a href="javascript:">
-          Something else here
-        </a>
-        <div class="dropdown-divider" />
-        <a href="javascript:">
-          Separated link
-        </a>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
+        <div class="dropdown-divider"/>
+        <a href="javascript:">Separated link</a>
       </rd-dropdown>
       <rd-dropdown>
-        <rd-button
-          slot="button"
-          info
-        >
-          Info
+        <rd-button slot="button" info>Info</rd-button>
+        <rd-button slot="button" info>
+          <span class="sr-only">Toggle Dropdown</span>
         </rd-button>
-        <rd-button
-          slot="button"
-          info
-        >
-          <span class="sr-only">
-            Toggle Dropdown
-          </span>
-        </rd-button>
-        <a href="javascript:">
-          Action
-        </a>
-        <a href="javascript:">
-          Another action
-        </a>
-        <a href="javascript:">
-          Something else here
-        </a>
-        <div class="dropdown-divider" />
-        <a href="javascript:">
-          Separated link
-        </a>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
+        <div class="dropdown-divider"/>
+        <a href="javascript:">Separated link</a>
       </rd-dropdown>
       <rd-dropdown>
-        <rd-button
-          slot="button"
-          warning
-        >
-          Warning
+        <rd-button slot="button" warning>Warning</rd-button>
+        <rd-button slot="button" warning>
+          <span class="sr-only">Toggle Dropdown</span>
         </rd-button>
-        <rd-button
-          slot="button"
-          warning
-        >
-          <span class="sr-only">
-            Toggle Dropdown
-          </span>
-        </rd-button>
-        <a href="javascript:">
-          Action
-        </a>
-        <a href="javascript:">
-          Another action
-        </a>
-        <a href="javascript:">
-          Something else here
-        </a>
-        <div class="dropdown-divider" />
-        <a href="javascript:">
-          Separated link
-        </a>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
+        <div class="dropdown-divider"/>
+        <a href="javascript:">Separated link</a>
       </rd-dropdown>
       <rd-dropdown>
-        <rd-button
-          slot="button"
-          danger
-        >
-          Danger
+        <rd-button slot="button" danger>Danger</rd-button>
+        <rd-button slot="button" danger>
+          <span class="sr-only">Toggle Dropdown</span>
         </rd-button>
-        <rd-button
-          slot="button"
-          danger
-        >
-          <span class="sr-only">
-            Toggle Dropdown
-          </span>
-        </rd-button>
-        <a href="javascript:">
-          Action
-        </a>
-        <a href="javascript:">
-          Another action
-        </a>
-        <a href="javascript:">
-          Something else here
-        </a>
-        <div class="dropdown-divider" />
-        <a href="javascript:">
-          Separated link
-        </a>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
+        <div class="dropdown-divider"/>
+        <a href="javascript:">Separated link</a>
       </rd-dropdown>
     </example>
     <highlight
@@ -392,120 +171,43 @@
   </a>
 </rd-dropdown>"
     />
-    <h3>
-      Sizing
-    </h3>
+    <h3>Sizing</h3>
     <example>
       <rd-dropdown inline>
-        <rd-button
-          slot="button"
-          secondary
-          lg
-        >
-          Large button
-        </rd-button>
-        <a
-          href="javascript:"
-        >
-          Action
-        </a>
-        <a
-          href="javascript:"
-        >
-          Another action
-        </a>
-        <a
-
-          href="javascript:"
-        >
-          Something else here
-        </a>
+        <rd-button slot="button" secondary lg>Large button</rd-button>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
       </rd-dropdown>
       <rd-dropdown>
-        <rd-button
-          slot="button"
-          secondary
-          lg
-        >
-          Large split button
+        <rd-button slot="button" secondary lg>Large split button</rd-button>
+        <rd-button slot="button" secondary>
+          <span class="sr-only">Toggle Dropdown</span>
         </rd-button>
-        <rd-button
-          slot="button"
-          secondary
-        >
-          <span class="sr-only">
-            Toggle Dropdown
-          </span>
-        </rd-button>
-        <a href="javascript:">
-          Action
-        </a>
-        <a href="javascript:">
-          Another action
-        </a>
-        <a href="javascript:">
-          Something else here
-        </a>
-        <div class="dropdown-divider" />
-        <a href="javascript:">
-          Separated link
-        </a>
-      </rd-dropdown><br><br>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
+        <div class="dropdown-divider"/>
+        <a href="javascript:">Separated link</a>
+      </rd-dropdown>
+      <br>
+      <br>
       <rd-dropdown inline>
-        <rd-button
-          slot="button"
-          secondary
-          sm
-        >
-          Small button
-        </rd-button>
-        <a
-          href="javascript:"
-        >
-          Action
-        </a>
-        <a
-          href="javascript:"
-        >
-          Another action
-        </a>
-        <a
-
-          href="javascript:"
-        >
-          Something else here
-        </a>
+        <rd-button slot="button" secondary sm>Small button</rd-button>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
       </rd-dropdown>
       <rd-dropdown>
-        <rd-button
-          slot="button"
-          secondary
-          sm
-        >
-          Small split button
+        <rd-button slot="button" secondary sm>Small split button</rd-button>
+        <rd-button slot="button" secondary sm>
+          <span class="sr-only">Toggle Dropdown</span>
         </rd-button>
-        <rd-button
-          slot="button"
-          secondary
-          sm
-        >
-          <span class="sr-only">
-            Toggle Dropdown
-          </span>
-        </rd-button>
-        <a href="javascript:">
-          Action
-        </a>
-        <a href="javascript:">
-          Another action
-        </a>
-        <a href="javascript:">
-          Something else here
-        </a>
-        <div class="dropdown-divider" />
-        <a href="javascript:">
-          Separated link
-        </a>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
+        <div class="dropdown-divider"/>
+        <a href="javascript:">Separated link</a>
       </rd-dropdown>
     </example>
     <highlight
@@ -622,67 +324,27 @@
 </rd-dropdown>"
     />
 
-
-    <h3>
-      Dropup
-    </h3>
+    <h3>Dropup</h3>
     <example>
-      <rd-dropdown
-        dropup
-        inline
-      >
-        <rd-button
-          slot="button"
-          secondary
-        >
-          Dropup
-        </rd-button>
-        <a href="javascript:">
-          Action
-        </a>
-        <a href="javascript:">
-          Another action
-        </a>
-        <a href="javascript:">
-          Something else here
-        </a>
-        <div class="dropdown-divider" />
-        <a href="javascript:">
-          Separated link
-        </a>
+      <rd-dropdown dropup inline>
+        <rd-button slot="button" secondary>Dropup</rd-button>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
+        <div class="dropdown-divider"/>
+        <a href="javascript:">Separated link</a>
       </rd-dropdown>
 
-      <rd-dropdown
-        inline
-        dropup
-      >
-        <rd-button
-          slot="button"
-          secondary
-        >
-          Split dropup
+      <rd-dropdown inline dropup>
+        <rd-button slot="button" secondary>Split dropup</rd-button>
+        <rd-button slot="button" secondary>
+          <span class="sr-only">Toggle Dropup</span>
         </rd-button>
-        <rd-button
-          slot="button"
-          secondary
-        >
-          <span class="sr-only">
-            Toggle Dropup
-          </span>
-        </rd-button>
-        <a href="javascript:">
-          Action
-        </a>
-        <a href="javascript:">
-          Another action
-        </a>
-        <a href="javascript:">
-          Something else here
-        </a>
-        <div class="dropdown-divider" />
-        <a href="javascript:">
-          Separated link
-        </a>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
+        <div class="dropdown-divider"/>
+        <a href="javascript:">Separated link</a>
       </rd-dropdown>
     </example>
     <highlight
@@ -745,67 +407,27 @@
 </rd-dropdown>"
     />
 
-
-    <h3>
-      Dropright
-    </h3>
+    <h3>Dropright</h3>
     <example>
-      <rd-dropdown
-        dropright
-        inline
-      >
-        <rd-button
-          slot="button"
-          secondary
-        >
-          Dropright
-        </rd-button>
-        <a href="javascript:">
-          Action
-        </a>
-        <a href="javascript:">
-          Another action
-        </a>
-        <a href="javascript:">
-          Something else here
-        </a>
-        <div class="dropdown-divider" />
-        <a href="javascript:">
-          Separated link
-        </a>
+      <rd-dropdown dropright inline>
+        <rd-button slot="button" secondary>Dropright</rd-button>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
+        <div class="dropdown-divider"/>
+        <a href="javascript:">Separated link</a>
       </rd-dropdown>
 
-      <rd-dropdown
-        inline
-        dropright
-      >
-        <rd-button
-          slot="button"
-          secondary
-        >
-          Split dropright
+      <rd-dropdown inline dropright>
+        <rd-button slot="button" secondary>Split dropright</rd-button>
+        <rd-button slot="button" secondary>
+          <span class="sr-only">Toggle Dropright</span>
         </rd-button>
-        <rd-button
-          slot="button"
-          secondary
-        >
-          <span class="sr-only">
-            Toggle Dropright
-          </span>
-        </rd-button>
-        <a href="javascript:">
-          Action
-        </a>
-        <a href="javascript:">
-          Another action
-        </a>
-        <a href="javascript:">
-          Something else here
-        </a>
-        <div class="dropdown-divider" />
-        <a href="javascript:">
-          Separated link
-        </a>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
+        <div class="dropdown-divider"/>
+        <a href="javascript:">Separated link</a>
       </rd-dropdown>
     </example>
     <highlight
@@ -868,71 +490,29 @@
 </rd-dropdown>"
     />
 
-
-    <h3>
-      Dropleft
-    </h3>
+    <h3>Dropleft</h3>
     <example>
-      <rd-dropdown
-        dropleft
-        inline
-      >
-        <rd-button
-          slot="button"
-          secondary
-        >
-          Dropleft
-        </rd-button>
-        <a href="javascript:">
-          Action
-        </a>
-        <a href="javascript:">
-          Another action
-        </a>
-        <a href="javascript:">
-          Something else here
-        </a>
-        <div class="dropdown-divider" />
-        <a href="javascript:">
-          Separated link
-        </a>
+      <rd-dropdown dropleft inline>
+        <rd-button slot="button" secondary>Dropleft</rd-button>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
+        <a href="javascript:">Something else here</a>
+        <div class="dropdown-divider"/>
+        <a href="javascript:">Separated link</a>
       </rd-dropdown>
 
-
       <rd-dropdown inline>
-        <rd-dropdown
-          slot="button"
-          dropleft
-          inline
-        >
-          <rd-button
-            slot="button"
-            secondary
-          >
-            <span class="sr-only">
-              Toggle Dropright
-            </span>
+        <rd-dropdown slot="button" dropleft inline>
+          <rd-button slot="button" secondary>
+            <span class="sr-only">Toggle Dropright</span>
           </rd-button>
-          <a href="javascript:">
-            Action
-          </a>
-          <a href="javascript:">
-            Another action
-          </a>
-          <a href="javascript:">
-            Something else here
-          </a>
-          <div class="dropdown-divider" />
-          <a href="javascript:">
-            Separated link
-          </a>
+          <a href="javascript:">Action</a>
+          <a href="javascript:">Another action</a>
+          <a href="javascript:">Something else here</a>
+          <div class="dropdown-divider"/>
+          <a href="javascript:">Separated link</a>
         </rd-dropdown>
-        <rd-button
-          slot="button"
-          secondary
-        >
-          Split dropleft
-        </rd-button>
+        <rd-button slot="button" secondary>Split dropleft</rd-button>
       </rd-dropdown>
     </example>
     <highlight
@@ -999,36 +579,13 @@
       </rd-dropdown>"
     />
 
-
-    <h3>
-      Menu items
-    </h3>
+    <h3>Menu items</h3>
     <example>
       <rd-dropdown>
-        <rd-button
-          slot="button"
-          secondary
-        >
-          Dropdown
-        </rd-button>
-        <button
-          class="dropdown-item"
-          type="button"
-        >
-          Action
-        </button>
-        <button
-          class="dropdown-item"
-          type="button"
-        >
-          Another action
-        </button>
-        <button
-          class="dropdown-item"
-          type="button"
-        >
-          Something else here
-        </button>
+        <rd-button slot="button" secondary>Dropdown</rd-button>
+        <button class="dropdown-item" type="button">Action</button>
+        <button class="dropdown-item" type="button">Another action</button>
+        <button class="dropdown-item" type="button">Something else here</button>
       </rd-dropdown>
     </example>
     <highlight
@@ -1060,36 +617,13 @@
 </rd-dropdown>"
     />
 
-
-    <h3>
-      Menu alignment
-    </h3>
+    <h3>Menu alignment</h3>
     <example>
       <rd-dropdown alignright>
-        <rd-button
-          slot="button"
-          secondary
-        >
-          Right-aligned menu
-        </rd-button>
-        <button
-          class="dropdown-item"
-          type="button"
-        >
-          Action
-        </button>
-        <button
-          class="dropdown-item"
-          type="button"
-        >
-          Another action
-        </button>
-        <button
-          class="dropdown-item"
-          type="button"
-        >
-          Something else here
-        </button>
+        <rd-button slot="button" secondary>Right-aligned menu</rd-button>
+        <button class="dropdown-item" type="button">Action</button>
+        <button class="dropdown-item" type="button">Another action</button>
+        <button class="dropdown-item" type="button">Something else here</button>
       </rd-dropdown>
     </example>
     <highlight
@@ -1121,29 +655,14 @@
 </rd-dropdown>"
     />
 
-    <h3>
-      Menu content
-    </h3>
-    <h4>
-      Headers
-    </h4>
+    <h3>Menu content</h3>
+    <h4>Headers</h4>
     <example>
       <rd-dropdown>
-        <rd-button
-          slot="button"
-          secondary
-        >
-          Header menu
-        </rd-button>
-        <h6 slot="header">
-          Dropdown header
-        </h6>
-        <a href="javascript:">
-          Action
-        </a>
-        <a href="javascript:">
-          Another action
-        </a>
+        <rd-button slot="button" secondary>Header menu</rd-button>
+        <h6 slot="header">Dropdown header</h6>
+        <a href="javascript:">Action</a>
+        <a href="javascript:">Another action</a>
       </rd-dropdown>
     </example>
     <highlight
@@ -1166,23 +685,13 @@
 </rd-dropdown>"
     />
 
-
-    <h4>
-      Text
-    </h4>
+    <h4>Text</h4>
     <example>
       <rd-dropdown>
-        <rd-button
-          slot="button"
-          secondary
-        >
-          Text menu
-        </rd-button>
+        <rd-button slot="button" secondary>Text menu</rd-button>
         <div class="p-4 text-muted">
           <p>Some example text that's free-flowing within the dropdown menu.</p>
-          <p class="mb-0">
-            And this is more example text.
-          </p>
+          <p class="mb-0">And this is more example text.</p>
         </div>
       </rd-dropdown>
     </example>
@@ -1203,23 +712,13 @@
 </rd-dropdown>"
     />
 
-
-    <h4>
-      Forms
-    </h4>
+    <h4>Forms</h4>
     <example>
       <rd-dropdown>
-        <rd-button
-          slot="button"
-          secondary
-        >
-          Form menu
-        </rd-button>
+        <rd-button slot="button" secondary>Form menu</rd-button>
         <form class="px-4 py-3">
           <div class="form-group">
-            <label for="exampleDropdownFormEmail1">
-              Email address
-            </label>
+            <label for="exampleDropdownFormEmail1">Email address</label>
             <input
               id="exampleDropdownFormEmail1"
               type="email"
@@ -1228,9 +727,7 @@
             >
           </div>
           <div class="form-group">
-            <label for="exampleDropdownFormPassword1">
-              Password
-            </label>
+            <label for="exampleDropdownFormPassword1">Password</label>
             <input
               id="exampleDropdownFormPassword1"
               type="password"
@@ -1239,38 +736,14 @@
             >
           </div>
           <div class="form-check">
-            <input
-              id="dropdownCheck"
-              type="checkbox"
-              class="form-check-input"
-            >
-            <label
-              class="form-check-label"
-              for="dropdownCheck"
-            >
-              Remember me
-            </label>
+            <input id="dropdownCheck" type="checkbox" class="form-check-input">
+            <label class="form-check-label" for="dropdownCheck">Remember me</label>
           </div>
-          <button
-            type="submit"
-            class="btn btn-primary"
-          >
-            Sign in
-          </button>
+          <button type="submit" class="btn btn-primary">Sign in</button>
         </form>
-        <div class="dropdown-divider" />
-        <a
-          class="dropdown-item"
-          href="javascript:"
-        >
-          New around here? Sign up
-        </a>
-        <a
-          class="dropdown-item"
-          href="javascript:"
-        >
-          Forgot password?
-        </a>
+        <div class="dropdown-divider"/>
+        <a class="dropdown-item" href="javascript:">New around here? Sign up</a>
+        <a class="dropdown-item" href="javascript:">Forgot password?</a>
       </rd-dropdown>
     </example>
     <highlight
@@ -1339,33 +812,60 @@
   </a>
 </rd-dropdown>"
     />
-    <h3>Props</h3>
-    추가로 <nuxt-link
-      append
-      to="../../mixins/semantic"
-    >
-      Semantic
-    </nuxt-link> 속성을 쓸 수 있습니다.
-    <properties
-      type="props"
-      :data="props"
-    />
+    <h3>Props</h3>We can also use
+    <nuxt-link append to="../../mixins/semantic">Semantic</nuxt-link>attributes
+    <properties type="props" :data="props"/>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'Dropdown',
+  name: "Dropdown",
   data() {
     return {
       props: [
-        ['tag', '렌더링 될 HTML 엘리먼트의 태그', 'String', 'div', 'div ...'],
-        ['inline', 'inline으로 표시. Split 버튼일 경우 필수', 'Boolean', 'false', ''],
-        ['dropright', '오른쪽으로 나옵니다.', 'Boolean', 'false', ''],
-        ['dropleft', '왼쪽으로 나옵니다.', 'Boolean', 'false', ''],
-        ['dropup', '위로 나옵니다.', 'Boolean', 'false', ''],
-        ['alignright', '메뉴가 오른쪽으로 붙게 됩니다.', 'Boolean', 'false', ''],
+        [
+          "tag",
+          "Tags of HTML elements to be rendered",
+          "String",
+          "div",
+          "div ..."
+        ],
+        [
+          "inline",
+          "Button dropdonws on the same horizontal row. Essential  when you use .Split button dropdowns ",
+          "Boolean",
+          "false",
+          ""
+        ],
+        [
+          "dropright",
+          "Trigger dropdown menus at the right of the elements.",
+          "Boolean",
+          "false",
+          ""
+        ],
+        [
+          "dropleft",
+          "Trigger dropdown menus at the left of the elements.",
+          "Boolean",
+          "false",
+          ""
+        ],
+        [
+          "dropup",
+          "Trigger dropdown menus above elements.",
+          "Boolean",
+          "false",
+          ""
+        ],
+        [
+          "alignright",
+          "Trigger dropdown menus at the right of the elements.",
+          "Boolean",
+          "false",
+          ""
+        ]
       ]
     };
   }

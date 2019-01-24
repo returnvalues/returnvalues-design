@@ -1,40 +1,22 @@
 <template>
   <div>
     <h1>Form</h1>
-    <p class="bd-lead">
-      폼 컨트롤 스타일, 레이아웃 옵션 및 다양한 폼양식을 만들기 위한 사용자 지정 컴포넌트 대한 예제 및 사용 가이드.
-    </p>
+    <p
+      class="bd-lead"
+    >Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
     <h2>Example</h2>
     <example>
       <form>
-        <rd-input
-          v-model="testEmail"
-          type="email"
-        >
+        <rd-input v-model="testEmail" type="email">
           Email address
-          <small
-            slot="message"
-            class="form-text text-muted"
-          >
+          <small slot="message" class="form-text text-muted">
             We'll never share your email with anyone
             else.
           </small>
         </rd-input>
-        <rd-input type="password">
-          Password
-        </rd-input>
-        <rd-input
-          v-model="testCheckbox"
-          type="checkbox"
-        >
-          Check me out
-        </rd-input>
-        <rd-button
-          type="submit"
-          primary
-        >
-          Submit
-        </rd-button>
+        <rd-input type="password">Password</rd-input>
+        <rd-input v-model="testCheckbox" type="checkbox">Check me out</rd-input>
+        <rd-button type="submit" primary>Submit</rd-button>
       </form>
     </example>
     <highlight
@@ -69,57 +51,31 @@
   </rd-button>
 </form>"
     />
-    <h3>
-      Form controls
-    </h3>
+    <h3>Form controls</h3>
     <example>
       <form>
-        <rd-input
-          type="email"
-          placeholder="name@example.com"
-        >
-          Email address
-        </rd-input>
+        <rd-input type="email" placeholder="name@example.com">Email address</rd-input>
         <rd-select>
-          <span slot="label">
-            Example select
-          </span>
+          <span slot="label">Example select</span>
           <option>1</option>
           <option>2</option>
           <option>3</option>
           <option>4</option>
           <option>5</option>
         </rd-select>
-        <rd-select
-          v-model="test"
-          multiple
-        >
-          <span slot="label">
-            Example multiple select
-          </span>
-          <option :value="a">
-            1
-          </option>
-          <option :value="b">
-            2
-          </option>
+        <rd-select v-model="test" multiple>
+          <span slot="label">Example multiple select</span>
+          <option :value="a">1</option>
+          <option :value="b">2</option>
           <option>3</option>
-          <option :value="4">
-            4
-          </option>
-          <option value="5">
-            5
-          </option>
+          <option :value="4">4</option>
+          <option value="5">5</option>
         </rd-select>
-        <rd-textarea v-model="test2">
-          Example textarea
-        </rd-textarea>
+        <rd-textarea v-model="test2">Example textarea</rd-textarea>
       </form>
 
       <form>
-        <rd-input type="file">
-          Example file input
-        </rd-input>
+        <rd-input type="file">Example file input</rd-input>
       </form>
     </example>
     <highlight
@@ -172,27 +128,11 @@
   </rd-input>
 </form>"
     />
-    <h3>
-      Sizing
-    </h3>
+    <h3>Sizing</h3>
     <example>
-      <rd-input
-        lg
-        type="text"
-        class="mt-1"
-        placeholder=".form-control-lg"
-      />
-      <rd-input
-        type="text"
-        class="mt-1"
-        placeholder="Default input"
-      />
-      <rd-input
-        sm
-        type="text"
-        class="mt-1"
-        placeholder=".form-control-sm"
-      />
+      <rd-input lg type="text" class="mt-1" placeholder=".form-control-lg"/>
+      <rd-input type="text" class="mt-1" placeholder="Default input"/>
+      <rd-input sm type="text" class="mt-1" placeholder=".form-control-sm"/>
     </example>
     <highlight
       code="
@@ -213,15 +153,9 @@
   placeholder=&quot;.form-control-sm&quot;
 />"
     />
-    <h3>
-      Readonly
-    </h3>
+    <h3>Readonly</h3>
     <example>
-      <rd-input
-        type="text"
-        placeholder="Readonly input here…"
-        readonly
-      />
+      <rd-input type="text" placeholder="Readonly input here…" readonly/>
     </example>
     <highlight
       code="<rd-input
@@ -230,18 +164,10 @@
   readonly
 />"
     />
-    <h3>
-      Readonly plain text
-    </h3>
+    <h3>Readonly plain text</h3>
     <example>
       <form>
-        <rd-input
-          plaintext
-          value="email@example.com"
-          readonly
-        >
-          Email
-        </rd-input>
+        <rd-input plaintext value="email@example.com" readonly>Email</rd-input>
       </form>
     </example>
     <highlight
@@ -255,14 +181,10 @@
   </rd-input>
 </form>"
     />
-    <h3>
-      Range Inputs
-    </h3>
+    <h3>Range Inputs</h3>
     <example>
       <form>
-        <rd-input type="range">
-          Example Range input
-        </rd-input>
+        <rd-input type="range">Example Range input</rd-input>
       </form>
     </example>
     <highlight
@@ -272,41 +194,13 @@
   </rd-input>
 </form>"
     />
-    <h3>
-      Checkboxes and radios
-    </h3>
+    <h3>Checkboxes and radios</h3>
     <example>
-      <rd-input type="checkbox">
-        Default checkbox
-      </rd-input>
-      <rd-input
-        type="checkbox"
-        disabled
-      >
-        Disabled checkbox
-      </rd-input>
-      <rd-input
-        v-model="test3"
-        :value="1"
-        type="radio"
-      >
-        Default radio
-      </rd-input>
-      <rd-input
-        v-model="test3"
-        :value="2"
-        type="radio"
-      >
-        Second default radio
-      </rd-input>
-      <rd-input
-        v-model="test3"
-        :value="3"
-        type="radio"
-        disabled
-      >
-        Disabled radio
-      </rd-input>
+      <rd-input type="checkbox">Default checkbox</rd-input>
+      <rd-input type="checkbox" disabled>Disabled checkbox</rd-input>
+      <rd-input v-model="test3" :value="1" type="radio">Default radio</rd-input>
+      <rd-input v-model="test3" :value="2" type="radio">Second default radio</rd-input>
+      <rd-input v-model="test3" :value="3" type="radio" disabled>Disabled radio</rd-input>
     </example>
     <highlight
       code="<rd-input type=&quot;checkbox&quot;>
@@ -341,56 +235,16 @@
   Disabled radio
 </rd-input>"
     />
-    <h3>
-      Inline
-    </h3>
+    <h3>Inline</h3>
     <example>
-      <rd-input
-        inline
-        type="checkbox"
-        value="option1"
-      >
-        1
-      </rd-input>
-      <rd-input
-        inline
-        type="checkbox"
-        value="option2"
-      >
-        2
-      </rd-input>
+      <rd-input inline type="checkbox" value="option1">1</rd-input>
+      <rd-input inline type="checkbox" value="option2">2</rd-input>
 
-      <rd-input
-        inline
-        type="checkbox"
-        value="option3"
-        disabled
-      >
-        3 (disabled)
-      </rd-input>
-      <rd-input
-        inline
-        type="radio"
-        value="option1"
-      >
-        1
-      </rd-input>
-      <rd-input
-        inline
-        type="radio"
-        value="option2"
-      >
-        2
-      </rd-input>
+      <rd-input inline type="checkbox" value="option3" disabled>3 (disabled)</rd-input>
+      <rd-input inline type="radio" value="option1">1</rd-input>
+      <rd-input inline type="radio" value="option2">2</rd-input>
 
-      <rd-input
-        inline
-        type="radio"
-        value="option3"
-        disabled
-      >
-        3 (disabled)
-      </rd-input>
+      <rd-input inline type="radio" value="option3" disabled>3 (disabled)</rd-input>
     </example>
     <highlight
       code="<rd-input
@@ -441,45 +295,38 @@
 </rd-input>"
     />
     <h2>RdInput</h2>
-    <h3>Props</h3>
-    추가로 <nuxt-link
-      append
-      to="../../mixins/size"
-    >
-      Size
-    </nuxt-link> 속성을 쓸 수 있습니다.
-    <properties
-      type="props"
-      :data="propsInput"
-    />
+    <h3>Props</h3>You can also use
+    <nuxt-link append to="../../mixins/size">Size</nuxt-link>attributes.
+    <properties type="props" :data="propsInput"/>
     <h3>Events</h3>
-    <properties
-      type="events"
-      :data="eventsInput"
-    />
+    <properties type="events" :data="eventsInput"/>
   </div>
 </template>
 
 <script>
-
-
 export default {
-  name: 'Form',
+  name: "Form",
   data() {
     return {
-      testEmail: '123',
+      testEmail: "123",
       testCheckbox: true,
-      test: ['3', 4],
+      test: ["3", 4],
       a: { a: 1 },
       b: { b: 2 },
       c: { c: 3 },
-      test2: 'wfwe',
+      test2: "wfwe",
       test3: 2,
       propsInput: [
-        ['modelValue', 'v-model', 'Any', '', ''],
-        ['type', 'input type', 'String', 'text', 'text, checkbox, radio ...'],
+        ["modelValue", "v-model", "Any", "", ""],
+        ["type", "input type", "String", "text", "text, checkbox, radio ..."]
       ],
-      eventsInput: [['change', '값이 바뀌었을때 발생', '(value)']]
+      eventsInput: [
+        [
+          "change",
+          "The change event triggers when the value has changed",
+          "(value)"
+        ]
+      ]
     };
   }
 };
