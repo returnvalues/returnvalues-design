@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>Units filter</h1>
-    <p class="bd-lead">Ethereum unit converter</p>
+    <p class="bd-lead">
+      Ethereum unit converter
+    </p>
     <h2>Example</h2>
     <example>
       <rd-list-group>
@@ -18,7 +20,10 @@
 </rd-list-group>`"
     />
     <h2>Arguments</h2>
-    <properties type="args" :data="args"/>
+    <properties
+      type="args"
+      :data="args"
+    />
     <h3>Units</h3>
     <ul>
       <li>wei</li>
@@ -50,12 +55,12 @@
 </template>
 <script>
 export default {
-  name: "UnitsFilter",
+  name: 'UnitsFilter',
   data() {
     return {
       args: [
-        ["from", "unit of Ether. can be ommited", "String", "eth", "(Units..)"],
-        ["to", "return unit", "String", "wei", "(Units..)"]
+        ['from', 'unit of Ether. can be ommited', 'String', 'eth', '(Units..)'],
+        ['to', 'return unit', 'String', 'wei', '(Units..)']
       ]
     };
   }

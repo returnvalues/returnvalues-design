@@ -1,14 +1,30 @@
 <template>
   <div>
     <h1>Nav</h1>
-    <p class="bd-lead">Documentation and examples for how to use Bootstrap’s navigation components.</p>
+    <p class="bd-lead">
+      Documentation and examples for how to use Bootstrap’s navigation components.
+    </p>
     <h2>Example</h2>
     <example>
       <rd-nav>
-        <a class="active" href="javascript:">Active</a>
-        <a href="javascript:">Link</a>
-        <a href="javascript:">Link</a>
-        <a class="disabled" href="javascript:">Disabled</a>
+        <a
+          class="active"
+          href="javascript:"
+        >
+          Active
+        </a>
+        <a href="javascript:">
+          Link
+        </a>
+        <a href="javascript:">
+          Link
+        </a>
+        <a
+          class="disabled"
+          href="javascript:"
+        >
+          Disabled
+        </a>
       </rd-nav>
     </example>
     <highlight
@@ -40,10 +56,24 @@
 
     <example>
       <rd-nav tag="nav">
-        <a class="active" href="javascript:">Active</a>
-        <a href="javascript:">Link</a>
-        <a href="javascript:">Link</a>
-        <a class="disabled" href="javascript:">Disabled</a>
+        <a
+          class="active"
+          href="javascript:"
+        >
+          Active
+        </a>
+        <a href="javascript:">
+          Link
+        </a>
+        <a href="javascript:">
+          Link
+        </a>
+        <a
+          class="disabled"
+          href="javascript:"
+        >
+          Disabled
+        </a>
       </rd-nav>
     </example>
     <highlight
@@ -77,10 +107,24 @@
     <h3>Vertical</h3>
     <example>
       <rd-nav class="flex-column">
-        <a class="active" href="javascript:">Active</a>
-        <a href="javascript:">Link</a>
-        <a href="javascript:">Link</a>
-        <a class="disabled" href="javascript:">Disabled</a>
+        <a
+          class="active"
+          href="javascript:"
+        >
+          Active
+        </a>
+        <a href="javascript:">
+          Link
+        </a>
+        <a href="javascript:">
+          Link
+        </a>
+        <a
+          class="disabled"
+          href="javascript:"
+        >
+          Disabled
+        </a>
       </rd-nav>
     </example>
     <highlight
@@ -116,10 +160,24 @@
     <h3>Tabs</h3>
     <example>
       <rd-nav tabs>
-        <a class="active" href="javascript:">Active</a>
-        <a href="javascript:">Link</a>
-        <a href="javascript:">Link</a>
-        <a class="disabled" href="javascript:">Disabled</a>
+        <a
+          class="active"
+          href="javascript:"
+        >
+          Active
+        </a>
+        <a href="javascript:">
+          Link
+        </a>
+        <a href="javascript:">
+          Link
+        </a>
+        <a
+          class="disabled"
+          href="javascript:"
+        >
+          Disabled
+        </a>
       </rd-nav>
     </example>
     <highlight
@@ -153,10 +211,24 @@
     <h3>Pills</h3>
     <example>
       <rd-nav pills>
-        <a class="active" href="javascript:">Active</a>
-        <a href="javascript:">Link</a>
-        <a href="javascript:">Link</a>
-        <a class="disabled" href="javascript:">Disabled</a>
+        <a
+          class="active"
+          href="javascript:"
+        >
+          Active
+        </a>
+        <a href="javascript:">
+          Link
+        </a>
+        <a href="javascript:">
+          Link
+        </a>
+        <a
+          class="disabled"
+          href="javascript:"
+        >
+          Disabled
+        </a>
       </rd-nav>
     </example>
     <highlight
@@ -189,11 +261,28 @@
     />
     <h3>Fill and justify</h3>
     <example>
-      <rd-nav pills fill>
-        <a class="active" href="javascript:">Active</a>
-        <a href="javascript:">Longer nav link</a>
-        <a href="javascript:">Link</a>
-        <a class="disabled" href="javascript:">Disabled</a>
+      <rd-nav
+        pills
+        fill
+      >
+        <a
+          class="active"
+          href="javascript:"
+        >
+          Active
+        </a>
+        <a href="javascript:">
+          Longer nav link
+        </a>
+        <a href="javascript:">
+          Link
+        </a>
+        <a
+          class="disabled"
+          href="javascript:"
+        >
+          Disabled
+        </a>
       </rd-nav>
     </example>
     <highlight
@@ -229,11 +318,28 @@
     />
 
     <example>
-      <rd-nav pills justified>
-        <a class="active" href="javascript:">Active</a>
-        <a href="javascript:">Longer nav link</a>
-        <a href="javascript:">Link</a>
-        <a class="disabled" href="javascript:">Disabled</a>
+      <rd-nav
+        pills
+        justified
+      >
+        <a
+          class="active"
+          href="javascript:"
+        >
+          Active
+        </a>
+        <a href="javascript:">
+          Longer nav link
+        </a>
+        <a href="javascript:">
+          Link
+        </a>
+        <a
+          class="disabled"
+          href="javascript:"
+        >
+          Disabled
+        </a>
       </rd-nav>
     </example>
     <highlight
@@ -270,17 +376,42 @@
     <h3>Using dropdowns</h3>
     <example>
       <rd-nav tabs>
-        <a class="active" href="javascript:">Active</a>
+        <a
+          class="active"
+          href="javascript:"
+        >
+          Active
+        </a>
         <rd-dropdown>
-          <a slot="button" href="javascript:">Dropdown</a>
-          <a href="javascript:">Action</a>
-          <a href="javascript:">Another action</a>
-          <a href="javascript:">Something else here</a>
-          <div class="dropdown-divider"/>
-          <a href="javascript:">Separated link</a>
+          <a
+            slot="button"
+            href="javascript:"
+          >
+            Dropdown
+          </a>
+          <a href="javascript:">
+            Action
+          </a>
+          <a href="javascript:">
+            Another action
+          </a>
+          <a href="javascript:">
+            Something else here
+          </a>
+          <div class="dropdown-divider" />
+          <a href="javascript:">
+            Separated link
+          </a>
         </rd-dropdown>
-        <a href="javascript:">Link</a>
-        <a class="disabled" href="javascript:">Disabled</a>
+        <a href="javascript:">
+          Link
+        </a>
+        <a
+          class="disabled"
+          href="javascript:"
+        >
+          Disabled
+        </a>
       </rd-nav>
     </example>
     <highlight
@@ -341,17 +472,42 @@
     <h3>Pills with dropdowns</h3>
     <example>
       <rd-nav pills>
-        <a class="active" href="javascript:">Active</a>
+        <a
+          class="active"
+          href="javascript:"
+        >
+          Active
+        </a>
         <rd-dropdown>
-          <a slot="button" href="javascript:">Dropdown</a>
-          <a href="javascript:">Action</a>
-          <a href="javascript:">Another action</a>
-          <a href="javascript:">Something else here</a>
-          <div class="dropdown-divider"/>
-          <a href="javascript:">Separated link</a>
+          <a
+            slot="button"
+            href="javascript:"
+          >
+            Dropdown
+          </a>
+          <a href="javascript:">
+            Action
+          </a>
+          <a href="javascript:">
+            Another action
+          </a>
+          <a href="javascript:">
+            Something else here
+          </a>
+          <div class="dropdown-divider" />
+          <a href="javascript:">
+            Separated link
+          </a>
         </rd-dropdown>
-        <a href="javascript:">Link</a>
-        <a class="disabled" href="javascript:">Disabled</a>
+        <a href="javascript:">
+          Link
+        </a>
+        <a
+          class="disabled"
+          href="javascript:"
+        >
+          Disabled
+        </a>
       </rd-nav>
     </example>
     <highlight
@@ -411,38 +567,41 @@
     />
 
     <h2>Props</h2>
-    <properties type="props" :data="props"/>
+    <properties
+      type="props"
+      :data="props"
+    />
   </div>
 </template>
 
 <script>
 export default {
-  name: "Nav",
+  name: 'Nav',
   data() {
     return {
       props: [
         [
-          "tag",
-          "Tags of HTML elements to be rendered",
-          "String",
-          "ul",
-          "ul, nav"
+          'tag',
+          'Tags of HTML elements to be rendered',
+          'String',
+          'ul',
+          'ul, nav'
         ],
-        ["tabs", "Generate a tabbed interface ", "Boolean", "false", ""],
-        ["pills", "Make components rounded ", "Boolean", "false", ""],
+        ['tabs', 'Generate a tabbed interface ', 'Boolean', 'false', ''],
+        ['pills', 'Make components rounded ', 'Boolean', 'false', ''],
         [
-          "fill",
-          "Force to contents to extend the full available width",
-          "Boolean",
-          "false",
-          ""
+          'fill',
+          'Force to contents to extend the full available width',
+          'Boolean',
+          'false',
+          ''
         ],
         [
-          "justified",
-          "Force to contents to extend the full available width with equal width elements",
-          "Boolean",
-          "false",
-          ""
+          'justified',
+          'Force to contents to extend the full available width with equal width elements',
+          'Boolean',
+          'false',
+          ''
         ]
       ]
     };

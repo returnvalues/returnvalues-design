@@ -3,21 +3,48 @@
     <h1>Modal</h1>
     <p
       class="bd-lead"
-    >Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+    >
+      Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.
+    </p>
     <h2>Example</h2>
     <example>
-      <rd-button type="button" primary @click.native="open=true">Launch demo modal</rd-button>
+      <rd-button
+        type="button"
+        primary
+        @click.native="open=true"
+      >
+        Launch demo modal
+      </rd-button>
       <rd-modal v-model="open">
         <rd-modal-header>
-          <h5 title>Modal title</h5>
-          <rd-button type="button" close @click.native="open=false">&times;</rd-button>
+          <h5 title>
+            Modal title
+          </h5>
+          <rd-button
+            type="button"
+            close
+            @click.native="open=false"
+          >
+            &times;
+          </rd-button>
         </rd-modal-header>
         <rd-modal-body>
           <p>Modal body text goes here.</p>
         </rd-modal-body>
         <rd-modal-footer>
-          <rd-button type="button" secondary @click.native="open=false">Close</rd-button>
-          <rd-button type="button" primary>Save changes</rd-button>
+          <rd-button
+            type="button"
+            secondary
+            @click.native="open=false"
+          >
+            Close
+          </rd-button>
+          <rd-button
+            type="button"
+            primary
+          >
+            Save changes
+          </rd-button>
         </rd-modal-footer>
       </rd-modal>
     </example>
@@ -64,19 +91,44 @@
     />
     <h3>Scrolling long content</h3>
     <example>
-      <rd-button type="button" primary @click.native="$refs.modal1.show">Launch demo modal</rd-button>
+      <rd-button
+        type="button"
+        primary
+        @click.native="$refs.modal1.show"
+      >
+        Launch demo modal
+      </rd-button>
 
       <rd-modal ref="modal1">
         <rd-modal-header>
-          <h5 title>Modal title</h5>
-          <rd-button type="button" close @click.native="$refs.modal1.hide">&times;</rd-button>
+          <h5 title>
+            Modal title
+          </h5>
+          <rd-button
+            type="button"
+            close
+            @click.native="$refs.modal1.hide"
+          >
+            &times;
+          </rd-button>
         </rd-modal-header>
         <rd-modal-body>
           <p>Modal body text goes here.</p>
         </rd-modal-body>
         <rd-modal-footer>
-          <rd-button type="button" secondary @click.native="$refs.modal1.hide">Close</rd-button>
-          <rd-button type="button" primary>Save changes</rd-button>
+          <rd-button
+            type="button"
+            secondary
+            @click.native="$refs.modal1.hide"
+          >
+            Close
+          </rd-button>
+          <rd-button
+            type="button"
+            primary
+          >
+            Save changes
+          </rd-button>
         </rd-modal-footer>
       </rd-modal>
     </example>
@@ -124,18 +176,46 @@
     />
     <h3>Vertically centered</h3>
     <example>
-      <rd-button type="button" primary @click.native="$refs.modal2.show">Launch demo modal</rd-button>
-      <rd-modal ref="modal2" centered>
+      <rd-button
+        type="button"
+        primary
+        @click.native="$refs.modal2.show"
+      >
+        Launch demo modal
+      </rd-button>
+      <rd-modal
+        ref="modal2"
+        centered
+      >
         <rd-modal-header>
-          <h5 title>Modal title</h5>
-          <rd-button type="button" close @click.native="$refs.modal2.hide">&times;</rd-button>
+          <h5 title>
+            Modal title
+          </h5>
+          <rd-button
+            type="button"
+            close
+            @click.native="$refs.modal2.hide"
+          >
+            &times;
+          </rd-button>
         </rd-modal-header>
         <rd-modal-body>
           <p>Modal body text goes here.</p>
         </rd-modal-body>
         <rd-modal-footer>
-          <rd-button type="button" secondary @click.native="$refs.modal2.hide">Close</rd-button>
-          <rd-button type="button" primary>Save changes</rd-button>
+          <rd-button
+            type="button"
+            secondary
+            @click.native="$refs.modal2.hide"
+          >
+            Close
+          </rd-button>
+          <rd-button
+            type="button"
+            primary
+          >
+            Save changes
+          </rd-button>
         </rd-modal-footer>
       </rd-modal>
     </example>
@@ -185,16 +265,31 @@
     />
     <h3>Tooltips and popovers</h3>
     <example>
-      <rd-button type="button" primary @click.native="$refs.modal3.show">Launch demo modal</rd-button>
+      <rd-button
+        type="button"
+        primary
+        @click.native="$refs.modal3.show"
+      >
+        Launch demo modal
+      </rd-button>
 
       <rd-modal ref="modal3">
         <rd-modal-header>
-          <h5 title>Modal title</h5>
-          <rd-button type="button" close @click.native="$refs.modal3.hide">&times;</rd-button>
+          <h5 title>
+            Modal title
+          </h5>
+          <rd-button
+            type="button"
+            close
+            @click.native="$refs.modal3.hide"
+          >
+            &times;
+          </rd-button>
         </rd-modal-header>
         <rd-modal-body>
           <h5>Popover in a modal</h5>
-          <p>This
+          <p>
+            This
             <rd-button
               href="javascript:"
               secondary
@@ -202,18 +297,44 @@
                 title:'Popover title',
                 content:'Popover body content is set in this attribute.'
               }"
-            >button</rd-button>triggers a popover on click.
+            >
+              button
+            </rd-button>triggers a popover on click.
           </p>
           <hr>
           <h5>Tooltips in a modal</h5>
           <p>
-            <rd-tooltip tag="a" href="javascript:" title="Tooltip">This link</rd-tooltip>and
-            <rd-tooltip tag="a" href="javascript:" class="tooltip-test" title="Tooltip">that link</rd-tooltip>have tooltips on hover.
+            <rd-tooltip
+              tag="a"
+              href="javascript:"
+              title="Tooltip"
+            >
+              This link
+            </rd-tooltip>and
+            <rd-tooltip
+              tag="a"
+              href="javascript:"
+              class="tooltip-test"
+              title="Tooltip"
+            >
+              that link
+            </rd-tooltip>have tooltips on hover.
           </p>
         </rd-modal-body>
         <rd-modal-footer>
-          <rd-button type="button" secondary @click.native="$refs.modal3.hide">Close</rd-button>
-          <rd-button type="button" primary>Save changes</rd-button>
+          <rd-button
+            type="button"
+            secondary
+            @click.native="$refs.modal3.hide"
+          >
+            Close
+          </rd-button>
+          <rd-button
+            type="button"
+            primary
+          >
+            Save changes
+          </rd-button>
         </rd-modal-footer>
       </rd-modal>
     </example>
@@ -291,33 +412,89 @@
     />
     <h3>Optional sizes</h3>
     <example>
-      <rd-button type="button" primary @click.native="$refs.modal4.show">Large modal</rd-button>
-      <rd-modal ref="modal4" lg>
+      <rd-button
+        type="button"
+        primary
+        @click.native="$refs.modal4.show"
+      >
+        Large modal
+      </rd-button>
+      <rd-modal
+        ref="modal4"
+        lg
+      >
         <rd-modal-header>
-          <h5 title>Modal title</h5>
-          <rd-button type="button" close @click.native="$refs.modal4.hide">&times;</rd-button>
+          <h5 title>
+            Modal title
+          </h5>
+          <rd-button
+            type="button"
+            close
+            @click.native="$refs.modal4.hide"
+          >
+            &times;
+          </rd-button>
         </rd-modal-header>
         <rd-modal-body>
           <p>Modal body text goes here.</p>
         </rd-modal-body>
         <rd-modal-footer>
-          <rd-button type="button" secondary @click.native="$refs.modal4.hide">Close</rd-button>
-          <rd-button type="button" primary>Save changes</rd-button>
+          <rd-button
+            type="button"
+            secondary
+            @click.native="$refs.modal4.hide"
+          >
+            Close
+          </rd-button>
+          <rd-button
+            type="button"
+            primary
+          >
+            Save changes
+          </rd-button>
         </rd-modal-footer>
       </rd-modal>
 
-      <rd-button type="button" primary @click.native="$refs.modal5.show">Small modal</rd-button>
-      <rd-modal ref="modal5" sm>
+      <rd-button
+        type="button"
+        primary
+        @click.native="$refs.modal5.show"
+      >
+        Small modal
+      </rd-button>
+      <rd-modal
+        ref="modal5"
+        sm
+      >
         <rd-modal-header>
-          <h5 title>Modal title</h5>
-          <rd-button type="button" close @click.native="$refs.modal5.hide">&times;</rd-button>
+          <h5 title>
+            Modal title
+          </h5>
+          <rd-button
+            type="button"
+            close
+            @click.native="$refs.modal5.hide"
+          >
+            &times;
+          </rd-button>
         </rd-modal-header>
         <rd-modal-body>
           <p>Modal body text goes here.</p>
         </rd-modal-body>
         <rd-modal-footer>
-          <rd-button type="button" secondary @click.native="$refs.modal5.hide">Close</rd-button>
-          <rd-button type="button" primary>Save changes</rd-button>
+          <rd-button
+            type="button"
+            secondary
+            @click.native="$refs.modal5.hide"
+          >
+            Close
+          </rd-button>
+          <rd-button
+            type="button"
+            primary
+          >
+            Save changes
+          </rd-button>
         </rd-modal-footer>
       </rd-modal>
     </example>
@@ -409,41 +586,55 @@
 </rd-modal>"
     />
     <h2>Props</h2>You can also use
-    <nuxt-link append to="../mixins/size">Size</nuxt-link>attributes.
-    <properties type="props" :data="props"/>
+    <nuxt-link
+      append
+      to="../mixins/size"
+    >
+      Size
+    </nuxt-link>attributes.
+    <properties
+      type="props"
+      :data="props"
+    />
     <h2>Methods</h2>
-    <properties type="methods" :data="methods"/>
+    <properties
+      type="methods"
+      :data="methods"
+    />
     <h2>Events</h2>
-    <properties type="events" :data="events"/>
+    <properties
+      type="events"
+      :data="events"
+    />
   </div>
 </template>
 <script>
 export default {
-  name: "Modal",
+  name: 'Modal',
   data() {
     return {
       open: false,
       props: [
-        ["open", "v-model", "Boolean", "false", ""],
+        ['open', 'v-model', 'Boolean', 'false', ''],
         [
-          "backdrop",
+          'backdrop',
           "Specifies backdrop.  If you specify 'static' for a backdrop, it is not possible to close the modal when clicking outside of it.",
-          "Boolean|String",
-          "true",
+          'Boolean|String',
+          'true',
           "true, false, 'static'"
         ],
-        ["fade", "ffade effect", "Boolean", "true", ""]
+        ['fade', 'ffade effect', 'Boolean', 'true', '']
       ],
       methods: [
-        ["toggle", "", "Manually toggles a modal ", ""],
-        ["show", "", "Manually shows a modal ", ""],
-        ["hide", "", "Manually hides a modal.", ""]
+        ['toggle', '', 'Manually toggles a modal ', ''],
+        ['show', '', 'Manually shows a modal ', ''],
+        ['hide', '', 'Manually hides a modal.', '']
       ],
       events: [
         [
-          "change",
-          "The change event triggers when the value has changed",
-          "(value)"
+          'change',
+          'The change event triggers when the value has changed',
+          '(value)'
         ]
       ]
     };

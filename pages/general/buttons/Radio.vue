@@ -5,9 +5,27 @@
     <h2>Example</h2>
     <example>
       <rd-button-group>
-        <rd-button-radio v-model="picked" semantic="secondary" value="one">Active</rd-button-radio>
-        <rd-button-radio v-model="picked" semantic="secondary" value="two">Radio</rd-button-radio>
-        <rd-button-radio v-model="picked" semantic="secondary" value="three">Radio</rd-button-radio>
+        <rd-button-radio
+          v-model="picked"
+          semantic="secondary"
+          value="one"
+        >
+          Active
+        </rd-button-radio>
+        <rd-button-radio
+          v-model="picked"
+          semantic="secondary"
+          value="two"
+        >
+          Radio
+        </rd-button-radio>
+        <rd-button-radio
+          v-model="picked"
+          semantic="secondary"
+          value="three"
+        >
+          Radio
+        </rd-button-radio>
       </rd-button-group>
     </example>
     <highlight
@@ -36,26 +54,37 @@
 </rd-button-group>"
     />
     <h2>Props</h2>We can also use
-    <nuxt-link append to="../button">Button</nuxt-link>attributes
-    <properties type="props" :data="props"/>
+    <nuxt-link
+      append
+      to="../button"
+    >
+      Button
+    </nuxt-link>attributes
+    <properties
+      type="props"
+      :data="props"
+    />
 
     <h2>Events</h2>
-    <properties type="events" :data="events"/>
+    <properties
+      type="events"
+      :data="events"
+    />
   </div>
 </template>
 
 <script>
 export default {
-  name: "Radio",
+  name: 'Radio',
   data() {
     return {
-      picked: "one",
-      props: [["modelValue", "v-model", "Boolean", "false", ""]],
+      picked: 'one',
+      props: [['modelValue', 'v-model', 'Boolean', 'false', '']],
       events: [
         [
-          "change",
-          "The change event triggers when the value has changed",
-          "(value)"
+          'change',
+          'The change event triggers when the value has changed',
+          '(value)'
         ]
       ]
     };

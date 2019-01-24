@@ -3,20 +3,33 @@
     <h1>Ethereum Input</h1>
     <p
       class="bd-lead"
-    >When you save string in smart contract Ethereum Input converts string into byte values . It returns byte value of a string.</p>
+    >
+      When you save string in smart contract Ethereum Input converts string into byte values . It returns byte value of a string.
+    </p>
     <h2>Example</h2>
     <example>
       <rd-eth-input v-model="hexData">
         <b>Default</b>
       </rd-eth-input>
-      <rd-eth-input v-model="hexData" from="hex">
+      <rd-eth-input
+        v-model="hexData"
+        from="hex"
+      >
         <b>from: hex</b>
       </rd-eth-input>
       <p>hexData: {{ hexData }}</p>
-      <rd-eth-input v-model="bytesData" class="mt-5" to="bytes">
+      <rd-eth-input
+        v-model="bytesData"
+        class="mt-5"
+        to="bytes"
+      >
         <b>to: bytes</b>
       </rd-eth-input>
-      <rd-eth-input v-model="bytesData" from="hex" to="bytes">
+      <rd-eth-input
+        v-model="bytesData"
+        from="hex"
+        to="bytes"
+      >
         <b>from: hex, to: bytes</b>
       </rd-eth-input>
       <p>bytesData: {{ bytesData }}</p>
@@ -50,16 +63,19 @@
     />
 
     <h2>Props</h2>
-    <properties type="props" :data="props"/>
+    <properties
+      type="props"
+      :data="props"
+    />
   </div>
 </template>
 
 <script>
 export default {
-  name: "Input",
+  name: 'Input',
   data() {
     return {
-      hexData: "0x52657475726e56616c7565732044657369676e",
+      hexData: '0x52657475726e56616c7565732044657369676e',
       bytesData: [
         82,
         101,
@@ -82,20 +98,20 @@ export default {
         110
       ],
       props: [
-        ["modelValue", "v-model", "Array|String", "", ""],
+        ['modelValue', 'v-model', 'Array|String', '', ''],
         [
-          "from",
-          "입력할 형식",
-          "String",
-          "utf8",
-          "ascii, bytes, hex, number, numberString, utf8"
+          'from',
+          '입력할 형식',
+          'String',
+          'utf8',
+          'ascii, bytes, hex, number, numberString, utf8'
         ],
         [
-          "to",
-          "모델을 갱신할 형식",
-          "String",
-          "hex",
-          "ascii, bytes, hex, number, numberString, utf8"
+          'to',
+          '모델을 갱신할 형식',
+          'String',
+          'hex',
+          'ascii, bytes, hex, number, numberString, utf8'
         ]
       ]
     };

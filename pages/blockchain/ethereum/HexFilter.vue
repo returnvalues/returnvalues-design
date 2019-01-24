@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>Hex Filter</h1>
-    <p class="bd-lead">It converts bytes to string for the smart contract.</p>
+    <p class="bd-lead">
+      It converts bytes to string for the smart contract.
+    </p>
     <h2>Example</h2>
     <example style="overflow:auto">
       <rd-list-group>
@@ -20,22 +22,25 @@
 </rd-list-group>`"
     />
     <h2>Arguments</h2>
-    <properties type="args" :data="args"/>
+    <properties
+      type="args"
+      :data="args"
+    />
   </div>
 </template>
 
 <script>
 export default {
-  name: "HexFilter",
+  name: 'HexFilter',
   data() {
     return {
       args: [
         [
-          "to",
-          "보여줄 형식",
-          "String",
-          "utf8",
-          "ascii, bytes, number, numberString, utf8"
+          'to',
+          '보여줄 형식',
+          'String',
+          'utf8',
+          'ascii, bytes, number, numberString, utf8'
         ]
       ]
     };
