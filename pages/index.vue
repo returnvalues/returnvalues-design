@@ -10,7 +10,7 @@
       <code>build</code> 브랜치에 푸시를 하게 됩니다.
     </p>
     <highlight type="bash" code="npm run build:push"/>
-    <h2>설치법</h2>
+    <h2>Installation</h2>
     <highlight
       type="bash"
       code="npm i git+ssh://git@github.com/returnvalues/returnvalues-design.git#build"
@@ -19,12 +19,11 @@
       <code>build</code> 브랜치에 올라와 있는 버전으로 설치를 합니다.
     </p>
 
-    <h2>사용법</h2>
-    <p>
-      Vue.js Plugin 형태로
-      <code>webpack</code> 혹은
-      <code>rollup</code> 등을 통해
-      <code>import</code> 하여 사용합니다.
+    <h2>Usage</h2>
+    <p>you can
+      <code>import</code> the npm package as a Vue.js plugin with
+      <code>webpack</code> or
+      <code>rollup</code>
     </p>
     <highlight
       type="javascript"
@@ -33,8 +32,9 @@ import ReturnvaluesDesign from 'returnvalues-design';
 
 Vue.use(ReturnvaluesDesign);"
     />
-    <h2>Github Pages 브랜치 빌드 및 업로드</h2>
-    <p>Authentication required to push to a repository.
+    <h2>Branch build and upload on Github</h2>
+    <p>
+      Authentication required to push to a repository.
       <br>Let's commit the files to store the changes you've made.
       <br>And then type the command below to build files and push changes from your commit into the
       <code>gh-pages</code> branch automatically.
