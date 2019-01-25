@@ -1,27 +1,23 @@
 <template>
   <div>
     <h1>Getting started</h1>
-    <h2>빌드 하는 법</h2>
-    <p>
-      저장소에 푸시 권한이 있는 상태여야 합니다.
-                          <br>모든 변경 사항을 커밋한 후 아래 명령을 실행하면
-                          <br>
-                          <code>/build</code> 폴더에 빌드 및
-                          <code>build</code> 브랜치에 푸시를 하게 됩니다.
+    <h2>How to build</h2>
+    <p>The repository must have push permissions.
+      <br>After committing all the changes,
+      <br>Run the following command
+      <br>it will build files in the
+      <code>/build</code> folder and automatically push to the
+      <code>build</code> branch after the build is completed.
     </p>
-    <highlight
-      type="bash"
-      code="npm run build:push"
-    />
+    <highlight type="bash" code="npm run build:push"/>
     <h2>Installation</h2>
     <highlight
       type="bash"
       code="npm i git+ssh://git@github.com/returnvalues/returnvalues-design.git#build"
     />
-    <p>
-      <code>build</code> 브랜치에 올라와 있는 버전으로 설치를 합니다.
+    <p>Install the version from the
+      <code>build</code> branch
     </p>
-
     <h2>Usage</h2>
     <p>
       you can
@@ -43,15 +39,12 @@ Vue.use(ReturnvaluesDesign);"
       <br>And then type the command below to build files and push changes from your commit into the
       <code>gh-pages</code> branch automatically.
     </p>
-    <highlight
-      type="bash"
-      code="npm run gh-pages"
-    />
+    <highlight type="bash" code="npm run gh-pages"/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Index'
+  name: "Index"
 };
 </script>
