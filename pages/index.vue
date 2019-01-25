@@ -1,8 +1,9 @@
 <template>
   <div>
     <h1>Getting started</h1>
-    <h2>How to build</h2>
-    <p>The repository must have push permissions.
+    <h2>Build</h2>
+    <p>
+      The repository must have push permissions.
       <br>After committing all the changes,
       <br>Run the following command
       <br>it will build files in the
@@ -15,7 +16,8 @@
       type="bash"
       code="npm i git+ssh://git@github.com/returnvalues/returnvalues-design.git#build"
     />
-    <p>Install the version from the
+    <p>
+      Install the version from the
       <code>build</code> branch
     </p>
     <h2>Usage</h2>
