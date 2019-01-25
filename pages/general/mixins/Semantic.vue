@@ -2,8 +2,8 @@
   <div>
     <h1>Semantic</h1>
     <p>
-      시각화 색상 정보를 가지고 있는 내부 Mixin 입니다.<br>
-      사용하는 컴포넌트는 아래와 같습니다.
+      It is an internal Mixin which has visualization color information.
+      <br>We can use components as below.
     </p>
     <ul>
       <li
@@ -27,14 +27,16 @@ export default {
   name: 'Semantic',
   data() {
     return {
-      comps: ['RdListItem',
+      comps: [
+        'RdListItem',
         'RdButton',
         'RdButtonCheckbox',
         'RdButtonRadio',
         'RdAlert',
         'RdBadge',
         'RdNavbar',
-        'RdProgress'],
+        'RdProgress'
+      ],
       props: [
         ['primary', '', 'Boolean', 'false', ''],
         ['secondary', '', 'Boolean', 'false', ''],
@@ -44,9 +46,15 @@ export default {
         ['info', '', 'Boolean', 'false', ''],
         ['light', '', 'Boolean', 'false', ''],
         ['dark', '', 'Boolean', 'false', ''],
-        ['semantic', '색상을 문자열로 줄 수 있습니다.', 'String', 'false', 'primary, secondary, success, danger, warning, info, light, dark'],
+        [
+          'semantic',
+          'Color accepts a string',
+          'String',
+          'false',
+          'primary, secondary, success, danger, warning, info, light, dark'
+        ]
       ]
     };
-  },
+  }
 };
 </script>

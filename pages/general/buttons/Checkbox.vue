@@ -1,9 +1,7 @@
 <template>
   <div>
-    <h1>
-      Checkbox
-    </h1>
-    <p>내부적으로 RdButton을 쓰는 컴포넌트 입니다.</p>
+    <h1>Checkbox</h1>
+    <p>A component that uses RdButton internally.</p>
     <h2>Example</h2>
     <example>
       <rd-button-group>
@@ -25,13 +23,13 @@
   </rd-button-checkbox>
 </rd-button-group>"
     />
-    <h2>Props</h2>
-    추가로 <nuxt-link
+    <h2>Props</h2>We can also use
+    <nuxt-link
       append
       to="../button"
     >
       Button
-    </nuxt-link> 속성을 쓸 수 있습니다.
+    </nuxt-link>attributes
     <properties
       type="props"
       :data="props"
@@ -45,19 +43,20 @@
 </template>
 
 <script>
-
 export default {
   name: 'Checkbox',
   data() {
     return {
       checked: true,
-      props: [
-        ['modelValue', 'v-model', 'Boolean', 'false', ''],
-      ],
+      props: [['modelValue', 'v-model', 'Boolean', 'false', '']],
       events: [
-        ['change', '값이 바뀌었을때 발생', '(value)']
-      ],
+        [
+          'change',
+          'The change event triggers when the value has changed',
+          '(value)'
+        ]
+      ]
     };
-  },
+  }
 };
 </script>

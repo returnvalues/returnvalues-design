@@ -1,10 +1,8 @@
 <template>
   <div>
-    <h1>
-      Jumbotron
-    </h1>
+    <h1>Jumbotron</h1>
     <p class="bd-lead">
-      hero 유닛 스타일 콘텐츠를 보여주는 가볍고 유연한 컴포넌트.
+      Lightweight, flexible component for showcasing unit style content.
     </p>
     <p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key marketing messages on your site.</p>
     <h2>Example</h2>
@@ -55,13 +53,14 @@
 </rd-jumbotron>"
     />
 
-
     <example>
       <rd-jumbotron fluid>
         <h1 class="display-4">
           Fluid jumbotron
         </h1>
-        <p class="lead">
+        <p
+          class="lead"
+        >
           This is a modified jumbotron that occupies the entire horizontal space of its parent.
         </p>
       </rd-jumbotron>
@@ -86,15 +85,20 @@
 </template>
 
 <script>
-
 export default {
   name: 'Jumbotron',
   data() {
     return {
       props: [
-        ['fluid', 'occupies the entire horizontal space of its parent.', 'Boolean', 'false', ''],
-      ],
+        [
+          'fluid',
+          'occupies the entire horizontal space of its parent.',
+          'Boolean',
+          'false',
+          ''
+        ]
+      ]
     };
-  },
+  }
 };
 </script>

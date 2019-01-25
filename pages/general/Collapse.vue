@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>Collapse</h1>
-    <p class="bd-lead">
+    <p
+      class="bd-lead"
+    >
       The Collapse element shows and hides content with a built-in slide in/out animation. You might use this to create a panel of settings for your application, with sub-sections that can be expanded and collapsed.
     </p>
     <h2>Example</h2>
@@ -95,7 +97,7 @@ v-model=&quot;test&quot;
         <div class="col">
           <rd-collapse
             ref="collapse2"
-            class=" multi-collapse"
+            class="multi-collapse"
           >
             <rd-card>
               <rd-card-body>
@@ -110,7 +112,7 @@ v-model=&quot;test&quot;
         <div class="col">
           <rd-collapse
             ref="collapse3"
-            class=" multi-collapse"
+            class="multi-collapse"
           >
             <rd-card>
               <rd-card-body>
@@ -190,9 +192,7 @@ v-model=&quot;test&quot;
         class="accordion"
       >
         <rd-card>
-          <rd-card-header
-            id="headingOne"
-          >
+          <rd-card-header id="headingOne">
             <h5 class="mb-0">
               <rd-button
                 link
@@ -381,20 +381,22 @@ v-model=&quot;test&quot;
 </template>
 
 <script>
-
 export default {
   name: 'Collapse',
   data() {
     return {
       accordion: 1,
       test: false,
-      props: [
-        ['show', 'v-model', 'Boolean', 'false', ''],
-      ],
+      props: [['show', 'v-model', 'Boolean', 'false', '']],
       methods: [
-        ['toggle', '{Boolean} show', '표시 토글. 파라미터는 필수 아님', '변화 여부 true/false']
+        [
+          'toggle',
+          '{Boolean} show',
+          'To show Toggles or hide.(optional)',
+          'Returns to the caller before the collapsible element has actually been shown or hidden true/false'
+        ]
       ]
     };
-  },
+  }
 };
 </script>

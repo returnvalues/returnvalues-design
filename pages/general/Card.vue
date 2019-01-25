@@ -56,9 +56,7 @@
     <h3>Body</h3>
     <example>
       <rd-card>
-        <rd-card-body>
-          This is some text within a card body.
-        </rd-card-body>
+        <rd-card-body>This is some text within a card body.</rd-card-body>
       </rd-card>
     </example>
     <highlight
@@ -164,9 +162,7 @@
     <h3>List groups</h3>
     <example>
       <rd-card style="width: 18rem;">
-        <rd-card-header>
-          Featured
-        </rd-card-header>
+        <rd-card-header>Featured</rd-card-header>
         <rd-list-group flush>
           <rd-list-item>Cras justo odio</rd-list-item>
           <rd-list-item>Dapibus ac facilisis in</rd-list-item>
@@ -189,9 +185,7 @@
     />
     <h3>Kitchen sink</h3>
     <example>
-      <rd-card
-        style="width: 18rem;"
-      >
+      <rd-card style="width: 18rem;">
         <img
           slot="top"
           src="https://dummyimage.com/180x100/000/fff"
@@ -205,7 +199,7 @@
           </p>
         </rd-card-body>
         <rd-list-group
-          class=" "
+          class
           flush
         >
           <rd-list-item>Cras justo odio</rd-list-item>
@@ -228,7 +222,6 @@
         </rd-card-body>
       </rd-card>
     </example>
-
 
     <highlight
       code="<rd-card
@@ -273,9 +266,7 @@
     <h3>Header and footer</h3>
     <example>
       <rd-card>
-        <rd-card-header>
-          Featured
-        </rd-card-header>
+        <rd-card-header>Featured</rd-card-header>
         <rd-card-body>
           <h5 slot="title">
             Special title treatment
@@ -284,7 +275,7 @@
           <rd-button
             tag="a"
             href="javascript:"
-            class=" "
+            class
             primary
           >
             Go somewhere
@@ -326,7 +317,7 @@
           <rd-button
             tag="a"
             href="javascript:"
-            class=" "
+            class
             primary
           >
             Go somewhere
@@ -357,9 +348,7 @@
     />
     <example>
       <rd-card>
-        <rd-card-header>
-          Quote
-        </rd-card-header>
+        <rd-card-header>Quote</rd-card-header>
         <rd-card-body>
           <blockquote class="blockquote mb-0">
             <p>
@@ -367,7 +356,8 @@
               Integer posuere erat a ante.
             </p>
             <footer class="blockquote-footer">
-              Someone famous in <cite title="Source Title">
+              Someone famous in
+              <cite title="Source Title">
                 Source Title
               </cite>
             </footer>
@@ -397,9 +387,7 @@
     />
     <example>
       <rd-card class="text-center">
-        <rd-card-header>
-          Featured
-        </rd-card-header>
+        <rd-card-header>Featured</rd-card-header>
         <rd-card-body>
           <h5 slot="title">
             Special title treatment
@@ -408,13 +396,13 @@
           <rd-button
             tag="a"
             href="javascript:"
-            class=" "
+            class
             primary
           >
             Go somewhere
           </rd-button>
         </rd-card-body>
-        <rd-card-footer class=" text-muted">
+        <rd-card-footer class="text-muted">
           2 days ago
         </rd-card-footer>
       </rd-card>
@@ -448,23 +436,21 @@
     <example>
       <rd-card class="text-center">
         <rd-card-header>
-          <rd-nav
-            tabs
-          >
+          <rd-nav tabs>
             <a
-              class=" active"
+              class="active"
               href="javascript:"
             >
               Active
             </a>
             <a
-              class=""
+              class
               href="javascript:"
             >
               Link
             </a>
             <a
-              class=" disabled"
+              class="disabled"
               href="javascript:"
             >
               Disabled
@@ -479,7 +465,7 @@
           <rd-button
             tag="a"
             href="javascript:"
-            class=" "
+            class
             primary
           >
             Go somewhere
@@ -532,23 +518,21 @@
     <example>
       <rd-card class="text-center">
         <rd-card-header>
-          <rd-nav
-            pills
-          >
+          <rd-nav pills>
             <a
-              class=" active"
+              class="active"
               href="javascript:"
             >
               Active
             </a>
             <a
-              class=""
+              class
               href="javascript:"
             >
               Link
             </a>
             <a
-              class=" disabled"
+              class="disabled"
               href="javascript:"
             >
               Disabled
@@ -563,7 +547,7 @@
           <rd-button
             tag="a"
             href="javascript:"
-            class=" "
+            class
             primary
           >
             Go somewhere
@@ -996,7 +980,7 @@
         style="max-width: 18rem;"
       >
         <rd-card-header>Header</rd-card-header>
-        <rd-card-body class=" text-primary">
+        <rd-card-body class="text-primary">
           <h5 slot="title">
             Primary card title
           </h5>
@@ -1011,7 +995,7 @@
         style="max-width: 18rem;"
       >
         <rd-card-header>Header</rd-card-header>
-        <rd-card-body class=" text-secondary">
+        <rd-card-body class="text-secondary">
           <h5 slot="title">
             Secondary card title
           </h5>
@@ -1026,7 +1010,7 @@
         style="max-width: 18rem;"
       >
         <rd-card-header>Header</rd-card-header>
-        <rd-card-body class=" text-success">
+        <rd-card-body class="text-success">
           <h5 slot="title">
             Success card title
           </h5>
@@ -1041,7 +1025,7 @@
         style="max-width: 18rem;"
       >
         <rd-card-header>Header</rd-card-header>
-        <rd-card-body class=" text-danger">
+        <rd-card-body class="text-danger">
           <h5 slot="title">
             Danger card title
           </h5>
@@ -1056,7 +1040,7 @@
         style="max-width: 18rem;"
       >
         <rd-card-header>Header</rd-card-header>
-        <rd-card-body class=" text-warning">
+        <rd-card-body class="text-warning">
           <h5 slot="title">
             Warning card title
           </h5>
@@ -1071,7 +1055,7 @@
         style="max-width: 18rem;"
       >
         <rd-card-header>Header</rd-card-header>
-        <rd-card-body class=" text-info">
+        <rd-card-body class="text-info">
           <h5 slot="title">
             Info card title
           </h5>
@@ -1101,7 +1085,7 @@
         style="max-width: 18rem;"
       >
         <rd-card-header>Header</rd-card-header>
-        <rd-card-body class=" text-dark">
+        <rd-card-body class="text-dark">
           <h5 slot="title">
             Dark card title
           </h5>
@@ -1243,7 +1227,7 @@
         <div class="card-header bg-transparent border-success">
           Header
         </div>
-        <rd-card-body class=" text-success">
+        <rd-card-body class="text-success">
           <h5 slot="title">
             Success card title
           </h5>
@@ -1252,7 +1236,7 @@
             and make up the bulk of the card's content.
           </p>
         </rd-card-body>
-        <rd-card-footer class=" bg-transparent border-success">
+        <rd-card-footer class="bg-transparent border-success">
           Footer
         </rd-card-footer>
       </rd-card>
@@ -1360,7 +1344,7 @@
               as a natural lead-in to additional content. This content is a little bit longer.
             </p>
           </rd-card-body>
-          <rd-card-footer class="">
+          <rd-card-footer class>
             <small class="text-muted">
               Last updated 3 mins ago
             </small>
@@ -1378,7 +1362,7 @@
             </h5>
             <p>This card has supporting text below as a natural lead-in to additional content.</p>
           </rd-card-body>
-          <rd-card-footer class="">
+          <rd-card-footer class>
             <small class="text-muted">
               Last updated 3 mins ago
             </small>
@@ -1400,7 +1384,7 @@
               This card has even longer content than the first to show that equal height action.
             </p>
           </rd-card-body>
-          <rd-card-footer class="">
+          <rd-card-footer class>
             <small class="text-muted">
               Last updated 3 mins ago
             </small>
@@ -1618,7 +1602,7 @@
               as a natural lead-in to additional content. This content is a little bit longer.
             </p>
           </rd-card-body>
-          <rd-card-footer class="">
+          <rd-card-footer class>
             <small class="text-muted">
               Last updated 3 mins ago
             </small>
@@ -1636,7 +1620,7 @@
             </h5>
             <p>This card has supporting text below as a natural lead-in to additional content.</p>
           </rd-card-body>
-          <rd-card-footer class="">
+          <rd-card-footer class>
             <small class="text-muted">
               Last updated 3 mins ago
             </small>
@@ -1658,7 +1642,7 @@
               This card has even longer content than the first to show that equal height action.
             </p>
           </rd-card-body>
-          <rd-card-footer class="">
+          <rd-card-footer class>
             <small class="text-muted">
               Last updated 3 mins ago
             </small>
@@ -1823,7 +1807,8 @@
             </p>
             <footer class="blockquote-footer">
               <small class="text-muted">
-                Someone famous in <cite title="Source Title">
+                Someone famous in
+                <cite title="Source Title">
                   Source Title
                 </cite>
               </small>
@@ -1853,7 +1838,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
             <footer class="blockquote-footer">
               <small>
-                Someone famous in <cite title="Source Title">
+                Someone famous in
+                <cite title="Source Title">
                   Source Title
                 </cite>
               </small>
@@ -1888,7 +1874,8 @@
             </p>
             <footer class="blockquote-footer">
               <small class="text-muted">
-                Someone famous in <cite title="Source Title">
+                Someone famous in
+                <cite title="Source Title">
                   Source Title
                 </cite>
               </small>
@@ -2046,19 +2033,34 @@
 </template>
 
 <script>
-
 export default {
   name: 'Card',
   data() {
     return {
       props: [
-        ['group', 'card-group 사용시 래퍼에 사용', 'Boolean', 'false', ''],
-        ['deck', 'card-deck 사용시 래퍼에 사용', 'Boolean', 'false', ''],
-        ['columns', 'card-columns 사용시 래퍼에 사용', 'Boolean', 'false', ''],
+        [
+          'group',
+          'Using at wrapper when using card-group ',
+          'Boolean',
+          'false',
+          ''
+        ],
+        [
+          'deck',
+          'Using at wrapper when using card-deck ',
+          'Boolean',
+          'false',
+          ''
+        ],
+        [
+          'columns',
+          'Using at wrapper when using card-columns ',
+          'Boolean',
+          'false',
+          ''
+        ]
       ],
-      propsBody: [
-        ['overlay', 'Image overlay시 사용', 'Boolean', 'false', ''],
-      ],
+      propsBody: [['overlay', 'Image overlay', 'Boolean', 'false', '']]
     };
   }
 };

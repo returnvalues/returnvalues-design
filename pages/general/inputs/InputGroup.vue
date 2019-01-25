@@ -1,8 +1,10 @@
 <template>
   <div>
     <h1>Input group</h1>
-    <p class="bd-lead">
-      입력폼 양쪽에 텍스트, 버튼 또는 버튼 그룹을 추가하여 폼 컨트롤을 쉽게 확장 할 수 있습니다.
+    <p
+      class="bd-lead"
+    >
+      Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.
     </p>
     <h2>Example</h2>
     <example>
@@ -46,14 +48,13 @@
         >
           $
         </span>
-        <rd-input>
-          <span
-            slot="append"
-            text
-          >
-            .00
-          </span>
-        </rd-input>
+        <rd-input />
+        <span
+          slot="append"
+          text
+        >
+          .00
+        </span>
       </rd-input-group>
       <rd-input-group>
         <span
@@ -106,14 +107,13 @@
   >
     $
   </span>
-  <rd-input>
+  <rd-input/>
     <span
       slot=&quot;append&quot;
       text
     >
       .00
     </span>
-  </rd-input>
 </rd-input-group>
 <rd-input-group>
   <span
@@ -125,9 +125,7 @@
   <textarea />
 </rd-input-group>"
     />
-    <h3>
-      Sizing
-    </h3>
+    <h3>Sizing</h3>
     <example>
       <rd-input-group
         class="mb-3"
@@ -141,7 +139,7 @@
         </span>
         <rd-input />
       </rd-input-group>
-      <rd-input-group class=" mb-3">
+      <rd-input-group class="mb-3">
         <span
           slot="prepend"
           text
@@ -192,37 +190,27 @@
   <rd-input />
 </rd-input-group>"
     />
-    <h3>
-      Checkboxes and radios
-    </h3>
+    <h3>Checkboxes and radios</h3>
     <example>
       <rd-input-group class="mb-3">
         <div
           slot="prepend"
           text
         >
-          <rd-input
-            type="checkbox"
-          />
+          <rd-input type="checkbox" />
         </div>
 
-        <rd-input
-          type="text"
-        />
+        <rd-input type="text" />
       </rd-input-group>
       <rd-input-group>
         <div
           slot="prepend"
           text
         >
-          <rd-input
-            type="radio"
-          />
+          <rd-input type="radio" />
         </div>
 
-        <rd-input
-          type="text"
-        />
+        <rd-input type="text" />
       </rd-input-group>
     </example>
     <highlight
@@ -255,9 +243,7 @@
   />
 </rd-input-group>"
     />
-    <h3>
-      Multiple inputs
-    </h3>
+    <h3>Multiple inputs</h3>
     <example>
       <rd-input-group>
         <span
@@ -282,9 +268,7 @@
   <rd-input />
 </rd-input-group>"
     />
-    <h3>
-      Multiple addons
-    </h3>
+    <h3>Multiple addons</h3>
     <example>
       <rd-input-group class="mb-3">
         <span
@@ -349,9 +333,7 @@
   </span>
 </rd-input-group>"
     />
-    <h3>
-      Button addons
-    </h3>
+    <h3>Button addons</h3>
     <example>
       <rd-input-group class="mb-3">
         <rd-button
@@ -466,9 +448,7 @@
   </rd-button>
 </rd-input-group>"
     />
-    <h3>
-      Buttons with dropdowns
-    </h3>
+    <h3>Buttons with dropdowns</h3>
     <example>
       <rd-input-group class="mb-3">
         <rd-dropdown slot="prepend">
@@ -479,25 +459,17 @@
           >
             Dropdown
           </rd-button>
-          <a
-            href="javascript:"
-          >
+          <a href="javascript:">
             Action
           </a>
-          <a
-            href="javascript:"
-          >
+          <a href="javascript:">
             Another action
           </a>
-          <a
-            href="javascript:"
-          >
+          <a href="javascript:">
             Something else here
           </a>
           <div class="dropdown-divider" />
-          <a
-            href="javascript:"
-          >
+          <a href="javascript:">
             Separated link
           </a>
         </rd-dropdown>
@@ -619,9 +591,7 @@
   </rd-dropdown>
 </rd-input-group>"
     />
-    <h3>
-      Segmented buttons
-    </h3>
+    <h3>Segmented buttons</h3>
     <example>
       <rd-input-group class="mb-3">
         <rd-dropdown
@@ -824,9 +794,7 @@
   </rd-dropdown>
 </rd-input-group>"
     />
-    <h3>
-      Custom select
-    </h3>
+    <h3>Custom select</h3>
     <example>
       <rd-input-group class="mb-3">
         <span
@@ -993,9 +961,7 @@
   </rd-button>
 </rd-input-group>"
     />
-    <h3>
-      Custom file input
-    </h3>
+    <h3>Custom file input</h3>
     <example>
       <rd-input-group class="mb-3">
         <span
@@ -1098,20 +1064,18 @@
   </rd-button>
 </rd-input-group>"
     />
-    <h3>Props</h3>
+    <h3>Props</h3>You can also use
     <nuxt-link
       append
       to="../../mixins/size"
     >
       Size
-    </nuxt-link> 속성을 쓸 수 있습니다.
+    </nuxt-link>attributes.
   </div>
 </template>
 
 <script>
-
-
 export default {
-  name: 'InputGroup',
+  name: 'InputGroup'
 };
 </script>

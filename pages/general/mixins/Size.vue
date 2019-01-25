@@ -2,8 +2,8 @@
   <div>
     <h1>Size</h1>
     <p>
-      크기를 조절하는 내부 Mixin 입니다.<br>
-      사용하는 컴포넌트는 아래와 같습니다.
+      Internal Mixin which adjust the size.
+      <br>Here are the components we can use.
     </p>
     <ul>
       <li
@@ -27,18 +27,26 @@ export default {
   name: 'Size',
   data() {
     return {
-      comps: ['RdButtonGroup',
+      comps: [
+        'RdButtonGroup',
         'RdButton',
         'RdInput',
         'RdNavbar',
         'RdPagination',
-        'RdModal'],
+        'RdModal'
+      ],
       props: [
         ['sm', 'Small', 'Boolean', 'false', ''],
         ['lg', 'Large', 'Boolean', 'false', ''],
-        ['size', 'size를 문자열로 줄 수 있습니다.', 'String', 'false', 'sm,lg'],
+        [
+          'size',
+          'We can configure size with string .',
+          'String',
+          'false',
+          'sm,lg'
+        ]
       ]
     };
-  },
+  }
 };
 </script>

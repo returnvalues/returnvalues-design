@@ -1,8 +1,10 @@
 <template>
   <div>
     <h1>Pagination</h1>
-    <p class="bd-lead">
-      여러 페이지에 일련의 관련 콘텐츠가 있음을 나타내는 페이지 번호 매김을 보여주는 문서와 예제.
+    <p
+      class="bd-lead"
+    >
+      Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.
     </p>
 
     <h2>Example</h2>
@@ -45,9 +47,7 @@
   </a>
 </rd-pagination>"
     />
-    <h3>
-      Working with icons
-    </h3>
+    <h3>Working with icons</h3>
     <example>
       <rd-pagination>
         <a
@@ -61,19 +61,13 @@
             Previous
           </span>
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           1
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           2
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           3
         </a>
         <a
@@ -130,9 +124,7 @@
   </a>
 </rd-pagination>"
     />
-    <h3>
-      Disabled and active states
-    </h3>
+    <h3>Disabled and active states</h3>
     <example>
       <rd-pagination>
         <a
@@ -142,9 +134,7 @@
         >
           Previous
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           1
         </a>
         <a
@@ -152,22 +142,20 @@
           class="active"
           active
         >
-          2 <span class="sr-only">
+          2
+          <span class="sr-only">
             (current)
           </span>
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           3
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Next
         </a>
       </rd-pagination>
-    </example><highlight
+    </example>
+    <highlight
       code="<rd-pagination>
   <a
     href=&quot;javascript:&quot;
@@ -208,9 +196,7 @@
         <span disabled>
           Previous
         </span>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           1
         </a>
         <span active>
@@ -219,14 +205,10 @@
             (current)
           </span>
         </span>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           3
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Next
         </a>
       </rd-pagination>
@@ -260,9 +242,7 @@
 </rd-pagination>"
     />
 
-    <h3>
-      Sizing
-    </h3>
+    <h3>Sizing</h3>
     <example>
       <rd-pagination lg>
         <a
@@ -271,14 +251,10 @@
         >
           1
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           2
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           3
         </a>
       </rd-pagination>
@@ -311,14 +287,10 @@
         >
           1
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           2
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           3
         </a>
       </rd-pagination>
@@ -344,9 +316,7 @@
 </rd-pagination>"
     />
 
-    <h3>
-      Alignment
-    </h3>
+    <h3>Alignment</h3>
     <example>
       <rd-pagination class="justify-content-center">
         <a
@@ -368,7 +338,8 @@
           Next
         </a>
       </rd-pagination>
-    </example><highlight
+    </example>
+    <highlight
       code="<rd-pagination class=&quot;justify-content-center&quot;>
   <a
     disabled
@@ -398,24 +369,16 @@
         >
           Previous
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           1
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           2
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           3
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Next
         </a>
       </rd-pagination>
@@ -450,19 +413,18 @@
   </a>
 </rd-pagination>"
     />
-    <h3>Props</h3>
+    <h3>Props</h3>You can use
     <nuxt-link
       append
       to="../mixins/size"
     >
       Size
-    </nuxt-link> 속성을 쓸 수 있습니다.
+    </nuxt-link>attribute.
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'Pagination',
+  name: 'Pagination'
 };
 </script>

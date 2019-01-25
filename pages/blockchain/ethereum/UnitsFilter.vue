@@ -2,7 +2,7 @@
   <div>
     <h1>Units filter</h1>
     <p class="bd-lead">
-      이더리움 ETH 단위 변환 필터
+      Ethereum unit converter
     </p>
     <h2>Example</h2>
     <example>
@@ -59,10 +59,10 @@ export default {
   data() {
     return {
       args: [
-        ['from', '입력 값의 단위. 생략가능', 'String', 'eth', '(Units..)'],
-        ['to', '출력 값의 단위', 'String', 'wei', '(Units..)']
+        ['from', 'unit of Ether. can be ommited', 'String', 'eth', '(Units..)'],
+        ['to', 'return unit', 'String', 'wei', '(Units..)']
       ]
     };
-  },
+  }
 };
 </script>

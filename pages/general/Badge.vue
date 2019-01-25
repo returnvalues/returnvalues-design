@@ -1,39 +1,47 @@
 <template>
   <div>
     <h1>Badges</h1>
-    <p class="bd-lead">
-      카운터 숫자 및 라벨 구성요소인 배지에 대한 문서 및 예제
+    <p
+      class="bd-lead"
+    >
+      Documentation and examples for badges, counting numbers and labeling component
     </p>
 
     <h2>Example</h2>
     <example>
       <h1>
-        Example heading <rd-badge secondary>
+        Example heading
+        <rd-badge secondary>
           New
         </rd-badge>
       </h1>
       <h2>
-        Example heading <rd-badge secondary>
+        Example heading
+        <rd-badge secondary>
           New
         </rd-badge>
       </h2>
       <h3>
-        Example heading <rd-badge secondary>
+        Example heading
+        <rd-badge secondary>
           New
         </rd-badge>
       </h3>
       <h4>
-        Example heading <rd-badge secondary>
+        Example heading
+        <rd-badge secondary>
           New
         </rd-badge>
       </h4>
       <h5>
-        Example heading <rd-badge secondary>
+        Example heading
+        <rd-badge secondary>
           New
         </rd-badge>
       </h5>
       <h6>
-        Example heading <rd-badge secondary>
+        Example heading
+        <rd-badge secondary>
           New
         </rd-badge>
       </h6>
@@ -71,16 +79,17 @@
 </h6>"
     />
 
-
     <example>
       <rd-button primary>
-        Notifications <rd-badge light>
+        Notifications
+        <rd-badge light>
           4
         </rd-badge>
       </rd-button>
 
       <rd-button primary>
-        Profile <rd-badge light>
+        Profile
+        <rd-badge light>
           9
         </rd-badge>
       </rd-button>
@@ -98,7 +107,6 @@
   </rd-badge>
 </rd-button>"
     />
-
 
     <h3>Contextual variations</h3>
 
@@ -374,13 +382,13 @@
   Dark
 </rd-badge>"
     />
-    <h2>Props</h2>
-    추가로 <nuxt-link
+    <h2>Props</h2>We can also use
+    <nuxt-link
       append
       to="../mixins/semantic"
     >
       Semantic
-    </nuxt-link> 속성을 쓸 수 있습니다.
+    </nuxt-link>attributes.
     <properties
       type="props"
       :data="props"
@@ -389,14 +397,19 @@
 </template>
 
 <script>
-
 export default {
   name: 'Badge',
   data() {
     return {
       props: [
-        ['pill', '둥근 모양', 'Boolean', 'false', ''],
-        ['tag', '렌더링 될 HTML 엘리먼트의 태그', 'String', '', 'a, span ...'],
+        ['pill', 'Make badges more rounded', 'Boolean', 'false', ''],
+        [
+          'tag',
+          'Tags of HTML elements to be rendered',
+          'String',
+          '',
+          'a, span ...'
+        ]
       ]
     };
   }

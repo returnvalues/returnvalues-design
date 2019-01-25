@@ -1,13 +1,13 @@
 <template>
   <div>
     <h1>Dropdown</h1>
-    <p class="bd-lead">
-      부트스트랩 드롭다운 플러그인을 사용하여 링크 목록 등을 표시하기 위한 관련 오버레이를 토글합니다.
+    <p
+      class="bd-lead"
+    >
+      Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.
     </p>
     <h2>Example</h2>
-    <h3>
-      Single button
-    </h3>
+    <h3>Single button</h3>
     <example>
       <rd-dropdown inline>
         <rd-button
@@ -16,20 +16,13 @@
         >
           Primary
         </rd-button>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Action
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Another action
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Something else here
         </a>
       </rd-dropdown>
@@ -40,20 +33,13 @@
         >
           Secondary
         </rd-button>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Action
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Another action
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Something else here
         </a>
       </rd-dropdown>
@@ -64,20 +50,13 @@
         >
           Success
         </rd-button>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Action
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Another action
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Something else here
         </a>
       </rd-dropdown>
@@ -88,20 +67,13 @@
         >
           Info
         </rd-button>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Action
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Another action
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Something else here
         </a>
       </rd-dropdown>
@@ -112,20 +84,13 @@
         >
           Warning
         </rd-button>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Action
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Another action
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Something else here
         </a>
       </rd-dropdown>
@@ -136,20 +101,13 @@
         >
           Danger
         </rd-button>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Action
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Another action
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Something else here
         </a>
       </rd-dropdown>
@@ -181,10 +139,7 @@
 </rd-dropdown>"
     />
 
-
-    <h3>
-      Split button
-    </h3>
+    <h3>Split button</h3>
     <example>
       <rd-dropdown>
         <rd-button
@@ -392,9 +347,7 @@
   </a>
 </rd-dropdown>"
     />
-    <h3>
-      Sizing
-    </h3>
+    <h3>Sizing</h3>
     <example>
       <rd-dropdown inline>
         <rd-button
@@ -404,20 +357,13 @@
         >
           Large button
         </rd-button>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Action
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Another action
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Something else here
         </a>
       </rd-dropdown>
@@ -450,7 +396,9 @@
         <a href="javascript:">
           Separated link
         </a>
-      </rd-dropdown><br><br>
+      </rd-dropdown>
+      <br>
+      <br>
       <rd-dropdown inline>
         <rd-button
           slot="button"
@@ -459,20 +407,13 @@
         >
           Small button
         </rd-button>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Action
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Another action
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Something else here
         </a>
       </rd-dropdown>
@@ -622,10 +563,7 @@
 </rd-dropdown>"
     />
 
-
-    <h3>
-      Dropup
-    </h3>
+    <h3>Dropup</h3>
     <example>
       <rd-dropdown
         dropup
@@ -745,10 +683,7 @@
 </rd-dropdown>"
     />
 
-
-    <h3>
-      Dropright
-    </h3>
+    <h3>Dropright</h3>
     <example>
       <rd-dropdown
         dropright
@@ -868,10 +803,7 @@
 </rd-dropdown>"
     />
 
-
-    <h3>
-      Dropleft
-    </h3>
+    <h3>Dropleft</h3>
     <example>
       <rd-dropdown
         dropleft
@@ -897,7 +829,6 @@
           Separated link
         </a>
       </rd-dropdown>
-
 
       <rd-dropdown inline>
         <rd-dropdown
@@ -999,10 +930,7 @@
       </rd-dropdown>"
     />
 
-
-    <h3>
-      Menu items
-    </h3>
+    <h3>Menu items</h3>
     <example>
       <rd-dropdown>
         <rd-button
@@ -1060,10 +988,7 @@
 </rd-dropdown>"
     />
 
-
-    <h3>
-      Menu alignment
-    </h3>
+    <h3>Menu alignment</h3>
     <example>
       <rd-dropdown alignright>
         <rd-button
@@ -1121,12 +1046,8 @@
 </rd-dropdown>"
     />
 
-    <h3>
-      Menu content
-    </h3>
-    <h4>
-      Headers
-    </h4>
+    <h3>Menu content</h3>
+    <h4>Headers</h4>
     <example>
       <rd-dropdown>
         <rd-button
@@ -1166,10 +1087,7 @@
 </rd-dropdown>"
     />
 
-
-    <h4>
-      Text
-    </h4>
+    <h4>Text</h4>
     <example>
       <rd-dropdown>
         <rd-button
@@ -1203,10 +1121,7 @@
 </rd-dropdown>"
     />
 
-
-    <h4>
-      Forms
-    </h4>
+    <h4>Forms</h4>
     <example>
       <rd-dropdown>
         <rd-button
@@ -1339,13 +1254,13 @@
   </a>
 </rd-dropdown>"
     />
-    <h3>Props</h3>
-    추가로 <nuxt-link
+    <h3>Props</h3>We can also use
+    <nuxt-link
       append
       to="../../mixins/semantic"
     >
       Semantic
-    </nuxt-link> 속성을 쓸 수 있습니다.
+    </nuxt-link>attributes
     <properties
       type="props"
       :data="props"
@@ -1354,18 +1269,53 @@
 </template>
 
 <script>
-
 export default {
   name: 'Dropdown',
   data() {
     return {
       props: [
-        ['tag', '렌더링 될 HTML 엘리먼트의 태그', 'String', 'div', 'div ...'],
-        ['inline', 'inline으로 표시. Split 버튼일 경우 필수', 'Boolean', 'false', ''],
-        ['dropright', '오른쪽으로 나옵니다.', 'Boolean', 'false', ''],
-        ['dropleft', '왼쪽으로 나옵니다.', 'Boolean', 'false', ''],
-        ['dropup', '위로 나옵니다.', 'Boolean', 'false', ''],
-        ['alignright', '메뉴가 오른쪽으로 붙게 됩니다.', 'Boolean', 'false', ''],
+        [
+          'tag',
+          'Tags of HTML elements to be rendered',
+          'String',
+          'div',
+          'div ...'
+        ],
+        [
+          'inline',
+          'Button dropdonws on the same horizontal row. Essential  when you use .Split button dropdowns ',
+          'Boolean',
+          'false',
+          ''
+        ],
+        [
+          'dropright',
+          'Trigger dropdown menus at the right of the elements.',
+          'Boolean',
+          'false',
+          ''
+        ],
+        [
+          'dropleft',
+          'Trigger dropdown menus at the left of the elements.',
+          'Boolean',
+          'false',
+          ''
+        ],
+        [
+          'dropup',
+          'Trigger dropdown menus above elements.',
+          'Boolean',
+          'false',
+          ''
+        ],
+        [
+          'alignright',
+          'Trigger dropdown menus at the right of the elements.',
+          'Boolean',
+          'false',
+          ''
+        ]
       ]
     };
   }

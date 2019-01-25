@@ -2,7 +2,7 @@
   <div>
     <h1>Nav</h1>
     <p class="bd-lead">
-      부트스트랩에 포함된 네비게이션 컴포넌트를 사용하는 방법에 대한 문서 및 예제.
+      Documentation and examples for how to use Bootstrap’s navigation components.
     </p>
     <h2>Example</h2>
     <example>
@@ -13,14 +13,10 @@
         >
           Active
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Link
         </a>
-        <a
-          href="javascript:"
-        >
+        <a href="javascript:">
           Link
         </a>
         <a
@@ -66,16 +62,10 @@
         >
           Active
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Link
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Link
         </a>
         <a
@@ -114,29 +104,19 @@
   </a>
 </rd-nav>"
     />
-    <h3>
-      Vertical
-    </h3>
+    <h3>Vertical</h3>
     <example>
-      <rd-nav
-        class="flex-column"
-      >
+      <rd-nav class="flex-column">
         <a
           class="active"
           href="javascript:"
         >
           Active
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Link
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Link
         </a>
         <a
@@ -177,9 +157,7 @@
   </a>
 </rd-nav>"
     />
-    <h3>
-      Tabs
-    </h3>
+    <h3>Tabs</h3>
     <example>
       <rd-nav tabs>
         <a
@@ -188,16 +166,10 @@
         >
           Active
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Link
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Link
         </a>
         <a
@@ -236,9 +208,7 @@
   </a>
 </rd-nav>"
     />
-    <h3>
-      Pills
-    </h3>
+    <h3>Pills</h3>
     <example>
       <rd-nav pills>
         <a
@@ -247,16 +217,10 @@
         >
           Active
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Link
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Link
         </a>
         <a
@@ -295,9 +259,7 @@
   </a>
 </rd-nav>"
     />
-    <h3>
-      Fill and justify
-    </h3>
+    <h3>Fill and justify</h3>
     <example>
       <rd-nav
         pills
@@ -309,16 +271,10 @@
         >
           Active
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Longer nav link
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Link
         </a>
         <a
@@ -372,16 +328,10 @@
         >
           Active
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Longer nav link
         </a>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Link
         </a>
         <a
@@ -423,9 +373,7 @@
   </a>
 </rd-nav>"
     />
-    <h3>
-      Using dropdowns
-    </h3>
+    <h3>Using dropdowns</h3>
     <example>
       <rd-nav tabs>
         <a
@@ -441,36 +389,21 @@
           >
             Dropdown
           </a>
-          <a
-
-            href="javascript:"
-          >
+          <a href="javascript:">
             Action
           </a>
-          <a
-
-            href="javascript:"
-          >
+          <a href="javascript:">
             Another action
           </a>
-          <a
-
-            href="javascript:"
-          >
+          <a href="javascript:">
             Something else here
           </a>
           <div class="dropdown-divider" />
-          <a
-
-            href="javascript:"
-          >
+          <a href="javascript:">
             Separated link
           </a>
         </rd-dropdown>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Link
         </a>
         <a
@@ -536,9 +469,7 @@
   </a>
 </rd-nav>"
     />
-    <h3>
-      Pills with dropdowns
-    </h3>
+    <h3>Pills with dropdowns</h3>
     <example>
       <rd-nav pills>
         <a
@@ -554,36 +485,21 @@
           >
             Dropdown
           </a>
-          <a
-
-            href="javascript:"
-          >
+          <a href="javascript:">
             Action
           </a>
-          <a
-
-            href="javascript:"
-          >
+          <a href="javascript:">
             Another action
           </a>
-          <a
-
-            href="javascript:"
-          >
+          <a href="javascript:">
             Something else here
           </a>
           <div class="dropdown-divider" />
-          <a
-
-            href="javascript:"
-          >
+          <a href="javascript:">
             Separated link
           </a>
         </rd-dropdown>
-        <a
-
-          href="javascript:"
-        >
+        <a href="javascript:">
           Link
         </a>
         <a
@@ -659,17 +575,34 @@
 </template>
 
 <script>
-
 export default {
   name: 'Nav',
   data() {
     return {
       props: [
-        ['tag', '렌더링 될 HTML 엘리먼트의 태그', 'String', 'ul', 'ul, nav'],
-        ['tabs', '탭 모양으로 표시', 'Boolean', 'false', ''],
-        ['pills', '둥글게 표시', 'Boolean', 'false', ''],
-        ['fill', '꽉 차게 표시', 'Boolean', 'false', ''],
-        ['justified', '모두 같은 너비로 꽉차게 표시', 'Boolean', 'false', ''],
+        [
+          'tag',
+          'Tags of HTML elements to be rendered',
+          'String',
+          'ul',
+          'ul, nav'
+        ],
+        ['tabs', 'Generate a tabbed interface ', 'Boolean', 'false', ''],
+        ['pills', 'Make components rounded ', 'Boolean', 'false', ''],
+        [
+          'fill',
+          'Force to contents to extend the full available width',
+          'Boolean',
+          'false',
+          ''
+        ],
+        [
+          'justified',
+          'Force to contents to extend the full available width with equal width elements',
+          'Boolean',
+          'false',
+          ''
+        ]
       ]
     };
   }

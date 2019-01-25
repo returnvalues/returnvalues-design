@@ -1,8 +1,10 @@
 <template>
   <div>
     <h1>Form</h1>
-    <p class="bd-lead">
-      폼 컨트롤 스타일, 레이아웃 옵션 및 다양한 폼양식을 만들기 위한 사용자 지정 컴포넌트 대한 예제 및 사용 가이드.
+    <p
+      class="bd-lead"
+    >
+      Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.
     </p>
     <h2>Example</h2>
     <example>
@@ -69,9 +71,7 @@
   </rd-button>
 </form>"
     />
-    <h3>
-      Form controls
-    </h3>
+    <h3>Form controls</h3>
     <example>
       <form>
         <rd-input
@@ -172,9 +172,7 @@
   </rd-input>
 </form>"
     />
-    <h3>
-      Sizing
-    </h3>
+    <h3>Sizing</h3>
     <example>
       <rd-input
         lg
@@ -195,7 +193,7 @@
       />
     </example>
     <highlight
-      code="
+      code="<rd-input
   lg
   type=&quot;text&quot;
   class=&quot;mt-1&quot;
@@ -213,9 +211,7 @@
   placeholder=&quot;.form-control-sm&quot;
 />"
     />
-    <h3>
-      Readonly
-    </h3>
+    <h3>Readonly</h3>
     <example>
       <rd-input
         type="text"
@@ -230,9 +226,7 @@
   readonly
 />"
     />
-    <h3>
-      Readonly plain text
-    </h3>
+    <h3>Readonly plain text</h3>
     <example>
       <form>
         <rd-input
@@ -255,9 +249,7 @@
   </rd-input>
 </form>"
     />
-    <h3>
-      Range Inputs
-    </h3>
+    <h3>Range Inputs</h3>
     <example>
       <form>
         <rd-input type="range">
@@ -272,9 +264,7 @@
   </rd-input>
 </form>"
     />
-    <h3>
-      Checkboxes and radios
-    </h3>
+    <h3>Checkboxes and radios</h3>
     <example>
       <rd-input type="checkbox">
         Default checkbox
@@ -341,9 +331,7 @@
   Disabled radio
 </rd-input>"
     />
-    <h3>
-      Inline
-    </h3>
+    <h3>Inline</h3>
     <example>
       <rd-input
         inline
@@ -441,13 +429,13 @@
 </rd-input>"
     />
     <h2>RdInput</h2>
-    <h3>Props</h3>
-    추가로 <nuxt-link
+    <h3>Props</h3>You can also use
+    <nuxt-link
       append
       to="../../mixins/size"
     >
       Size
-    </nuxt-link> 속성을 쓸 수 있습니다.
+    </nuxt-link>attributes.
     <properties
       type="props"
       :data="propsInput"
@@ -461,8 +449,6 @@
 </template>
 
 <script>
-
-
 export default {
   name: 'Form',
   data() {
@@ -477,9 +463,15 @@ export default {
       test3: 2,
       propsInput: [
         ['modelValue', 'v-model', 'Any', '', ''],
-        ['type', 'input type', 'String', 'text', 'text, checkbox, radio ...'],
+        ['type', 'input type', 'String', 'text', 'text, checkbox, radio ...']
       ],
-      eventsInput: [['change', '값이 바뀌었을때 발생', '(value)']]
+      eventsInput: [
+        [
+          'change',
+          'The change event triggers when the value has changed',
+          '(value)'
+        ]
+      ]
     };
   }
 };

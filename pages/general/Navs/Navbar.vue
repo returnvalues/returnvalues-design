@@ -23,7 +23,8 @@
               class="nav-lik"
               href="javascript:"
             >
-              Home <span class="sr-only">
+              Home
+              <span class="sr-only">
                 (current)
               </span>
             </a>
@@ -150,9 +151,7 @@
         light
         class="bg-light"
       >
-        <rd-navbar-brand
-          href="javascript:"
-        >
+        <rd-navbar-brand href="javascript:">
           Navbar
         </rd-navbar-brand>
       </rd-navbar>
@@ -193,9 +192,7 @@
         light
         class="bg-light"
       >
-        <rd-navbar-brand
-          href="javascript:"
-        >
+        <rd-navbar-brand href="javascript:">
           Navbar
         </rd-navbar-brand>
         <rd-navbar-toggler @click.native="$refs.collapse2.toggle()" />
@@ -208,14 +205,10 @@
             >
               Home
             </a>
-            <a
-              href="javascript:"
-            >
+            <a href="javascript:">
               Features
             </a>
-            <a
-              href="javascript:"
-            >
+            <a href="javascript:">
               Pricing
             </a>
             <a
@@ -275,9 +268,7 @@
         light
         class="bg-light"
       >
-        <rd-navbar-brand
-          href="javascript:"
-        >
+        <rd-navbar-brand href="javascript:">
           Navbar
         </rd-navbar-brand>
         <rd-navbar-toggler @click.native="$refs.collapse3.toggle()" />
@@ -290,14 +281,10 @@
             >
               Home
             </a>
-            <a
-              href="javascript:"
-            >
+            <a href="javascript:">
               Features
             </a>
-            <a
-              href="javascript:"
-            >
+            <a href="javascript:">
               Pricing
             </a>
             <a
@@ -357,9 +344,7 @@
         light
         class="bg-light"
       >
-        <rd-navbar-brand
-          href="javascript:"
-        >
+        <rd-navbar-brand href="javascript:">
           Navbar
         </rd-navbar-brand>
         <rd-navbar-toggler @click.native="$refs.collapse4.toggle()" />
@@ -372,15 +357,11 @@
             >
               Home
             </a>
-            <a
-              href="javascript:"
-            >
+            <a href="javascript:">
               Features
             </a>
 
-            <a
-              href="javascript:"
-            >
+            <a href="javascript:">
               Pricing
             </a>
             <rd-dropdown>
@@ -390,19 +371,13 @@
               >
                 Dropdown link
               </a>
-              <a
-                href="javascript:"
-              >
+              <a href="javascript:">
                 Action
               </a>
-              <a
-                href="javascript:"
-              >
+              <a href="javascript:">
                 Another action
               </a>
-              <a
-                href="javascript:"
-              >
+              <a href="javascript:">
                 Something else here
               </a>
             </rd-dropdown>
@@ -518,9 +493,7 @@
         light
         class="bg-light"
       >
-        <rd-navbar-brand>
-          Navbar
-        </rd-navbar-brand>
+        <rd-navbar-brand>Navbar</rd-navbar-brand>
         <form class="form-inline">
           <input
             class="form-control mr-sm-2"
@@ -662,9 +635,7 @@
         light
         class="bg-light"
       >
-        <rd-navbar-text>
-          Navbar text with an inline element
-        </rd-navbar-text>
+        <rd-navbar-text>Navbar text with an inline element</rd-navbar-text>
       </rd-navbar>
     </example>
     <highlight
@@ -683,9 +654,7 @@
         light
         class="bg-light"
       >
-        <rd-navbar-brand
-          href="javascript:"
-        >
+        <rd-navbar-brand href="javascript:">
           Navbar w/ text
         </rd-navbar-brand>
         <rd-navbar-toggler @click.native="$refs.collapse5.toggle()" />
@@ -696,24 +665,19 @@
               class="active"
               href="javascript:"
             >
-              Home <span class="sr-only">
+              Home
+              <span class="sr-only">
                 (current)
               </span>
             </a>
-            <a
-              href="javascript:"
-            >
+            <a href="javascript:">
               Features
             </a>
-            <a
-              href="javascript:"
-            >
+            <a href="javascript:">
               Pricing
             </a>
           </rd-nav>
-          <rd-navbar-text>
-            Navbar text with an inline element
-          </rd-navbar-text>
+          <rd-navbar-text>Navbar text with an inline element</rd-navbar-text>
         </rd-collapse>
       </rd-navbar>
     </example>
@@ -758,10 +722,7 @@
 </rd-navbar>"
     />
 
-
-    <h3>
-      Color schemes
-    </h3>
+    <h3>Color schemes</h3>
     <example>
       <rd-navbar
         dark
@@ -774,14 +735,10 @@
           >
             Home
           </a>
-          <a
-            href="javascript:"
-          >
+          <a href="javascript:">
             Features
           </a>
-          <a
-            href="javascript:"
-          >
+          <a href="javascript:">
             Pricing
           </a>
           <a
@@ -804,14 +761,10 @@
           >
             Home
           </a>
-          <a
-            href="javascript:"
-          >
+          <a href="javascript:">
             Features
           </a>
-          <a
-            href="javascript:"
-          >
+          <a href="javascript:">
             Pricing
           </a>
           <a
@@ -834,14 +787,10 @@
           >
             Home
           </a>
-          <a
-            href="javascript:"
-          >
+          <a href="javascript:">
             Features
           </a>
-          <a
-            href="javascript:"
-          >
+          <a href="javascript:">
             Pricing
           </a>
           <a
@@ -946,18 +895,19 @@
     />
 
     <h3>RdNavbar</h3>
-    <h4>Props</h4>
+    <h4>Props</h4>You can use
     <nuxt-link
       append
       to="../../mixins/semantic"
     >
       Semantic
-    </nuxt-link>, <nuxt-link
+    </nuxt-link>,
+    <nuxt-link
       append
       to="../../mixins/size"
     >
       Size
-    </nuxt-link> 속성을 쓸 수 있습니다.
+    </nuxt-link>attributes.
     <h3>RdNavbarBrand</h3>
     <h4>Props</h4>
     <properties
@@ -981,11 +931,23 @@ export default {
   data() {
     return {
       propsText: [
-        ['tag', '렌더링 될 HTML 엘리먼트의 태그', 'String', 'span', 'span, a ...'],
+        [
+          'tag',
+          'Tags of HTML elements to be rendered ',
+          'String',
+          'span',
+          'span, a ...'
+        ]
       ],
       propsBrand: [
-        ['tag', '렌더링 될 HTML 엘리먼트의 태그', 'String', 'a', 'span, a ...'],
-      ],
+        [
+          'tag',
+          'Tags of HTML elements to be rendered ',
+          'String',
+          'a',
+          'span, a ...'
+        ]
+      ]
     };
   }
 };

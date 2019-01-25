@@ -2,7 +2,7 @@
   <div>
     <h1>ToHex Filter</h1>
     <p class="bd-lead">
-      필터를 이용하여 값을 hex 스트링으로 변환합니다.
+      To Convert values to hex string by using a filter.
     </p>
     <h2>Example</h2>
     <example style="overflow:auto">
@@ -28,9 +28,20 @@
 </template>
 
 <script>
-
 export default {
   name: 'ToHexFilter',
-  data() { return { args: [['from', '값의 형식', 'String', 'utf8', 'ascii, bytes, number, numberString, utf8']] }; }
+  data() {
+    return {
+      args: [
+        [
+          'from',
+          'type of values',
+          'String',
+          'utf8',
+          'ascii, bytes, number, numberString, utf8'
+        ]
+      ]
+    };
+  }
 };
 </script>

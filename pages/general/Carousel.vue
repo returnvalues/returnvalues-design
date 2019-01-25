@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>Carousel</h1>
-    <p class="bd-lead">
+    <p
+      class="bd-lead"
+    >
       A slideshow component for cycling through elements—images or slides of text—like a carousel.
     </p>
     <h2>Example</h2>
@@ -43,10 +45,12 @@
         <img
           src="http://dummyimage.com/800x400/777777/555555&text=First slide"
           alt="First slide"
-        >      <img
+        >
+        <img
           src="http://dummyimage.com/800x400/666666/444444&text=Second slide"
           alt="Second slide"
-        >      <img
+        >
+        <img
           src="http://dummyimage.com/800x400/555555/333333&text=Third slide"
           alt="Third slide"
         >
@@ -232,7 +236,6 @@
   </div>
 </template>
 <script>
-
 export default {
   name: 'Carousel',
   data() {
@@ -240,22 +243,57 @@ export default {
       test: 1,
       props: [
         ['idx', 'v-model', 'Number', '0', ''],
-        ['slide', '슬라이드 효과', 'Boolean', 'false', ''],
-        ['control', '페이지 버튼 보이기', 'Boolean', 'false', ''],
-        ['indicator', '인디케이터 보이기', 'Boolean', 'false', ''],
-        ['fade', 'fade 전환 효과', 'Boolean', 'false', ''],
-        ['interval', '반복 시간', 'Number', '5000', ''],
-        ['keyboard', '키보드 이벤트 사용 여부', 'Boolean', 'false', ''],
-        ['pauseMode', '멈추는 조건', 'String|Boolean', 'hover', '"hover", false'],
-        ['ride', 'Autoplays the carousel after the user manually cycles the first item. If "carousel", autoplays the carousel on load.', 'Boolean', 'false', ''],
-        ['wrap', 'Whether the carousel should cycle continuously or have hard stops.', 'Boolean', 'true', ''],
+        ['slide', 'slide', 'Boolean', 'false', ''],
+        ['control', 'show page button', 'Boolean', 'false', ''],
+        ['indicator', 'show indicator', 'Boolean', 'false', ''],
+        ['fade', 'fade effect', 'Boolean', 'false', ''],
+        [
+          'interval',
+          'The amount of the to delay between automatically cycling an item',
+          'Number',
+          '5000',
+          ''
+        ],
+        [
+          'keyboard',
+          'Whether the carousel should react to keyboard events',
+          'Boolean',
+          'false',
+          ''
+        ],
+        [
+          'pauseMode',
+          'Configuring conditions to pauses the cycling of the carousel',
+          'String|Boolean',
+          'hover',
+          '"hover", false'
+        ],
+        [
+          'ride',
+          'Autoplays the carousel after the user manually cycles the first item. If "carousel", autoplays the carousel on load.',
+          'Boolean',
+          'false',
+          ''
+        ],
+        [
+          'wrap',
+          'Whether the carousel should cycle continuously or have hard stops.',
+          'Boolean',
+          'true',
+          ''
+        ]
       ],
       methods: [
-        ['cycle', '', '순환 시작', ''],
-        ['pause', '', '일시정지', ''],
-        ['to', 'idx', '해당 슬라이드로 이동', ''],
-        ['prev', '', '이전 슬라이드', ''],
-        ['next', '', '다음 슬라이드', ''],
+        [
+          'cycle',
+          '',
+          'Cycles through the carousel items from let to right',
+          ''
+        ],
+        ['pause', '', 'Stops the carousel form cycling', ''],
+        ['to', 'idx', "Cycles to the idx'th item", ''],
+        ['prev', '', 'Cycles to the previous item', ''],
+        ['next', '', 'Cycles to the next item', '']
       ]
     };
   }

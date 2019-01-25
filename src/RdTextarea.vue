@@ -4,8 +4,15 @@
     <textarea
       ref="textarea"
       class="form-control rd-textarea"
-      :rows="rows"
       :value="modelValue"
+      :rows="rows"
+      :cols="cols"
+      :autofocus="autofocus"
+      :disabled="disabled"
+      :placeholder="placeholder"
+      :readonly="readonly"
+      :required="required"
+      :wrap="wrap"
       @change="$emit('change',$refs.textarea.value)"
     />
   </div>
@@ -20,7 +27,14 @@ export default {
   },
   props: {
     modelValue: { type: null, default: undefined },
-    rows: { type: Number, default: undefined }
+    rows: { type: Number, default: undefined },
+    cols: { type: Number, default: undefined },
+    autofocus: Boolean,
+    disabled: Boolean,
+    placeholder: Boolean,
+    readonly: Boolean,
+    required: Boolean,
+    wrap: Boolean
   }
 };
 </script>

@@ -1,8 +1,10 @@
 <template>
   <div>
     <h1>Modal</h1>
-    <p class="bd-lead">
-      부트스트랩의 자바스크립트 모달 플러그인을 사용하여 라이트 박스, 사용자 알림 또는 사용자 정의 컨텐츠 대화상자를 사이트에 추가하십시오.
+    <p
+      class="bd-lead"
+    >
+      Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.
     </p>
     <h2>Example</h2>
     <example>
@@ -87,9 +89,7 @@
   </rd-modal-footer>
 </rd-modal>"
     />
-    <h3>
-      Scrolling long content
-    </h3>
+    <h3>Scrolling long content</h3>
     <example>
       <rd-button
         type="button"
@@ -174,9 +174,7 @@
   </rd-modal-footer>
 </rd-modal>"
     />
-    <h3>
-      Vertically centered
-    </h3>
+    <h3>Vertically centered</h3>
     <example>
       <rd-button
         type="button"
@@ -265,9 +263,7 @@
   </rd-modal-footer>
 </rd-modal>"
     />
-    <h3>
-      Tooltips and popovers
-    </h3>
+    <h3>Tooltips and popovers</h3>
     <example>
       <rd-button
         type="button"
@@ -293,7 +289,8 @@
         <rd-modal-body>
           <h5>Popover in a modal</h5>
           <p>
-            This <rd-button
+            This
+            <rd-button
               href="javascript:"
               secondary
               :popover="{
@@ -302,7 +299,7 @@
               }"
             >
               button
-            </rd-button> triggers a popover on click.
+            </rd-button>triggers a popover on click.
           </p>
           <hr>
           <h5>Tooltips in a modal</h5>
@@ -313,14 +310,15 @@
               title="Tooltip"
             >
               This link
-            </rd-tooltip> and <rd-tooltip
+            </rd-tooltip>and
+            <rd-tooltip
               tag="a"
               href="javascript:"
               class="tooltip-test"
               title="Tooltip"
             >
               that link
-            </rd-tooltip> have tooltips on hover.
+            </rd-tooltip>have tooltips on hover.
           </p>
         </rd-modal-body>
         <rd-modal-footer>
@@ -412,9 +410,7 @@
   </rd-modal-footer>
 </rd-modal>"
     />
-    <h3>
-      Optional sizes
-    </h3>
+    <h3>Optional sizes</h3>
     <example>
       <rd-button
         type="button"
@@ -589,13 +585,13 @@
   </rd-modal-footer>
 </rd-modal>"
     />
-    <h2>Props</h2>
-    추가로 <nuxt-link
+    <h2>Props</h2>You can also use
+    <nuxt-link
       append
       to="../mixins/size"
     >
       Size
-    </nuxt-link> 속성을 쓸 수 있습니다.
+    </nuxt-link>attributes.
     <properties
       type="props"
       :data="props"
@@ -613,7 +609,6 @@
   </div>
 </template>
 <script>
-
 export default {
   name: 'Modal',
   data() {
@@ -621,17 +616,27 @@ export default {
       open: false,
       props: [
         ['open', 'v-model', 'Boolean', 'false', ''],
-        ['backdrop', 'backdrop을 표시합니다. \'static\'일 경우 눌러도 닫지 않습니다.', 'Boolean|String', 'true', 'true, false, \'static\''],
-        ['fade', 'fade 효과를 줍니다.', 'Boolean', 'true', ''],
+        [
+          'backdrop',
+          "Specifies backdrop.  If you specify 'static' for a backdrop, it is not possible to close the modal when clicking outside of it.",
+          'Boolean|String',
+          'true',
+          "true, false, 'static'"
+        ],
+        ['fade', 'ffade effect', 'Boolean', 'true', '']
       ],
       methods: [
-        ['toggle', '', '표시 토글', ''],
-        ['show', '', '나타냅니다.', ''],
-        ['hide', '', '숨깁니다.', '']
+        ['toggle', '', 'Manually toggles a modal ', ''],
+        ['show', '', 'Manually shows a modal ', ''],
+        ['hide', '', 'Manually hides a modal.', '']
       ],
       events: [
-        ['change', '값이 바뀌었을때 발생', '(value)']
-      ],
+        [
+          'change',
+          'The change event triggers when the value has changed',
+          '(value)'
+        ]
+      ]
     };
   }
 };
