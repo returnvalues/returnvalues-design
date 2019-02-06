@@ -7,8 +7,8 @@
     "build": "node node_modules/rollup/bin/rollup -c rollup.config.js",
     "build:push": "npm run build && node node_modules/push-dir/bin/push-dir --dir=build --branch=build --cleanup",
     "start": "node node_modules/nuxt/bin/nuxt",
-    "gh-pages": "node node_modules/.bin/nuxt generate -c nuxt.config.gh-pages.js && node node_modules/.bin/push-dir --dir=dist --branch=gh-pagesi --cleanup",
-    "www": "git pull && node node_modules/.bin/nuxt generate -c nuxt.config.www.js",
+    "gh-pages": "node node_modules/nuxt/bin/nuxt generate -c nuxt.config.gh-pages.js && node node_modules/push-dir/bin/push-dir --dir=dist --branch=gh-pages --cleanup",
+    "www": "git pull && node node_modules/nuxt/bin/nuxt generate -c nuxt.config.www.js",
     "lint": "node_modules/.bin/eslint pages src components plugins layouts --ext .js,.mjs,.vue",
     "lint:fix": "node_modules/.bin/eslint pages src components plugins layouts --ext .js,.mjs,.vue --fix"
   },
